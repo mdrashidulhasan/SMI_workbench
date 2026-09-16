@@ -1,0 +1,33 @@
+{
+  "subproject": "maternal-exposure-to-heat-and-its-association-with-miscarriage-in-rural-kwazulu-natal-south-africa-a-population-based-cohort-study",
+  "run_id": "run-20260821-153911-d291b976",
+  "created_at": "2026-08-21T15:39:11Z",
+  "config_path": "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/generated_configs/maternal-exposure-to-heat-and-its-association-with-miscarriage-in-rural-kwazulu-natal-south-africa-a-population-based-cohort-study_20260821_113911.yaml",
+  "api_base_url": "https://dev.posit.niehs.nih.gov/et/api",
+  "state": "completed",
+  "artifacts": {
+    "literature_search": {
+      "id": "references_9617c8305bc74c2eb5135860ac965651",
+      "recordCount": 0,
+      "databaseQueries": {
+        "pubmed": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study"
+      },
+      "successfulSources": [
+        "pubmed"
+      ],
+      "sourceErrors": [],
+      "sourceCounts": {
+        "pubmed": 0
+      }
+    }
+  },
+  "updated_at": "2026-08-21T15:39:14Z",
+  "completion_reason": "no_records",
+  "completed_at": "2026-08-21T15:39:14Z",
+  "workflow_control": {
+    "stop": true,
+    "reason": "no_records",
+    "stage": "literature_search",
+    "note": "Literature search completed successfully but returned 0 records. The workflow stopped cleanly before deduplication and AI screening. Search query: 'Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study'."
+  }
+}

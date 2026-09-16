@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% set page_title = "PDF Preview" %}
+{% set page_kicker = "Outputs" %}
+{% set page_subtitle = pdf_name %}
+{% block content %}
+<div class="card">
+  <div class="actions" style="margin-bottom:12px;">
+    <a class="button" href="{{ download_url }}">Download PDF</a>
+    <a class="button button-light" href="{{ preview_url }}" target="_blank">Open raw PDF</a>
+    <a class="button button-light" href="javascript:history.back()">Back</a>
+  </div>
+  <p class="small muted">This viewer is intended for original API paper PDFs. Multi-page PDFs should scroll inside the viewer. Use <b>Open raw PDF</b> or <b>Download PDF</b> if your browser does not show all pages in the embedded frame.</p>
+  <iframe class="pdf" src="{{ preview_url }}#view=FitH"></iframe>
+</div>
+{% endblock %}

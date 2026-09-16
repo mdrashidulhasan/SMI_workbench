@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% set page_title = "Review Queue" %}
+{% set page_kicker = "Intelligence Add-on" %}
+{% set page_subtitle = "Accept, reject, or annotate extracted structured facts" %}
+{% block content %}
+<div class="card">
+  <form method="get" action="/intelligence/review" class="grid">
+    <div><label>Project</label><select name="subproject" onchange="this.form.submit()">{% for p in projects %}<option value="{{ p }}" {% if p == selected_project %}selected{% endif %}>{{ p }}</option>{% endfor %}</select></div>
+    <div><label>Run</label><select name="run_id" onchange="this.form.submit()">{% for r in runs %}<option value="{{ r.name }}" {% if selected_run and r.name == selected_run.name %}selected{% endif %}>{{ r.name }}</option>{% endfor %}</select></div>
+    <div><label>Status filter</label><select name="status" onchange="this.form.submit()"><option value="all" {% if status_filter == 'all' %}selected{% endif %}>All</option><option value="pending" {% if status_filter == 'pending' %}selected{% endif %}>Pending</option><option value="accepted" {% if status_filter == 'accepted' %}selected{% endif %}>Accepted</option><option value="rejected" {% if status_filter == 'rejected' %}selected{% endif %}>Rejected</option></select></div>
+  </form>
+</div>
+{% if selected_run %}
+<div class="card"><h2>{{ review_rows|length }} review items</h2></div>
+{% for row in review_rows %}
+<div class="card">
+  <div class="actions"><span class="chip">{{ row.module_label }}</span><span class="chip chip-gray">{{ row.review_status | default('pending') }}</span><span class="chip chip-gray">{{ row.confidence | default('') }}</span><a class="button button-light" href="{{ row.evidence_pack_url }}">Open Evidence Pack</a></div>
+  <h2>{{ row.display_label }}</h2>
+  <p><b>Evidence:</b> {{ row.evidence_sentence or row.market_or_product_use or row.testing_rationale or row.source_title }}</p>
+  <p class="muted small"><b>Source paper:</b> {{ row.source_title_display }}{% if row.source_citation_display %}<br><b>Source citation:</b> {{ row.source_citation_display }}{% endif %}</p>
+  <form method="post" action="/intelligence/review/update">
+    <input type="hidden" name="subproject" value="{{ selected_project }}">
+    <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+    <input type="hidden" name="module" value="{{ row.module }}">
+    <input type="hidden" name="item_id" value="{{ row.id }}">
+    <label>Reviewer notes</label><textarea name="notes">{{ row.reviewer_notes | default('') }}</textarea>
+    <div class="actions" style="margin-top:10px;">
+      <button name="status" value="accepted" type="submit">Accept</button>
+      <button class="button-secondary" name="status" value="pending" type="submit">Keep pending</button>
+      <button class="button-red" name="status" value="rejected" type="submit">Reject</button>
+    </div>
+  </form>
+</div>
+{% endfor %}
+{% else %}<div class="notice warn">No run selected.</div>{% endif %}
+{% endblock %}

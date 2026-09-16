@@ -1,0 +1,12 @@
+
+# SMI generated run data
+smi_workbench_full_existing_plus_intelligence_v67/smi/subprojects/
+
+# Validation outputs
+smi_workbench_full_existing_plus_intelligence_v67/smi/validation/
+
+# Local jobs
+smi_workbench_full_existing_plus_intelligence_v67/jobs/
+
+# Generated archives
+*.zip

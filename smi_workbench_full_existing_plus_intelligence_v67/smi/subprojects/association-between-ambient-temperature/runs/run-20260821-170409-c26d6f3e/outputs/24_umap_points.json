@@ -1,0 +1,12 @@
+[
+  {
+    "article_id": "PMID: 37806575",
+    "title": "Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom.",
+    "cluster_id": 1,
+    "x": 0.0,
+    "y": 0.0,
+    "priority_score": 0.505,
+    "exposures": "heat/temperature",
+    "outcomes": "asthma"
+  }
+]

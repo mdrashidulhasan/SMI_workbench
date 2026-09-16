@@ -1,0 +1,18 @@
+[
+  {
+    "cluster_id": 1,
+    "theme": "heat/temperature",
+    "article_count": 1,
+    "cluster_method": "agglomerative_cosine",
+    "articles": [
+      {
+        "article_id": "PMID: 39453277",
+        "title": "Leveraging Climate Data for Dengue Forecasting in Ba Ria Vung Tau Province, Vietnam: An Advanced Machine Learning Approach.",
+        "pca_x": 0.0,
+        "pca_y": 0.0,
+        "umap_x": 0.0,
+        "umap_y": 0.0
+      }
+    ]
+  }
+]

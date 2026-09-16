@@ -1,0 +1,12 @@
+{
+  "pid": 92982,
+  "subproject": "geospatial-patterns-of-non-melanoma-skin-cancer-in-relation-to-climate-changes-in-iran",
+  "run_id": "run-20260821-174043-3e93d948",
+  "config_path": "generated_configs/geospatial-patterns-of-non-melanoma-skin-cancer-in-relation-to-climate-changes-in-iran_20260821_134042.yaml",
+  "log_path": "smi/jobs/job-20260821-134043-92900.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-134043-92900.log",
+  "started_at": "2026-08-21T13:40:44",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject geospatial-patterns-of-non-melanoma-skin-cancer-in-relation-to-climate-changes-in-iran --config generated_configs/geospatial-patterns-of-non-melanoma-skin-cancer-in-relation-to-climate-changes-in-iran_20260821_134042.yaml",
+  "job_id": "job-20260821-134043-92900"
+}

@@ -1,0 +1,12 @@
+{
+  "pid": 70556,
+  "subproject": "leveraging-climate-data",
+  "run_id": "run-20260821-162142-621d41ba",
+  "config_path": "generated_configs/leveraging-climate-data_20260821_122141.yaml",
+  "log_path": "smi/jobs/job-20260821-122142-65872.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-122142-65872.log",
+  "started_at": "2026-08-21T12:21:42",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject leveraging-climate-data --config generated_configs/leveraging-climate-data_20260821_122141.yaml",
+  "job_id": "job-20260821-122142-65872"
+}

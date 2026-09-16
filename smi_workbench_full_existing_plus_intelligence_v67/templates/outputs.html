@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% set page_title = "Outputs and PDFs" %}
+{% set page_kicker = "Original App" %}
+{% set page_subtitle = "Browse, preview, and download workflow artifacts and individual PDFs" %}
+{% block content %}
+{% if request.query_params.get('cleared') == '1' %}<div class="notice">Results were cleared for the selected run. Metadata, approvals, and logs were preserved.</div>{% endif %}
+{% if request.query_params.get('stopped') == '1' %}<div class="notice warn">Stop was requested for this run. The status file was updated to stopped.</div>{% endif %}
+<div class="card">
+  <form method="get" action="/outputs" class="grid">
+    <div><label>Project</label><select name="subproject" onchange="this.form.submit()">{% for p in projects %}<option value="{{ p }}" {% if p == selected_project %}selected{% endif %}>{{ p }}</option>{% endfor %}</select></div>
+    <div><label>Run</label><select name="run_id" onchange="this.form.submit()">{% for r in runs %}<option value="{{ r.name }}" {% if selected_run and r.name == selected_run.name %}selected{% endif %}>{{ r.name }}</option>{% endfor %}</select></div>
+  </form>
+</div>
+{% if selected_run %}
+
+<div class="notice warn"><b>PDFs:</b> Row-level PDF links appear only when the app can confidently match a file to an article. If a match is uncertain, use the run-level PDF package instead.</div>
+{% if active_job %}
+<div class="card">
+  <h2>Active workflow run</h2>
+  <p class="muted">This selected run is still running in the background. PID: {{ active_job.pid }}</p>
+  <form method="post" action="/runs/stop" onsubmit="return confirm('Stop this workflow run now?');">
+    <input type="hidden" name="job_id" value="{{ active_job.job_id }}">
+    <input type="hidden" name="subproject" value="{{ selected_project }}">
+    <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+    <input type="hidden" name="return_to" value="outputs">
+    <button type="submit" class="button-red">Stop Run</button>
+    {% if active_job.log_url %}<a class="button button-light" href="{{ active_job.log_url }}" target="_blank">View live log</a>{% endif %}
+  </form>
+</div>
+{% endif %}
+<div class="card">
+  <h2>Clear generated results</h2>
+  <p class="muted">This removes PDFs, output JSON/CSV/Markdown files, statistics reports, risk assessment CSV, and intelligence results for this selected run. It keeps the project, run folder, metadata, approvals, status, and logs.</p>
+  <form method="post" action="/runs/clear-results" onsubmit="return confirm('Clear PDFs, outputs, statistics, risk assessment, and intelligence results for this run? This cannot be undone.');">
+    <input type="hidden" name="subproject" value="{{ selected_project }}">
+    <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+    <input type="hidden" name="return_to" value="outputs">
+    <button type="submit" class="button-red">Clear Results</button>
+  </form>
+</div>
+<div class="card">
+  <h2>Citation and PDF Table</h2>
+  {% if citation_rows %}
+  <p><a class="button button-light" href="/citation-table.csv?subproject={{ selected_subproject }}&run_id={{ selected_run_id }}">Download citation table CSV</a>{% if pdf_package_url %} <a class="button button-light" href="{{ pdf_package_url }}">Download first PDF package{% if pdf_package_name %}: {{ pdf_package_name }}{% endif %}</a>{% endif %}</p>
+  <p class="small muted">PDF ZIP packages are run-level artifacts. Row-level PDF links appear only when an individual article PDF is confidently matched to a citation.</p>
+  {% if pdf_package_links %}
+  <details class="notice"><summary><b>Large-scale PDF packages</b> — {{ pdf_package_links|length }} ZIP file(s)</summary>
+    <div class="scroll"><table>
+      <tr><th>Package</th><th>Batch</th><th>Size</th><th>Action</th></tr>
+      {% for pkg in pdf_package_links %}
+      <tr><td>{{ pkg.name }}</td><td>{{ pkg.label }}</td><td>{{ pkg.size }}</td><td><a href="{{ pkg.url }}">Download ZIP</a></td></tr>
+      {% endfor %}
+    </table></div>
+  </details>
+  {% endif %}
+  <div class="scroll"><table>
+    <tr><th>#</th><th>Title</th><th>Citation</th><th>Journal / Date</th><th>QA flag</th><th>PDF status</th><th>Paper actions</th><th>PDF actions</th></tr>
+    {% for row in citation_rows %}
+    <tr>
+      <td>{{ row.index }}</td>
+      <td><b>{{ row.title }}</b><br><span class="small muted">{{ row.authors }}</span></td>
+      <td>{% if row.pmid %}PMID: {{ row.pmid }}<br>{% endif %}{% if row.doi %}DOI: {{ row.doi }}<br>{% endif %}{% if row.pmcid %}PMCID: {{ row.pmcid }}{% endif %}</td>
+      <td>{{ row.journal }}<br><span class="small muted">{{ row.publication_date }}</span></td>
+      <td>{% if row.scope_warning %}<span class="small" style="font-weight:700;color:#9a3412;">{{ row.scope_warning }}</span>{% else %}<span class="small muted">No obvious scope flag</span>{% endif %}</td>
+      <td>{{ row.pdf_status }}{% if row.pdf_file_name %}<br><span class="small muted">{{ row.pdf_file_name }}</span>{% endif %}{% if row.pdf_match_type %}<br><span class="small muted">{{ row.pdf_match_type }}</span>{% endif %}</td>
+      <td class="actions"><a href="{{ row.evidence_pack_url }}">Open Evidence Pack</a></td>
+      <td class="actions">
+        {% if row.pdf_preview_url %}<a href="{{ row.pdf_preview_url }}" target="_blank">Preview PDF</a>{% endif %}
+        {% if row.pdf_is_individual and row.pdf_download_url %}<a href="{{ row.pdf_download_url }}">Download PDF</a>{% endif %}
+        {% if not row.pdf_is_individual %}<span class="small muted">No row-level PDF</span>{% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table></div>
+  {% else %}<p class="muted">No citation rows found for this run.</p>{% endif %}
+</div>
+<div class="card">
+  <h2>All output files</h2>
+  {% if files %}
+  <div class="scroll"><table>
+    <tr><th>File</th><th>Kind</th><th>Size</th><th>Actions</th></tr>
+    {% for file in files %}
+    <tr>
+      <td><b>{{ file.relative }}</b></td>
+      <td>{{ file.kind }}</td>
+      <td>{{ file.size }}</td>
+      <td class="actions">
+        {% if file.previewable %}<a href="{{ file.preview_url }}" target="_blank">Preview</a>{% endif %}
+        <a href="{{ file.url }}">Download</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table></div>
+  {% else %}<p class="muted">No files found.</p>{% endif %}
+</div>
+{% else %}<div class="notice warn">No run selected.</div>{% endif %}
+{% endblock %}

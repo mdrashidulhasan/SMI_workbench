@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% set page_title = spec.label %}
+{% set page_kicker = "Intelligence Module" %}
+{% set page_subtitle = spec.description %}
+{% block content %}
+<div class="card">
+  <form method="get" action="/intelligence/{{ spec.short }}" class="grid">
+    <div><label>Project</label><select name="subproject" onchange="this.form.submit()">{% for p in projects %}<option value="{{ p }}" {% if p == selected_project %}selected{% endif %}>{{ p }}</option>{% endfor %}</select></div>
+    <div><label>Run</label><select name="run_id" onchange="this.form.submit()">{% for r in runs %}<option value="{{ r.name }}" {% if selected_run and r.name == selected_run.name %}selected{% endif %}>{{ r.name }}</option>{% endfor %}</select></div>
+  </form>
+</div>
+{% if selected_run %}
+<div class="card">
+  <div class="actions">
+    <a class="button button-light" href="/intelligence?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Back to Intelligence Dashboard</a>
+    <a class="button button-light" href="/intelligence/review?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Review Queue</a>
+    {% for f in files %}<a class="button button-light" href="{{ f.url }}">Download {{ f.name }}</a>{% endfor %}
+  </div>
+</div>
+<div class="notice"><b>Traceability update:</b> each extracted row now includes a source-paper column and an Evidence Pack link. Association rows now show <b>Sample Size</b>, <b>Population Size</b>, and <b>Statistical Methods</b> as explicit columns. Use the Evidence Pack link to verify the original title, abstract, identifiers, PDF status, and all other extracted facts from the same paper.</div>
+<div class="card">
+  <h2>{{ rows|length }} extracted rows</h2>
+  {% if rows %}
+  <div class="scroll"><table>
+    <tr><th>Source Paper</th><th>Actions</th>{% for col in spec.columns %}<th>{{ col|replace('_', ' ')|title }}</th>{% endfor %}</tr>
+    {% for row in rows %}
+    <tr>
+      <td style="min-width:320px;"><b>{{ row.source_title_display }}</b>{% if row.source_citation_display %}<br><span class="small muted">{{ row.source_citation_display }}</span>{% endif %}</td>
+      <td class="actions" style="min-width:170px;"><a href="{{ row.evidence_pack_url }}">Open Evidence Pack</a></td>
+      {% for col in spec.columns %}<td>{{ row.get(col, '') }}</td>{% endfor %}
+    </tr>
+    {% endfor %}
+  </table></div>
+  {% else %}
+  <p class="muted">No rows yet. Use Generate intelligence outputs on the Intelligence Dashboard.</p>
+  {% endif %}
+</div>
+{% else %}<div class="notice warn">No run selected.</div>{% endif %}
+{% endblock %}

@@ -1,0 +1,70 @@
+{
+  "chunked_ai_screening": true,
+  "screening_mode": "record_level_local_decisions",
+  "parallel": false,
+  "max_workers": 1,
+  "completed_chunk_units": 1,
+  "failed_chunk_units": 0,
+  "completed_record_count": 1,
+  "requested_record_count": 1,
+  "chunk_size": 75,
+  "chunks": [
+    {
+      "recordCount": 1,
+      "sourceRecordCount": 1,
+      "decisionCounts": {
+        "Relevant": 1,
+        "Not relevant": 0,
+        "Unclear": 0
+      },
+      "chunk_index": 1,
+      "chunk_label": "AI screening chunk 1/1 (1 records)",
+      "chunk_size": 1,
+      "requested_reference_count": 1,
+      "processed_record_count": 1,
+      "retained_record_count": 1,
+      "excluded_record_count": 0,
+      "unclear_record_count": 0,
+      "source": "local_record_level_ai_screening",
+      "screening_mode": "record_level_local_decisions",
+      "records": [
+        {
+          "id": "PMID-37584317",
+          "pmid": "37584317",
+          "pmcid": "PMC10786254",
+          "title": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda.",
+          "doi": "10.1093/infdis/jiad348",
+          "authors": "Xu E, Goel V, Baguma E, Ayebare E, Hollingsworth BD, Brown-Marusiak A, Giandomenico D, Reyes R, Ntaro M, Mulogo EM, Boyce RM",
+          "journal": "The Journal of infectious diseases",
+          "volume": "229",
+          "issue": "1",
+          "publicationDate": "2024-01-12",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10786254/pdf/",
+          "abstract": "BACKGROUND: Malaria epidemics result from extreme precipitation and flooding, which are increasing with global climate change. Local adaptation and mitigation strategies will be essential to prevent excess morbidity and mortality. METHODS: We investigated the spatial risk of malaria infection at multiple timepoints after severe flooding in rural western Uganda employing longitudinal household surveys measuring parasite prevalence and leveraging remotely sensed information to inform spatial models of malaria risk in the 3 months after flooding. RESULTS: We identified clusters of malaria risk emerging in areas (1) that showed the greatest changes in Normalized Difference Vegetation Index from pre- to postflood and (2) where residents were displaced for longer periods of time and had lower access to long-lasting insecticidal nets, both of which were associated with a positive malaria rapid diagnostic test result. The disproportionate risk persisted despite a concurrent chemoprevention program that achieved high coverage. CONCLUSIONS: The findings enhance our understanding not only of the spatial evolution of malaria risk after flooding, but also in the context of an effective intervention. The results provide a \"proof of concept\" for programs aiming to prevent malaria outbreaks after flooding using a combination of interventions. Further study of mitigation strategies-and particularly studies of implementation-is urgently needed.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ],
+      "decisions": [
+        {
+          "record_index": 1,
+          "record_label": "PMID 37584317",
+          "decision": "Relevant",
+          "retained": true,
+          "api_response_id": "references_b5dec489a90f4e909c4c489fb2dcf9f6"
+        }
+      ]
+    }
+  ],
+  "chunk_errors": []
+}

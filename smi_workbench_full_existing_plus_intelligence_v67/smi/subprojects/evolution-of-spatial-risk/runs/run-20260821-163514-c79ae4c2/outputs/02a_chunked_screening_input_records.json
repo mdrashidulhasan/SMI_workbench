@@ -1,0 +1,32 @@
+{
+  "source_result_type": "deduped",
+  "references_id": "references_606efdefff3d4e8da737034c390434bb",
+  "requested_limit": 1000,
+  "record_count": 1,
+  "records": [
+    {
+      "id": "PMID-37584317",
+      "pmid": "37584317",
+      "pmcid": "PMC10786254",
+      "title": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda.",
+      "doi": "10.1093/infdis/jiad348",
+      "authors": "Xu E, Goel V, Baguma E, Ayebare E, Hollingsworth BD, Brown-Marusiak A, Giandomenico D, Reyes R, Ntaro M, Mulogo EM, Boyce RM",
+      "journal": "The Journal of infectious diseases",
+      "volume": "229",
+      "issue": "1",
+      "publicationDate": "2024-01-12",
+      "fullTextAvailable": true,
+      "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10786254/pdf/",
+      "abstract": "BACKGROUND: Malaria epidemics result from extreme precipitation and flooding, which are increasing with global climate change. Local adaptation and mitigation strategies will be essential to prevent excess morbidity and mortality. METHODS: We investigated the spatial risk of malaria infection at multiple timepoints after severe flooding in rural western Uganda employing longitudinal household surveys measuring parasite prevalence and leveraging remotely sensed information to inform spatial models of malaria risk in the 3 months after flooding. RESULTS: We identified clusters of malaria risk emerging in areas (1) that showed the greatest changes in Normalized Difference Vegetation Index from pre- to postflood and (2) where residents were displaced for longer periods of time and had lower access to long-lasting insecticidal nets, both of which were associated with a positive malaria rapid diagnostic test result. The disproportionate risk persisted despite a concurrent chemoprevention program that achieved high coverage. CONCLUSIONS: The findings enhance our understanding not only of the spatial evolution of malaria risk after flooding, but also in the context of an effective intervention. The results provide a \"proof of concept\" for programs aiming to prevent malaria outbreaks after flooding using a combination of interventions. Further study of mitigation strategies-and particularly studies of implementation-is urgently needed.",
+      "index": 0,
+      "sourceIndex": 0,
+      "sourceId": "pubmed",
+      "database": "PubMed",
+      "databaseKey": "pubmed",
+      "pages": "",
+      "isbn": "",
+      "referenceIndex": 0,
+      "duplicate": false
+    }
+  ]
+}

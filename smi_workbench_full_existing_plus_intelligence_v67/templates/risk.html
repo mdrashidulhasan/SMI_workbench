@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% set page_title = "Risk Assessment" %}
+{% set page_kicker = "Original App" %}
+{% set page_subtitle = "Manual risk-of-bias / quality assessment table with CSV output" %}
+{% block content %}
+<div class="card">
+  <form method="get" action="/risk" class="grid">
+    <div><label>Project</label><select name="subproject" onchange="this.form.submit()">{% for p in projects %}<option value="{{ p }}" {% if p == selected_project %}selected{% endif %}>{{ p }}</option>{% endfor %}</select></div>
+    <div><label>Run</label><select name="run_id" onchange="this.form.submit()">{% for r in runs %}<option value="{{ r.name }}" {% if selected_run and r.name == selected_run.name %}selected{% endif %}>{{ r.name }}</option>{% endfor %}</select></div>
+  </form>
+</div>
+{% if selected_run %}
+<div class="card">
+  <h2>Add risk assessment row</h2>
+  <form method="post" action="/risk/add">
+    <input type="hidden" name="subproject" value="{{ selected_project }}">
+    <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+    <div class="grid">
+      <div><label>Reviewer</label><input name="reviewer" value="Md Rashidul Hasan"></div>
+      <div><label>Record ID</label><input name="record_id" value="record-001"></div>
+      <div><label>Title</label><input name="title" value=""></div>
+    </div>
+    <div class="grid">
+      <div><label>Selection bias</label><select name="selection_bias"><option>Low</option><option>Some concerns</option><option>High</option></select></div>
+      <div><label>Exposure assessment</label><select name="exposure_assessment"><option>Low</option><option>Some concerns</option><option>High</option></select></div>
+      <div><label>Outcome assessment</label><select name="outcome_assessment"><option>Low</option><option>Some concerns</option><option>High</option></select></div>
+      <div><label>Confounding</label><select name="confounding"><option>Some concerns</option><option>Low</option><option>High</option></select></div>
+      <div><label>Reporting bias</label><select name="reporting_bias"><option>Low</option><option>Some concerns</option><option>High</option></select></div>
+      <div><label>Overall risk</label><select name="overall_risk"><option>Some concerns</option><option>Low</option><option>High</option></select></div>
+    </div>
+    <label>Notes</label><textarea name="notes"></textarea>
+    <button type="submit">Add risk row</button>
+  </form>
+</div>
+<div class="card">
+  <h2>Risk assessment rows</h2>
+  {% if risk_rows %}
+  <div class="scroll"><table>
+    <tr>{% for key in risk_rows[0].keys() %}<th>{{ key }}</th>{% endfor %}</tr>
+    {% for row in risk_rows %}<tr>{% for key, val in row.items() %}<td>{{ val }}</td>{% endfor %}</tr>{% endfor %}
+  </table></div>
+  {% else %}<p class="muted">No risk rows yet.</p>{% endif %}
+</div>
+{% else %}<div class="notice warn">No run selected.</div>{% endif %}
+{% endblock %}

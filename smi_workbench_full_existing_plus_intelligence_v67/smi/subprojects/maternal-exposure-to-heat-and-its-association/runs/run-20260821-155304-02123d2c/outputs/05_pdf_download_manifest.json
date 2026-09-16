@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-08-21T11:53:53",
+  "requested_reference_count": 1,
+  "batch_size": 1,
+  "completed_batch_count": 1,
+  "completed_reference_count": 1,
+  "successful_pdf_count": 1,
+  "failed_batch_count": 0,
+  "package_zip_count": 1,
+  "package_zips": [
+    {
+      "fileName": "PDF batch 1-1 -1 references-pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+      "localZipPath": "smi/subprojects/maternal-exposure-to-heat-and-its-association/runs/run-20260821-155304-02123d2c/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+      "relativePath": "smi/subprojects/maternal-exposure-to-heat-and-its-association/runs/run-20260821-155304-02123d2c/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+      "batchLabel": "PDF batch 1/1 (1 references)",
+      "sizeBytes": 536430
+    }
+  ],
+  "batch_errors": []
+}

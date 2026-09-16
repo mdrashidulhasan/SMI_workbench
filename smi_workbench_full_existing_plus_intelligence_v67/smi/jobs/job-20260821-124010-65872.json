@@ -1,0 +1,12 @@
+{
+  "pid": 75438,
+  "subproject": "psychotropic-medication-prescriptions-and-large-california-wildfires",
+  "run_id": "run-20260821-164010-e47ae432",
+  "config_path": "generated_configs/psychotropic-medication-prescriptions-and-large-california-wildfires_20260821_124010.yaml",
+  "log_path": "smi/jobs/job-20260821-124010-65872.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-124010-65872.log",
+  "started_at": "2026-08-21T12:40:11",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject psychotropic-medication-prescriptions-and-large-california-wildfires --config generated_configs/psychotropic-medication-prescriptions-and-large-california-wildfires_20260821_124010.yaml",
+  "job_id": "job-20260821-124010-65872"
+}

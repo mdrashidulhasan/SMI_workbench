@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h2>Knowledge Cluster Map</h2>
+  <p class="muted">Each dot is an article. Articles close together have similar abstract-only knowledge vectors. Topic buttons are generated from the current run.</p>
+  {% if selected_project and selected_run %}
+  <form method="get" action="/knowledge/map" class="actions">
+    <input type="hidden" name="subproject" value="{{ selected_project }}">
+    <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+    <input name="q" value="{{ map_query }}" placeholder="Filter topic, exposure, outcome, or cluster term" style="min-width:340px;">
+    <select name="projection">
+      <option value="umap" {% if projection == 'umap' %}selected{% endif %}>UMAP</option>
+      <option value="pca" {% if projection == 'pca' %}selected{% endif %}>PCA</option>
+    </select>
+    <select name="cluster" title="Show papers from a specific cluster">
+      <option value="">All clusters</option>
+      {% for cluster in clusters %}
+      <option value="{{ cluster.cluster_id }}" {% if cluster_filter == cluster.cluster_id|string %}selected{% endif %}>{{ cluster.cluster_id }} — {{ cluster.theme }} ({{ cluster.article_count }})</option>
+      {% endfor %}
+    </select>
+    <input type="number" name="max_points" value="{{ max_points }}" min="100" step="100" title="Maximum points to render">
+    <select name="per_page" title="Papers per page">
+      <option value="50" {% if paper_per_page == 50 %}selected{% endif %}>50 papers/page</option>
+      <option value="100" {% if paper_per_page == 100 %}selected{% endif %}>100 papers/page</option>
+      <option value="150" {% if paper_per_page == 150 %}selected{% endif %}>150 papers/page</option>
+      <option value="250" {% if paper_per_page == 250 %}selected{% endif %}>250 papers/page</option>
+    </select>
+    <input type="hidden" name="page" value="1">
+    <button type="submit">Update map</button>
+    <a class="button button-light" href="/knowledge?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Dashboard</a>
+    <a class="button button-light" href="/knowledge/reports?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Download data</a>
+  </form>
+  {% if topic_lenses %}
+  <div class="actions" style="margin-top:0.75rem;">
+    <span class="small muted">Suggested topics from this run:</span>
+    {% for lens in topic_lenses %}
+      <a class="button button-light" href="{{ lens.url }}">{{ lens.label }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endif %}
+  <p class="small muted">Projection: {{ projection|upper }}. Showing {{ shown_points }} of {{ total_filtered_points }} matching points{% if map_query %} for “{{ map_query }}”{% endif %}{% if cluster_filter %} in cluster(s) {{ cluster_filter }}{% endif %}.</p>
+  <div class="actions" style="margin-top:0.5rem;">
+    {% if cluster_filter %}
+      <a class="button button-light" href="{{ clear_cluster_url }}">Clear cluster selection</a>
+    {% endif %}
+    {% if cluster_filter or map_query %}
+      <a class="button button-light" href="{{ clear_all_url }}">Clear all filters</a>
+    {% endif %}
+  </div>
+</div>
+
+<div class="card scroll">
+  {% if points %}
+  <svg width="100%" height="560" viewBox="0 0 620 520" role="img" aria-label="Knowledge cluster map">
+    <rect x="0" y="0" width="620" height="520" fill="#ffffff" />
+    <line x1="40" x2="590" y1="260" y2="260" stroke="#cbd5e1" />
+    <line x1="300" x2="300" y1="35" y2="485" stroke="#cbd5e1" />
+    <text x="40" y="25" fill="#64748b" font-size="12">{{ projection|upper }} knowledge map{% if map_query %}: {{ map_query }}{% endif %}</text>
+    {% for p in points %}
+      <g>
+        <a href="{{ p.evidence_pack_url }}">
+          <circle cx="{{ p.svg_x }}" cy="{{ p.svg_y }}" r="{{ p.radius }}" fill="hsl({{ (p.cluster_id|int * 47) % 360 }}, 62%, 48%)" opacity="0.78">
+            <title>Cluster {{ p.cluster_id }} | {{ p.title }} | Priority {{ p.priority_score }} | {{ p.exposures }} -> {{ p.outcomes }} | n={{ p.sample_size }}</title>
+          </circle>
+        </a>
+        <text x="{{ p.svg_x + 8 }}" y="{{ p.svg_y - 8 }}" font-size="10" fill="#334155">{{ p.cluster_id }}</text>
+      </g>
+    {% endfor %}
+  </svg>
+  <p class="small muted">Tip: click a dot to open its Evidence Pack.</p>
+  {% else %}
+  <p class="muted">No map points match this filter/projection. Try another topic button, clear the filter, or regenerate Knowledge Space.</p>
+  {% endif %}
+</div>
+
+<div class="card">
+  <h2>{% if map_query %}Filtered Cluster Themes{% else %}Visible Cluster Legend{% endif %}</h2>
+  {% if clusters %}
+  <table><tr><th>Cluster(s)</th><th>Theme</th><th>Matching Articles</th><th>Method</th><th>Action</th></tr>
+    {% for cluster in clusters %}
+    <tr>
+      <td>{{ cluster.cluster_id }}</td>
+      <td>{{ cluster.theme }}</td>
+      <td>{{ cluster.article_count }}</td>
+      <td>{{ cluster.cluster_method | default('') }}</td>
+      <td><a class="button button-light" href="{{ cluster.show_papers_url }}">Show papers</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p class="muted">No clusters to show for the current filter.</p>
+  {% endif %}
+</div>
+
+<div class="card">
+  <h2>{% if cluster_filter %}Papers in cluster(s) {{ cluster_filter }}{% elif map_query %}Papers for “{{ map_query }}”{% else %}Visible Papers{% endif %}</h2>
+  {% if related_papers %}
+  <table>
+    <tr><th>Cluster</th><th>Paper</th><th>Exposure(s)</th><th>Outcome(s)</th><th>Action</th></tr>
+    {% for p in related_papers %}
+    <tr>
+      <td>{{ p.cluster_id }}</td>
+      <td><strong>{{ p.title }}</strong><br><span class="small muted">{{ p.article_id }}</span></td>
+      <td>{{ p.exposures }}</td>
+      <td>{{ p.outcomes }}</td>
+      <td><a class="button button-light" href="{{ p.evidence_pack_url }}">Open Evidence Pack</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  <div class="actions" style="margin-top:0.75rem;">
+    {% if paper_prev_url %}<a class="button button-light" href="{{ paper_prev_url }}">Previous</a>{% endif %}
+    <span class="small muted">Showing {{ related_paper_start }}–{{ related_paper_end }} of {{ total_related_papers }} papers. Page {{ paper_page }} of {{ paper_total_pages }}.</span>
+    {% if paper_next_url %}<a class="button button-light" href="{{ paper_next_url }}">Next</a>{% endif %}
+  </div>
+  {% if cluster_filter %}
+  <p class="small muted">Cluster paper list is paginated so the page stays responsive.</p>
+  {% else %}
+  <p class="small muted">Use “Show papers” next to a cluster to filter the table. Paper lists are paginated for speed.</p>
+  {% endif %}
+  {% else %}
+  <p class="muted">No related papers to show for this map/filter.</p>
+  {% endif %}
+</div>
+{% endblock %}

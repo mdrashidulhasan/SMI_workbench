@@ -1,0 +1,32 @@
+{
+  "enabled": true,
+  "modules": [
+    "exposure_health_associations",
+    "clinical_epidemiology",
+    "research_datasets",
+    "geospatial_datasets",
+    "cohorts",
+    "chemical_watchlist",
+    "research_reviews",
+    "hew_resource_library"
+  ],
+  "counts": {
+    "exposure_health_associations": 1,
+    "clinical_epidemiology": 0,
+    "research_datasets": 0,
+    "geospatial_datasets": 0,
+    "cohorts": 0,
+    "chemical_watchlist": 0,
+    "research_reviews": 0,
+    "hew_resource_library": 1,
+    "article_methods": 1
+  },
+  "knowledge_space": {
+    "records": 1,
+    "clusters": 1,
+    "priority_items": 1,
+    "large_scale_mode": false,
+    "umap": "single_record"
+  },
+  "generated_at": "2026-08-18T20:59:55Z"
+}

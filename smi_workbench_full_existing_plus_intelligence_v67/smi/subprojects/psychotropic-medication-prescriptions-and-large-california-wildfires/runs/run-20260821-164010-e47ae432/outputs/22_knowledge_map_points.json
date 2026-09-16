@@ -1,0 +1,21 @@
+[
+  {
+    "article_id": "PMID: 38407907",
+    "title": "Psychotropic Medication Prescriptions and Large California Wildfires.",
+    "cluster_id": 1,
+    "pca_x": 0.0,
+    "pca_y": 0.0,
+    "umap_x": 0.0,
+    "umap_y": 0.0,
+    "x": 0.0,
+    "y": 0.0,
+    "priority_score": 0.505,
+    "effect_direction": "positive",
+    "exposures": "",
+    "outcomes": "",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "not extracted",
+    "filter_text": "psychotropic medication prescriptions and large california wildfires. pmid: 38407907 importance: wildfires, intensified by climate change, have known effects on physical health but their effects on mental health are less well characterized. it has been hypothesized that the residential proximity to a large wildfire can exacerbate underlying mental health conditions as evidenced by increased prescriptions of psychotropic medications.. objective: to evaluate the association between the occurrence of large wildfires and the prescription rates of psychotropic medications immediately following the start of the fire. design, setting, and. participants: this cohortstudy used an interrupted time-series analysis to compare psychotropic medication prescriptions in the 6 weeks before and after each of 25 wildfires. the setting was california counties within metropolitan statistical areas (msas) experiencing large wildfires from 2011 through 2018. participants included individuals residing in california msas with prescriptions of psychotropic medications recorded in the merative marketscan research database (marketscan) during the study period. statistical analysis was performed for these 25 large wildfires occurring between september 2011 and november 2018. exposure: residential proximity to large wildfires that burned more than 25 000 acres occurring in a california county within an msa. main outcomes and measures: prescriptions of psychotropic medications, including antidepressants, antipsychotics, anxiolytics, hypnotics, and mood-stabilizers, with statins as a negative control outcome.. results: for the study period, prescription data and patient-level attributes were extracted for 7 115 690 unique individuals (annual mean [range]: 889 461 [455 705-1 426 928] individuals) enrolled in marketscan and residing in fire-affected msas. this study found a statistically significant increase in prescriptions of antidepressants (rate ratio [rr], 1.04 [95% ci, 1.01-1.07]), anxiolytics (rr, 1.05 [95% ci, 1.02-1.09]), and mood-stabilizing medications (rr, 1.06 [95% ci, 1.01-1.13]) in the fire period compared with the prefire baseline. however, the prescriptions of antipsychotics, hypnotics, and the negative control outcome, statins, showed no significant association. conclusions and relevance: in this cohort study of large california wildfires, the occurrence of wildfire was associated with increased mental health burden as reflected in increased prescription rates of certain psychotropic medications. the findings underscore the need for further scientific examination into the mental health effects of wildfires and the allocation of mental health resources in disaster responses. california experienced a substantial burden of wildfires from 2011 to 2018, and as wildfires become more intense and frequent in the context of anthropogenic climate change, it is increasingly important to understand and address their mental health effects    "
+  }
+]

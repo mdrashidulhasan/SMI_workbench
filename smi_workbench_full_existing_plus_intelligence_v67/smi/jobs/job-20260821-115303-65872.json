@@ -1,0 +1,12 @@
+{
+  "pid": 66079,
+  "subproject": "maternal-exposure-to-heat-and-its-association",
+  "run_id": "run-20260821-155304-02123d2c",
+  "config_path": "generated_configs/maternal-exposure-to-heat-and-its-association_20260821_115303.yaml",
+  "log_path": "smi/jobs/job-20260821-115303-65872.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-115303-65872.log",
+  "started_at": "2026-08-21T11:53:04",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject maternal-exposure-to-heat-and-its-association --config generated_configs/maternal-exposure-to-heat-and-its-association_20260821_115303.yaml",
+  "job_id": "job-20260821-115303-65872"
+}

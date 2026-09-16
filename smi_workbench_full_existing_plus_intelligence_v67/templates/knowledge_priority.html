@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <form method="get" action="/knowledge/priority" class="grid">
+    <div>
+      <label>Project</label>
+      <select name="subproject" onchange="this.form.submit()">
+        {% for p in projects %}
+        <option value="{{ p }}" {% if p == selected_project %}selected{% endif %}>{{ p }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label>Run</label>
+      <select name="run_id" onchange="this.form.submit()">
+        {% for r in runs %}
+        <option value="{{ r.name }}" {% if selected_run and r.name == selected_run.name %}selected{% endif %}>{{ r.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </form>
+</div>
+
+<div class="card">
+  <h2>Priority Review Queue</h2>
+  <p class="muted">Priority combines novelty, potential support/dispute signals, recency, chemical/dataset/cohort relevance, and cluster centrality. It is a triage aid, not a scientific conclusion.</p>
+</div>
+<div class="card scroll">
+  <h2>Ranked Articles</h2>
+  {% if priority_rows %}
+  <table><tr><th>Rank</th><th>Level</th><th>Title</th><th>Cluster</th><th>Score</th><th>Why review</th><th>Novelty</th><th>Conflict</th></tr>
+    {% for row in priority_rows %}
+    <tr><td>{{ row.rank }}</td><td>{{ row.priority_level }}</td><td>{{ row.title }}</td><td>{{ row.cluster_id }}</td><td>{{ row.priority_score }}</td><td>{{ row.review_reason }}</td><td>{{ row.novelty_score }}</td><td>{{ row.conflict_score }}</td></tr>
+    {% endfor %}
+  </table>
+  {% else %}<p class="muted">No priority rows yet.</p>{% endif %}
+</div>
+<div class="grid-2">
+  <div class="card scroll">
+    <h2>Novelty</h2>
+    {% if novelty_rows %}<table><tr><th>Title</th><th>Year</th><th>Novelty</th><th>Label</th></tr>{% for row in novelty_rows[:30] %}<tr><td>{{ row.title }}</td><td>{{ row.publication_year }}</td><td>{{ row.novelty_score }}</td><td>{{ row.novelty_label }}</td></tr>{% endfor %}</table>{% else %}<p class="muted">No novelty rows.</p>{% endif %}
+  </div>
+  <div class="card scroll">
+    <h2>Support / Dispute</h2>
+    {% if dispute_rows %}<table><tr><th>Title</th><th>Cluster</th><th>Direction</th><th>Majority</th><th>Label</th></tr>{% for row in dispute_rows[:30] %}<tr><td>{{ row.title }}</td><td>{{ row.cluster_id }}</td><td>{{ row.article_direction }}</td><td>{{ row.cluster_majority_direction }}</td><td>{{ row.support_dispute_label }}</td></tr>{% endfor %}</table>{% else %}<p class="muted">No support/dispute rows.</p>{% endif %}
+  </div>
+</div>
+<div class="card scroll">
+  <h2>Exposure × Outcome Matrix</h2>
+  {% if matrix_rows %}<table><tr><th>Exposure</th><th>Outcome</th><th>Articles</th><th>Positive</th><th>Negative</th><th>Null</th><th>Mixed</th><th>Unclear</th></tr>{% for row in matrix_rows %}<tr><td>{{ row.exposure }}</td><td>{{ row.health_outcome }}</td><td>{{ row.article_count }}</td><td>{{ row.positive }}</td><td>{{ row.negative }}</td><td>{{ row.null }}</td><td>{{ row.mixed }}</td><td>{{ row.unclear }}</td></tr>{% endfor %}</table>{% else %}<p class="muted">No matrix yet.</p>{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,712 @@
+[
+  {
+    "article_id": "PMID: 42623452",
+    "title": "Respiratory and Cardiovascular Effects of Ozone Modified by PM2.5: Evidence from a Panel Study and a Meta-Regression Analysis.",
+    "cluster_id": 15,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3178,
+    "exposures": "PM2.5; ozone (O3)",
+    "outcomes": ""
+  },
+  {
+    "article_id": "PMID: 42611483",
+    "title": "Identification of Pro-Atherogenic Microenvironment-Associated Molecular Signatures in Response to Key Effective PM2.5 Constituents Using a Blood-Brain Barrier-Immune Microenvironment Platform.",
+    "cluster_id": 16,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3001,
+    "exposures": "PM2.5; particulate matter",
+    "outcomes": "immune"
+  },
+  {
+    "article_id": "PMID: 42607263",
+    "title": "Climate-Smart Health Care: Role of the Family Physician.",
+    "cluster_id": 1,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2253,
+    "exposures": "heat/temperature; air pollution",
+    "outcomes": "cardiovascular; mortality; respiratory"
+  },
+  {
+    "article_id": "PMID: 42603825",
+    "title": "Short-term air pollution exposure and COVID-19 pneumonia in New York City: stronger associations among individuals with pre-existing cardiovascular conditions.",
+    "cluster_id": 8,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2775,
+    "exposures": "air pollution; particulate matter",
+    "outcomes": "cardiovascular; heart disease; respiratory"
+  },
+  {
+    "article_id": "PMID: 42600829",
+    "title": "Integrated Computational and In Vivo Evidence Prioritizes MYH6 as a Candidate Node in PFOS-Associated HCM-like Cardiac Remodeling.",
+    "cluster_id": 5,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3722,
+    "exposures": "PFAS; PFOS",
+    "outcomes": "cardiovascular"
+  },
+  {
+    "article_id": "PMID: 42600486",
+    "title": "A prospective twin cohort investigates placental transfer efficiency as a potential determinant of fetal growth across a 300-xenobiotic maternal-fetal exposure landscape.",
+    "cluster_id": 17,
+    "x": "",
+    "y": "",
+    "priority_score": 0.4523,
+    "exposures": "PFAS; phthalate",
+    "outcomes": "birth weight"
+  },
+  {
+    "article_id": "PMID: 42600302",
+    "title": "Impairment of placental function and maternal-fetal immunity cross-talk by per- and polyfluoroalkyl substances during early pregnancy.",
+    "cluster_id": 4,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3338,
+    "exposures": "PFAS; PFOA; PFOS",
+    "outcomes": "immune; pregnancy"
+  },
+  {
+    "article_id": "PMID: 42598180",
+    "title": "Effect of ambient relative humidity and particulate matter on the levels of asthma therapy.",
+    "cluster_id": 9,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2793,
+    "exposures": "PM2.5; heat/temperature; particulate matter",
+    "outcomes": "asthma"
+  },
+  {
+    "article_id": "PMID: 42595534",
+    "title": "[Acute impact of combined exposure to cold spell and heavy pollution on circulatory disease mortality in the Beijing-Tianjin-Hebei Region and surrounding areas].",
+    "cluster_id": 11,
+    "x": "",
+    "y": "",
+    "priority_score": 0.256,
+    "exposures": "PM2.5; heat/temperature; particulate matter",
+    "outcomes": "heart disease; mortality"
+  },
+  {
+    "article_id": "PMID: 42595033",
+    "title": "Prenatal PFAS exposure and early childhood sleep quality in the ECHO Cohort.",
+    "cluster_id": 4,
+    "x": "",
+    "y": "",
+    "priority_score": 0.5556,
+    "exposures": "PFAS; PFOA; PFOS",
+    "outcomes": "neurodevelopment; pregnancy"
+  },
+  {
+    "article_id": "PMID: 42595030",
+    "title": "Association between long-term ambient PM. exposure and hypertension and metabolic syndrome among Ghanaian adults. 2 5",
+    "cluster_id": 10,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3146,
+    "exposures": "PM2.5",
+    "outcomes": "cardiovascular; hypertension"
+  },
+  {
+    "article_id": "PMID: 42594972",
+    "title": "Gestational inhalation of nanoparticles alters placental glucose transporter expression and increases glucose flux in rats.",
+    "cluster_id": 2,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2067,
+    "exposures": "particulate matter",
+    "outcomes": "pregnancy"
+  },
+  {
+    "article_id": "PMID: 42588124",
+    "title": "Nutrition and Hydration Strategies for Heatwave Adaptation: A Narrative Review.",
+    "cluster_id": 1,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2433,
+    "exposures": "heat/temperature",
+    "outcomes": "cardiovascular"
+  },
+  {
+    "article_id": "PMID: 42551848",
+    "title": "Critical Windows of Air Pollution Exposure During Spermatogenesis and Intrauterine Insemination Outcomes.",
+    "cluster_id": 2,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2124,
+    "exposures": "PM2.5; nitrogen dioxide (NO2); ozone (O3); particulate matter",
+    "outcomes": "pregnancy"
+  },
+  {
+    "article_id": "PMID: 42570382",
+    "title": "Heat-protective behavior in pregnancy: Extending Protection Motivation Theory with environmental and social factors.",
+    "cluster_id": 6,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2103,
+    "exposures": "heat/temperature",
+    "outcomes": "pregnancy"
+  },
+  {
+    "article_id": "PMID: 42568331",
+    "title": "Association between long-term exposure to air pollution and blood pressure in children: an updated systematic review and meta-analysis.",
+    "cluster_id": 18,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3033,
+    "exposures": "nitrogen dioxide (NO2); particulate matter",
+    "outcomes": "cardiovascular; hypertension"
+  },
+  {
+    "article_id": "PMID: 42565432",
+    "title": "Time series analysis of environmental factors and their association with emergency visits for asthma exacerbations in Petaling Jaya, Malaysia.",
+    "cluster_id": 7,
+    "x": "",
+    "y": "",
+    "priority_score": 0.1918,
+    "exposures": "air pollution; particulate matter",
+    "outcomes": "asthma; respiratory"
+  },
+  {
+    "article_id": "PMID: 42551796",
+    "title": "Association of PFAS exposure with maternal blood pressure and hypertension during pregnancy in the PROTECT cohort.",
+    "cluster_id": 4,
+    "x": "",
+    "y": "",
+    "priority_score": 0.6052,
+    "exposures": "PFAS; PFOA; PFOS",
+    "outcomes": "hypertension; pregnancy"
+  },
+  {
+    "article_id": "PMID: 42557995",
+    "title": "The Impact of Heat and Bushfire Smoke on Health System Utilisation in Australia.",
+    "cluster_id": 1,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3606,
+    "exposures": "heat/temperature; particulate matter",
+    "outcomes": "cardiovascular; respiratory"
+  },
+  {
+    "article_id": "PMID: 42544117",
+    "title": "Spatial analysis of environmental and socioeconomic factors impacting maternal and infant health outcomes in North Carolina.",
+    "cluster_id": 6,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2532,
+    "exposures": "",
+    "outcomes": "pregnancy"
+  },
+  {
+    "article_id": "PMID: 42540534",
+    "title": "Exposure to Airborne Particulate Matter in Regional Environments of Bangladesh and Its Effects on Respiratory Health: A Narrative Review.",
+    "cluster_id": 7,
+    "x": "",
+    "y": "",
+    "priority_score": 0.1918,
+    "exposures": "air pollution; particulate matter",
+    "outcomes": "asthma; respiratory"
+  },
+  {
+    "article_id": "PMID: 42538170",
+    "title": "Household incense burning and small for gestational age risk in newborn infants.",
+    "cluster_id": 2,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2499,
+    "exposures": "particulate matter",
+    "outcomes": "pregnancy; preterm birth"
+  },
+  {
+    "article_id": "PMID: 42534890",
+    "title": "Prenatal PFAS exposure and offspring health: evidence review and implications for intergenerational risk assessment.",
+    "cluster_id": 4,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3395,
+    "exposures": "PFAS; PFOA; PFOS",
+    "outcomes": "immune; thyroid"
+  },
+  {
+    "article_id": "PMID: 42529083",
+    "title": "Environmental and socioeconomic influences on childhood asthma and pneumonia: burden and healthcare utilization in a population-based cohort study.",
+    "cluster_id": 9,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2793,
+    "exposures": "nitrogen dioxide (NO2); heat/temperature; particulate matter",
+    "outcomes": "asthma; respiratory"
+  },
+  {
+    "article_id": "PMID: 42529026",
+    "title": "Short-term associations between ambient air pollution and cardiovascular disease mortality: an 11-year time-series study in Nanning, China.",
+    "cluster_id": 12,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2913,
+    "exposures": "nitrogen dioxide (NO2); heat/temperature",
+    "outcomes": "cardiovascular; mortality"
+  },
+  {
+    "article_id": "PMID: 42528898",
+    "title": "Interpretable machine learning for identifying determinants of high hypertension burden under extreme heat vulnerability: evidence from Maryland, USA.",
+    "cluster_id": 1,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2147,
+    "exposures": "heat/temperature",
+    "outcomes": "cardiovascular; hypertension"
+  },
+  {
+    "article_id": "PMID: 42524808",
+    "title": "Compound Exposure to Extreme Heat and Substantial Landscape Fire-Sourced Air Pollution on Cardiovascular Mortality.",
+    "cluster_id": 1,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2439,
+    "exposures": "heat/temperature; air pollution",
+    "outcomes": "cardiovascular; heart disease; mortality"
+  },
+  {
+    "article_id": "PMID: 42524806",
+    "title": "Heat Plus Fire: A Compound Hazard Threatening Cardiovascular Health.",
+    "cluster_id": 13,
+    "x": "",
+    "y": "",
+    "priority_score": 0.165,
+    "exposures": "",
+    "outcomes": ""
+  },
+  {
+    "article_id": "PMID: 42521043",
+    "title": "Heat stress promotes myocardial injury and ventricular arrhythmia through DRP1-mediated mitochondrial dysfunction.",
+    "cluster_id": 12,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2981,
+    "exposures": "heat/temperature",
+    "outcomes": "mortality"
+  },
+  {
+    "article_id": "PMID: 42520874",
+    "title": "Long-term particulate matter exposure and coronary inflammation: A large-scale cohort study assessed by pericoronary fat attenuation index.",
+    "cluster_id": 10,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3146,
+    "exposures": "PM2.5; PM10; black carbon; particulate matter",
+    "outcomes": "cardiovascular; diabetes; hypertension; inflammation"
+  },
+  {
+    "article_id": "PMID: 42520868",
+    "title": "Maternal exposure to particulate matter during pregnancy and offspring liver function.",
+    "cluster_id": 2,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2356,
+    "exposures": "air pollution; particulate matter",
+    "outcomes": "liver; pregnancy"
+  },
+  {
+    "article_id": "PMID: 42520653",
+    "title": "Perfluoroalkyl/Polyfluoroalkyl Substances, Hemostatic/Inflammatory Biomarkers, and Incident Hypertension: The Study of Women's Health Across the Nation.",
+    "cluster_id": 5,
+    "x": "",
+    "y": "",
+    "priority_score": 0.6268,
+    "exposures": "PFAS",
+    "outcomes": "cardiovascular; hypertension; inflammation"
+  },
+  {
+    "article_id": "PMID: 42512137",
+    "title": "Weather Information Seeking and Heat-Health Protective Actions During Pregnancy: An Exploratory Study.",
+    "cluster_id": 6,
+    "x": "",
+    "y": "",
+    "priority_score": 0.4603,
+    "exposures": "heat/temperature",
+    "outcomes": "pregnancy"
+  },
+  {
+    "article_id": "PMID: 42508048",
+    "title": "Air pollution and cardiovascular disease: A review of current scientific data.",
+    "cluster_id": 3,
+    "x": "",
+    "y": "",
+    "priority_score": 0.25,
+    "exposures": "PM2.5; PM10; nitrogen dioxide (NO2); ozone (O3); particulate matter",
+    "outcomes": "cardiovascular; heart disease; inflammation; mortality; oxidative stress; respiratory"
+  },
+  {
+    "article_id": "PMID: 42503941",
+    "title": "[Advances on the effects and mechanisms of maternal exposure to particulate matter on offspring neurodevelopment].",
+    "cluster_id": 14,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2959,
+    "exposures": "particulate matter",
+    "outcomes": "inflammation; neurodevelopment; oxidative stress; pregnancy"
+  },
+  {
+    "article_id": "PMID: 42500877",
+    "title": "Case-Crossover Analysis of Short-Term Particulate Matter and Health Outcomes in Patients With Atrial Fibrillation.",
+    "cluster_id": 3,
+    "x": "",
+    "y": "",
+    "priority_score": 0.368,
+    "exposures": "PM2.5; nitrogen dioxide (NO2); ozone (O3); heat/temperature; particulate matter",
+    "outcomes": "cardiovascular"
+  },
+  {
+    "article_id": "PMID: 42496250",
+    "title": "Mechanisms of Heat-Induced Sleep Disruption in Aging: A Narrative Review.",
+    "cluster_id": 1,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2805,
+    "exposures": "heat/temperature",
+    "outcomes": "cardiovascular; immune; inflammation"
+  },
+  {
+    "article_id": "PMID: 42492149",
+    "title": "Prenatal air pollution exposure and placental biomarkers of oxidative stress and ageing: results from the BiSC cohort.",
+    "cluster_id": 14,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3,
+    "exposures": "black carbon; nitrogen dioxide (NO2); particulate matter",
+    "outcomes": "birth weight; oxidative stress; pregnancy"
+  },
+  {
+    "article_id": "PMID: 42488199",
+    "title": "Changes in respiratory and cardiovascular morbidity air pollution risk and attributable burden in New York City.",
+    "cluster_id": 19,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2917,
+    "exposures": "nitrogen dioxide (NO2); ozone (O3); heat/temperature",
+    "outcomes": "asthma; cardiovascular; respiratory"
+  },
+  {
+    "article_id": "PMID: 42488198",
+    "title": "A comprehensive study on the association of personal air pollution exposure with thyroid hormones in pregnant women.",
+    "cluster_id": 2,
+    "x": "",
+    "y": "",
+    "priority_score": 0.5012,
+    "exposures": "nitrogen dioxide (NO2); particulate matter",
+    "outcomes": "pregnancy; thyroid"
+  },
+  {
+    "article_id": "PMID: 42484582",
+    "title": "Constituent-Specific PM and Cardiovascular Risk: From Mass to Mixture. 2.5",
+    "cluster_id": 13,
+    "x": "",
+    "y": "",
+    "priority_score": 0.165,
+    "exposures": "",
+    "outcomes": ""
+  },
+  {
+    "article_id": "PMID: 42483592",
+    "title": "Quantifying the Health Benefits Linked to Reduced Traffic-Related PM Exposure on Acute Coronary Syndrome Incidence in China. 2.5",
+    "cluster_id": 3,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2575,
+    "exposures": "particulate matter",
+    "outcomes": "cardiovascular"
+  },
+  {
+    "article_id": "PMID: 42483588",
+    "title": "Transcriptomic Perturbations in Placental Gene Expression Following Developmental Exposure to Perfluorooctanoic Acid (PFOA) or Hexafluoropropylene Oxide-Dimer Acid (HFPO-DA or GenX) in CD‑1 Mice Are Consistent with Placental Insufficiency.",
+    "cluster_id": 4,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3338,
+    "exposures": "PFAS; PFOA",
+    "outcomes": "birth weight; immune; pregnancy"
+  },
+  {
+    "article_id": "PMID: 42483065",
+    "title": "Combined effects of apparent low temperature and PM pollution on circulatory emergency ambulance calls: a time-series analysis in Shijiazhuang, China. 2.5",
+    "cluster_id": 1,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2125,
+    "exposures": "heat/temperature; air pollution; particulate matter",
+    "outcomes": "cardiovascular; hypertension"
+  },
+  {
+    "article_id": "PMID: 42482688",
+    "title": "Size-specific health effects of particulate matter components on cardiovascular mortality: a weekly time-series study in Tianjin, China.",
+    "cluster_id": 3,
+    "x": "",
+    "y": "",
+    "priority_score": 0.25,
+    "exposures": "PM2.5; nitrogen dioxide (NO2); ozone (O3); cadmium; particulate matter",
+    "outcomes": "cardiovascular; heart disease; mortality"
+  },
+  {
+    "article_id": "PMID: 42476417",
+    "title": "Thermophysiological response of adults to long-distance running in different ACSM environmental risk conditions: A systematic review and meta-analysis.",
+    "cluster_id": 1,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2147,
+    "exposures": "heat/temperature",
+    "outcomes": "cardiovascular"
+  },
+  {
+    "article_id": "PMID: 42474428",
+    "title": "Individual and neighborhood factors influencing pediatric asthma exacerbations during urban heatwaves.",
+    "cluster_id": 9,
+    "x": "",
+    "y": "",
+    "priority_score": 0.5453,
+    "exposures": "heat/temperature",
+    "outcomes": "asthma"
+  },
+  {
+    "article_id": "PMID: 42472615",
+    "title": "Targeted inhibition of JAK2 phosphorylation by GenX disrupts the JAK2-STAT3 pathway and induces cardiovascular toxicity in zebrafish: Insights from network toxicology and molecular dynamics.",
+    "cluster_id": 5,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3722,
+    "exposures": "PFAS",
+    "outcomes": "cardiovascular; heart disease"
+  },
+  {
+    "article_id": "PMID: 42471626",
+    "title": "Associations between wildland fire smoke PM and maternal blood pressure. 2.5",
+    "cluster_id": 2,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2067,
+    "exposures": "PM2.5; particulate matter",
+    "outcomes": "pregnancy"
+  },
+  {
+    "article_id": "PMID: 42466507",
+    "title": "Joint Effects of Heat and Fine Particulate Matter on Out-of-Hospital Cardiac Arrest in Japan: A Nationwide Time-Stratified Case-Crossover Study.",
+    "cluster_id": 1,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2125,
+    "exposures": "heat/temperature; air pollution; particulate matter",
+    "outcomes": "cardiovascular"
+  },
+  {
+    "article_id": "PMID: 42459959",
+    "title": "Mechanistic insights into PM-induced cardiac fibrosis involving ERS/TXNIP/NLRP3-driven pyroptosis in multiple cell types. 2.5",
+    "cluster_id": 3,
+    "x": "",
+    "y": "",
+    "priority_score": 0.268,
+    "exposures": "PM2.5; particulate matter",
+    "outcomes": "cardiovascular; oxidative stress"
+  },
+  {
+    "article_id": "PMID: 42455550",
+    "title": "Modifiable Risk Factors and Attributable Ischemic Heart Disease Mortality in US States, 1990-2023: A Systematic Analysis for the Global Burden of Disease Study 2023.",
+    "cluster_id": 11,
+    "x": "",
+    "y": "",
+    "priority_score": 0.256,
+    "exposures": "particulate matter",
+    "outcomes": "heart disease; mortality"
+  },
+  {
+    "article_id": "PMID: 42455100",
+    "title": "Long-Term Exposure to PM Constituents and Coronary Heart Disease Risk in China. 2.5",
+    "cluster_id": 8,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2775,
+    "exposures": "air pollution; particulate matter",
+    "outcomes": "cardiovascular; coronary heart disease; heart disease; mortality"
+  },
+  {
+    "article_id": "PMID: 42450330",
+    "title": "Imaging and Molecular Biomarkers of PFAS-Related Vascular Aging: A Narrative Review.",
+    "cluster_id": 5,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3768,
+    "exposures": "PFAS",
+    "outcomes": "cardiovascular; inflammation; oxidative stress"
+  },
+  {
+    "article_id": "PMID: 42449303",
+    "title": "Environmental exposome and its public health impact on COPD and asthma exacerbations in France.",
+    "cluster_id": 20,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3114,
+    "exposures": "air pollution",
+    "outcomes": "asthma; mortality"
+  },
+  {
+    "article_id": "PMID: 42447841",
+    "title": "Micro- and nano-plastics in the coronary circulation and air pollution exposure in ischaemic heart disease presentation.",
+    "cluster_id": 10,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3184,
+    "exposures": "PM2.5; nanoplastics",
+    "outcomes": "cardiovascular; inflammation"
+  },
+  {
+    "article_id": "PMID: 42445923",
+    "title": "Ambient temperature, rainfall, and adverse maternal and child health outcomes in Nigeria: evidence from a national cross-sectional study.",
+    "cluster_id": 21,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2893,
+    "exposures": "heat/temperature",
+    "outcomes": ""
+  },
+  {
+    "article_id": "PMID: 42442744",
+    "title": "Fine Particulate Matter (PM2.5), the Exposome, and Cumulative Health Risk: A Life-course Perspective.",
+    "cluster_id": 3,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3561,
+    "exposures": "PM2.5; particulate matter",
+    "outcomes": "cardiovascular; endocrine disruption; inflammation; mortality; oxidative stress; respiratory"
+  },
+  {
+    "article_id": "PMID: 42440588",
+    "title": "Maternal exposure to fine particulate matter and autism spectrum disorder in children: population based case-control study.",
+    "cluster_id": 2,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2179,
+    "exposures": "PM2.5; black carbon; particulate matter",
+    "outcomes": "pregnancy"
+  },
+  {
+    "article_id": "PMID: 42437198",
+    "title": "Air Pollution Mixture and Folate Status Indicators among Pregnant Women in Canada: Maternal-Infant Research on Environmental Chemicals (MIREC) Study, 2008 to 2011.",
+    "cluster_id": 2,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2124,
+    "exposures": "PM2.5; nitrogen dioxide (NO2); ozone (O3); particulate matter",
+    "outcomes": "pregnancy"
+  },
+  {
+    "article_id": "PMID: 42428257",
+    "title": "Prenatal Air Pollution Exposure and Autism Spectrum Disorder in the ECHO Consortium.",
+    "cluster_id": 2,
+    "x": "",
+    "y": "",
+    "priority_score": 0.4186,
+    "exposures": "PM2.5; nitrogen dioxide (NO2); ozone (O3); particulate matter",
+    "outcomes": "pregnancy"
+  },
+  {
+    "article_id": "PMID: 42422320",
+    "title": "Maternal ambient air pollution exposure and risk of stillbirth in Georgia, USA.",
+    "cluster_id": 2,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2356,
+    "exposures": "air pollution; particulate matter",
+    "outcomes": "pregnancy"
+  },
+  {
+    "article_id": "PMID: 42420937",
+    "title": "Assessing the feasibility of indoor air quality monitoring in low-income housing among Black adults with uncontrolled asthma in New York City.",
+    "cluster_id": 7,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2795,
+    "exposures": "",
+    "outcomes": "asthma; respiratory"
+  },
+  {
+    "article_id": "PMID: 42420917",
+    "title": "Effects of per- and polyfluoroalkyl substances on maternal thyroid function: a stratified analysis by maternal iodine status and thyroid autoantibody status.",
+    "cluster_id": 4,
+    "x": "",
+    "y": "",
+    "priority_score": 0.4025,
+    "exposures": "PFAS; PFOS",
+    "outcomes": "pregnancy; thyroid"
+  },
+  {
+    "article_id": "PMID: 42419777",
+    "title": "Genetic susceptibility to respiratory health effects from outdoor air pollution: a structured narrative review.",
+    "cluster_id": 7,
+    "x": "",
+    "y": "",
+    "priority_score": 0.3808,
+    "exposures": "nitrogen dioxide (NO2); particulate matter",
+    "outcomes": "asthma; inflammation; oxidative stress; respiratory"
+  },
+  {
+    "article_id": "PMID: 42416905",
+    "title": "Association between air pollution and incident cardiovascular diseases among a population with cardiovascular-kidney-metabolic syndrome stages 0-3: the first evidence from the China Health and Retirement Longitudinal Study.",
+    "cluster_id": 8,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2828,
+    "exposures": "air pollution",
+    "outcomes": "cardiovascular; heart disease; kidney"
+  },
+  {
+    "article_id": "PMID: 42414291",
+    "title": "Causal effects of wildfire PM on hospital costs and length of stay in Brazil. 2.5",
+    "cluster_id": 3,
+    "x": "",
+    "y": "",
+    "priority_score": 0.268,
+    "exposures": "PM2.5; particulate matter",
+    "outcomes": "asthma; cardiovascular; respiratory"
+  },
+  {
+    "article_id": "PMID: 42413509",
+    "title": "Adaptations to Climate Change-Related Environmental Phenomena to Achieve Physical Activity Recommendations for Adults Aged 65 and Older.",
+    "cluster_id": 1,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2253,
+    "exposures": "heat/temperature; air pollution",
+    "outcomes": "cardiovascular; respiratory"
+  },
+  {
+    "article_id": "PMID: 42410409",
+    "title": "Investigating environmental heat exposure and its effects on maternal and fetal health in rural Northern Ghana (Physio-HeMAB Study): a study protocol for a cluster randomized trial.",
+    "cluster_id": 6,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2351,
+    "exposures": "heat/temperature",
+    "outcomes": "pregnancy; preterm birth"
+  },
+  {
+    "article_id": "PMID: 42406176",
+    "title": "Associations of short-, mid-, and long-term particulate matter exposure with elevated LDL-C levels in Korean adults: analysis of KNHANES 2016-2022.",
+    "cluster_id": 22,
+    "x": "",
+    "y": "",
+    "priority_score": 0.2944,
+    "exposures": "air pollution; particulate matter",
+    "outcomes": ""
+  },
+  {
+    "article_id": "PMID: 42403579",
+    "title": "Exposure to air and water pollution during pregnancy and risk of adverse perinatal outcomes in São Paulo State: protocol for a retrospective population-based cohort study.",
+    "cluster_id": 23,
+    "x": "",
+    "y": "",
+    "priority_score": 0.323,
+    "exposures": "nitrogen dioxide (NO2); ozone (O3); cadmium; lead; mercury; particulate matter",
+    "outcomes": "birth weight; mortality; pregnancy"
+  }
+]

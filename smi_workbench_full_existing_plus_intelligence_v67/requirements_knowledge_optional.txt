@@ -1,0 +1,7 @@
+# Optional advanced Knowledge Space dependencies.
+# Install only after the base app is working.
+# For macOS, Python 3.11 or 3.12 is usually safest.
+# --only-binary prevents long local source builds of scipy/scikit-learn.
+scipy
+scikit-learn
+umap-learn

@@ -1,0 +1,12 @@
+{
+  "pid": 60608,
+  "subproject": "leveraging-climate-data-for-dengue-forecasting-in-ba-ria-vung-tau-province-vietnam-an-advanced-machine-learning-approach",
+  "run_id": "run-20260821-153357-5baeb649",
+  "config_path": "generated_configs/leveraging-climate-data-for-dengue-forecasting-in-ba-ria-vung-tau-province-vietnam-an-advanced-machine-learning-approach_20260821_113356.yaml",
+  "log_path": "smi/jobs/job-20260821-113357-57186.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-113357-57186.log",
+  "started_at": "2026-08-21T11:33:57",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject leveraging-climate-data-for-dengue-forecasting-in-ba-ria-vung-tau-province-vietnam-an-advanced-machine-learning-approach --config generated_configs/leveraging-climate-data-for-dengue-forecasting-in-ba-ria-vung-tau-province-vietnam-an-advanced-machine-learning-approach_20260821_113356.yaml",
+  "job_id": "job-20260821-113357-57186"
+}

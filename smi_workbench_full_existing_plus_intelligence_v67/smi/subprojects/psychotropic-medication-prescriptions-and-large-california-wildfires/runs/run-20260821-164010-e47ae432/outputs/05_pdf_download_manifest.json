@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-08-21T12:40:22",
+  "requested_reference_count": 1,
+  "batch_size": 1,
+  "completed_batch_count": 1,
+  "completed_reference_count": 1,
+  "successful_pdf_count": 1,
+  "failed_batch_count": 0,
+  "package_zip_count": 1,
+  "package_zips": [
+    {
+      "fileName": "PDF batch 1-1 -1 references-pdfs_50daa79665184de796c654afac6eba3f.zip",
+      "localZipPath": "smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_50daa79665184de796c654afac6eba3f.zip",
+      "relativePath": "smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_50daa79665184de796c654afac6eba3f.zip",
+      "batchLabel": "PDF batch 1/1 (1 references)",
+      "sizeBytes": 413412
+    }
+  ],
+  "batch_errors": []
+}

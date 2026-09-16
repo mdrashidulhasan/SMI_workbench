@@ -1,0 +1,21 @@
+[
+  {
+    "article_id": "PMID: 39176885",
+    "title": "Deep Learning Models for Health-Driven Forecasting of Indoor Temperatures in Heat Waves in Canada: An Exploratory Study Using Smart Thermostats.",
+    "cluster_id": 1,
+    "pca_x": 0.0,
+    "pca_y": 0.0,
+    "umap_x": 0.0,
+    "umap_y": 0.0,
+    "x": 0.0,
+    "y": 0.0,
+    "priority_score": 0.505,
+    "effect_direction": "unclear",
+    "exposures": "heat/temperature",
+    "outcomes": "",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "deep learning",
+    "filter_text": "deep learning models for health-driven forecasting of indoor temperatures in heat waves in canada: an exploratory study using smart thermostats. pmid: 39176885 in canada, extreme heat occurrences present significant risks to public health, particularly for vulnerable groups like older individuals and those with pre-existing health conditions. accurately predicting indoor temperatures during these events is crucial for informing public health strategies and mitigating the adverse impacts of extreme heat. while current systems rely on outdoor temperature data, incorporating real-time indoor temperature estimations can significantly enhance decision-making and strengthen overall health system responses. sensor-based technologies, such as ecobee smart thermostats installed in homes, enable effortless collection of indoor temperature and humidity data. this study evaluates the efficacy of deep learning models in predicting indoor temperatures during heat waves using smart thermostat data, to enhance public health responses. utilizing ecobee smart thermostats, we analyzed indoor temperature trends and developed forecasting models. our findings indicate the potential of integrating iot and deep learning into health warning systems, enabling proactive interventions, and improving sustainable health care practices in extreme heat scenarios. this approach highlights the role of digital health innovations in creating the resilient and sustainable healthcare systems against climate-related health adversities heat/temperature   "
+  }
+]

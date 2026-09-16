@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-08-18T16:59:54",
+  "requested_reference_count": 1,
+  "batch_size": 1,
+  "completed_batch_count": 1,
+  "completed_reference_count": 1,
+  "successful_pdf_count": 1,
+  "failed_batch_count": 0,
+  "package_zip_count": 1,
+  "package_zips": [
+    {
+      "fileName": "PDF batch 1-1 -1 references-pdfs_786b1018f4014cabb8e839a4b87737e6.zip",
+      "localZipPath": "smi/subprojects/community-perspectives-of-heat-and-weather-warnings-for-pregnant-and-postpartum-women/runs/run-20260818-205900-2eb21bd1/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_786b1018f4014cabb8e839a4b87737e6.zip",
+      "relativePath": "smi/subprojects/community-perspectives-of-heat-and-weather-warnings-for-pregnant-and-postpartum-women/runs/run-20260818-205900-2eb21bd1/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_786b1018f4014cabb8e839a4b87737e6.zip",
+      "batchLabel": "PDF batch 1/1 (1 references)",
+      "sizeBytes": 404936
+    }
+  ],
+  "batch_errors": []
+}

@@ -1,0 +1,29 @@
+[2026-08-21T17:55:09Z] Created workflow run.
+[2026-08-21T17:55:11Z] Literature search requested_limit=1000.
+[2026-08-21T17:55:11Z] Completed literature search.
+[2026-08-21T17:55:12Z] Completed deduplication. effective_limit=1000.
+[2026-08-21T17:55:12Z] AI screening is using non-empty exclusion criteria from the run config (keys=['study_type', 'exposure', 'outcome']).
+[2026-08-21T17:55:12Z] Trying to retrieve concrete records for chunked AI screening: result_type=deduped, limit=1000, page_size=500.
+[2026-08-21T17:55:12Z] Retrieved 1 concrete records so far for chunked AI screening using result_type=deduped.
+[2026-08-21T17:55:12Z] Retrieved 1 concrete records for chunked AI screening using result_type=deduped.
+[2026-08-21T17:55:12Z] AI screening will use record-level local decision mapping for 1 records in 1 checkpoint chunk(s), chunk_size=75. Opaque references_* ids returned by /ai-screening will be kept for audit only and will not be sent to /results.
+[2026-08-21T17:55:12Z] AI screening record-level workers=1 (parallel=disabled).
+[2026-08-21T17:55:21Z] Completed AI screening chunk 1/1: Relevant=1, Unclear=0, Not relevant=0.
+[2026-08-21T17:55:21Z] Completed record-level AI screening for 1 records: Relevant=1, Unclear=0, Not relevant=0; retained=1.
+[2026-08-21T17:55:21Z] AI screening effective_limit=1000.
+[2026-08-21T17:55:21Z] Completed AI screening.
+[2026-08-21T17:55:21Z] Retrieving records from 1 AI-screening chunk result(s).
+[2026-08-21T17:55:21Z] Retrieved 1 records from chunked AI screening.
+[2026-08-21T17:55:21Z] PDF download will attempt all retrieved records: 1.
+[2026-08-21T17:55:21Z] Row-level PDF mode enabled: requesting one reference per PDF batch for safest article-to-PDF mapping.
+[2026-08-21T17:55:21Z] PDF download will request 1 references in 1 batch(es), batch_size=1, min_batch_size=1, retries=1.
+[2026-08-21T17:55:21Z] PDF parallel mode disabled; running batches sequentially.
+[2026-08-21T17:55:21Z] Starting PDF batch 1/1 (1 references), attempt 1/2.
+[2026-08-21T17:55:24Z] PDF batch 1/1 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T17:55:24Z] PDF batch 1/1 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-patterns-of-non-melanoma-skin-cancer/runs/run-20260821-175509-463caafb/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_bdd8df0ec9f444249c2ddf3a7eaf61c5.zip.
+[2026-08-21T17:55:24Z] Checkpointed PDF manifest after PDF batch 1/1 (1 references); completed units: 1, errors: 0.
+[2026-08-21T17:55:24Z] Created combined run-level ZIP package from 1 row-level PDFs: row_level_article_pdfs.zip.
+[2026-08-21T17:55:24Z] Completed PDF download stage.
+[2026-08-21T17:55:25Z] Generated Knowledge Space outputs: {'records': 1, 'clusters': 1, 'priority_items': 1, 'large_scale_mode': False, 'umap': 'single_record'}.
+[2026-08-21T17:55:25Z] Completed intelligence extraction.
+[2026-08-21T17:55:25Z] Paused for approval: post-pdf-download.

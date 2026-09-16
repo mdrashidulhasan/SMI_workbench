@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% set page_title = "Approvals" %}
+{% set page_kicker = "Human Review" %}
+{% set page_subtitle = "Approve checkpoints and resume original workflow runs" %}
+{% block content %}
+<div class="card">
+  <form method="get" action="/approvals" class="grid">
+    <div><label>Project</label><select name="subproject" onchange="this.form.submit()">{% for p in projects %}<option value="{{ p }}" {% if p == selected_project %}selected{% endif %}>{{ p }}</option>{% endfor %}</select></div>
+    <div><label>Run</label><select name="run_id" onchange="this.form.submit()">{% for r in runs %}<option value="{{ r.name }}" {% if selected_run and r.name == selected_run.name %}selected{% endif %}>{{ r.name }}</option>{% endfor %}</select></div>
+  </form>
+</div>
+{% if selected_run %}
+<div class="grid-2">
+  <div class="card">
+    <h2>Status</h2>
+    <pre>{{ status_text }}</pre>
+  </div>
+  <div class="card">
+    <h2>Existing approvals</h2>
+    <pre>{{ approvals_text }}</pre>
+  </div>
+</div>
+<div class="card">
+  <h2>Add approval</h2>
+  <form method="post" action="/approvals/add">
+    <input type="hidden" name="subproject" value="{{ selected_project }}">
+    <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+    <div class="grid">
+      <div><label>Checkpoint</label><select name="checkpoint">{% for cp in approval_checkpoints %}<option value="{{ cp }}">{{ cp }}</option>{% endfor %}</select></div>
+      <div><label>Reviewer</label><input name="reviewer" value="Md Rashidul Hasan"></div>
+      <div><label>Comments</label><input name="comments" value="Reviewed and approved."></div>
+    </div>
+    <button type="submit">Add approval</button>
+  </form>
+</div>
+<div class="card">
+  <h2>Resume workflow</h2>
+  <form method="post" action="/runs/resume">
+    <input type="hidden" name="subproject" value="{{ selected_project }}">
+    <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+    <button type="submit">Resume this run</button>
+  </form>
+</div>
+{% else %}<div class="notice warn">No run selected.</div>{% endif %}
+{% endblock %}

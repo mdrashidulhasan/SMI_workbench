@@ -1,0 +1,56 @@
+{
+  "recordCount": 1,
+  "sourceRecordCount": 1,
+  "decisionCounts": {
+    "Relevant": 1,
+    "Not relevant": 0,
+    "Unclear": 0
+  },
+  "chunk_index": 1,
+  "chunk_label": "AI screening chunk 1/1 (1 records)",
+  "chunk_size": 1,
+  "requested_reference_count": 1,
+  "processed_record_count": 1,
+  "retained_record_count": 1,
+  "excluded_record_count": 0,
+  "unclear_record_count": 0,
+  "source": "local_record_level_ai_screening",
+  "screening_mode": "record_level_local_decisions",
+  "records": [
+    {
+      "id": "PMID-39176885",
+      "pmid": "39176885",
+      "pmcid": "",
+      "title": "Deep Learning Models for Health-Driven Forecasting of Indoor Temperatures in Heat Waves in Canada: An Exploratory Study Using Smart Thermostats.",
+      "doi": "10.3233/SHTI240826",
+      "authors": "Kaur J, Singh G, Oetomo A, Kaur N, Morita PP",
+      "journal": "Studies in health technology and informatics",
+      "volume": "316",
+      "issue": "",
+      "publicationDate": "2024-08-22",
+      "fullTextAvailable": false,
+      "pdfUrl": "",
+      "abstract": "In Canada, extreme heat occurrences present significant risks to public health, particularly for vulnerable groups like older individuals and those with pre-existing health conditions. Accurately predicting indoor temperatures during these events is crucial for informing public health strategies and mitigating the adverse impacts of extreme heat. While current systems rely on outdoor temperature data, incorporating real-time indoor temperature estimations can significantly enhance decision-making and strengthen overall health system responses. Sensor-based technologies, such as ecobee smart thermostats installed in homes, enable effortless collection of indoor temperature and humidity data. This study evaluates the efficacy of deep learning models in predicting indoor temperatures during heat waves using smart thermostat data, to enhance public health responses. Utilizing ecobee smart thermostats, we analyzed indoor temperature trends and developed forecasting models. Our findings indicate the potential of integrating IoT and deep learning into health warning systems, enabling proactive interventions, and improving sustainable health care practices in extreme heat scenarios. This approach highlights the role of digital health innovations in creating the resilient and sustainable healthcare systems against climate-related health adversities.",
+      "index": 0,
+      "sourceIndex": 0,
+      "sourceId": "pubmed",
+      "database": "PubMed",
+      "databaseKey": "pubmed",
+      "pages": "",
+      "isbn": "",
+      "referenceIndex": 0,
+      "duplicate": false,
+      "ai_screening_decision": "Relevant",
+      "screening_decision": "Relevant"
+    }
+  ],
+  "decisions": [
+    {
+      "record_index": 1,
+      "record_label": "PMID 39176885",
+      "decision": "Relevant",
+      "retained": true,
+      "api_response_id": "references_b7cab5c2f50948859e12e1c62248f181"
+    }
+  ]
+}

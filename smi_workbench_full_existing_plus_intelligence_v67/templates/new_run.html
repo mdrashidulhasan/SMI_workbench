@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% set page_title = "New Workflow Run" %}
+{% set page_kicker = "Launch" %}
+{% set page_subtitle = "Start a workflow run" %}
+{% block content %}
+<form id="new-run-form" class="card" method="post" action="/runs/start">
+  <input type="hidden" name="search_limit" value="">
+  <input type="hidden" name="search_all" value="1">
+  <div class="grid-2">
+    <div>
+      <label>Project name</label>
+      <input name="subproject" value="geospatial-exposure-health-outcomes">
+      <label>Search query</label>
+      <textarea name="query">(PM2.5 OR particulate matter OR PFAS OR heat) AND (asthma OR pregnancy OR cardiovascular) AND environmental health</textarea>
+      <label>Databases</label>
+      <div class="inline-check"><input type="checkbox" name="databases" value="pubmed" checked> PubMed</div>
+      <div class="inline-check"><input type="checkbox" name="databases" value="scopus"> Scopus</div>
+      <div class="inline-check"><input type="checkbox" name="databases" value="wos"> Web of Science</div>
+    </div>
+    <div>
+      <label>Start date</label><input name="start_date" value="2015-01-01">
+      <label>End date</label><input name="end_date" value="{{ today }}">
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:10px;">
+        <div>
+          <label>Pipeline / AI screening record limit</label>
+          <input type="number" name="screening_limit" value="1000" min="1">
+          <div class="inline-check"><input type="checkbox" name="screening_all" value="1" onchange="toggleLimit(this, 'screening_limit')"> Screen all / no limit</div>
+        </div>
+        <div>
+          <label>Record retrieval limit</label>
+          <input type="number" name="retrieval_limit" value="1000" min="1">
+          <div class="inline-check"><input type="checkbox" name="retrieval_all" value="1" onchange="toggleLimit(this, 'retrieval_limit')"> Retrieve all / no limit</div>
+        </div>
+      </div>
+      <p class="small muted">PDF mode: the app attempts PDFs for the retrieved records and creates a run-level ZIP package with mapped article PDFs when available.</p>
+    </div>
+  </div>
+  <div class="card" style="box-shadow:none;margin-top:16px;">
+    <h2>Intelligence add-on modules</h2>
+    <p class="muted">These are added on top of the original workflow. They write JSON/CSV outputs after record retrieval/PDF download.</p>
+    {% for name, spec in module_specs.items() %}
+      <div class="inline-check"><input type="checkbox" name="intelligence_modules" value="{{ name }}" checked> <b>{{ spec.label }}</b> <span class="muted">- {{ spec.description }}</span></div>
+    {% endfor %}
+  </div>
+  <div class="actions" style="margin-top:16px;">
+    <button type="submit">Start workflow</button>
+    <button type="button" class="button-light" onclick="clearNewRunForm()">Clear Form</button>
+  </div>
+</form>
+<script>
+function toggleLimit(box, inputName) {
+  const input = document.querySelector('input[name="' + inputName + '"]');
+  if (!input) return;
+  input.disabled = box.checked;
+  if (box.checked) input.value = '';
+}
+function clearNewRunForm() {
+  const form = document.getElementById('new-run-form');
+  if (!form) return;
+  form.querySelectorAll('input, textarea').forEach(function(el) {
+    if (el.type === 'hidden') return;
+    if (el.type === 'checkbox' || el.type === 'radio') {
+      el.checked = false;
+    } else {
+      el.value = '';
+      el.disabled = false;
+    }
+  });
+  form.querySelectorAll('select').forEach(function(el) { el.selectedIndex = 0; });
+}
+</script>
+<div class="notice warn">Live runs require CONNECT_API_KEY. Long live API runs start in the background, so you can stop them if needed.</div>
+{% endblock %}

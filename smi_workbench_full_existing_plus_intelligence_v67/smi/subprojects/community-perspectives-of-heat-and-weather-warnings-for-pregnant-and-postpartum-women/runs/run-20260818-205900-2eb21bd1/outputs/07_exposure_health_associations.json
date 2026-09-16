@@ -1,0 +1,21 @@
+[
+  {
+    "exposure_name": "heat/temperature",
+    "exposure_type": "non-chemical stressor",
+    "health_outcome": "preterm birth",
+    "population": "not applicable — review synthesizes evidence across studies/populations",
+    "study_design": "review / perspective",
+    "effect_direction": "review-level association evidence; not a primary-study effect estimate",
+    "effect_estimate": "not applicable — no pooled quantitative effect estimate reported in abstract",
+    "sample_size": "not applicable (review article)",
+    "population_size": "not applicable (review article)",
+    "statistical_methods": "review synthesis; exact review/statistical methods not reported in abstract",
+    "evidence_sentence": "We investigated community members' heat and weather warning information-seeking behaviour, identified available sources, assessed their reliability and utility, and examined their influence on behaviour.",
+    "citation": "PMID: 39561132",
+    "source_title": "Community perspectives of heat and weather warnings for pregnant and postpartum women in Kilifi, Kenya",
+    "confidence": "high",
+    "id": "assoc-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

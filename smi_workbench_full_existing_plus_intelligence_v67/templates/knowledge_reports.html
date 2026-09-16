@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h2>Knowledge Space Reports and Files</h2>
+  <p class="muted">Download vectors, sampled/full similarity output, clusters, novelty/support-dispute scores, priority queue, evidence matrix, PCA/UMAP map points, and summary.</p>
+</div>
+<div class="card scroll">
+  {% if knowledge_files %}
+  <table><tr><th>File</th><th>Size</th><th>Actions</th></tr>
+    {% for file in knowledge_files %}
+    <tr><td>{{ file.name }}</td><td>{{ file.size }}</td><td><a href="{{ file.preview_url }}">Preview</a> | <a href="{{ file.url }}">Download</a></td></tr>
+    {% endfor %}
+  </table>
+  {% else %}<p class="muted">No Knowledge Space files yet. Generate Knowledge Space first.</p>{% endif %}
+</div>
+<div class="card"><h2>Summary</h2>{% if knowledge_summary %}<pre>{{ knowledge_summary }}</pre>{% else %}<p class="muted">No summary yet.</p>{% endif %}</div>
+{% endblock %}

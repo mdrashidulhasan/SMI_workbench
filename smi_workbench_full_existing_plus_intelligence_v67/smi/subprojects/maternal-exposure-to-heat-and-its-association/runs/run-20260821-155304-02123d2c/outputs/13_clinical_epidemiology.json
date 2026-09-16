@@ -1,0 +1,27 @@
+[
+  {
+    "evidence_type": "clinical / observational study",
+    "population": "pregnancies / pregnant women",
+    "comparator": "not specified",
+    "predictor_or_exposure": "heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study",
+    "health_outcome": "miscarriage / pregnancy loss; reproductive",
+    "study_design": "population-based cohort study",
+    "effect_direction": "positive association",
+    "effect_estimate": "Each additional hot day during T1 was associated with a 26% higher odds of miscarriage (odds ratio: 1.26; 95% confidence interval: 1.15-1.38).",
+    "sample_size": "3477 pregnancies",
+    "population_size": "3477 pregnancies",
+    "study_period": "2012-2016",
+    "data_source": "not specified",
+    "recruitment_site": "not specified",
+    "enrollment_site": "not specified",
+    "study_site": "not specified",
+    "statistical_methods": "binary logistic regression",
+    "evidence_sentence": "Each additional hot day during T1 was associated with a 26% higher odds of miscarriage (odds ratio: 1.26; 95% confidence interval: 1.15-1.38).",
+    "citation": "PMID: 39066467",
+    "source_title": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study",
+    "confidence": "high",
+    "id": "clin-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

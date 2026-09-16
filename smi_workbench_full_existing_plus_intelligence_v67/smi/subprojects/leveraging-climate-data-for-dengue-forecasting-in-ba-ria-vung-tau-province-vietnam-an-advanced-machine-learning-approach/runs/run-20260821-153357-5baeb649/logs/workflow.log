@@ -1,0 +1,29 @@
+[2026-08-21T15:33:57Z] Created workflow run.
+[2026-08-21T15:34:00Z] Literature search requested_limit=1000.
+[2026-08-21T15:34:00Z] Completed literature search.
+[2026-08-21T15:34:00Z] Completed deduplication. effective_limit=1000.
+[2026-08-21T15:34:00Z] AI screening is using non-empty exclusion criteria from the run config (keys=['study_type', 'exposure', 'outcome']).
+[2026-08-21T15:34:00Z] Trying to retrieve concrete records for chunked AI screening: result_type=deduped, limit=1000, page_size=500.
+[2026-08-21T15:34:00Z] Retrieved 2 concrete records so far for chunked AI screening using result_type=deduped.
+[2026-08-21T15:34:00Z] Retrieved 2 concrete records for chunked AI screening using result_type=deduped.
+[2026-08-21T15:34:00Z] AI screening will use record-level local decision mapping for 2 records in 1 checkpoint chunk(s), chunk_size=75. Opaque references_* ids returned by /ai-screening will be kept for audit only and will not be sent to /results.
+[2026-08-21T15:34:00Z] AI screening record-level workers=2 (parallel=enabled).
+[2026-08-21T15:34:10Z] Completed AI screening chunk 1/1: Relevant=1, Unclear=0, Not relevant=1.
+[2026-08-21T15:34:10Z] Completed record-level AI screening for 2 records: Relevant=1, Unclear=0, Not relevant=1; retained=1.
+[2026-08-21T15:34:10Z] AI screening effective_limit=1000.
+[2026-08-21T15:34:10Z] Completed AI screening.
+[2026-08-21T15:34:10Z] Retrieving records from 1 AI-screening chunk result(s).
+[2026-08-21T15:34:10Z] Retrieved 1 records from chunked AI screening.
+[2026-08-21T15:34:10Z] PDF download will attempt all retrieved records: 1.
+[2026-08-21T15:34:10Z] Row-level PDF mode enabled: requesting one reference per PDF batch for safest article-to-PDF mapping.
+[2026-08-21T15:34:10Z] PDF download will request 1 references in 1 batch(es), batch_size=1, min_batch_size=1, retries=1.
+[2026-08-21T15:34:10Z] PDF parallel mode disabled; running batches sequentially.
+[2026-08-21T15:34:10Z] Starting PDF batch 1/1 (1 references), attempt 1/2.
+[2026-08-21T15:34:14Z] PDF batch 1/1 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T15:34:14Z] PDF batch 1/1 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/leveraging-climate-data-for-dengue-forecasting-in-ba-ria-vung-tau-province-vietnam-an-advanced-machine-learning-approach/runs/run-20260821-153357-5baeb649/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_cfe2bd09b6ba4b4a9f4444d045a827da.zip.
+[2026-08-21T15:34:14Z] Checkpointed PDF manifest after PDF batch 1/1 (1 references); completed units: 1, errors: 0.
+[2026-08-21T15:34:14Z] Created combined run-level ZIP package from 1 row-level PDFs: row_level_article_pdfs.zip.
+[2026-08-21T15:34:14Z] Completed PDF download stage.
+[2026-08-21T15:34:15Z] Generated Knowledge Space outputs: {'records': 1, 'clusters': 1, 'priority_items': 1, 'large_scale_mode': False, 'umap': 'single_record'}.
+[2026-08-21T15:34:15Z] Completed intelligence extraction.
+[2026-08-21T15:34:15Z] Paused for approval: post-pdf-download.

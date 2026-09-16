@@ -1,0 +1,32 @@
+{
+  "source_result_type": "deduped",
+  "references_id": "references_806ef5bbcb4240868ab83f388d4d7ebd",
+  "requested_limit": 1000,
+  "record_count": 1,
+  "records": [
+    {
+      "id": "PMID-39066467",
+      "pmid": "39066467",
+      "pmcid": "PMC11282531",
+      "title": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study.",
+      "doi": "10.1177/17455057241259171",
+      "authors": "Moodley Y, Asare K, Tanser F, Tomita A",
+      "journal": "Women's health (London, England)",
+      "volume": "20",
+      "issue": "",
+      "publicationDate": "2024-01-01",
+      "fullTextAvailable": true,
+      "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11282531/pdf/",
+      "abstract": "BACKGROUND: We sought to improve the current understanding of how climate change impacts women's reproductive health in sub-Saharan Africa. OBJECTIVES: We investigated the relationship between maternal heat exposure and miscarriage (pregnancy ending before 20 weeks gestation) in a South African setting. DESIGN: Population-based cohort study. METHODS: Our study involved data for pregnancies collected via a health and demographic surveillance system in rural KwaZulu-Natal, South Africa between 2012 and 2016. Data from the South African Weather Service were used to compute maternal exposure to heat during the following time windows for each pregnancy: during the month preceding conception (T1) and during the week preceding the study outcome (either a miscarriage or no miscarriage, T2). Heat exposure was operationalized as a continuous variable and defined as the number of days that a mother was exposed to a mean daily temperature of > 26.6°C (A \"hot day,\" equivalent to a mean daily temperature of > 80°F) during T1 or T2. Binary logistic regression was used to investigate the relationship between maternal heat exposure and miscarriage. RESULTS: A total of 105/3477 pregnancies included in our analysis ended in miscarriage (3.0%). Each additional hot day during T1 was associated with a 26% higher odds of miscarriage (odds ratio: 1.26; 95% confidence interval: 1.15-1.38). No significant associations were observed between maternal heat exposure during T2 and the odds of miscarriage (odds ratio: 0.94, 95% confidence interval: 0.73-1.20). The relationship between maternal heat exposure during T1 and the odds of miscarriage was J-shaped. CONCLUSION: There is a clear relationship between maternal heat exposure during the month preceding conception and miscarriage in our sub-Saharan African setting. Given the lack of feasible strategies to reduce pregnancy loss associated with prevailing high temperatures in sub-Saharan Africa, progressive climate change will likely exacerbate existing challenges for women's reproductive health in this region.",
+      "index": 0,
+      "sourceIndex": 0,
+      "sourceId": "pubmed",
+      "database": "PubMed",
+      "databaseKey": "pubmed",
+      "pages": "",
+      "isbn": "",
+      "referenceIndex": 0,
+      "duplicate": false
+    }
+  ]
+}

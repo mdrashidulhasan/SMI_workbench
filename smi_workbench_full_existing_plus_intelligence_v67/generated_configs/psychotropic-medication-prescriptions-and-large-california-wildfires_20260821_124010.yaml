@@ -1,0 +1,55 @@
+literature_search:
+  query: Psychotropic Medication Prescriptions and Large California Wildfires
+  start_date: '2015-01-01'
+  end_date: '2026-08-21'
+  database:
+  - pubmed
+  limit: 1000
+deduplication:
+  limit: 1000
+ai_screening:
+  enabled: true
+  exclusion_criteria:
+    study_type: 'Current literature-search query: Psychotropic Medication Prescriptions
+      and Large California Wildfires. Exclude based on study type only when the record
+      is clearly outside the scope of this search. Do not impose a study-design restriction
+      unless the search query explicitly requires one. Retain uncertain or borderline
+      records.'
+    exposure: 'Current literature-search query: Psychotropic Medication Prescriptions
+      and Large California Wildfires. Exclude only when the record''s main topic,
+      exposure, intervention, predictor, condition, technology, population, or subject
+      is clearly unrelated to the search query. Do not add domain-specific restrictions
+      that are not present in the query. Retain uncertain or borderline records.'
+    outcome: 'Current literature-search query: Psychotropic Medication Prescriptions
+      and Large California Wildfires. Exclude only when the record''s outcomes, endpoints,
+      objectives, or overall purpose are clearly unrelated to the search query. Do
+      not require a particular health outcome or endpoint unless the query explicitly
+      does so. Retain uncertain or borderline records.'
+  limit: 1000
+  chunk_size: 75
+  min_chunk_size: 25
+  retries: 1
+record_retrieval:
+  type: screened
+  start_index: 0
+  number_of_records: 1000
+pdf_download:
+  enabled: true
+  unpaywall_email: ''
+  row_level_pdfs: true
+  batch_size: 1
+  min_batch_size: 1
+intelligence:
+  enabled: true
+  modules:
+  - exposure_health_associations
+  - clinical_epidemiology
+  - research_datasets
+  - geospatial_datasets
+  - cohorts
+  - chemical_watchlist
+  - research_reviews
+  - hew_resource_library
+approval_gates:
+  post-pdf-download: true
+  final-approval: true

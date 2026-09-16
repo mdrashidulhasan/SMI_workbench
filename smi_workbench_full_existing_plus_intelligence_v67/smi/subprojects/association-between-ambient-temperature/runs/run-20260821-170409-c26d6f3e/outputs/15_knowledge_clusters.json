@@ -1,0 +1,18 @@
+[
+  {
+    "cluster_id": 1,
+    "theme": "heat/temperature + asthma",
+    "article_count": 1,
+    "cluster_method": "agglomerative_cosine",
+    "articles": [
+      {
+        "article_id": "PMID: 37806575",
+        "title": "Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom.",
+        "pca_x": 0.0,
+        "pca_y": 0.0,
+        "umap_x": 0.0,
+        "umap_y": 0.0
+      }
+    ]
+  }
+]

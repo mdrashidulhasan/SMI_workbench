@@ -1,0 +1,18 @@
+[
+  {
+    "cluster_id": 1,
+    "theme": "heat/temperature",
+    "article_count": 1,
+    "cluster_method": "agglomerative_cosine",
+    "articles": [
+      {
+        "article_id": "PMID: 39176885",
+        "title": "Deep Learning Models for Health-Driven Forecasting of Indoor Temperatures in Heat Waves in Canada: An Exploratory Study Using Smart Thermostats.",
+        "pca_x": 0.0,
+        "pca_y": 0.0,
+        "umap_x": 0.0,
+        "umap_y": 0.0
+      }
+    ]
+  }
+]

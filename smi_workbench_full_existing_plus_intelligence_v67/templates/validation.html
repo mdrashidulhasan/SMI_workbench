@@ -1,0 +1,296 @@
+{% extends "base.html" %}
+{% set page_title = "Automated Validation" %}
+{% set page_kicker = "Validation" %}
+{% set page_subtitle = "Benchmark SMI search and Structured Evidence against a LaserAI export." %}
+{% block content %}
+
+<div class="card">
+  <h2>Start a validation run</h2>
+  <p class="muted">Upload the LaserAI Excel export. The validator collapses coding rows to publications, tests SMI title-search recall, verifies publication identity, uses PubMed first and DOI/non-PubMed source fallbacks when needed, and compares Structured Evidence labels automatically. Label aliases are normalized only for scoring; extraction itself is unchanged.</p>
+  <form method="post" action="{{ connect_app_base }}/validation/start" enctype="multipart/form-data">
+    <div class="grid">
+      <div>
+        <label>LaserAI export (.xlsx)</label>
+        <input type="file" name="benchmark_file" accept=".xlsx" required>
+      </div>
+      <div>
+        <label>Validation set</label>
+        <select name="sample_size">
+          <option value="25">25 publications</option>
+          <option value="50" selected>50 publications</option>
+          <option value="100">100 publications</option>
+          <option value="200">200 publications</option>
+          <option value="500">500 publications</option>
+          <option value="all">All publications</option>
+        </select>
+      </div>
+      <div>
+        <label>Sampling</label>
+        <select name="sampling_mode">
+          <option value="stratified" selected>Stratified — recommended</option>
+          <option value="random">Random</option>
+        </select>
+      </div>
+      <div>
+        <label>Random seed</label>
+        <input type="number" name="seed" value="2026" min="0" step="1">
+      </div>
+      <div>
+        <label>Formal validation set</label>
+        <div class="inline-check"><input type="checkbox" name="exclude_development" value="1" checked><span>Exclude the 10 development papers already used to tune SMI</span></div>
+        <div class="small muted">Recommended for an unbiased validation estimate. Uncheck only when you intentionally want to retest the development examples.</div>
+      </div>
+      <div>
+        <label>Validation workers</label>
+        <select name="max_workers">
+          {% for n in range(1,9) %}
+          <option value="{{ n }}" {% if n == validation_default_workers %}selected{% endif %}>{{ n }}</option>
+          {% endfor %}
+        </select>
+        <div class="small muted">This controls validation papers in parallel, not AI-screening workers. Start with 2–3 on Posit.</div>
+      </div>
+    </div>
+    <div class="actions" style="margin-top:16px;">
+      <button type="submit">Start automated validation</button>
+    </div>
+  </form>
+</div>
+
+{% if recent_validations %}
+<div class="card">
+  <h2>Validation runs</h2>
+  <form method="get" action="{{ connect_app_base }}/validation">
+    <label>Open a previous validation</label>
+    <select name="validation_id" onchange="this.form.submit()">
+      {% for item in recent_validations %}
+      <option value="{{ item.validation_id }}" {% if item.validation_id == validation_id %}selected{% endif %}>
+        {{ item.validation_id }} — {{ item.state }} — {{ item.completed_publications or 0 }}/{{ item.selected_publications or 0 }}
+      </option>
+      {% endfor %}
+    </select>
+  </form>
+</div>
+{% endif %}
+
+{% if validation_status %}
+<div class="card">
+  <div style="display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap;">
+    <div>
+      <div class="kicker">{{ validation_status.state|upper }}</div>
+      <h2 style="margin-bottom:6px;">{{ validation_id }}</h2>
+      <div class="muted">{{ validation_status.message }}</div>
+    </div>
+    <div class="actions">
+      {% if validation_status.state in ['queued','running'] %}
+      <form method="post" action="{{ connect_app_base }}/validation/stop" onsubmit="return confirm('Stop this validation run? Completed results will be preserved and can be resumed.');">
+        <input type="hidden" name="validation_id" value="{{ validation_id }}">
+        <button class="button-red" type="submit">Stop validation</button>
+      </form>
+      {% endif %}
+      {% if validation_status.state in ['interrupted','failed','stopped'] %}
+      <form method="post" action="{{ connect_app_base }}/validation/resume" onsubmit="return confirm('Resume this validation from its saved checkpoint? Completed publications will be skipped and transient network errors will be retried.');">
+        <input type="hidden" name="validation_id" value="{{ validation_id }}">
+        <input type="hidden" name="max_workers" value="{{ validation_status.get('config', {}).get('max_workers', validation_default_workers) }}">
+        <button type="submit">Resume validation</button>
+      </form>
+      {% endif %}
+      {% if validation_summary %}
+      <a class="button button-light" href="{{ connect_app_base }}/validation/export?validation_id={{ validation_id }}&kind=results">Results CSV</a>
+      <a class="button button-light" href="{{ connect_app_base }}/validation/export?validation_id={{ validation_id }}&kind=metrics">Field metrics CSV</a>
+      <a class="button button-light" href="{{ connect_app_base }}/validation/export?validation_id={{ validation_id }}&kind=summary">Summary JSON</a>
+      {% endif %}
+    </div>
+  </div>
+
+  {% set done = validation_status.completed_publications or 0 %}
+  {% set total = validation_status.selected_publications or 0 %}
+  {% set pct = (100.0 * done / total) if total else 0 %}
+  <div style="height:12px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin-top:18px;">
+    <div style="height:100%;width:{{ '%.1f'|format(pct) }}%;background:#0f766e;"></div>
+  </div>
+  <div class="small muted" style="margin-top:7px;">{{ done }} of {{ total }} publications completed ({{ '%.1f'|format(pct) }}%).{% if validation_status.current_title %} Current/recent: {{ validation_status.current_title }}{% endif %}</div>
+  {% if validation_status.state in ['interrupted','failed','stopped'] %}
+  <div class="small muted" style="margin-top:8px;">Resume uses the saved <code>results.partial.json</code> checkpoint: completed publications are not repeated, while transient network/timeout failures are retried.</div>
+  {% endif %}
+</div>
+{% endif %}
+
+{% if validation_summary %}
+{% set source_summary = validation_summary.get("source", {}) %}
+<div class="grid">
+  <div class="metric">
+    <div class="label">Title-search recall</div>
+    <div class="value">{{ '%.1f'|format(validation_summary.search.title_search_recall * 100) }}%</div>
+    <div class="small muted">{{ validation_summary.search.title_found }} found from title/title-fallback searches.</div>
+  </div>
+  <div class="metric">
+    <div class="label">Found after identifier rescue</div>
+    <div class="value">{{ '%.1f'|format(validation_summary.search.found_after_identifier_rescue * 100) }}%</div>
+    <div class="small muted">PMID/DOI rescue is diagnostic and does not erase title-search misses.</div>
+  </div>
+  <div class="metric">
+    <div class="label">Structured Evidence precision</div>
+    <div class="value">{{ '%.1f'|format(validation_summary.structured_evidence.precision * 100) }}%</div>
+    <div class="small muted">Correct SMI labels / all SMI labels.</div>
+  </div>
+  <div class="metric">
+    <div class="label">Structured Evidence recall</div>
+    <div class="value">{{ '%.1f'|format(validation_summary.structured_evidence.recall * 100) }}%</div>
+    <div class="small muted">Correct SMI labels / LaserAI reference labels.</div>
+  </div>
+  <div class="metric">
+    <div class="label">Structured Evidence F1</div>
+    <div class="value">{{ '%.1f'|format(validation_summary.structured_evidence.f1 * 100) }}%</div>
+    <div class="small muted">Micro-averaged across controlled-vocabulary labels.</div>
+  </div>
+  <div class="metric">
+    <div class="label">Source identity match</div>
+    <div class="value">{{ '%.1f'|format((source_summary.get('identity_match_rate', 0) or 0) * 100) }}%</div>
+    <div class="small muted">Source identity is checked by PMID/DOI/title before extraction. PubMed is preferred; DOI/non-PubMed and SMI-record fallbacks are tracked separately.</div>
+  </div>
+  <div class="metric">
+    <div class="label">Source coverage</div>
+    <div class="value">{{ '%.1f'|format((source_summary.get('availability_rate', 0) or 0) * 100) }}%</div>
+    <div class="small muted">{{ source_summary.get('available', 0) }} identity-controlled source records available from {{ validation_summary.completed_publications }} completed publications.</div>
+  </div>
+  <div class="metric">
+    <div class="label">Independent-source coverage</div>
+    {% if source_summary.get('independent_source_rate') is not none %}
+    <div class="value">{{ '%.1f'|format((source_summary.get('independent_source_rate', 0) or 0) * 100) }}%</div>
+    <div class="small muted">PubMed/Europe PMC sources. SMI-returned records are clearly marked non-independent rather than mixed silently into this number.</div>
+    {% else %}
+    <div class="value">N/A</div>
+    <div class="small muted">This is an older validation result created before independent-source coverage was recorded. Rerun validation to calculate it.</div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="card">
+  <h2>Validation source coverage</h2>
+  <p class="small muted">The validator prefers independent sources. When no PubMed/Europe PMC record is available, an identity-matched record returned by the SMI search API can be used as a fallback and is explicitly labeled non-independent.</p>
+  {% if source_summary.get('methods') %}
+  <div class="actions" style="margin-top:10px;">
+    {% for item in source_summary.get('methods', []) %}
+      <span class="chip chip-gray">{{ item.method }} · {{ item.count }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if source_summary.get('content_levels') %}
+  <div class="small muted" style="margin-top:10px;">Content available: {% for item in source_summary.get('content_levels', []) %}{{ item.level }} {{ item.count }}{% if not loop.last %} · {% endif %}{% endfor %}</div>
+  {% endif %}
+</div>
+
+<div class="card">
+  <h2>Field-level performance</h2>
+  <p class="small muted">Primary score compares controlled labels only. Exact aliases such as “Post Traumatic Stress Disorder” vs “PTSD, Post Traumatic Stress Disorder” are canonicalized for scoring; LaserAI’s “Information Source” and free-text write-ins are not included in the primary F1.</p>
+  <div style="overflow:auto;">
+    <table>
+      <tr><th>Field</th><th>Papers</th><th>TP</th><th>FP</th><th>FN</th><th>Precision</th><th>Recall</th><th>F1</th><th>Exact agreement</th></tr>
+      {% for row in validation_summary.field_metrics %}
+      <tr>
+        <td><b>{{ row.label }}</b></td>
+        <td>{{ row.papers_scored }}</td>
+        <td>{{ row.tp }}</td><td>{{ row.fp }}</td><td>{{ row.fn }}</td>
+        <td>{{ '%.1f'|format(row.precision * 100) }}%</td>
+        <td>{{ '%.1f'|format(row.recall * 100) }}%</td>
+        <td><b>{{ '%.1f'|format(row.f1 * 100) }}%</b></td>
+        <td>{{ '%.1f'|format(row.exact_agreement * 100) }}%</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+<div class="grid-2">
+  <div class="card">
+    <h2>Vocabulary gaps after normalization</h2>
+    {% if validation_summary.vocabulary_gaps %}
+    <table><tr><th>Field</th><th>LaserAI term not in SMI vocabulary</th><th>Count</th></tr>
+      {% for item in validation_summary.vocabulary_gaps[:20] %}<tr><td>{{ item.field }}</td><td>{{ item.term }}</td><td>{{ item.count }}</td></tr>{% endfor %}
+    </table>
+    {% else %}<div class="notice">No controlled-vocabulary gaps were detected in the scored set.</div>{% endif %}
+  </div>
+  <div class="card">
+    <h2>Most frequent extraction discrepancies</h2>
+    <h3>Missed LaserAI labels</h3>
+    {% if validation_summary.top_missing_terms %}
+      {% for item in validation_summary.top_missing_terms[:10] %}<span class="chip chip-gray">{{ item.term }} · {{ item.count }}</span>{% endfor %}
+    {% else %}<div class="small muted">None.</div>{% endif %}
+    <h3 style="margin-top:18px;">Extra SMI labels</h3>
+    {% if validation_summary.top_extra_terms %}
+      {% for item in validation_summary.top_extra_terms[:10] %}<span class="chip chip-gray">{{ item.term }} · {{ item.count }}</span>{% endfor %}
+    {% else %}<div class="small muted">None.</div>{% endif %}
+  </div>
+</div>
+
+{% if validation_summary.normalization_matches %}
+<div class="card">
+  <h2>Equivalent labels normalized for scoring</h2>
+  <p class="small muted">These are scoring aliases only; the Structured Evidence extractor was not changed.</p>
+  <table><tr><th>Field</th><th>LaserAI</th><th>SMI</th><th>Count</th></tr>
+    {% for item in validation_summary.normalization_matches[:20] %}
+    <tr><td>{{ item.field }}</td><td>{{ item.gold }}</td><td>{{ item.predicted }}</td><td>{{ item.count }}</td></tr>
+    {% endfor %}
+  </table>
+</div>
+{% endif %}
+{% endif %}
+
+{% if validation_results %}
+<div class="card">
+  <h2>Paper-level review</h2>
+  <p class="small muted">Errors and non-exact papers are shown first. Full results are always available in the CSV export.</p>
+  <div style="overflow:auto;">
+    <table>
+      <tr><th>Publication</th><th>Search</th><th>Identity/source</th><th>P</th><th>R</th><th>F1</th><th>Missing labels</th><th>Extra labels</th></tr>
+      {% for row in validation_results %}
+      {% set comp = row.comparison or {} %}
+      <tr>
+        <td style="min-width:300px;"><b>{{ row.title }}</b><div class="small muted">{% if row.pmid %}PMID {{ row.pmid }}{% endif %}{% if row.doi %} · DOI {{ row.doi }}{% endif %}</div></td>
+        <td>
+          {% if row.search.status == 'title_found' %}<span class="chip">Title found</span>
+          {% elif row.search.status == 'identifier_rescue' %}<span class="chip chip-gray">Identifier rescue</span>
+          {% elif row.search.status == 'not_found' %}<span class="chip chip-red">Not found</span>
+          {% else %}<span class="chip chip-red">Search error</span>{% endif %}
+          {% if row.search.error %}<div class="small muted">{{ row.search.error }}</div>{% endif %}
+        </td>
+        <td>{% if row.source.identity_match %}<span class="chip">Verified</span>{% elif row.source.available %}<span class="chip chip-red">Mismatch</span>{% else %}<span class="chip chip-gray">Unavailable</span>{% endif %}{% if row.source.source_method %}<div class="small muted">{{ row.source.source_method }}{% if row.source.independent_source == false %} · non-independent fallback{% endif %}{% if row.source.content_level %} · {{ row.source.content_level }}{% endif %}</div>{% endif %}{% if row.source.error %}<div class="small muted">{{ row.source.error }}</div>{% endif %}</td>
+        <td>{% if comp %}{{ '%.0f'|format(comp.precision * 100) }}%{% else %}—{% endif %}</td>
+        <td>{% if comp %}{{ '%.0f'|format(comp.recall * 100) }}%{% else %}—{% endif %}</td>
+        <td><b>{% if comp %}{{ '%.0f'|format(comp.f1 * 100) }}%{% else %}—{% endif %}</b></td>
+        <td style="min-width:260px;">{% if row.missing_labels_display %}{% for item in row.missing_labels_display %}<div class="small">• {{ item }}</div>{% endfor %}{% else %}—{% endif %}</td>
+        <td style="min-width:260px;">{% if row.extra_labels_display %}{% for item in row.extra_labels_display %}<div class="small">• {{ item }}</div>{% endfor %}{% else %}—{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  {% if validation_total_pages > 1 %}
+  <div class="actions" style="margin-top:16px;">
+    {% if validation_page > 1 %}<a class="button button-light" href="{{ connect_app_base }}/validation?validation_id={{ validation_id }}&page={{ validation_page - 1 }}">Previous</a>{% endif %}
+    <span class="chip chip-gray">Page {{ validation_page }} / {{ validation_total_pages }}</span>
+    {% if validation_page < validation_total_pages %}<a class="button button-light" href="{{ connect_app_base }}/validation?validation_id={{ validation_id }}&page={{ validation_page + 1 }}">Next</a>{% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="card">
+  <h2>What this validation does — and does not do</h2>
+  <div class="grid-2">
+    <div>
+      <h3>Automatically scored</h3>
+      <p class="small muted">SMI title-search recall, identifier rescue, source identity, source coverage by method, and Structured Evidence controlled-vocabulary agreement (precision, recall, F1, exact agreement, normalized aliases, missing/extra terms, and vocabulary gaps).</p>
+    </div>
+    <div>
+      <h3>Not treated as LaserAI gold-standard fields</h3>
+      <p class="small muted">Study design, statistical methods, sample size, comparator, effect estimate, and evidence sentence are richer SMI fields but are not present as gold-standard fields in this LaserAI export. They should be evaluated separately against source text or a curated gold set.</p>
+    </div>
+  </div>
+</div>
+
+{% if validation_status and validation_status.state in ['queued','running'] %}
+<script>
+  setTimeout(function(){ window.location.reload(); }, 5000);
+</script>
+{% endif %}
+{% endblock %}

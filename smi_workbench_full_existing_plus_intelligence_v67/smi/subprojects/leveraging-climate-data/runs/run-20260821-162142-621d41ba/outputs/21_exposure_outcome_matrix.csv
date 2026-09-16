@@ -1,0 +1,5 @@
+exposure,health_outcome,article_count,positive,negative,null,mixed,unclear
+humidity,dengue incidence / outbreaks,1,0,0,0,0,0
+precipitation,dengue incidence / outbreaks,1,0,0,0,0,0
+temperature,dengue incidence / outbreaks,1,0,0,0,0,0
+wind speed,dengue incidence / outbreaks,1,0,0,0,0,0

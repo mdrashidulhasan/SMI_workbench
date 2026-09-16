@@ -1,0 +1,108 @@
+{
+  "chunked_ai_screening": true,
+  "screening_status": "screened_in_chunks",
+  "screening_mode": "record_level_local_decisions",
+  "references_id": "references_b9409f4876b945eb94e758efce3c82c1",
+  "applied_limit": 1000,
+  "requested_record_count": 1,
+  "processed_record_count": 1,
+  "screened_record_count": 1,
+  "retained_record_count": 1,
+  "decisionCounts": {
+    "Relevant": 1,
+    "Not relevant": 0,
+    "Unclear": 0
+  },
+  "chunk_size": 75,
+  "chunk_count": 1,
+  "parallel": false,
+  "max_workers": 1,
+  "completed_chunk_unit_count": 1,
+  "chunks": [
+    {
+      "recordCount": 1,
+      "sourceRecordCount": 1,
+      "decisionCounts": {
+        "Relevant": 1,
+        "Not relevant": 0,
+        "Unclear": 0
+      },
+      "chunk_index": 1,
+      "chunk_label": "AI screening chunk 1/1 (1 records)",
+      "chunk_size": 1,
+      "requested_reference_count": 1,
+      "processed_record_count": 1,
+      "retained_record_count": 1,
+      "excluded_record_count": 0,
+      "unclear_record_count": 0,
+      "source": "local_record_level_ai_screening",
+      "screening_mode": "record_level_local_decisions",
+      "records": [
+        {
+          "id": "PMID-38546088",
+          "pmid": "38546088",
+          "pmcid": "PMC11152402",
+          "title": "Geospatial Patterns of Non-Melanoma Skin Cancer in Relation to Climate Changes in Iran.",
+          "doi": "10.31557/APJCP.2024.25.3.1053",
+          "authors": "Aryan Kya M",
+          "journal": "Asian Pacific journal of cancer prevention : APJCP",
+          "volume": "25",
+          "issue": "3",
+          "publicationDate": "2024-03-01",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11152402/pdf/",
+          "abstract": "OBJECTIVE: The purpose of this study is to examine the impact of climate change factors on the incidence of skin cancer in Iran. METHODS: The statistical population for this study comprises skin cancer patients in Iran. All other data used in this research were extracted from Remote Sensing imagery, including Ultraviolet ray, Relative humidity, Cloud cover, incoming short-wave flux, elevation, and total hours of sunshine. Initially, spatial autocorrelation analysis and cluster patterns were calculated using General G and Moran's I indices. Subsequently, a Geographically Weighted Regression Model was used to establish a regression relationship between the climate change data and the detection and forecasting rate of skin cancer. Finally, the model's accuracy was evaluated by estimating the detection coefficient between the reality map and the forecasting map. RESULTS: The study found that UV radiation and relative humidity exhibit the highest positive and negative correlation, respectively, with the skin cancer rate in Iran. Geostatistical analysis revealed a clustered spatial distribution of skin cancer rates, and the proposed GWR model demonstrated high accuracy in predicting the skin cancer rate. The results indicate the highest positive correlation (+0.51) for UV ray and the most negative correlation (-0.43) for relative humidity. The Geostatistical analysis reveals spatial autocorrelation, cluster patterns, and non-randomness of the data. CONCLUSION: The detection rate of skin cancer increases from north to south and from west to east.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ],
+      "decisions": [
+        {
+          "record_index": 1,
+          "record_label": "PMID 38546088",
+          "decision": "Relevant",
+          "retained": true,
+          "api_response_id": "references_d5197b90cba54201a1f7e8ad4eca54a3"
+        }
+      ]
+    }
+  ],
+  "screening_ids": [],
+  "records": [
+    {
+      "id": "PMID-38546088",
+      "pmid": "38546088",
+      "pmcid": "PMC11152402",
+      "title": "Geospatial Patterns of Non-Melanoma Skin Cancer in Relation to Climate Changes in Iran.",
+      "doi": "10.31557/APJCP.2024.25.3.1053",
+      "authors": "Aryan Kya M",
+      "journal": "Asian Pacific journal of cancer prevention : APJCP",
+      "volume": "25",
+      "issue": "3",
+      "publicationDate": "2024-03-01",
+      "fullTextAvailable": true,
+      "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11152402/pdf/",
+      "abstract": "OBJECTIVE: The purpose of this study is to examine the impact of climate change factors on the incidence of skin cancer in Iran. METHODS: The statistical population for this study comprises skin cancer patients in Iran. All other data used in this research were extracted from Remote Sensing imagery, including Ultraviolet ray, Relative humidity, Cloud cover, incoming short-wave flux, elevation, and total hours of sunshine. Initially, spatial autocorrelation analysis and cluster patterns were calculated using General G and Moran's I indices. Subsequently, a Geographically Weighted Regression Model was used to establish a regression relationship between the climate change data and the detection and forecasting rate of skin cancer. Finally, the model's accuracy was evaluated by estimating the detection coefficient between the reality map and the forecasting map. RESULTS: The study found that UV radiation and relative humidity exhibit the highest positive and negative correlation, respectively, with the skin cancer rate in Iran. Geostatistical analysis revealed a clustered spatial distribution of skin cancer rates, and the proposed GWR model demonstrated high accuracy in predicting the skin cancer rate. The results indicate the highest positive correlation (+0.51) for UV ray and the most negative correlation (-0.43) for relative humidity. The Geostatistical analysis reveals spatial autocorrelation, cluster patterns, and non-randomness of the data. CONCLUSION: The detection rate of skin cancer increases from north to south and from west to east.",
+      "index": 0,
+      "sourceIndex": 0,
+      "sourceId": "pubmed",
+      "database": "PubMed",
+      "databaseKey": "pubmed",
+      "pages": "",
+      "isbn": "",
+      "referenceIndex": 0,
+      "duplicate": false,
+      "ai_screening_decision": "Relevant",
+      "screening_decision": "Relevant"
+    }
+  ]
+}

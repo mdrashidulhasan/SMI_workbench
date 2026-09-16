@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% set page_title = "Intelligence Reports" %}
+{% set page_kicker = "Exports" %}
+{% set page_subtitle = "Download JSON/CSV outputs and Markdown intelligence summary" %}
+{% block content %}
+<div class="card">
+  <form method="get" action="/intelligence/reports" class="grid">
+    <div><label>Project</label><select name="subproject" onchange="this.form.submit()">{% for p in projects %}<option value="{{ p }}" {% if p == selected_project %}selected{% endif %}>{{ p }}</option>{% endfor %}</select></div>
+    <div><label>Run</label><select name="run_id" onchange="this.form.submit()">{% for r in runs %}<option value="{{ r.name }}" {% if selected_run and r.name == selected_run.name %}selected{% endif %}>{{ r.name }}</option>{% endfor %}</select></div>
+  </form>
+</div>
+{% if selected_run %}
+<div class="card">
+  <h2>Summary preview</h2>
+  {% if summary_text %}<pre>{{ summary_text }}</pre>{% else %}<p class="muted">No intelligence summary yet.</p>{% endif %}
+</div>
+<div class="card">
+  <h2>Downloadable intelligence files</h2>
+  {% if intelligence_files %}
+  <div class="scroll"><table><tr><th>File</th><th>Size</th><th>Actions</th></tr>
+    {% for file in intelligence_files %}<tr><td>{{ file.name }}</td><td>{{ file.size }}</td><td><a href="{{ file.preview_url }}" target="_blank">Preview</a> <a href="{{ file.url }}">Download</a></td></tr>{% endfor %}
+  </table></div>
+  {% else %}<p class="muted">No intelligence files found. Generate intelligence outputs first.</p>{% endif %}
+</div>
+{% else %}<div class="notice warn">No run selected.</div>{% endif %}
+{% endblock %}

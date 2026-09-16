@@ -1,0 +1,12 @@
+{
+  "pid": 88195,
+  "subproject": "deep-learning-models-for-health-driven-forecasting-of-indoor-temperatures-in-heat-waves-in-canada-an-exploratory-study-using-smart-thermostats",
+  "run_id": "run-20260821-172453-30f832dd",
+  "config_path": "generated_configs/deep-learning-models-for-health-driven-forecasting-of-indoor-temperatures-in-heat-waves-in-canada-an-exploratory-study-using-smart-thermostats_20260821_132452.yaml",
+  "log_path": "smi/jobs/job-20260821-132452-86163.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-132452-86163.log",
+  "started_at": "2026-08-21T13:24:53",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject deep-learning-models-for-health-driven-forecasting-of-indoor-temperatures-in-heat-waves-in-canada-an-exploratory-study-using-smart-thermostats --config generated_configs/deep-learning-models-for-health-driven-forecasting-of-indoor-temperatures-in-heat-waves-in-canada-an-exploratory-study-using-smart-thermostats_20260821_132452.yaml",
+  "job_id": "job-20260821-132452-86163"
+}

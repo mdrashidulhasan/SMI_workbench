@@ -1,0 +1,260 @@
+{
+  "subproject": "evolution-of-spatial-risk",
+  "run_id": "run-20260821-163514-c79ae4c2",
+  "created_at": "2026-08-21T16:35:14Z",
+  "config_path": "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/generated_configs/evolution-of-spatial-risk_20260821_123514.yaml",
+  "api_base_url": "https://dev.posit.niehs.nih.gov/et/api",
+  "state": "created",
+  "artifacts": {
+    "literature_search": {
+      "id": "references_8cc11a73b1194b4085f545ab3a975f5d",
+      "recordCount": 1,
+      "databaseQueries": {
+        "pubmed": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda"
+      },
+      "successfulSources": [
+        "pubmed"
+      ],
+      "sourceErrors": [],
+      "sourceCounts": {
+        "pubmed": 1
+      }
+    },
+    "deduplication": {
+      "id": "references_606efdefff3d4e8da737034c390434bb",
+      "recordCount": 1,
+      "duplicateRecordCount": 0
+    },
+    "ai_screening": {
+      "chunked_ai_screening": true,
+      "screening_status": "screened_in_chunks",
+      "screening_mode": "record_level_local_decisions",
+      "references_id": "references_606efdefff3d4e8da737034c390434bb",
+      "applied_limit": 1000,
+      "requested_record_count": 1,
+      "processed_record_count": 1,
+      "screened_record_count": 1,
+      "retained_record_count": 1,
+      "decisionCounts": {
+        "Relevant": 1,
+        "Not relevant": 0,
+        "Unclear": 0
+      },
+      "chunk_size": 75,
+      "chunk_count": 1,
+      "parallel": false,
+      "max_workers": 1,
+      "completed_chunk_unit_count": 1,
+      "chunks": [
+        {
+          "recordCount": 1,
+          "sourceRecordCount": 1,
+          "decisionCounts": {
+            "Relevant": 1,
+            "Not relevant": 0,
+            "Unclear": 0
+          },
+          "chunk_index": 1,
+          "chunk_label": "AI screening chunk 1/1 (1 records)",
+          "chunk_size": 1,
+          "requested_reference_count": 1,
+          "processed_record_count": 1,
+          "retained_record_count": 1,
+          "excluded_record_count": 0,
+          "unclear_record_count": 0,
+          "source": "local_record_level_ai_screening",
+          "screening_mode": "record_level_local_decisions",
+          "records": [
+            {
+              "id": "PMID-37584317",
+              "pmid": "37584317",
+              "pmcid": "PMC10786254",
+              "title": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda.",
+              "doi": "10.1093/infdis/jiad348",
+              "authors": "Xu E, Goel V, Baguma E, Ayebare E, Hollingsworth BD, Brown-Marusiak A, Giandomenico D, Reyes R, Ntaro M, Mulogo EM, Boyce RM",
+              "journal": "The Journal of infectious diseases",
+              "volume": "229",
+              "issue": "1",
+              "publicationDate": "2024-01-12",
+              "fullTextAvailable": true,
+              "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10786254/pdf/",
+              "abstract": "BACKGROUND: Malaria epidemics result from extreme precipitation and flooding, which are increasing with global climate change. Local adaptation and mitigation strategies will be essential to prevent excess morbidity and mortality. METHODS: We investigated the spatial risk of malaria infection at multiple timepoints after severe flooding in rural western Uganda employing longitudinal household surveys measuring parasite prevalence and leveraging remotely sensed information to inform spatial models of malaria risk in the 3 months after flooding. RESULTS: We identified clusters of malaria risk emerging in areas (1) that showed the greatest changes in Normalized Difference Vegetation Index from pre- to postflood and (2) where residents were displaced for longer periods of time and had lower access to long-lasting insecticidal nets, both of which were associated with a positive malaria rapid diagnostic test result. The disproportionate risk persisted despite a concurrent chemoprevention program that achieved high coverage. CONCLUSIONS: The findings enhance our understanding not only of the spatial evolution of malaria risk after flooding, but also in the context of an effective intervention. The results provide a \"proof of concept\" for programs aiming to prevent malaria outbreaks after flooding using a combination of interventions. Further study of mitigation strategies-and particularly studies of implementation-is urgently needed.",
+              "index": 0,
+              "sourceIndex": 0,
+              "sourceId": "pubmed",
+              "database": "PubMed",
+              "databaseKey": "pubmed",
+              "pages": "",
+              "isbn": "",
+              "referenceIndex": 0,
+              "duplicate": false,
+              "ai_screening_decision": "Relevant",
+              "screening_decision": "Relevant"
+            }
+          ],
+          "decisions": [
+            {
+              "record_index": 1,
+              "record_label": "PMID 37584317",
+              "decision": "Relevant",
+              "retained": true,
+              "api_response_id": "references_b5dec489a90f4e909c4c489fb2dcf9f6"
+            }
+          ]
+        }
+      ],
+      "screening_ids": [],
+      "records": [
+        {
+          "id": "PMID-37584317",
+          "pmid": "37584317",
+          "pmcid": "PMC10786254",
+          "title": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda.",
+          "doi": "10.1093/infdis/jiad348",
+          "authors": "Xu E, Goel V, Baguma E, Ayebare E, Hollingsworth BD, Brown-Marusiak A, Giandomenico D, Reyes R, Ntaro M, Mulogo EM, Boyce RM",
+          "journal": "The Journal of infectious diseases",
+          "volume": "229",
+          "issue": "1",
+          "publicationDate": "2024-01-12",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10786254/pdf/",
+          "abstract": "BACKGROUND: Malaria epidemics result from extreme precipitation and flooding, which are increasing with global climate change. Local adaptation and mitigation strategies will be essential to prevent excess morbidity and mortality. METHODS: We investigated the spatial risk of malaria infection at multiple timepoints after severe flooding in rural western Uganda employing longitudinal household surveys measuring parasite prevalence and leveraging remotely sensed information to inform spatial models of malaria risk in the 3 months after flooding. RESULTS: We identified clusters of malaria risk emerging in areas (1) that showed the greatest changes in Normalized Difference Vegetation Index from pre- to postflood and (2) where residents were displaced for longer periods of time and had lower access to long-lasting insecticidal nets, both of which were associated with a positive malaria rapid diagnostic test result. The disproportionate risk persisted despite a concurrent chemoprevention program that achieved high coverage. CONCLUSIONS: The findings enhance our understanding not only of the spatial evolution of malaria risk after flooding, but also in the context of an effective intervention. The results provide a \"proof of concept\" for programs aiming to prevent malaria outbreaks after flooding using a combination of interventions. Further study of mitigation strategies-and particularly studies of implementation-is urgently needed.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ]
+    },
+    "retrieved_records": {
+      "chunked_retrieval": true,
+      "source": "chunked_ai_screening_results",
+      "record_count": 1,
+      "applied_limit": 1000,
+      "records": [
+        {
+          "id": "PMID-37584317",
+          "pmid": "37584317",
+          "pmcid": "PMC10786254",
+          "title": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda.",
+          "doi": "10.1093/infdis/jiad348",
+          "authors": "Xu E, Goel V, Baguma E, Ayebare E, Hollingsworth BD, Brown-Marusiak A, Giandomenico D, Reyes R, Ntaro M, Mulogo EM, Boyce RM",
+          "journal": "The Journal of infectious diseases",
+          "volume": "229",
+          "issue": "1",
+          "publicationDate": "2024-01-12",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10786254/pdf/",
+          "abstract": "BACKGROUND: Malaria epidemics result from extreme precipitation and flooding, which are increasing with global climate change. Local adaptation and mitigation strategies will be essential to prevent excess morbidity and mortality. METHODS: We investigated the spatial risk of malaria infection at multiple timepoints after severe flooding in rural western Uganda employing longitudinal household surveys measuring parasite prevalence and leveraging remotely sensed information to inform spatial models of malaria risk in the 3 months after flooding. RESULTS: We identified clusters of malaria risk emerging in areas (1) that showed the greatest changes in Normalized Difference Vegetation Index from pre- to postflood and (2) where residents were displaced for longer periods of time and had lower access to long-lasting insecticidal nets, both of which were associated with a positive malaria rapid diagnostic test result. The disproportionate risk persisted despite a concurrent chemoprevention program that achieved high coverage. CONCLUSIONS: The findings enhance our understanding not only of the spatial evolution of malaria risk after flooding, but also in the context of an effective intervention. The results provide a \"proof of concept\" for programs aiming to prevent malaria outbreaks after flooding using a combination of interventions. Further study of mitigation strategies-and particularly studies of implementation-is urgently needed.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ],
+      "chunk_results": [
+        {
+          "chunk_index": 1,
+          "source": "records_embedded_in_ai_screening_chunk",
+          "record_count": 1
+        }
+      ]
+    },
+    "pdf_download": {
+      "status": "unavailable",
+      "source": "api_unavailable",
+      "note": "The PDF API returned no extractable original PDFs or package ZIPs for this run. Requested 1 references in 1 batch(es). Failed batches: 0. No generated summary PDFs were substituted.",
+      "fileName": "",
+      "localZipPath": "",
+      "pdfs": [],
+      "batch_size": 1,
+      "min_batch_size": 1,
+      "batch_count": 1,
+      "parallel": false,
+      "max_workers": 20,
+      "row_level_pdfs": true,
+      "batch_results": [
+        {
+          "id": "pdfs_3965469f23e94d3a9ca8c29e005049b9",
+          "sourceId": "references_8f19ba6651a64f4ca7ad1ef044241d9d",
+          "sourceType": "references",
+          "status": "manual_required",
+          "recordCount": 1,
+          "downloadedCount": 0,
+          "manualRequiredCount": 0,
+          "failedCount": 1,
+          "skippedCount": 0,
+          "zipFileCount": 0,
+          "fileName": "",
+          "downloadUrl": "",
+          "records": [
+            {
+              "id": "API-1",
+              "title": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda.",
+              "doi": "10.1093/infdis/jiad348",
+              "pmcid": "PMC10786254",
+              "status": "failed",
+              "filePath": "",
+              "errorMessage": "The link opened a web page instead of a PDF. Open it in a browser or upload the PDF manually.; PDF is behind a publisher browser check or access page, so it could not be downloaded automatically. Open it through your browser or institutional access, then upload the PDF manually.; The link opened a web page instead of a PDF. Open it in a browser or upload the PDF manually."
+            }
+          ],
+          "errorMessage": "No PDFs were downloaded automatically.",
+          "pdfs": [],
+          "batch_index": 1,
+          "batch_label": "PDF batch 1/1 (1 references)",
+          "batch_size": 1,
+          "requested_reference_count": 1
+        }
+      ],
+      "batch_errors": [],
+      "packageZips": []
+    },
+    "intelligence_extraction": {
+      "enabled": true,
+      "modules": [
+        "exposure_health_associations",
+        "clinical_epidemiology",
+        "research_datasets",
+        "geospatial_datasets",
+        "cohorts",
+        "chemical_watchlist",
+        "research_reviews",
+        "hew_resource_library"
+      ],
+      "counts": {
+        "exposure_health_associations": 1,
+        "clinical_epidemiology": 1,
+        "research_datasets": 0,
+        "geospatial_datasets": 0,
+        "cohorts": 0,
+        "chemical_watchlist": 0,
+        "research_reviews": 0,
+        "hew_resource_library": 1,
+        "article_methods": 1
+      },
+      "knowledge_space": {
+        "records": 1,
+        "clusters": 1,
+        "priority_items": 1,
+        "large_scale_mode": false,
+        "umap": "single_record"
+      },
+      "generated_at": "2026-08-21T16:36:20Z"
+    }
+  },
+  "updated_at": "2026-08-21T16:36:20Z"
+}

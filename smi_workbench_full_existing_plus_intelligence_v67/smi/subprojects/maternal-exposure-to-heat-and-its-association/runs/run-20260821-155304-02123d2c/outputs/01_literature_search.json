@@ -1,0 +1,14 @@
+{
+  "id": "references_fde1d87afb204f249b929b9036571d19",
+  "recordCount": 1,
+  "databaseQueries": {
+    "pubmed": "Maternal exposure heat miscarriage rural KwaZulu Natal South Africa"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 1
+  }
+}

@@ -1,0 +1,15 @@
+﻿field,label,papers_scored,tp,fp,fn,precision,recall,f1,exact_agreement
+reference_type,Reference Type,40,19,21,3,0.475,0.863636,0.612903,0.475
+exposure_l1,Exposure L1,40,27,15,19,0.642857,0.586957,0.613636,0.4
+exposure_l2,Exposure L2,40,9,6,9,0.6,0.5,0.545455,0.725
+health_impact_l1,Health Impact L1,40,33,25,11,0.568966,0.75,0.647059,0.425
+health_impact_l2,Health Impact L2,40,21,24,11,0.466667,0.65625,0.545455,0.475
+health_impact_l3,Health Impact L3,40,8,0,1,1.0,0.888889,0.941176,0.975
+geography_l1,Geography L1,40,21,19,13,0.525,0.617647,0.567568,0.525
+geography_l2,Geography L2,40,11,5,9,0.6875,0.55,0.611111,0.675
+geographic_feature,Geographic Feature,40,7,11,4,0.388889,0.636364,0.482759,0.675
+data_resource_type_l1,Data Resource Type L1,40,1,1,5,0.5,0.166667,0.25,0.85
+data_resource_type_l2,Data Resource Type L2,40,0,0,0,1.0,1.0,1.0,1.0
+model_type,Model Type,40,0,1,6,0.0,0.0,0.0,0.85
+special_topic_l1,Special Topic L1,40,10,9,21,0.526316,0.322581,0.4,0.55
+special_topic_l2,Special Topic L2,40,10,5,9,0.666667,0.526316,0.588235,0.7

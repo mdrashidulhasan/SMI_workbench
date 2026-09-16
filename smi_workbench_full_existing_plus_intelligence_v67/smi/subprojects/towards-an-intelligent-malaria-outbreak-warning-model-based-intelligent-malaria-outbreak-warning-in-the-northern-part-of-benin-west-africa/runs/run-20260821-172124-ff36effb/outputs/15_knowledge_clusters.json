@@ -1,0 +1,18 @@
+[
+  {
+    "cluster_id": 1,
+    "theme": "heat/temperature",
+    "article_count": 1,
+    "cluster_method": "agglomerative_cosine",
+    "articles": [
+      {
+        "article_id": "PMID: 38347490",
+        "title": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa.",
+        "pca_x": 0.0,
+        "pca_y": 0.0,
+        "umap_x": 0.0,
+        "umap_y": 0.0
+      }
+    ]
+  }
+]

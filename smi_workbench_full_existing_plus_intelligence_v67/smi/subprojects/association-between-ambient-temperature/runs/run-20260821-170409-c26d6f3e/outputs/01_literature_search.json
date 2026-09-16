@@ -1,0 +1,14 @@
+{
+  "id": "references_5484f6afc06b4ef1bc46cda359926099",
+  "recordCount": 1,
+  "databaseQueries": {
+    "pubmed": "Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 1
+  }
+}

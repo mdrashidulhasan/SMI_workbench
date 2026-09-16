@@ -1,0 +1,56 @@
+{
+  "recordCount": 1,
+  "sourceRecordCount": 1,
+  "decisionCounts": {
+    "Relevant": 1,
+    "Not relevant": 0,
+    "Unclear": 0
+  },
+  "chunk_index": 1,
+  "chunk_label": "AI screening chunk 1/1 (1 records)",
+  "chunk_size": 1,
+  "requested_reference_count": 1,
+  "processed_record_count": 1,
+  "retained_record_count": 1,
+  "excluded_record_count": 0,
+  "unclear_record_count": 0,
+  "source": "local_record_level_ai_screening",
+  "screening_mode": "record_level_local_decisions",
+  "records": [
+    {
+      "id": "PMID-39561132",
+      "pmid": "39561132",
+      "pmcid": "PMC11575763",
+      "title": "Community perspectives of heat and weather warnings for pregnant and postpartum women in Kilifi, Kenya.",
+      "doi": "10.1371/journal.pone.0313781",
+      "authors": "Lusambili A, Filippi V, Nakstad B, Natukunda J, Birch CE, Marsham JH, Roos N, Khaemba P, Kovats S",
+      "journal": "PloS one",
+      "volume": "19",
+      "issue": "11",
+      "publicationDate": "2024-01-01",
+      "fullTextAvailable": true,
+      "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11575763/pdf/",
+      "abstract": "BACKGROUND: Extreme weather is a recognised risk factor for stillbirth and preterm birth, disrupts women's access to healthcare during pregnancy and childbirth, and negatively affects the care of newborns. Reliable and accessible heat and weather warning systems are key in alerting individuals to undertake protective measures. There is a notable gap in understanding how women and caregivers in rural East Africa perceive and utilize weather information. We investigated community members' heat and weather warning information-seeking behaviour, identified available sources, assessed their reliability and utility, and examined their influence on behaviour. SETTINGS: Our research was conducted in rural Kilifi County in Kenya's coastal region. The area experiences temperatures exceeding 23°C throughout the year, with extended periods of extreme temperatures [> 40°C] and long and severe droughts. METHODS: We conducted in-depth interviews [IDI] with pregnant and postpartum women [n = 21] and held six focus group discussions [FGDs] involving mothers-in-law and community health volunteers [CHVs]. The data were analysed in NVivo 12 using both inductive and deductive approaches. RESULTS: We found significant gaps concerning pregnant and post-partum women, and their caregivers, having timely access to weather forecasts and heat information from health or meteorological authorities. Information on heat and weather warnings is disseminated through various channels, including television, radio, mobile phones, and word of mouth, which are facilitated by community influencers such as CHVs and local chiefs. Indigenous methods of weather forecasting, such as cloud observation, consulting local \"rainmakers\", and studying the behavioural patterns of amphibians, are employed in conjunction with warnings from the Kenyan Meteorological Department (KMD). Barriers to accessing weather information include the cost of television and smartphones and a lack of segmented information in local languages. CONCLUSIONS: National and county meteorological services need to enhance public participation, communication, and the delivery of heat and weather information to guide community-level response measures and individual behaviour change. They should also collaborate with health professionals to address heat risks for vulnerable groups. Further research is needed to empower indigenous weather predictors with modern weather information and revise national policies to deliver tailored messages to vulnerable populations like pregnant and postpartum women.",
+      "index": 0,
+      "sourceIndex": 0,
+      "sourceId": "pubmed",
+      "database": "PubMed",
+      "databaseKey": "pubmed",
+      "pages": "",
+      "isbn": "",
+      "referenceIndex": 0,
+      "duplicate": false,
+      "ai_screening_decision": "Relevant",
+      "screening_decision": "Relevant"
+    }
+  ],
+  "decisions": [
+    {
+      "record_index": 1,
+      "record_label": "PMID 39561132",
+      "decision": "Relevant",
+      "retained": true,
+      "api_response_id": "references_cd30229b02e44221980d1469c0759e00"
+    }
+  ]
+}

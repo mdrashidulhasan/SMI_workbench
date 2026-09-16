@@ -1,0 +1,2 @@
+rank,article_id,title,cluster_id,priority_score,priority_level,review_reason,exposures,outcomes,sample_size,population_size,statistical_methods
+1,PMID: 38347490,"Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa.",1,0.505,medium,novel compared with prior/cluster records,heat/temperature,,not reported,not reported,negative binomial regression; linear regression; support vector machines (SVM/LS-SVM)

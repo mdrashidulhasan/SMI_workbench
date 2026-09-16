@@ -1,0 +1,21 @@
+[
+  {
+    "article_id": "PMID: 39340501",
+    "title": "Symptoms Reported by Young Adults With Asthma During Wildfire Smoke Season.",
+    "cluster_id": 1,
+    "pca_x": 0.0,
+    "pca_y": 0.0,
+    "umap_x": 0.0,
+    "umap_y": 0.0,
+    "x": 0.0,
+    "y": 0.0,
+    "priority_score": 0.505,
+    "effect_direction": "positive",
+    "exposures": "wildfire smoke",
+    "outcomes": "asthma; respiratory",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "linear regression",
+    "filter_text": "symptoms reported by young adults with asthma during wildfire smoke season. pmid: 39340501 purpose: the purpose of this article is to evaluate the relationship between exposure to poor air quality (aq) and self-reported symptoms among young adults with asthma during wildfire smoke season.. methods: sixty seven young adults (aged 18-26 years) completed the asthma control test and reported asthma symptoms at three time points (baseline, 4 weeks, and 8 weeks) during wildfire season as part of a clinical trial. bivariate correlations between asthma control test and aq measures were examined followed by predictive linear regression. multiple symptoms were compared between participants who experienced poor aq and those who did not.. results: asthma control was inversely related to aq with increased exposure to poor aq tied to poor asthma control. a significantly greater proportion of participants reported critical respiratory symptoms when exposed to poor aq than those who were not. discussion: respiratory symptoms are key indicators that young adults can monitor to optimize their asthma management during wildfire smoke season wildfire smoke asthma; respiratory  "
+  }
+]

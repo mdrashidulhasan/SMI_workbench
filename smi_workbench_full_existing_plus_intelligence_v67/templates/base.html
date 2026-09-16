@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ app_name }}</title>
+  <style>
+    :root { --nav:#0f172a; --teal:#0f766e; --teal2:#14b8a6; --bg:#f8fafc; --line:#e2e8f0; --muted:#64748b; --text:#0f172a; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; background:var(--bg); color:var(--text); }
+    a { color:#0f766e; text-decoration:none; font-weight:800; }
+    .layout { display:grid; grid-template-columns:260px 1fr; min-height:100vh; }
+    .sidebar { background:var(--nav); color:white; padding:24px 16px; position:sticky; top:0; height:100vh; overflow:auto; }
+    .logo-row { display:flex; align-items:center; gap:12px; margin-bottom:26px; }
+    .logo-box { width:42px; height:42px; border-radius:12px; background:var(--teal); display:flex; align-items:center; justify-content:center; font-weight:900; }
+    .logo-title { font-weight:900; font-size:18px; line-height:18px; }
+    .logo-subtitle { color:#cbd5e1; font-size:12px; }
+    .nav-section { color:#94a3b8; font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; margin:22px 8px 8px; }
+    .nav-link { display:block; color:#cbd5e1; padding:10px 12px; border-radius:9px; margin:4px 0; font-weight:800; }
+    .nav-link:hover { background:rgba(255,255,255,.08); color:white; }
+    .nav-active { background:rgba(20,184,166,.18); border:1px solid var(--teal2); color:white; }
+    .main { padding:28px 32px 44px; }
+    .top { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:24px; }
+    .kicker { color:var(--teal); font-size:12px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:32px; margin:4px 0; } h2 { margin-top:0; }
+    .subtitle { color:var(--muted); font-weight:700; }
+    .chip { display:inline-block; background:#ecfdf5; border:1px solid #99f6e4; color:#047857; border-radius:8px; padding:7px 11px; font-size:12px; font-weight:900; margin:2px; }
+    .chip-gray { background:white; border-color:var(--line); color:#475569; }
+    .chip-red { background:#fef2f2; border-color:#fecaca; color:#b91c1c; }
+    .card { background:white; border:1px solid var(--line); border-radius:14px; padding:20px; box-shadow:0 8px 28px rgba(15,23,42,.04); margin-bottom:18px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
+    .grid-2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(360px,1fr)); gap:16px; }
+    table { width:100%; border-collapse:collapse; background:white; }
+    th, td { border-bottom:1px solid var(--line); padding:10px 9px; text-align:left; vertical-align:top; font-size:14px; }
+    th { background:#f1f5f9; color:#334155; font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+    tr:hover td { background:#f8fafc; }
+    input, textarea, select { width:100%; border:1px solid #cbd5e1; border-radius:9px; padding:10px; font-size:14px; background:white; }
+    textarea { min-height:90px; }
+    label { display:block; font-weight:900; color:#334155; margin:14px 0 6px; font-size:13px; }
+    .inline-check { display:flex; align-items:center; gap:9px; margin:8px 0; }
+    .inline-check input { width:auto; }
+    button, .button { display:inline-block; border:0; border-radius:9px; padding:10px 14px; background:var(--teal); color:white; font-weight:900; cursor:pointer; }
+    .button-secondary { background:#334155; }
+    .button-light { background:#f1f5f9; color:#0f172a; border:1px solid #cbd5e1; }
+    .button-red { background:#b91c1c; }
+    pre { background:#0f172a; color:#e2e8f0; padding:14px; border-radius:10px; overflow:auto; white-space:pre-wrap; }
+    .muted { color:var(--muted); } .small { font-size:12px; }
+    .metric { border:1px solid var(--line); border-radius:12px; padding:16px; background:#f8fafc; }
+    .metric .value { font-size:28px; font-weight:900; } .metric .label { color:#64748b; font-weight:800; }
+    .actions { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+    .notice { padding:12px 14px; border-radius:10px; background:#ecfdf5; border:1px solid #99f6e4; color:#065f46; font-weight:700; }
+    .warn { background:#fff7ed; border-color:#fed7aa; color:#9a3412; }
+    .danger { background:#fef2f2; border-color:#fecaca; color:#991b1b; }
+    .scroll { overflow:auto; max-width:100%; }
+    iframe.pdf { width:100%; height:760px; border:1px solid var(--line); border-radius:12px; background:white; }
+    @media (max-width: 900px) { .layout { grid-template-columns:1fr; } .sidebar { position:relative; height:auto; } .main { padding:18px; } }
+  </style>
+</head>
+<body>
+{% set connect_app_base = request.headers.get("rstudio-connect-app-base-url", "").rstrip("/") %}
+<div class="layout">
+  <aside class="sidebar">
+    <div class="logo-row"><div class="logo-box">SMI</div><div><div class="logo-title">{{ app_name }}</div><div class="logo-subtitle">{{ app_full_name }}</div></div></div>
+    <div class="nav-section">Original App</div>
+    <a class="nav-link {% if active_tab == 'dashboard' %}nav-active{% endif %}" href="{{ connect_app_base }}/">Dashboard</a>
+    <a class="nav-link {% if active_tab == 'new' %}nav-active{% endif %}" href="{{ connect_app_base }}/new">New Run</a>
+    <a class="nav-link {% if active_tab == 'approvals' %}nav-active{% endif %}" href="{{ connect_app_base }}/approvals">Approvals</a>
+    <a class="nav-link {% if active_tab == 'outputs' %}nav-active{% endif %}" href="{{ connect_app_base }}/outputs">Outputs / PDFs</a>
+    <a class="nav-link {% if active_tab == 'statistics' %}nav-active{% endif %}" href="{{ connect_app_base }}/statistics">Statistics</a>
+    <div class="nav-section">Intelligence Add-on</div>
+    <a class="nav-link {% if active_tab == 'intelligence' %}nav-active{% endif %}" href="{{ connect_app_base }}/intelligence">Intelligence Dashboard</a>
+    <a class="nav-link" href="{{ connect_app_base }}/intelligence/associations">Associations</a>
+    <a class="nav-link" href="{{ connect_app_base }}/intelligence/clinical">Clinical / Sites</a>
+    <a class="nav-link" href="{{ connect_app_base }}/intelligence/datasets">Research Datasets</a>
+    <a class="nav-link" href="{{ connect_app_base }}/intelligence/geospatial">Geospatial Data</a>
+    <a class="nav-link" href="{{ connect_app_base }}/intelligence/cohorts">Cohorts</a>
+    <a class="nav-link" href="{{ connect_app_base }}/intelligence/chemicals">Chemical Watchlist</a>
+    <a class="nav-link {% if active_tab == 'intelligence_review' %}nav-active{% endif %}" href="{{ connect_app_base }}/intelligence/review">Review Queue</a>
+    <a class="nav-link {% if active_tab == 'intelligence_reports' %}nav-active{% endif %}" href="{{ connect_app_base }}/intelligence/reports">Intelligence Reports</a>
+    <div class="nav-section">Knowledge Space</div>
+    <a class="nav-link {% if active_tab == 'knowledge' %}nav-active{% endif %}" href="{{ connect_app_base }}/knowledge">Knowledge Dashboard</a>
+    <a class="nav-link {% if active_tab == 'evidence_map' %}nav-active{% endif %}" href="{{ connect_app_base }}/knowledge/evidence-map">Evidence Map</a>
+    <a class="nav-link {% if active_tab == 'knowledge_map' %}nav-active{% endif %}" href="{{ connect_app_base }}/knowledge/map">Cluster Map</a>
+    <a class="nav-link {% if active_tab == 'knowledge_priority' %}nav-active{% endif %}" href="{{ connect_app_base }}/knowledge/priority">Priority Queue</a>
+    <a class="nav-link {% if active_tab == 'knowledge_reports' %}nav-active{% endif %}" href="{{ connect_app_base }}/knowledge/reports">Knowledge Reports</a>
+    <div class="nav-section">Validation</div>
+    <a class="nav-link {% if active_tab == 'validation' %}nav-active{% endif %}" href="{{ connect_app_base }}/validation">Automated Validation</a>
+    <div class="nav-section">Connection</div>
+    <div class="chip {% if not api_connected %}chip-red{% endif %}">{{ 'API connected' if api_connected else 'API key missing' }}</div>
+  </aside>
+  <main class="main">
+    <div class="top">
+      <div><div class="kicker">{{ page_kicker | default('Scientific Market Intelligence') }}</div><h1>{{ page_title | default(app_name) }}</h1><div class="subtitle">{{ page_subtitle | default('Workflow, review, outputs, and intelligence extraction') }}</div></div>
+      <div><span class="chip">{{ today }}</span></div>
+    </div>
+    {% if demo_mode_env and not demo_runs_allowed %}
+      <div class="notice warn" style="margin-bottom:16px;"><b>Demo variable detected but ignored:</b> <code>SMI_DEMO_MODE=1</code> is set, but v10 will not use demo records unless <code>SMI_ALLOW_DEMO_RUNS=1</code> is also set. Live runs require <code>CONNECT_API_KEY</code>.</div>
+    {% elif demo_mode_env and demo_runs_allowed %}
+      <div class="notice warn" style="margin-bottom:16px;"><b>Explicit demo mode is ON:</b> runs will use bundled demo records and will not retrieve original API PDFs. Unset <code>SMI_DEMO_MODE</code> and <code>SMI_ALLOW_DEMO_RUNS</code> for live API paper PDFs.</div>
+    {% endif %}
+    {% block content %}{% endblock %}
+    <script>
+    // Posit Connect hosts this FastAPI app below a content-specific base URL.
+    // Existing SMI templates intentionally keep their local root-relative URLs;
+    // this small deployment shim prefixes those URLs only when Connect provides
+    // RStudio-Connect-App-Base-URL. Local uvicorn behavior is unchanged.
+    (function () {
+      const rawBase = {{ connect_app_base | tojson }};
+      const appBase = (rawBase || '').replace(/\/$/, '');
+      if (!appBase) return;
+
+      let appBasePath = '';
+      try { appBasePath = new URL(appBase, window.location.origin).pathname.replace(/\/$/, ''); }
+      catch (e) { appBasePath = appBase.startsWith('/') ? appBase : ''; }
+
+      function withAppBase(value) {
+        if (!value || typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return value;
+        if (appBasePath && (value === appBasePath || value.startsWith(appBasePath + '/'))) return value;
+        return appBase + value;
+      }
+
+      function patchElement(el) {
+        ['href', 'action', 'src', 'formaction'].forEach(function (attr) {
+          if (!el.hasAttribute || !el.hasAttribute(attr)) return;
+          const value = el.getAttribute(attr);
+          const fixed = withAppBase(value);
+          if (fixed !== value) el.setAttribute(attr, fixed);
+        });
+      }
+
+      function patchTree(root) {
+        if (!root || !root.querySelectorAll) return;
+        if (root.nodeType === 1) patchElement(root);
+        root.querySelectorAll('[href],[action],[src],[formaction]').forEach(patchElement);
+      }
+
+      patchTree(document);
+
+      // Protect links/forms added later by page scripts.
+      new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          mutation.addedNodes.forEach(function (node) {
+            if (node.nodeType === 1) patchTree(node);
+          });
+        });
+      }).observe(document.documentElement, { childList: true, subtree: true });
+
+      // Protect programmatic fetch/XHR calls that still use root-relative paths.
+      if (window.fetch) {
+        const originalFetch = window.fetch.bind(window);
+        window.fetch = function (input, init) {
+          if (typeof input === 'string') input = withAppBase(input);
+          else if (input instanceof Request) {
+            try {
+              const url = new URL(input.url, window.location.origin);
+              if (url.origin === window.location.origin) {
+                const fixedPath = withAppBase(url.pathname + url.search + url.hash);
+                if (fixedPath !== url.pathname + url.search + url.hash) input = new Request(fixedPath, input);
+              }
+            } catch (e) {}
+          }
+          return originalFetch(input, init);
+        };
+      }
+
+      const originalXhrOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        if (typeof url === 'string') arguments[1] = withAppBase(url);
+        return originalXhrOpen.apply(this, arguments);
+      };
+
+      // Re-check at the moment of user navigation/submission as a final guard.
+      document.addEventListener('click', function (event) {
+        const link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
+        if (link) patchElement(link);
+      }, true);
+      document.addEventListener('submit', function (event) {
+        if (event.target) patchElement(event.target);
+      }, true);
+    })();
+    </script>
+  </main>
+</div>
+</body>
+</html>

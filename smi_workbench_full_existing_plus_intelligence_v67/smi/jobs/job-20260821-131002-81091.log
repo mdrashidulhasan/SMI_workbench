@@ -1,0 +1,6 @@
+/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py:411: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  run_id = f"run-{dt.datetime.utcnow().strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:8]}"
+/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py:305: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+Paused at stage: summary
+Edit approvals file: /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/investigating-the-association/runs/run-20260821-171002-b2b1f1de/approvals.md

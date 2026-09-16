@@ -1,0 +1,14 @@
+{
+  "id": "references_40687ef9f5044faf91e04ce67cfda01f",
+  "recordCount": 1,
+  "databaseQueries": {
+    "pubmed": "Deep Learning Models for Health-Driven Forecasting of Indoor Temperatures in Heat Waves in Canada"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 1
+  }
+}

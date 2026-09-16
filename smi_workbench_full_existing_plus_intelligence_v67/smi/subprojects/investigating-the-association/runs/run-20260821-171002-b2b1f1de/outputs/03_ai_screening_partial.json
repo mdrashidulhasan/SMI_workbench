@@ -1,0 +1,70 @@
+{
+  "chunked_ai_screening": true,
+  "screening_mode": "record_level_local_decisions",
+  "parallel": false,
+  "max_workers": 1,
+  "completed_chunk_units": 1,
+  "failed_chunk_units": 0,
+  "completed_record_count": 1,
+  "requested_record_count": 1,
+  "chunk_size": 75,
+  "chunks": [
+    {
+      "recordCount": 1,
+      "sourceRecordCount": 1,
+      "decisionCounts": {
+        "Relevant": 1,
+        "Not relevant": 0,
+        "Unclear": 0
+      },
+      "chunk_index": 1,
+      "chunk_label": "AI screening chunk 1/1 (1 records)",
+      "chunk_size": 1,
+      "requested_reference_count": 1,
+      "processed_record_count": 1,
+      "retained_record_count": 1,
+      "excluded_record_count": 0,
+      "unclear_record_count": 0,
+      "source": "local_record_level_ai_screening",
+      "screening_mode": "record_level_local_decisions",
+      "records": [
+        {
+          "id": "PMID-38151131",
+          "pmid": "38151131",
+          "pmcid": "",
+          "title": "Investigating the association between floods and low birth weight in India: Using the geospatial approach.",
+          "doi": "10.1016/j.scitotenv.2023.169593",
+          "authors": "Biswas S, Mondal S, Banerjee A, Alam A, Satpati L",
+          "journal": "The Science of the total environment",
+          "volume": "912",
+          "issue": "",
+          "publicationDate": "2024-02-20",
+          "fullTextAvailable": false,
+          "pdfUrl": "",
+          "abstract": "BACKGROUND: Frequent natural disasters like floods pose a major threat to India, with significant implications for public health. Low birth weight (LBW) is a critical global health concern, contributing to neonatal mortality. However, the association between floods and LBW remains underexplored. This study aims to address this gap by investigating the association between flood hazards and LBW in India using a geospatial approach. By analyzing data from the National Family Health Survey (NFHS-5) and flood zonation maps, the study aims to uncover the spatial dynamics of this association, offering insights into the implications of floods on birth weight across diverse geographical regions. METHODS: The study used the fifth round of NFHS data, 2019-21, which involved 202,194 children selected through a multi-stage stratified sampling technique. The Vulnerability Atlas of India 2019 maps were also utilized to classify areas as flood or non-flood zones. Birth weight data from the NFHS-5 were categorized into three groups: very low, low, and normal birth weight (VLBW, LBW and NBW). Control variables including flood exposure, socio-demographic attributes, and geographic region were considered. Bivariate analysis and multinomial logistic regression were employed for statistical analysis. The spatial analysis involved Moran's I statistics and Geographically Weighted Regression to explore spatial dynamics of the association between floods and birth weight in India. RESULTS: Floods predominantly affect India's lower Himalayan belts and western coastal regions. Flood-affected areas show higher proportions of VLBW and LBW infants. Groundwater usage and unimproved sanitation are associated with higher risk of VLBW and LBW. Sex, wealth, maternal education, residence type, and geographic region significantly influence birth weights. Multinomial logistic regression reveals 8 % and 27 % higher risks for LBW and VLBW in flood-affected regions. LISA cluster maps identify high-risk areas for both LBW and floods. Geographically Weighted Regression highlights 52 % of the variability in LBW occurrences can be attributed to the influence of flood hazards. Families hailing from the poorest wealth background and exposed to flood hazards bear a 5 % heightened likelihood of delivering LBW infants, in stark contrast to their counterparts from the same economic background yet unaffected by floods. CONCLUSIONS: The significant association between floods and LBW underscores the importance of robust disaster preparedness and public health strategies. By unraveling the spatial intricacies of flood-induced LBW disparities, this research provides valuable insights for promoting healthier birth outcomes and reducing child mortality rates, particularly in flood-prone regions. These findings emphasize the importance of holistic policies that address both environmental challenges and socioeconomic inequalities to safeguard maternal and infant health across the nation.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ],
+      "decisions": [
+        {
+          "record_index": 1,
+          "record_label": "PMID 38151131",
+          "decision": "Relevant",
+          "retained": true,
+          "api_response_id": "references_3e1f1af2a038469985849e6f5aa8108e"
+        }
+      ]
+    }
+  ],
+  "chunk_errors": []
+}

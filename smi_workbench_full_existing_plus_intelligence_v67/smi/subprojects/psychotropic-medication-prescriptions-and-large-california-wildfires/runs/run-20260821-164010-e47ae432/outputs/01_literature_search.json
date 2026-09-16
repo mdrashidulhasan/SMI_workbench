@@ -1,0 +1,14 @@
+{
+  "id": "references_ef396dca8f1a4b1eb24fb2c22244f3ff",
+  "recordCount": 1,
+  "databaseQueries": {
+    "pubmed": "Psychotropic Medication Prescriptions and Large California Wildfires"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 1
+  }
+}

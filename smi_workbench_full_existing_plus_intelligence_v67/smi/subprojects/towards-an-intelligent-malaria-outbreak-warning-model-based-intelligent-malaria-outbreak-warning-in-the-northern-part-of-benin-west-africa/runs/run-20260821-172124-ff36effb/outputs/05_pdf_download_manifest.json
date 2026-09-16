@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-08-21T13:21:38",
+  "requested_reference_count": 1,
+  "batch_size": 1,
+  "completed_batch_count": 1,
+  "completed_reference_count": 1,
+  "successful_pdf_count": 1,
+  "failed_batch_count": 0,
+  "package_zip_count": 1,
+  "package_zips": [
+    {
+      "fileName": "PDF batch 1-1 -1 references-pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+      "localZipPath": "smi/subprojects/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa/runs/run-20260821-172124-ff36effb/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+      "relativePath": "smi/subprojects/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa/runs/run-20260821-172124-ff36effb/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+      "batchLabel": "PDF batch 1/1 (1 references)",
+      "sizeBytes": 3346261
+    }
+  ],
+  "batch_errors": []
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "cohort_name": "ECHO Cohort",
+    "population": "mother-child pairs",
+    "sample_size": "2836 mother-child pairs",
+    "geographic_region": "not specified",
+    "environmental_exposures": "PFAS; PFOA; PFOS",
+    "biospecimens": "serum",
+    "health_outcomes": "neurodevelopment",
+    "data_access": "not specified",
+    "linked_publications": "PMID: 42595033",
+    "source_title": "Prenatal PFAS exposure and early childhood sleep quality in the ECHO Cohort",
+    "evidence_sentence": "The analytic sample included 2836 mother-child pairs from 14 study sites in the Environmental influences on Child Health Outcomes (ECHO) Cohort.",
+    "confidence": "medium",
+    "id": "cohort-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  },
+  {
+    "cohort_name": "ECHO Cohort",
+    "population": "mother-child pairs",
+    "sample_size": "8,035 mother-child pairs",
+    "geographic_region": "United States",
+    "environmental_exposures": "PM2.5; nitrogen dioxide (NO2); ozone (O3)",
+    "biospecimens": "not specified",
+    "health_outcomes": "autism spectrum disorder; autism-related traits",
+    "data_access": "not specified",
+    "linked_publications": "PMID: 42428257",
+    "source_title": "Prenatal Air Pollution Exposure and Autism Spectrum Disorder in the ECHO Consortium",
+    "evidence_sentence": "We analyzed data from 8,035 mother-child pairs from 44 United States cohorts in the Environmental influences on Child Health Outcomes (ECHO) Cohort.",
+    "confidence": "medium",
+    "id": "cohort-0002",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "evidence_type": "pharmacy education / simulation evaluation study",
+    "population": "cohort participants",
+    "comparator": "not specified",
+    "predictor_or_exposure": "evaluator type: standardized patient evaluator vs pharmacist evaluator",
+    "health_outcome": "not extracted",
+    "study_design": "education / simulation evaluation study",
+    "effect_direction": "agreement/disagreement comparison",
+    "effect_estimate": "not extracted",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "study_period": "2009-2021",
+    "data_source": "not specified",
+    "recruitment_site": "not specified",
+    "enrollment_site": "not specified",
+    "study_site": "not specified",
+    "statistical_methods": "negative binomial regression; linear regression; support vector machines (SVM/LS-SVM)",
+    "evidence_sentence": "Two ecological factors such as factor 1 (related to average mean relative humidity, average maximum relative humidity, and average maximal temperature) and factor 2 (related to average minimal temperature) affect the incidence of malaria.",
+    "citation": "PMID: 38347490",
+    "source_title": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa",
+    "confidence": "low",
+    "id": "clin-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% set page_title = "Statistics" %}
+{% set page_kicker = "Original App" %}
+{% set page_subtitle = "Workflow counts, CSV table, SVG graph, and HTML report" %}
+{% block content %}
+<div class="card">
+  <form method="get" action="/statistics" class="grid">
+    <div><label>Project</label><select name="subproject" onchange="this.form.submit()">{% for p in projects %}<option value="{{ p }}" {% if p == selected_project %}selected{% endif %}>{{ p }}</option>{% endfor %}</select></div>
+    <div><label>Run</label><select name="run_id" onchange="this.form.submit()">{% for r in runs %}<option value="{{ r.name }}" {% if selected_run and r.name == selected_run.name %}selected{% endif %}>{{ r.name }}</option>{% endfor %}</select></div>
+  </form>
+</div>
+{% if selected_run %}
+<div class="grid">
+  <div class="metric"><div class="value">{{ summary.search_records if summary else 0 }}</div><div class="label">Literature search</div></div>
+  <div class="metric"><div class="value">{{ summary.screened_records if summary else 0 }}</div><div class="label">AI screened</div></div>
+  <div class="metric"><div class="value">{{ summary.retrieved_records if summary else 0 }}</div><div class="label">Retrieved records</div></div>
+  <div class="metric"><div class="value">{{ summary.pdf_downloads if summary else 0 }}</div><div class="label">PDF downloads</div></div>
+</div>
+<div class="card">
+  <form method="post" action="/statistics/generate">
+    <input type="hidden" name="subproject" value="{{ selected_project }}">
+    <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+    <button type="submit">Generate statistics files</button>
+  </form>
+  {% if generated %}<p class="notice">Generated statistics files.</p>{% endif %}
+</div>
+<div class="card">
+  <h2>Workflow graph</h2>
+  {% if svg_inline %}<div class="scroll">{{ svg_inline | safe }}</div>{% else %}<p class="muted">No SVG graph yet. Click Generate statistics files.</p>{% endif %}
+</div>
+<div class="card">
+  <h2>Downloadable report files</h2>
+  <div class="scroll"><table><tr><th>File</th><th>Size</th><th>Actions</th></tr>
+  {% for f in files if f.relative.startswith('reports/') %}<tr><td>{{ f.relative }}</td><td>{{ f.size }}</td><td><a href="{{ f.url }}">Download</a> {% if f.previewable %}<a href="{{ f.preview_url }}" target="_blank">Preview</a>{% endif %}</td></tr>{% endfor %}
+  </table></div>
+</div>
+{% else %}<div class="notice warn">No run selected.</div>{% endif %}
+{% endblock %}

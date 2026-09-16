@@ -1,0 +1,14 @@
+{
+  "id": "references_581fc6220129430cbcc8e5464078ed15",
+  "recordCount": 1,
+  "databaseQueries": {
+    "pubmed": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 1
+  }
+}

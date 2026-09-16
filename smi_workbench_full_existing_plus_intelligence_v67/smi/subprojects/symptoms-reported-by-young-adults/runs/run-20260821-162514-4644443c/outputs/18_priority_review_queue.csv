@@ -1,0 +1,2 @@
+rank,article_id,title,cluster_id,priority_score,priority_level,review_reason,exposures,outcomes,sample_size,population_size,statistical_methods
+1,PMID: 39340501,Symptoms Reported by Young Adults With Asthma During Wildfire Smoke Season.,1,0.505,medium,novel compared with prior/cluster records,wildfire smoke,asthma; respiratory,not reported,not reported,linear regression

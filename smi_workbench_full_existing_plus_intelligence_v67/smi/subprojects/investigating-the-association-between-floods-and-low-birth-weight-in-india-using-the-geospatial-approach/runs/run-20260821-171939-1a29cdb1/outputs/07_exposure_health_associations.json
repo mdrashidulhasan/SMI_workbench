@@ -1,0 +1,40 @@
+[
+  {
+    "exposure_name": "flood / flood hazards",
+    "exposure_type": "extreme weather-related event / disaster",
+    "health_outcome": "low birth weight (LBW)",
+    "population": "202,194 children represented in the study dataset",
+    "study_design": "geospatial observational analysis using survey data and flood-zonation maps",
+    "effect_direction": "flood-affected areas had higher risk / prevalence of low or very low birth weight",
+    "effect_estimate": "8% higher risk in flood-affected regions",
+    "sample_size": "202,194 children",
+    "population_size": "202,194 children",
+    "statistical_methods": "bivariate analysis; multinomial logistic regression; Moran's I statistics; Geographically Weighted Regression (GWR); LISA cluster analysis",
+    "evidence_sentence": "Multinomial logistic regression reveals 8 % and 27 % higher risks for LBW and VLBW in flood-affected regions.",
+    "citation": "PMID: 38151131",
+    "source_title": "Investigating the association between floods and low birth weight in India: Using the geospatial approach",
+    "confidence": "high",
+    "id": "assoc-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  },
+  {
+    "exposure_name": "flood / flood hazards",
+    "exposure_type": "extreme weather-related event / disaster",
+    "health_outcome": "very low birth weight (VLBW)",
+    "population": "202,194 children represented in the study dataset",
+    "study_design": "geospatial observational analysis using survey data and flood-zonation maps",
+    "effect_direction": "flood-affected areas had higher risk / prevalence of low or very low birth weight",
+    "effect_estimate": "27% higher risk in flood-affected regions",
+    "sample_size": "202,194 children",
+    "population_size": "202,194 children",
+    "statistical_methods": "bivariate analysis; multinomial logistic regression; Moran's I statistics; Geographically Weighted Regression (GWR); LISA cluster analysis",
+    "evidence_sentence": "Multinomial logistic regression reveals 8 % and 27 % higher risks for LBW and VLBW in flood-affected regions.",
+    "citation": "PMID: 38151131",
+    "source_title": "Investigating the association between floods and low birth weight in India: Using the geospatial approach",
+    "confidence": "high",
+    "id": "assoc-0002",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

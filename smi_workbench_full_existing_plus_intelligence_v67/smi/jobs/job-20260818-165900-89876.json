@@ -1,0 +1,12 @@
+{
+  "pid": 12403,
+  "subproject": "community-perspectives-of-heat-and-weather-warnings-for-pregnant-and-postpartum-women",
+  "run_id": "run-20260818-205900-2eb21bd1",
+  "config_path": "generated_configs/community-perspectives-of-heat-and-weather-warnings-for-pregnant-and-postpartum-women_20260818_165900.yaml",
+  "log_path": "smi/jobs/job-20260818-165900-89876.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260818-165900-89876.log",
+  "started_at": "2026-08-18T16:59:01",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject community-perspectives-of-heat-and-weather-warnings-for-pregnant-and-postpartum-women --config generated_configs/community-perspectives-of-heat-and-weather-warnings-for-pregnant-and-postpartum-women_20260818_165900.yaml",
+  "job_id": "job-20260818-165900-89876"
+}

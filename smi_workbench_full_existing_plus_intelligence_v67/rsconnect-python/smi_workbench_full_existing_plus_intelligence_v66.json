@@ -1,0 +1,12 @@
+{
+    "https://dev.posit.niehs.nih.gov": {
+        "server_url": "https://dev.posit.niehs.nih.gov",
+        "filename": "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66",
+        "app_url": "https://dev.posit.niehs.nih.gov:443/content/0fd960f8-1101-4642-9279-d70ac5864726/",
+        "app_id": "424",
+        "app_guid": "0fd960f8-1101-4642-9279-d70ac5864726",
+        "title": "SMI Workbench",
+        "app_mode": "python-fastapi",
+        "app_store_version": 1
+    }
+}

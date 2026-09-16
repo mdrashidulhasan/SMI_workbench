@@ -1,0 +1,237 @@
+[2026-08-21T14:29:00Z] Created workflow run.
+[2026-08-21T14:30:39Z] Literature search requested_limit=100.
+[2026-08-21T14:30:39Z] Completed literature search.
+[2026-08-21T14:35:20Z] Completed deduplication. effective_limit=100.
+[2026-08-21T14:35:20Z] AI screening is using non-empty exclusion criteria from the run config (keys=['study_type', 'exposure', 'outcome']).
+[2026-08-21T14:35:20Z] Trying to retrieve concrete records for chunked AI screening: result_type=deduped, limit=100, page_size=500.
+[2026-08-21T14:35:21Z] Retrieved 100 concrete records so far for chunked AI screening using result_type=deduped.
+[2026-08-21T14:35:21Z] Retrieved 100 concrete records for chunked AI screening using result_type=deduped.
+[2026-08-21T14:35:21Z] AI screening will use record-level local decision mapping for 100 records in 2 checkpoint chunk(s), chunk_size=75. Opaque references_* ids returned by /ai-screening will be kept for audit only and will not be sent to /results.
+[2026-08-21T14:35:21Z] AI screening record-level workers=50 (parallel=enabled).
+[2026-08-21T14:35:33Z] AI screening record-level progress: 25/100 records completed.
+[2026-08-21T14:35:40Z] AI screening record-level progress: 50/100 records completed.
+[2026-08-21T14:36:07Z] AI screening record-level progress: 75/100 records completed.
+[2026-08-21T14:37:05Z] Completed AI screening chunk 2/2: Relevant=19, Unclear=1, Not relevant=5.
+[2026-08-21T14:37:18Z] Completed AI screening chunk 1/2: Relevant=50, Unclear=1, Not relevant=24.
+[2026-08-21T14:37:18Z] Completed record-level AI screening for 100 records: Relevant=69, Unclear=2, Not relevant=29; retained=71.
+[2026-08-21T14:37:18Z] AI screening effective_limit=100.
+[2026-08-21T14:37:18Z] Completed AI screening.
+[2026-08-21T14:37:18Z] Retrieving records from 2 AI-screening chunk result(s).
+[2026-08-21T14:37:18Z] Retrieved 71 records from chunked AI screening.
+[2026-08-21T14:37:18Z] PDF download will attempt all retrieved records: 71.
+[2026-08-21T14:37:18Z] Row-level PDF mode enabled: requesting one reference per PDF batch for safest article-to-PDF mapping.
+[2026-08-21T14:37:18Z] PDF download will request 71 references in 71 batch(es), batch_size=1, min_batch_size=1, retries=1.
+[2026-08-21T14:37:18Z] PDF parallel mode enabled with max_workers=20.
+[2026-08-21T14:37:18Z] Starting PDF batch 1/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 4/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 3/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 6/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 9/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 7/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 8/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 11/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 2/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 12/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 10/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 13/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 16/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 19/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 5/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 15/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 20/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 14/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 18/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 17/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Starting PDF batch 21/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:18Z] Checkpointed PDF manifest after PDF batch 3/71 (1 references); completed units: 1, errors: 0.
+[2026-08-21T14:37:19Z] Starting PDF batch 22/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 23/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 24/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 25/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 26/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 27/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 28/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 10/71 (1 references); completed units: 2, errors: 0.
+[2026-08-21T14:37:19Z] Starting PDF batch 29/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 30/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 31/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 32/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 6/71 (1 references); completed units: 3, errors: 0.
+[2026-08-21T14:37:19Z] Starting PDF batch 33/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 34/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 5/71 (1 references); completed units: 4, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 1/71 (1 references); completed units: 5, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 2/71 (1 references); completed units: 6, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 18/71 (1 references); completed units: 7, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 9/71 (1 references); completed units: 8, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 7/71 (1 references); completed units: 9, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 11/71 (1 references); completed units: 10, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 14/71 (1 references); completed units: 11, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 4/71 (1 references); completed units: 12, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 16/71 (1 references); completed units: 13, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 12/71 (1 references); completed units: 14, errors: 0.
+[2026-08-21T14:37:19Z] Starting PDF batch 35/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 15/71 (1 references); completed units: 15, errors: 0.
+[2026-08-21T14:37:19Z] Starting PDF batch 36/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 37/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 38/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Starting PDF batch 39/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 28/71 (1 references); completed units: 16, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 30/71 (1 references); completed units: 17, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 27/71 (1 references); completed units: 18, errors: 0.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 31/71 (1 references); completed units: 19, errors: 0.
+[2026-08-21T14:37:19Z] Starting PDF batch 40/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 29/71 (1 references); completed units: 20, errors: 0.
+[2026-08-21T14:37:19Z] Starting PDF batch 41/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 22/71 (1 references); completed units: 21, errors: 0.
+[2026-08-21T14:37:19Z] Starting PDF batch 42/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:19Z] Checkpointed PDF manifest after PDF batch 35/71 (1 references); completed units: 22, errors: 0.
+[2026-08-21T14:37:20Z] Starting PDF batch 43/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:20Z] Checkpointed PDF manifest after PDF batch 36/71 (1 references); completed units: 23, errors: 0.
+[2026-08-21T14:37:20Z] Starting PDF batch 44/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:20Z] Checkpointed PDF manifest after PDF batch 41/71 (1 references); completed units: 24, errors: 0.
+[2026-08-21T14:37:20Z] Starting PDF batch 45/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:20Z] Checkpointed PDF manifest after PDF batch 38/71 (1 references); completed units: 25, errors: 0.
+[2026-08-21T14:37:20Z] PDF batch 17/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:20Z] PDF batch 17/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 17-71 -1 references-pdfs_1e17ebb230534aa2a291950649afcd05.zip.
+[2026-08-21T14:37:20Z] Starting PDF batch 46/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:20Z] Checkpointed PDF manifest after PDF batch 17/71 (1 references); completed units: 26, errors: 0.
+[2026-08-21T14:37:20Z] PDF batch 21/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:20Z] PDF batch 21/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 21-71 -1 references-pdfs_88647d5eb4e44bc4934e749175757abf.zip.
+[2026-08-21T14:37:20Z] Starting PDF batch 47/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:20Z] Checkpointed PDF manifest after PDF batch 21/71 (1 references); completed units: 27, errors: 0.
+[2026-08-21T14:37:20Z] Starting PDF batch 48/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:20Z] Checkpointed PDF manifest after PDF batch 45/71 (1 references); completed units: 28, errors: 0.
+[2026-08-21T14:37:20Z] PDF batch 33/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:20Z] PDF batch 33/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 33-71 -1 references-pdfs_b9f271e400204a23bb24efbc5eaf9802.zip.
+[2026-08-21T14:37:20Z] Starting PDF batch 49/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:20Z] Checkpointed PDF manifest after PDF batch 33/71 (1 references); completed units: 29, errors: 0.
+[2026-08-21T14:37:20Z] PDF batch 13/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:20Z] PDF batch 13/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 13-71 -1 references-pdfs_8733c5969b5d42daba4fd6473f461e81.zip.
+[2026-08-21T14:37:20Z] Starting PDF batch 50/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:20Z] Checkpointed PDF manifest after PDF batch 13/71 (1 references); completed units: 30, errors: 0.
+[2026-08-21T14:37:20Z] PDF batch 19/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:20Z] PDF batch 19/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 19-71 -1 references-pdfs_12fe2a7b11034c2cb93d9f20de9936d2.zip.
+[2026-08-21T14:37:20Z] Starting PDF batch 51/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:20Z] Checkpointed PDF manifest after PDF batch 19/71 (1 references); completed units: 31, errors: 0.
+[2026-08-21T14:37:20Z] Starting PDF batch 52/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:20Z] Checkpointed PDF manifest after PDF batch 46/71 (1 references); completed units: 32, errors: 0.
+[2026-08-21T14:37:21Z] Starting PDF batch 53/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 47/71 (1 references); completed units: 33, errors: 0.
+[2026-08-21T14:37:21Z] PDF batch 8/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:21Z] PDF batch 8/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 8-71 -1 references-pdfs_95e75cbce0164f4ca324eb179251154d.zip.
+[2026-08-21T14:37:21Z] Starting PDF batch 54/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 8/71 (1 references); completed units: 34, errors: 0.
+[2026-08-21T14:37:21Z] Starting PDF batch 55/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 48/71 (1 references); completed units: 35, errors: 0.
+[2026-08-21T14:37:21Z] Starting PDF batch 56/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 49/71 (1 references); completed units: 36, errors: 0.
+[2026-08-21T14:37:21Z] PDF batch 24/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:21Z] PDF batch 24/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 24-71 -1 references-pdfs_10df2e20ceab46788d826a9cd60ebd55.zip.
+[2026-08-21T14:37:21Z] Starting PDF batch 57/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 24/71 (1 references); completed units: 37, errors: 0.
+[2026-08-21T14:37:21Z] PDF batch 32/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:21Z] PDF batch 32/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 32-71 -1 references-pdfs_05746447fe5947ca9208ede0630cde92.zip.
+[2026-08-21T14:37:21Z] Starting PDF batch 58/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 32/71 (1 references); completed units: 38, errors: 0.
+[2026-08-21T14:37:21Z] Starting PDF batch 59/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 53/71 (1 references); completed units: 39, errors: 0.
+[2026-08-21T14:37:21Z] Starting PDF batch 60/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 52/71 (1 references); completed units: 40, errors: 0.
+[2026-08-21T14:37:21Z] Starting PDF batch 61/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 55/71 (1 references); completed units: 41, errors: 0.
+[2026-08-21T14:37:21Z] Starting PDF batch 62/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] PDF batch 40/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 56/71 (1 references); completed units: 42, errors: 0.
+[2026-08-21T14:37:21Z] PDF batch 40/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 40-71 -1 references-pdfs_efc3eddcae4246f6b1bf26525ec3d10f.zip.
+[2026-08-21T14:37:21Z] Starting PDF batch 63/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:21Z] Checkpointed PDF manifest after PDF batch 40/71 (1 references); completed units: 43, errors: 0.
+[2026-08-21T14:37:22Z] PDF batch 26/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:22Z] PDF batch 26/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 26-71 -1 references-pdfs_0161377d3c9241eb9c4cb1f8ad73b64e.zip.
+[2026-08-21T14:37:22Z] Starting PDF batch 64/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:22Z] Checkpointed PDF manifest after PDF batch 26/71 (1 references); completed units: 44, errors: 0.
+[2026-08-21T14:37:22Z] Starting PDF batch 65/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:22Z] Checkpointed PDF manifest after PDF batch 63/71 (1 references); completed units: 45, errors: 0.
+[2026-08-21T14:37:22Z] Starting PDF batch 66/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:22Z] Checkpointed PDF manifest after PDF batch 64/71 (1 references); completed units: 46, errors: 0.
+[2026-08-21T14:37:22Z] PDF batch 23/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:22Z] PDF batch 23/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 23-71 -1 references-pdfs_3190c193fd504bc5ad3e8d4f5bb07f1a.zip.
+[2026-08-21T14:37:22Z] Starting PDF batch 67/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:22Z] Checkpointed PDF manifest after PDF batch 23/71 (1 references); completed units: 47, errors: 0.
+[2026-08-21T14:37:23Z] PDF batch 54/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:23Z] PDF batch 54/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 54-71 -1 references-pdfs_ac687a823bdb4ca0ae743e3904bb788f.zip.
+[2026-08-21T14:37:23Z] Starting PDF batch 68/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:23Z] Checkpointed PDF manifest after PDF batch 54/71 (1 references); completed units: 48, errors: 0.
+[2026-08-21T14:37:23Z] PDF batch 20/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:23Z] PDF batch 20/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 20-71 -1 references-pdfs_70a8bf24bb8349fe989d379b3c45baa8.zip.
+[2026-08-21T14:37:23Z] Starting PDF batch 69/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:23Z] Checkpointed PDF manifest after PDF batch 20/71 (1 references); completed units: 49, errors: 0.
+[2026-08-21T14:37:23Z] PDF batch 34/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:23Z] PDF batch 34/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 34-71 -1 references-pdfs_44f653bb983b418fbd0598ac76913043.zip.
+[2026-08-21T14:37:23Z] Starting PDF batch 70/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:23Z] Checkpointed PDF manifest after PDF batch 34/71 (1 references); completed units: 50, errors: 0.
+[2026-08-21T14:37:23Z] PDF batch 50/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:23Z] PDF batch 50/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 50-71 -1 references-pdfs_f395d48fe0cd4a53a7b5e1e428b40b4e.zip.
+[2026-08-21T14:37:23Z] Starting PDF batch 71/71 (1 references), attempt 1/2.
+[2026-08-21T14:37:23Z] Checkpointed PDF manifest after PDF batch 50/71 (1 references); completed units: 51, errors: 0.
+[2026-08-21T14:37:23Z] PDF batch 59/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:23Z] PDF batch 59/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 59-71 -1 references-pdfs_1bbf1222098f4bf29c5fc0092c5348dd.zip.
+[2026-08-21T14:37:23Z] Checkpointed PDF manifest after PDF batch 59/71 (1 references); completed units: 52, errors: 0.
+[2026-08-21T14:37:23Z] PDF batch 44/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:23Z] PDF batch 44/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 44-71 -1 references-pdfs_f92e54d63ab1464a997c90d4d0258b41.zip.
+[2026-08-21T14:37:24Z] Checkpointed PDF manifest after PDF batch 44/71 (1 references); completed units: 53, errors: 0.
+[2026-08-21T14:37:24Z] Checkpointed PDF manifest after PDF batch 70/71 (1 references); completed units: 54, errors: 0.
+[2026-08-21T14:37:24Z] PDF batch 65/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:24Z] PDF batch 65/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 65-71 -1 references-pdfs_6fa5ea1f6c454f439b0f86ee79fb9974.zip.
+[2026-08-21T14:37:24Z] Checkpointed PDF manifest after PDF batch 65/71 (1 references); completed units: 55, errors: 0.
+[2026-08-21T14:37:24Z] Checkpointed PDF manifest after PDF batch 68/71 (1 references); completed units: 56, errors: 0.
+[2026-08-21T14:37:24Z] PDF batch 39/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:24Z] PDF batch 39/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 39-71 -1 references-pdfs_ad625d853461403c802391b004434bba.zip.
+[2026-08-21T14:37:24Z] Checkpointed PDF manifest after PDF batch 39/71 (1 references); completed units: 57, errors: 0.
+[2026-08-21T14:37:24Z] PDF batch 60/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:24Z] PDF batch 60/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 60-71 -1 references-pdfs_c6aaa9c9440b410ab4e3febba5d5bae2.zip.
+[2026-08-21T14:37:24Z] Checkpointed PDF manifest after PDF batch 60/71 (1 references); completed units: 58, errors: 0.
+[2026-08-21T14:37:24Z] PDF batch 67/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:24Z] PDF batch 67/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 67-71 -1 references-pdfs_aebbd4034c0c452ead6dc9c7cc59121f.zip.
+[2026-08-21T14:37:24Z] Checkpointed PDF manifest after PDF batch 67/71 (1 references); completed units: 59, errors: 0.
+[2026-08-21T14:37:24Z] PDF batch 69/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:24Z] PDF batch 69/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 69-71 -1 references-pdfs_3b587f8eb2f848d39c36d09ba7798fbf.zip.
+[2026-08-21T14:37:24Z] Checkpointed PDF manifest after PDF batch 69/71 (1 references); completed units: 60, errors: 0.
+[2026-08-21T14:37:25Z] PDF batch 25/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:25Z] PDF batch 25/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 25-71 -1 references-pdfs_0922fe6aa9704f19a58d2a25b0bb9b65.zip.
+[2026-08-21T14:37:25Z] PDF batch 61/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:25Z] PDF batch 61/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 61-71 -1 references-pdfs_886308a871d14fcf83c0cbe63c77f8b8.zip.
+[2026-08-21T14:37:25Z] Checkpointed PDF manifest after PDF batch 25/71 (1 references); completed units: 61, errors: 0.
+[2026-08-21T14:37:25Z] Checkpointed PDF manifest after PDF batch 61/71 (1 references); completed units: 62, errors: 0.
+[2026-08-21T14:37:25Z] PDF batch 66/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:25Z] PDF batch 66/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 66-71 -1 references-pdfs_1da5c7f28c964d77ba7e54b0ad21fca3.zip.
+[2026-08-21T14:37:25Z] Checkpointed PDF manifest after PDF batch 66/71 (1 references); completed units: 63, errors: 0.
+[2026-08-21T14:37:25Z] PDF batch 71/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:25Z] PDF batch 71/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 71-71 -1 references-pdfs_3044f322dbe048c08874ae9ba16b709e.zip.
+[2026-08-21T14:37:25Z] Checkpointed PDF manifest after PDF batch 71/71 (1 references); completed units: 64, errors: 0.
+[2026-08-21T14:37:26Z] PDF batch 37/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:26Z] PDF batch 37/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 37-71 -1 references-pdfs_fce1809fada94ccb9f3032da308d5ce0.zip.
+[2026-08-21T14:37:26Z] Checkpointed PDF manifest after PDF batch 37/71 (1 references); completed units: 65, errors: 0.
+[2026-08-21T14:37:26Z] PDF batch 58/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:26Z] PDF batch 58/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 58-71 -1 references-pdfs_947f9217d59a4020aa63c3e850593e08.zip.
+[2026-08-21T14:37:26Z] Checkpointed PDF manifest after PDF batch 58/71 (1 references); completed units: 66, errors: 0.
+[2026-08-21T14:37:26Z] PDF batch 57/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:26Z] PDF batch 57/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 57-71 -1 references-pdfs_efa41ae13f92496fa190e773d6c03c88.zip.
+[2026-08-21T14:37:26Z] Checkpointed PDF manifest after PDF batch 57/71 (1 references); completed units: 67, errors: 0.
+[2026-08-21T14:37:27Z] PDF batch 62/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:27Z] PDF batch 62/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 62-71 -1 references-pdfs_b3fa3027f18341d483c90033c97490bf.zip.
+[2026-08-21T14:37:27Z] Checkpointed PDF manifest after PDF batch 62/71 (1 references); completed units: 68, errors: 0.
+[2026-08-21T14:37:27Z] PDF batch 43/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:27Z] PDF batch 43/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 43-71 -1 references-pdfs_fa9c5fb23e464b2cba4be62d420948c4.zip.
+[2026-08-21T14:37:27Z] Checkpointed PDF manifest after PDF batch 43/71 (1 references); completed units: 69, errors: 0.
+[2026-08-21T14:37:28Z] PDF batch 51/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:28Z] PDF batch 51/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 51-71 -1 references-pdfs_32e21ea98a0d47708c7527ebcf4937cc.zip.
+[2026-08-21T14:37:28Z] Checkpointed PDF manifest after PDF batch 51/71 (1 references); completed units: 70, errors: 0.
+[2026-08-21T14:37:29Z] PDF batch 42/71 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T14:37:29Z] PDF batch 42/71 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 42-71 -1 references-pdfs_c527de95a3f945949e755dca43bf8256.zip.
+[2026-08-21T14:37:29Z] Checkpointed PDF manifest after PDF batch 42/71 (1 references); completed units: 71, errors: 0.
+[2026-08-21T14:37:30Z] Created combined run-level ZIP package from 33 row-level PDFs: row_level_article_pdfs.zip.
+[2026-08-21T14:37:30Z] Completed PDF download stage.
+[2026-08-21T14:37:44Z] Generated Knowledge Space outputs: {'records': 71, 'clusters': 23, 'priority_items': 71, 'large_scale_mode': False, 'umap': 'umap_not_installed'}.
+[2026-08-21T14:37:44Z] Completed intelligence extraction.
+[2026-08-21T14:37:44Z] Paused for approval: post-pdf-download.

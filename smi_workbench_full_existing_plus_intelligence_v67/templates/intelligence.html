@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% set page_title = "Intelligence Dashboard" %}
+{% set page_kicker = "Add-on Layer" %}
+{% set page_subtitle = "Structured extraction modules added on top of the existing app" %}
+{% block content %}
+<div class="card">
+  <form method="get" action="/intelligence" class="grid">
+    <div><label>Project</label><select name="subproject" onchange="this.form.submit()">{% for p in projects %}<option value="{{ p }}" {% if p == selected_project %}selected{% endif %}>{{ p }}</option>{% endfor %}</select></div>
+    <div><label>Run</label><select name="run_id" onchange="this.form.submit()">{% for r in runs %}<option value="{{ r.name }}" {% if selected_run and r.name == selected_run.name %}selected{% endif %}>{{ r.name }}</option>{% endfor %}</select></div>
+  </form>
+</div>
+{% if selected_run %}
+<div class="card">
+  <h2>Generate / refresh intelligence outputs</h2>
+  <p class="muted">This reads the existing retrieved records and writes the add-on JSON/CSV files. It does not remove your original workflow outputs.</p>
+  <form method="post" action="/intelligence/generate">
+    <input type="hidden" name="subproject" value="{{ selected_project }}">
+    <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+    <button type="submit">Generate intelligence outputs</button>
+  </form>
+  {% if generated_counts is defined %}<p class="notice">Generated: {{ generated_counts }}</p>{% endif %}
+</div>
+<div class="grid">
+  {% for name, spec in module_specs.items() %}
+  <div class="card">
+    <h2>{{ spec.label }}</h2>
+    <p class="muted">{{ spec.description }}</p>
+    <div class="metric"><div class="value">{{ counts.get(name, 0) }}</div><div class="label">extracted rows</div></div>
+    <p class="actions"><a class="button button-light" href="/intelligence/{{ spec.short }}?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Open module</a></p>
+  </div>
+  {% endfor %}
+</div>
+<div class="card">
+  <h2>Review and reports</h2>
+  <div class="actions">
+    <a class="button button-light" href="/intelligence/review?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Review Queue</a>
+    <a class="button button-light" href="/intelligence/reports?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Reports and exports</a>
+  </div>
+</div>
+{% else %}<div class="notice warn">No run selected.</div>{% endif %}
+{% endblock %}

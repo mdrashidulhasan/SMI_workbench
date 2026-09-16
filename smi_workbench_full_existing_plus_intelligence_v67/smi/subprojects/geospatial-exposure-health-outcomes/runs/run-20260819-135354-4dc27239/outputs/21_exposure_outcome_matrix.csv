@@ -1,0 +1,419 @@
+exposure,health_outcome,article_count,positive,negative,null,mixed,unclear
+particulate matter,cardiovascular,472,0,0,0,0,0
+PM2.5,cardiovascular,403,0,0,0,0,0
+air pollution,cardiovascular,348,0,0,0,0,0
+heat/temperature,cardiovascular,318,0,0,0,0,0
+particulate matter,asthma,245,0,0,0,0,0
+particulate matter,mortality,205,0,0,0,0,0
+heat/temperature,mortality,199,0,0,0,0,0
+air pollution,asthma,181,0,0,0,0,0
+PM2.5,mortality,177,0,0,0,0,0
+nitrogen dioxide (NO2),cardiovascular,170,0,0,0,0,0
+PM2.5,asthma,168,0,0,0,0,0
+particulate matter,respiratory,162,0,0,0,0,0
+air pollution,mortality,161,0,0,0,0,0
+air pollution,respiratory,133,0,0,0,0,0
+nitrogen dioxide (NO2),asthma,125,0,0,0,0,0
+PM2.5,respiratory,114,0,0,0,0,0
+ozone (O3),cardiovascular,95,0,0,0,0,0
+heat/temperature,asthma,86,0,0,0,0,0
+heat/temperature,preterm birth,86,0,0,0,0,0
+heat/temperature,respiratory,81,0,0,0,0,0
+PM10,cardiovascular,79,0,0,0,0,0
+nitrogen dioxide (NO2),mortality,73,0,0,0,0,0
+particulate matter,immune/inflammation,70,0,0,0,0,0
+ozone (O3),asthma,66,0,0,0,0,0
+PM2.5,birth weight,65,0,0,0,0,0
+nitrogen dioxide (NO2),respiratory,62,0,0,0,0,0
+black carbon,cardiovascular,58,0,0,0,0,0
+particulate matter,maternal blood pressure,58,0,0,0,0,0
+PM2.5,preterm birth,57,0,0,0,0,0
+PFAS,birth weight,54,0,0,0,0,0
+particulate matter,birth weight,53,0,0,0,0,0
+PFAS,cardiovascular,51,0,0,0,0,0
+PM2.5,immune/inflammation,49,0,0,0,0,0
+PFAS,reproductive,48,0,0,0,0,0
+particulate matter,preterm birth,47,0,0,0,0,0
+PM2.5,maternal blood pressure,46,0,0,0,0,0
+heat/temperature,cardiovascular mortality,46,0,0,0,0,0
+PM10,asthma,45,0,0,0,0,0
+ozone (O3),mortality,45,0,0,0,0,0
+PM2.5,diabetes,44,0,0,0,0,0
+air pollution,immune/inflammation,44,0,0,0,0,0
+air pollution,maternal blood pressure,44,0,0,0,0,0
+nitrogen dioxide (NO2),birth weight,44,0,0,0,0,0
+air pollution,birth weight,41,0,0,0,0,0
+particulate matter,cardiovascular mortality,40,0,0,0,0,0
+PFAS,neurodevelopment,38,0,0,0,0,0
+PM2.5,cardiovascular mortality,37,0,0,0,0,0
+air pollution,preterm birth,37,0,0,0,0,0
+PFAS,thyroid,36,0,0,0,0,0
+PM10,mortality,36,0,0,0,0,0
+heat/temperature,pregnancy outcomes,35,0,0,0,0,0
+particulate matter,diabetes,33,0,0,0,0,0
+air pollution,hypertension,32,0,0,0,0,0
+nitrogen dioxide (NO2),preterm birth,32,0,0,0,0,0
+noise,cardiovascular,32,0,0,0,0,0
+ozone (O3),respiratory,32,0,0,0,0,0
+PM10,respiratory,31,0,0,0,0,0
+PFAS,birth weight/fetal growth,30,0,0,0,0,0
+PFAS,diabetes,30,0,0,0,0,0
+black carbon,asthma,30,0,0,0,0,0
+wildfire smoke,cardiovascular,30,0,0,0,0,0
+PM2.5,hypertension,29,0,0,0,0,0
+air pollution,diabetes,29,0,0,0,0,0
+particulate matter,hypertension,29,0,0,0,0,0
+PFAS,asthma,28,0,0,0,0,0
+air pollution,pregnancy outcomes,28,0,0,0,0,0
+wildfire smoke,asthma,28,0,0,0,0,0
+wildfire smoke,respiratory,27,0,0,0,0,0
+air pollution,cardiovascular mortality,26,0,0,0,0,0
+heat/temperature,hypertension,26,0,0,0,0,0
+PFAS,immune,25,0,0,0,0,0
+PFAS,pregnancy outcomes,25,0,0,0,0,0
+heat/temperature,diabetes,25,0,0,0,0,0
+lead,cardiovascular,25,0,0,0,0,0
+PFAS,liver,24,0,0,0,0,0
+heat/temperature,birth weight,23,0,0,0,0,0
+nitrogen dioxide (NO2),diabetes,23,0,0,0,0,0
+particulate matter,birth weight/fetal growth,23,0,0,0,0,0
+PFAS,preterm birth,21,0,0,0,0,0
+heat/temperature,maternal blood pressure,21,0,0,0,0,0
+PM2.5,autism spectrum disorder,20,0,0,0,0,0
+PFAS,maternal blood pressure,19,0,0,0,0,0
+PM10,birth weight,19,0,0,0,0,0
+PM2.5,pregnancy outcomes,19,0,0,0,0,0
+black carbon,mortality,19,0,0,0,0,0
+green space/greenness,cardiovascular,19,0,0,0,0,0
+ozone (O3),birth weight,19,0,0,0,0,0
+particulate matter,all-cause mortality,19,0,0,0,0,0
+PFOA,birth weight,18,0,0,0,0,0
+heat/temperature,immune/inflammation,18,0,0,0,0,0
+nitrogen dioxide (NO2),immune/inflammation,18,0,0,0,0,0
+PFAS,immune/inflammation,17,0,0,0,0,0
+PM2.5,cancer,17,0,0,0,0,0
+lead,asthma,17,0,0,0,0,0
+nitrogen dioxide (NO2),cardiovascular mortality,17,0,0,0,0,0
+nitrogen dioxide (NO2),maternal blood pressure,17,0,0,0,0,0
+particulate matter,immune,17,0,0,0,0,0
+PFAS,hypertension,16,0,0,0,0,0
+PM2.5,all-cause mortality,16,0,0,0,0,0
+PM2.5,neurodevelopment,16,0,0,0,0,0
+air pollution,immune,16,0,0,0,0,0
+heat/temperature,all-cause mortality,16,0,0,0,0,0
+wildfire smoke,mortality,16,0,0,0,0,0
+PFOA,cardiovascular,15,0,0,0,0,0
+PFOA,thyroid,15,0,0,0,0,0
+air pollution,neurodevelopment,15,0,0,0,0,0
+black carbon,maternal blood pressure,15,0,0,0,0,0
+heat/temperature,reproductive,15,0,0,0,0,0
+nitrogen dioxide (NO2),hypertension,15,0,0,0,0,0
+particulate matter,cancer,15,0,0,0,0,0
+particulate matter,neurodevelopment,15,0,0,0,0,0
+particulate matter,cardiovascular disease mortality,14,0,0,0,0,0
+PFOA,reproductive,13,0,0,0,0,0
+PFOS,cardiovascular,13,0,0,0,0,0
+PM2.5,birth weight/fetal growth,13,0,0,0,0,0
+PM2.5,immune,13,0,0,0,0,0
+PM2.5,reproductive,13,0,0,0,0,0
+heat/temperature,cardiovascular disease mortality,13,0,0,0,0,0
+particulate matter,pregnancy outcomes,13,0,0,0,0,0
+particulate matter,thyroid,13,0,0,0,0,0
+PFAS,fertility,12,0,0,0,0,0
+PFOA,liver,12,0,0,0,0,0
+PM10,preterm birth,12,0,0,0,0,0
+black carbon,respiratory,12,0,0,0,0,0
+nitrogen dioxide (NO2),pregnancy outcomes,12,0,0,0,0,0
+ozone (O3),maternal blood pressure,12,0,0,0,0,0
+ozone (O3),preterm birth,12,0,0,0,0,0
+PFAS,mortality,11,0,0,0,0,0
+PFOA,asthma,11,0,0,0,0,0
+PFOS,birth weight,11,0,0,0,0,0
+air pollution,birth weight/fetal growth,11,0,0,0,0,0
+air pollution,reproductive,11,0,0,0,0,0
+black carbon,birth weight,11,0,0,0,0,0
+PFAS,respiratory,10,0,0,0,0,0
+PFOA,immune,10,0,0,0,0,0
+PFOA,maternal blood pressure,10,0,0,0,0,0
+PFOA,neurodevelopment,10,0,0,0,0,0
+air pollution,cancer,10,0,0,0,0,0
+black carbon,immune/inflammation,10,0,0,0,0,0
+lead,mortality,10,0,0,0,0,0
+ozone (O3),immune/inflammation,10,0,0,0,0,0
+particulate matter,autism spectrum disorder,10,0,0,0,0,0
+particulate matter,reproductive,10,0,0,0,0,0
+PFOA,pregnancy outcomes,9,0,0,0,0,0
+PM10,cardiovascular mortality,9,0,0,0,0,0
+PM10,diabetes,9,0,0,0,0,0
+air pollution,kidney,9,0,0,0,0,0
+black carbon,diabetes,9,0,0,0,0,0
+cadmium,cardiovascular,9,0,0,0,0,0
+green space/greenness,asthma,9,0,0,0,0,0
+green space/greenness,mortality,9,0,0,0,0,0
+PFOS,thyroid,8,0,0,0,0,0
+PM2.5,kidney,8,0,0,0,0,0
+air pollution,autism spectrum disorder,8,0,0,0,0,0
+air pollution,cardiovascular disease mortality,8,0,0,0,0,0
+black carbon,hypertension,8,0,0,0,0,0
+black carbon,preterm birth,8,0,0,0,0,0
+heat/temperature,birth weight/fetal growth,8,0,0,0,0,0
+lead,respiratory,8,0,0,0,0,0
+nitrogen dioxide (NO2),birth weight/fetal growth,8,0,0,0,0,0
+nitrogen dioxide (NO2),cardiovascular disease mortality,8,0,0,0,0,0
+nitrogen dioxide (NO2),immune,8,0,0,0,0,0
+noise,hypertension,8,0,0,0,0,0
+noise,mortality,8,0,0,0,0,0
+ozone (O3),diabetes,8,0,0,0,0,0
+particulate matter,kidney,8,0,0,0,0,0
+particulate matter,liver,8,0,0,0,0,0
+PFOS,liver,7,0,0,0,0,0
+PM2.5,apoptosis-related signaling,7,0,0,0,0,0
+PM2.5,cardiovascular disease mortality,7,0,0,0,0,0
+PM2.5,cognition,7,0,0,0,0,0
+green space/greenness,hypertension,7,0,0,0,0,0
+green space/greenness,preterm birth,7,0,0,0,0,0
+heat/temperature,fertility,7,0,0,0,0,0
+heat/temperature,kidney,7,0,0,0,0,0
+nitrogen dioxide (NO2),cancer,7,0,0,0,0,0
+nitrogen dioxide (NO2),thyroid,7,0,0,0,0,0
+PFAS,cancer,6,0,0,0,0,0
+PFAS,cellular toxicity / mechanistic outcome,6,0,0,0,0,0
+PFAS,cognition,6,0,0,0,0,0
+PFAS,kidney,6,0,0,0,0,0
+PFOA,birth weight/fetal growth,6,0,0,0,0,0
+PFOA,preterm birth,6,0,0,0,0,0
+PFOS,maternal blood pressure,6,0,0,0,0,0
+PM10,all-cause mortality,6,0,0,0,0,0
+PM2.5,thyroid,6,0,0,0,0,0
+air pollution,major adverse kidney events,6,0,0,0,0,0
+black carbon,cardiovascular mortality,6,0,0,0,0,0
+black carbon,neurodevelopment,6,0,0,0,0,0
+heat/temperature,immune,6,0,0,0,0,0
+heat/temperature,neurodevelopment,6,0,0,0,0,0
+nitrogen dioxide (NO2),all-cause mortality,6,0,0,0,0,0
+nitrogen dioxide (NO2),kidney,6,0,0,0,0,0
+nitrogen dioxide (NO2),neurodevelopment,6,0,0,0,0,0
+nitrogen dioxide (NO2),reproductive,6,0,0,0,0,0
+ozone (O3),cardiovascular mortality,6,0,0,0,0,0
+ozone (O3),hypertension,6,0,0,0,0,0
+particulate matter,apoptosis-related signaling,6,0,0,0,0,0
+particulate matter,fertility,6,0,0,0,0,0
+PFOA,diabetes,5,0,0,0,0,0
+PFOA,hypertension,5,0,0,0,0,0
+PFOS,asthma,5,0,0,0,0,0
+PFOS,birth weight/fetal growth,5,0,0,0,0,0
+PFOS,reproductive,5,0,0,0,0,0
+PM10,cancer,5,0,0,0,0,0
+PM10,hypertension,5,0,0,0,0,0
+PM10,immune/inflammation,5,0,0,0,0,0
+PM10,maternal blood pressure,5,0,0,0,0,0
+air pollution,thyroid,5,0,0,0,0,0
+noise,immune/inflammation,5,0,0,0,0,0
+noise,maternal blood pressure,5,0,0,0,0,0
+ozone (O3),pregnancy outcomes,5,0,0,0,0,0
+particulate matter,cellular toxicity / mechanistic outcome,5,0,0,0,0,0
+phthalate,birth weight,5,0,0,0,0,0
+wildfire smoke,all-cause mortality,5,0,0,0,0,0
+PFAS,autism spectrum disorder,4,0,0,0,0,0
+PFAS,autism-related traits,4,0,0,0,0,0
+PFAS,obesity,4,0,0,0,0,0
+PFOA,autism spectrum disorder,4,0,0,0,0,0
+PFOA,fertility,4,0,0,0,0,0
+PFOS,diabetes,4,0,0,0,0,0
+PFOS,preterm birth,4,0,0,0,0,0
+PM10,birth weight/fetal growth,4,0,0,0,0,0
+PM10,pregnancy outcomes,4,0,0,0,0,0
+PM2.5,fertility,4,0,0,0,0,0
+air pollution,all-cause mortality,4,0,0,0,0,0
+air pollution,fertility,4,0,0,0,0,0
+air pollution,liver,4,0,0,0,0,0
+black carbon,pregnancy outcomes,4,0,0,0,0,0
+green space/greenness,birth weight,4,0,0,0,0,0
+lead,birth weight,4,0,0,0,0,0
+lead,immune/inflammation,4,0,0,0,0,0
+lead,maternal blood pressure,4,0,0,0,0,0
+lead,preterm birth,4,0,0,0,0,0
+mercury,cardiovascular,4,0,0,0,0,0
+nitrogen dioxide (NO2),autism spectrum disorder,4,0,0,0,0,0
+nitrogen dioxide (NO2),cognition,4,0,0,0,0,0
+nitrogen dioxide (NO2),fertility,4,0,0,0,0,0
+noise,asthma,4,0,0,0,0,0
+ozone (O3),birth weight/fetal growth,4,0,0,0,0,0
+particulate matter,cell viability,4,0,0,0,0,0
+phthalate,asthma,4,0,0,0,0,0
+wildfire smoke,preterm birth,4,0,0,0,0,0
+PFAS,major adverse kidney events,3,0,0,0,0,0
+PFOA,immune/inflammation,3,0,0,0,0,0
+PFOS,autism spectrum disorder,3,0,0,0,0,0
+PFOS,fertility,3,0,0,0,0,0
+PFOS,immune,3,0,0,0,0,0
+PFOS,immune/inflammation,3,0,0,0,0,0
+PFOS,kidney,3,0,0,0,0,0
+PFOS,neurodevelopment,3,0,0,0,0,0
+PM2.5,liver,3,0,0,0,0,0
+PM2.5,major adverse kidney events,3,0,0,0,0,0
+air pollution,cognition,3,0,0,0,0,0
+arsenic,cardiovascular,3,0,0,0,0,0
+black carbon,autism spectrum disorder,3,0,0,0,0,0
+black carbon,cancer,3,0,0,0,0,0
+cadmium,maternal blood pressure,3,0,0,0,0,0
+green space/greenness,cardiovascular mortality,3,0,0,0,0,0
+heat/temperature,autism spectrum disorder,3,0,0,0,0,0
+heat/temperature,major adverse kidney events,3,0,0,0,0,0
+nanoplastics,cardiovascular,3,0,0,0,0,0
+nitrogen dioxide (NO2),major adverse kidney events,3,0,0,0,0,0
+noise,respiratory,3,0,0,0,0,0
+ozone (O3),all-cause mortality,3,0,0,0,0,0
+ozone (O3),cardiovascular disease mortality,3,0,0,0,0,0
+ozone (O3),reproductive,3,0,0,0,0,0
+particulate matter,cognition,3,0,0,0,0,0
+phthalate,cancer,3,0,0,0,0,0
+phthalate,cardiovascular,3,0,0,0,0,0
+urban tree canopy,asthma,3,0,0,0,0,0
+PFAS,apoptosis-related signaling,2,0,0,0,0,0
+PFAS,coronary inflammation / pericoronary fat attenuation index,2,0,0,0,0,0
+PFOA,kidney,2,0,0,0,0,0
+PFOA,mortality,2,0,0,0,0,0
+PFOS,hypertension,2,0,0,0,0,0
+PFOS,mortality,2,0,0,0,0,0
+PM10,cardiovascular disease mortality,2,0,0,0,0,0
+PM10,kidney,2,0,0,0,0,0
+PM10,neurodevelopment,2,0,0,0,0,0
+PM10,reproductive,2,0,0,0,0,0
+PM2.5,cell viability,2,0,0,0,0,0
+PM2.5,cellular toxicity / mechanistic outcome,2,0,0,0,0,0
+arsenic,asthma,2,0,0,0,0,0
+arsenic,birth weight,2,0,0,0,0,0
+arsenic,kidney,2,0,0,0,0,0
+black carbon,birth weight/fetal growth,2,0,0,0,0,0
+black carbon,cardiovascular disease mortality,2,0,0,0,0,0
+black carbon,reproductive,2,0,0,0,0,0
+black carbon,thyroid,2,0,0,0,0,0
+cadmium,birth weight,2,0,0,0,0,0
+green space/greenness,birth weight/fetal growth,2,0,0,0,0,0
+green space/greenness,maternal blood pressure,2,0,0,0,0,0
+green space/greenness,respiratory,2,0,0,0,0,0
+heat/temperature,cancer,2,0,0,0,0,0
+heat/temperature,maternal/child health,2,0,0,0,0,0
+lead,birth weight/fetal growth,2,0,0,0,0,0
+lead,fertility,2,0,0,0,0,0
+lead,neurodevelopment,2,0,0,0,0,0
+lead,reproductive,2,0,0,0,0,0
+mercury,maternal blood pressure,2,0,0,0,0,0
+mercury,neurodevelopment,2,0,0,0,0,0
+ozone (O3),autism spectrum disorder,2,0,0,0,0,0
+ozone (O3),cancer,2,0,0,0,0,0
+ozone (O3),kidney,2,0,0,0,0,0
+particulate matter,cell viability; apoptosis-related signaling,2,0,0,0,0,0
+particulate matter,major adverse kidney events,2,0,0,0,0,0
+particulate matter,pyroptosis-related signaling,2,0,0,0,0,0
+phthalate,fertility,2,0,0,0,0,0
+phthalate,reproductive,2,0,0,0,0,0
+urban tree canopy,mortality,2,0,0,0,0,0
+wildfire smoke,immune,2,0,0,0,0,0
+wildfire smoke,immune/inflammation,2,0,0,0,0,0
+BPA,birth weight/fetal growth,1,0,0,0,0,0
+BPA,cardiovascular,1,0,0,0,0,0
+BPA,diabetes,1,0,0,0,0,0
+BPA,mortality,1,0,0,0,0,0
+BPA,pregnancy outcomes,1,0,0,0,0,0
+BPA,reproductive,1,0,0,0,0,0
+PFAS,cardiovascular disease mortality,1,0,0,0,0,0
+PFAS,cell viability; vascular endothelial injury; necroptosis-related signaling; apoptosis-related signaling,1,0,0,0,0,0
+PFAS,hypertension during pregnancy,1,0,0,0,0,0
+PFAS,intestinal inflammation,1,0,0,0,0,0
+PFAS,maternal/child health,1,0,0,0,0,0
+PFOA,autism-related traits,1,0,0,0,0,0
+PFOA,coronary inflammation / pericoronary fat attenuation index,1,0,0,0,0,0
+PFOA,major adverse kidney events,1,0,0,0,0,0
+PFOA,obesity,1,0,0,0,0,0
+PFOA,respiratory,1,0,0,0,0,0
+PFOS,intestinal inflammation,1,0,0,0,0,0
+PFOS,major adverse kidney events,1,0,0,0,0,0
+PFOS,obesity,1,0,0,0,0,0
+PFOS,respiratory,1,0,0,0,0,0
+PM10,autism spectrum disorder,1,0,0,0,0,0
+PM10,fertility,1,0,0,0,0,0
+PM10,major adverse kidney events,1,0,0,0,0,0
+PM10,thyroid,1,0,0,0,0,0
+PM2.5,autism-related traits,1,0,0,0,0,0
+PM2.5,cell viability; apoptosis-related signaling,1,0,0,0,0,0
+PM2.5,folate status,1,0,0,0,0,0
+PM2.5,obesity,1,0,0,0,0,0
+air pollution,cell viability; vascular endothelial injury; apoptosis-related signaling,1,0,0,0,0,0
+air pollution,cellular toxicity / mechanistic outcome,1,0,0,0,0,0
+air pollution,disease-specific mortality,1,0,0,0,0,0
+arsenic,cardiovascular disease mortality,1,0,0,0,0,0
+arsenic,cardiovascular mortality,1,0,0,0,0,0
+arsenic,immune,1,0,0,0,0,0
+arsenic,maternal blood pressure,1,0,0,0,0,0
+arsenic,mortality,1,0,0,0,0,0
+arsenic,preterm birth,1,0,0,0,0,0
+black carbon,all-cause mortality,1,0,0,0,0,0
+black carbon,cognition,1,0,0,0,0,0
+black carbon,fertility,1,0,0,0,0,0
+black carbon,immune,1,0,0,0,0,0
+black carbon,kidney,1,0,0,0,0,0
+black carbon,liver,1,0,0,0,0,0
+cadmium,asthma,1,0,0,0,0,0
+cadmium,cardiovascular mortality,1,0,0,0,0,0
+cadmium,diabetes,1,0,0,0,0,0
+cadmium,immune/inflammation,1,0,0,0,0,0
+cadmium,kidney,1,0,0,0,0,0
+cadmium,mortality,1,0,0,0,0,0
+cadmium,preterm birth,1,0,0,0,0,0
+glyphosate,birth weight,1,0,0,0,0,0
+green space/greenness,cardiovascular disease mortality,1,0,0,0,0,0
+green space/greenness,diabetes,1,0,0,0,0,0
+green space/greenness,major adverse kidney events,1,0,0,0,0,0
+green space/greenness,neurodevelopment,1,0,0,0,0,0
+heat/temperature,apoptosis-related signaling,1,0,0,0,0,0
+heat/temperature,cellular toxicity / mechanistic outcome,1,0,0,0,0,0
+heat/temperature,kidney failure / kidney replacement therapy,1,0,0,0,0,0
+heat/temperature,liver,1,0,0,0,0,0
+heat/temperature,thyroid,1,0,0,0,0,0
+lead,cardiovascular disease mortality,1,0,0,0,0,0
+lead,cell viability,1,0,0,0,0,0
+lead,diabetes,1,0,0,0,0,0
+lead,kidney,1,0,0,0,0,0
+lead,pregnancy outcomes,1,0,0,0,0,0
+mercury,asthma,1,0,0,0,0,0
+mercury,birth weight,1,0,0,0,0,0
+mercury,immune/inflammation,1,0,0,0,0,0
+mercury,mortality,1,0,0,0,0,0
+microplastics,cardiovascular,1,0,0,0,0,0
+microplastics,hypertension,1,0,0,0,0,0
+microplastics,respiratory,1,0,0,0,0,0
+nitrogen dioxide (NO2),autism-related traits,1,0,0,0,0,0
+nitrogen dioxide (NO2),folate status,1,0,0,0,0,0
+nitrogen dioxide (NO2),obesity,1,0,0,0,0,0
+noise,autism spectrum disorder,1,0,0,0,0,0
+noise,birth weight,1,0,0,0,0,0
+noise,cancer,1,0,0,0,0,0
+noise,cardiovascular mortality,1,0,0,0,0,0
+noise,preterm birth,1,0,0,0,0,0
+ozone (O3),cognition,1,0,0,0,0,0
+ozone (O3),fertility,1,0,0,0,0,0
+ozone (O3),immune,1,0,0,0,0,0
+ozone (O3),liver,1,0,0,0,0,0
+ozone (O3),major adverse kidney events,1,0,0,0,0,0
+ozone (O3),neurodevelopment,1,0,0,0,0,0
+particulate matter,coronary inflammation / pericoronary fat attenuation index,1,0,0,0,0,0
+particulate matter,disease-specific mortality,1,0,0,0,0,0
+particulate matter,kidney failure / kidney replacement therapy,1,0,0,0,0,0
+particulate matter,obesity,1,0,0,0,0,0
+phthalate,birth weight/fetal growth,1,0,0,0,0,0
+phthalate,diabetes,1,0,0,0,0,0
+phthalate,immune,1,0,0,0,0,0
+phthalate,maternal blood pressure,1,0,0,0,0,0
+phthalate,neurodevelopment,1,0,0,0,0,0
+phthalate,preterm birth,1,0,0,0,0,0
+phthalate,respiratory,1,0,0,0,0,0
+urban tree canopy,birth weight,1,0,0,0,0,0
+urban tree canopy,cardiovascular,1,0,0,0,0,0
+urban tree canopy,preterm birth,1,0,0,0,0,0
+wildfire smoke,autism spectrum disorder,1,0,0,0,0,0
+wildfire smoke,cardiovascular mortality,1,0,0,0,0,0
+wildfire smoke,fertility,1,0,0,0,0,0
+wildfire smoke,major adverse kidney events,1,0,0,0,0,0
+wildfire smoke,reproductive,1,0,0,0,0,0

@@ -1,0 +1,324 @@
+{
+  "subproject": "maternal-exposure-to-heat-and-its-association",
+  "run_id": "run-20260821-155304-02123d2c",
+  "created_at": "2026-08-21T15:53:04Z",
+  "config_path": "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/generated_configs/maternal-exposure-to-heat-and-its-association_20260821_115303.yaml",
+  "api_base_url": "https://dev.posit.niehs.nih.gov/et/api",
+  "state": "created",
+  "artifacts": {
+    "literature_search": {
+      "id": "references_fde1d87afb204f249b929b9036571d19",
+      "recordCount": 1,
+      "databaseQueries": {
+        "pubmed": "Maternal exposure heat miscarriage rural KwaZulu Natal South Africa"
+      },
+      "successfulSources": [
+        "pubmed"
+      ],
+      "sourceErrors": [],
+      "sourceCounts": {
+        "pubmed": 1
+      }
+    },
+    "deduplication": {
+      "id": "references_806ef5bbcb4240868ab83f388d4d7ebd",
+      "recordCount": 1,
+      "duplicateRecordCount": 0
+    },
+    "ai_screening": {
+      "chunked_ai_screening": true,
+      "screening_status": "screened_in_chunks",
+      "screening_mode": "record_level_local_decisions",
+      "references_id": "references_806ef5bbcb4240868ab83f388d4d7ebd",
+      "applied_limit": 1000,
+      "requested_record_count": 1,
+      "processed_record_count": 1,
+      "screened_record_count": 1,
+      "retained_record_count": 1,
+      "decisionCounts": {
+        "Relevant": 1,
+        "Not relevant": 0,
+        "Unclear": 0
+      },
+      "chunk_size": 75,
+      "chunk_count": 1,
+      "parallel": false,
+      "max_workers": 1,
+      "completed_chunk_unit_count": 1,
+      "chunks": [
+        {
+          "recordCount": 1,
+          "sourceRecordCount": 1,
+          "decisionCounts": {
+            "Relevant": 1,
+            "Not relevant": 0,
+            "Unclear": 0
+          },
+          "chunk_index": 1,
+          "chunk_label": "AI screening chunk 1/1 (1 records)",
+          "chunk_size": 1,
+          "requested_reference_count": 1,
+          "processed_record_count": 1,
+          "retained_record_count": 1,
+          "excluded_record_count": 0,
+          "unclear_record_count": 0,
+          "source": "local_record_level_ai_screening",
+          "screening_mode": "record_level_local_decisions",
+          "records": [
+            {
+              "id": "PMID-39066467",
+              "pmid": "39066467",
+              "pmcid": "PMC11282531",
+              "title": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study.",
+              "doi": "10.1177/17455057241259171",
+              "authors": "Moodley Y, Asare K, Tanser F, Tomita A",
+              "journal": "Women's health (London, England)",
+              "volume": "20",
+              "issue": "",
+              "publicationDate": "2024-01-01",
+              "fullTextAvailable": true,
+              "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11282531/pdf/",
+              "abstract": "BACKGROUND: We sought to improve the current understanding of how climate change impacts women's reproductive health in sub-Saharan Africa. OBJECTIVES: We investigated the relationship between maternal heat exposure and miscarriage (pregnancy ending before 20 weeks gestation) in a South African setting. DESIGN: Population-based cohort study. METHODS: Our study involved data for pregnancies collected via a health and demographic surveillance system in rural KwaZulu-Natal, South Africa between 2012 and 2016. Data from the South African Weather Service were used to compute maternal exposure to heat during the following time windows for each pregnancy: during the month preceding conception (T1) and during the week preceding the study outcome (either a miscarriage or no miscarriage, T2). Heat exposure was operationalized as a continuous variable and defined as the number of days that a mother was exposed to a mean daily temperature of > 26.6°C (A \"hot day,\" equivalent to a mean daily temperature of > 80°F) during T1 or T2. Binary logistic regression was used to investigate the relationship between maternal heat exposure and miscarriage. RESULTS: A total of 105/3477 pregnancies included in our analysis ended in miscarriage (3.0%). Each additional hot day during T1 was associated with a 26% higher odds of miscarriage (odds ratio: 1.26; 95% confidence interval: 1.15-1.38). No significant associations were observed between maternal heat exposure during T2 and the odds of miscarriage (odds ratio: 0.94, 95% confidence interval: 0.73-1.20). The relationship between maternal heat exposure during T1 and the odds of miscarriage was J-shaped. CONCLUSION: There is a clear relationship between maternal heat exposure during the month preceding conception and miscarriage in our sub-Saharan African setting. Given the lack of feasible strategies to reduce pregnancy loss associated with prevailing high temperatures in sub-Saharan Africa, progressive climate change will likely exacerbate existing challenges for women's reproductive health in this region.",
+              "index": 0,
+              "sourceIndex": 0,
+              "sourceId": "pubmed",
+              "database": "PubMed",
+              "databaseKey": "pubmed",
+              "pages": "",
+              "isbn": "",
+              "referenceIndex": 0,
+              "duplicate": false,
+              "ai_screening_decision": "Relevant",
+              "screening_decision": "Relevant"
+            }
+          ],
+          "decisions": [
+            {
+              "record_index": 1,
+              "record_label": "PMID 39066467",
+              "decision": "Relevant",
+              "retained": true,
+              "api_response_id": "references_2d6df2d97bcb4375bd775c4e32b5c0bf"
+            }
+          ]
+        }
+      ],
+      "screening_ids": [],
+      "records": [
+        {
+          "id": "PMID-39066467",
+          "pmid": "39066467",
+          "pmcid": "PMC11282531",
+          "title": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study.",
+          "doi": "10.1177/17455057241259171",
+          "authors": "Moodley Y, Asare K, Tanser F, Tomita A",
+          "journal": "Women's health (London, England)",
+          "volume": "20",
+          "issue": "",
+          "publicationDate": "2024-01-01",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11282531/pdf/",
+          "abstract": "BACKGROUND: We sought to improve the current understanding of how climate change impacts women's reproductive health in sub-Saharan Africa. OBJECTIVES: We investigated the relationship between maternal heat exposure and miscarriage (pregnancy ending before 20 weeks gestation) in a South African setting. DESIGN: Population-based cohort study. METHODS: Our study involved data for pregnancies collected via a health and demographic surveillance system in rural KwaZulu-Natal, South Africa between 2012 and 2016. Data from the South African Weather Service were used to compute maternal exposure to heat during the following time windows for each pregnancy: during the month preceding conception (T1) and during the week preceding the study outcome (either a miscarriage or no miscarriage, T2). Heat exposure was operationalized as a continuous variable and defined as the number of days that a mother was exposed to a mean daily temperature of > 26.6°C (A \"hot day,\" equivalent to a mean daily temperature of > 80°F) during T1 or T2. Binary logistic regression was used to investigate the relationship between maternal heat exposure and miscarriage. RESULTS: A total of 105/3477 pregnancies included in our analysis ended in miscarriage (3.0%). Each additional hot day during T1 was associated with a 26% higher odds of miscarriage (odds ratio: 1.26; 95% confidence interval: 1.15-1.38). No significant associations were observed between maternal heat exposure during T2 and the odds of miscarriage (odds ratio: 0.94, 95% confidence interval: 0.73-1.20). The relationship between maternal heat exposure during T1 and the odds of miscarriage was J-shaped. CONCLUSION: There is a clear relationship between maternal heat exposure during the month preceding conception and miscarriage in our sub-Saharan African setting. Given the lack of feasible strategies to reduce pregnancy loss associated with prevailing high temperatures in sub-Saharan Africa, progressive climate change will likely exacerbate existing challenges for women's reproductive health in this region.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ]
+    },
+    "retrieved_records": {
+      "chunked_retrieval": true,
+      "source": "chunked_ai_screening_results",
+      "record_count": 1,
+      "applied_limit": 1000,
+      "records": [
+        {
+          "id": "PMID-39066467",
+          "pmid": "39066467",
+          "pmcid": "PMC11282531",
+          "title": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study.",
+          "doi": "10.1177/17455057241259171",
+          "authors": "Moodley Y, Asare K, Tanser F, Tomita A",
+          "journal": "Women's health (London, England)",
+          "volume": "20",
+          "issue": "",
+          "publicationDate": "2024-01-01",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11282531/pdf/",
+          "abstract": "BACKGROUND: We sought to improve the current understanding of how climate change impacts women's reproductive health in sub-Saharan Africa. OBJECTIVES: We investigated the relationship between maternal heat exposure and miscarriage (pregnancy ending before 20 weeks gestation) in a South African setting. DESIGN: Population-based cohort study. METHODS: Our study involved data for pregnancies collected via a health and demographic surveillance system in rural KwaZulu-Natal, South Africa between 2012 and 2016. Data from the South African Weather Service were used to compute maternal exposure to heat during the following time windows for each pregnancy: during the month preceding conception (T1) and during the week preceding the study outcome (either a miscarriage or no miscarriage, T2). Heat exposure was operationalized as a continuous variable and defined as the number of days that a mother was exposed to a mean daily temperature of > 26.6°C (A \"hot day,\" equivalent to a mean daily temperature of > 80°F) during T1 or T2. Binary logistic regression was used to investigate the relationship between maternal heat exposure and miscarriage. RESULTS: A total of 105/3477 pregnancies included in our analysis ended in miscarriage (3.0%). Each additional hot day during T1 was associated with a 26% higher odds of miscarriage (odds ratio: 1.26; 95% confidence interval: 1.15-1.38). No significant associations were observed between maternal heat exposure during T2 and the odds of miscarriage (odds ratio: 0.94, 95% confidence interval: 0.73-1.20). The relationship between maternal heat exposure during T1 and the odds of miscarriage was J-shaped. CONCLUSION: There is a clear relationship between maternal heat exposure during the month preceding conception and miscarriage in our sub-Saharan African setting. Given the lack of feasible strategies to reduce pregnancy loss associated with prevailing high temperatures in sub-Saharan Africa, progressive climate change will likely exacerbate existing challenges for women's reproductive health in this region.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ],
+      "chunk_results": [
+        {
+          "chunk_index": 1,
+          "source": "records_embedded_in_ai_screening_chunk",
+          "record_count": 1
+        }
+      ]
+    },
+    "pdf_download": {
+      "enabled": true,
+      "status": "success",
+      "source": "api_original_pdf_download_batched_resilient",
+      "requested_reference_count": 1,
+      "batch_size": 1,
+      "min_batch_size": 1,
+      "batch_count": 1,
+      "parallel": false,
+      "max_workers": 20,
+      "row_level_pdfs": true,
+      "completed_batch_unit_count": 1,
+      "successful_pdf_count": 1,
+      "package_zip_count": 2,
+      "failed_batch_count": 0,
+      "pdfs": [
+        {
+          "title": "API-1",
+          "fileName": "API-1.pdf",
+          "localPath": "smi/subprojects/maternal-exposure-to-heat-and-its-association/runs/run-20260821-155304-02123d2c/outputs/pdfs/api_original_pdfs/API-1.pdf",
+          "status": "downloaded",
+          "source": "original_api_pdf_zip",
+          "is_original_pdf": true,
+          "zipSource": "PDF batch 1-1 -1 references-pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+          "zipMemberName": "API-1.pdf",
+          "pdfTextProbe": "PDF-1.4 1 0 obj /Metadata 2 0 R/Pages 3 0 R/Type/Catalog/ViewerPreferences /Direction/L2R endobj 2 0 obj /Length 311775/Subtype/XML/Type/Metadata stream xpacket begin id W5M0MpCehiHzreSzNTczkc9d x:xmpmeta xmlns:x adobe:ns:meta/ x:xmptk Adobe XMP Core 5.2-c003 61.141987, 2011/02/22-12:03:51 rdf:RDF xmlns:rdf http://www.w3.org/1999/02/22-rdf-syntax-ns rdf:Description rdf:about xmlns:xmpMM http://ns.adobe.com/xap/1.0/mm/ xmlns:stRef http://ns.adobe.com/xap/1.0/sType/ResourceRef xmlns:stEvt http://ns.adobe.com/xap/1.0/sType/ResourceEvent xmpMM:InstanceID uuid:a7c444b4-8361-46ce-b4a7-1a98196fa8be /xmpMM:InstanceID xmpMM:DocumentID xmp.did:0877EB9F9C59DF11A1EBA9B605CE80B2 /xmpMM:DocumentID xmpMM:OriginalDocumentID adobe:docid:indd:61020d5a-531d-11de-9aa3-f47368b35948 /xmpMM:OriginalDocumentID xmpMM:RenditionClass proof:pdf /xmpMM:RenditionClass xmpMM:DerivedFrom rdf:parseType Resource stRef:instanceID xmp.iid:0777EB9F9C59DF11A1EBA9B605CE80B2 /stRef:instanceID stRef:documentID xmp.did:94BE82176957DF11B542CA46BCB5136B /stRef:documentID stRef:originalDocumentID adobe:docid:indd:61020d5a-531d-11de-9aa3-f47368b35948 /stRef:originalDocumentID stRef:renditionClass default /stRef:renditionClass /xmpMM:DerivedFrom xmpMM:History rdf:Seq rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:9FB4E5792453DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:01:39+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:A0B4E5792453DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:01:39+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7512E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:39:10+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7712E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:44:28+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7812E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:50:07+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7912E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:50:07+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /;/metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7A12E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T12:07:20+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7B12E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T12:41:08+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7C12E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T12:42:59+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:18A50C343353DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T12:47:04+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:19A50C343353DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T13:01:21+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:02A88F58BA55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T17:59:30+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:03A88F58BA55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:00:44+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:04A88F58BA55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:00:44+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /;/metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:05A88F58BA55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:03:50+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:0CA88F58BA55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:23:57+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:3A1FDE4BBF55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:34:56+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:3B1FDE4BBF55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:42:43+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:3C1FDE4BBF55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:47:09+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:1743EC08DB55DE118224BEA7DFF6EC94 /stEvt:instanceID stEvt:when 2009-06-10T21:53:30+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:1843EC08DB55DE118224BEA7DFF6EC94 /stEvt:instanceID stEvt:when 2009-06-10T21:53:30+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /;/metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:C1B875345656DE1189BAD4E2A7FE97BE /stEvt:instanceID stEvt:when 2009-06-11T12:35:11+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:C2B875345656DE1189BAD4E2A7FE97BE /stEvt:instanceID stEvt:when 2009-06-11T12:35:11+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D5BD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T12:24:27+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D6BD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T13:05:28+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D7BD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:07:29+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D8BD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:07:48+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D9BD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:07:48+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /;/metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:DABD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:10:03+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:DBBD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:13:44+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:DCBD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:30:59+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:DDBD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:32:08+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:DEBD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:40:40+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:A6A577708D59DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:48:07+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:A7A577708D59DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:48:08+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D70F5AF1A959DE11965681505D58AD45 /stEvt:instanceID stEvt:when 2009-06-15T18:18:31+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D80F5AF1A959DE11965681505D58AD45 /stEvt:instanceID stEvt:when 2009-06-15T18:24:10+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action s",
+          "pmid": "39066467",
+          "PMID": "39066467",
+          "pmcid": "PMC11282531",
+          "PMCID": "PMC11282531",
+          "doi": "10.1177/17455057241259171",
+          "DOI": "10.1177/17455057241259171",
+          "sourceRecordTitle": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study.",
+          "mappedBy": "single_reference_zip"
+        }
+      ],
+      "packageZips": [
+        {
+          "fileName": "row_level_article_pdfs.zip",
+          "localZipPath": "smi/subprojects/maternal-exposure-to-heat-and-its-association/runs/run-20260821-155304-02123d2c/outputs/pdfs/row_level_article_pdfs.zip",
+          "relativePath": "smi/subprojects/maternal-exposure-to-heat-and-its-association/runs/run-20260821-155304-02123d2c/outputs/pdfs/row_level_article_pdfs.zip",
+          "batchLabel": "Combined row-level article PDF package",
+          "sizeBytes": 536606,
+          "pdfCount": 1,
+          "source": "local_package_from_row_level_pdfs"
+        },
+        {
+          "fileName": "PDF batch 1-1 -1 references-pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+          "localZipPath": "smi/subprojects/maternal-exposure-to-heat-and-its-association/runs/run-20260821-155304-02123d2c/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+          "relativePath": "smi/subprojects/maternal-exposure-to-heat-and-its-association/runs/run-20260821-155304-02123d2c/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+          "batchLabel": "PDF batch 1/1 (1 references)",
+          "sizeBytes": 536430
+        }
+      ],
+      "batch_results": [
+        {
+          "id": "pdfs_5547ab6fc5dd44539a4bc8ccda341874",
+          "sourceId": "references_e60b7658f7584f92876ec1d549a43bc0",
+          "sourceType": "references",
+          "status": "downloaded",
+          "recordCount": 1,
+          "downloadedCount": 1,
+          "manualRequiredCount": 0,
+          "failedCount": 0,
+          "skippedCount": 0,
+          "zipFileCount": 1,
+          "fileName": "pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+          "downloadUrl": "/api/pdf-downloads/pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+          "records": [
+            {
+              "id": "API-1",
+              "title": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study.",
+              "doi": "10.1177/17455057241259171",
+              "pmcid": "PMC11282531",
+              "status": "downloaded",
+              "filePath": "/opt/rstudio-connect/mnt/app/data/pdfs/tools/pdfs_5547ab6fc5dd44539a4bc8ccda341874/API-1.pdf",
+              "errorMessage": ""
+            }
+          ],
+          "errorMessage": "",
+          "localZipPath": "smi/subprojects/maternal-exposure-to-heat-and-its-association/runs/run-20260821-155304-02123d2c/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+          "pdfs": [
+            {
+              "title": "API-1",
+              "fileName": "API-1.pdf",
+              "localPath": "smi/subprojects/maternal-exposure-to-heat-and-its-association/runs/run-20260821-155304-02123d2c/outputs/pdfs/api_original_pdfs/API-1.pdf",
+              "status": "downloaded",
+              "source": "original_api_pdf_zip",
+              "is_original_pdf": true,
+              "zipSource": "PDF batch 1-1 -1 references-pdfs_5547ab6fc5dd44539a4bc8ccda341874.zip",
+              "zipMemberName": "API-1.pdf",
+              "pdfTextProbe": "PDF-1.4 1 0 obj /Metadata 2 0 R/Pages 3 0 R/Type/Catalog/ViewerPreferences /Direction/L2R endobj 2 0 obj /Length 311775/Subtype/XML/Type/Metadata stream xpacket begin id W5M0MpCehiHzreSzNTczkc9d x:xmpmeta xmlns:x adobe:ns:meta/ x:xmptk Adobe XMP Core 5.2-c003 61.141987, 2011/02/22-12:03:51 rdf:RDF xmlns:rdf http://www.w3.org/1999/02/22-rdf-syntax-ns rdf:Description rdf:about xmlns:xmpMM http://ns.adobe.com/xap/1.0/mm/ xmlns:stRef http://ns.adobe.com/xap/1.0/sType/ResourceRef xmlns:stEvt http://ns.adobe.com/xap/1.0/sType/ResourceEvent xmpMM:InstanceID uuid:a7c444b4-8361-46ce-b4a7-1a98196fa8be /xmpMM:InstanceID xmpMM:DocumentID xmp.did:0877EB9F9C59DF11A1EBA9B605CE80B2 /xmpMM:DocumentID xmpMM:OriginalDocumentID adobe:docid:indd:61020d5a-531d-11de-9aa3-f47368b35948 /xmpMM:OriginalDocumentID xmpMM:RenditionClass proof:pdf /xmpMM:RenditionClass xmpMM:DerivedFrom rdf:parseType Resource stRef:instanceID xmp.iid:0777EB9F9C59DF11A1EBA9B605CE80B2 /stRef:instanceID stRef:documentID xmp.did:94BE82176957DF11B542CA46BCB5136B /stRef:documentID stRef:originalDocumentID adobe:docid:indd:61020d5a-531d-11de-9aa3-f47368b35948 /stRef:originalDocumentID stRef:renditionClass default /stRef:renditionClass /xmpMM:DerivedFrom xmpMM:History rdf:Seq rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:9FB4E5792453DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:01:39+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:A0B4E5792453DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:01:39+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7512E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:39:10+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7712E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:44:28+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7812E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:50:07+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7912E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T11:50:07+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /;/metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7A12E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T12:07:20+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7B12E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T12:41:08+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:7C12E5942853DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T12:42:59+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:18A50C343353DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T12:47:04+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:19A50C343353DE11A7B5AFBAD2547E18 /stEvt:instanceID stEvt:when 2009-06-07T13:01:21+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:02A88F58BA55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T17:59:30+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:03A88F58BA55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:00:44+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:04A88F58BA55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:00:44+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /;/metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:05A88F58BA55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:03:50+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:0CA88F58BA55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:23:57+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:3A1FDE4BBF55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:34:56+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:3B1FDE4BBF55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:42:43+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:3C1FDE4BBF55DE11AC61FCC07213CABC /stEvt:instanceID stEvt:when 2009-06-10T18:47:09+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:1743EC08DB55DE118224BEA7DFF6EC94 /stEvt:instanceID stEvt:when 2009-06-10T21:53:30+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:1843EC08DB55DE118224BEA7DFF6EC94 /stEvt:instanceID stEvt:when 2009-06-10T21:53:30+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /;/metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:C1B875345656DE1189BAD4E2A7FE97BE /stEvt:instanceID stEvt:when 2009-06-11T12:35:11+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:C2B875345656DE1189BAD4E2A7FE97BE /stEvt:instanceID stEvt:when 2009-06-11T12:35:11+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D5BD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T12:24:27+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D6BD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T13:05:28+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D7BD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:07:29+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D8BD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:07:48+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D9BD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:07:48+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /;/metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:DABD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:10:03+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:DBBD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:13:44+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:DCBD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:30:59+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:DDBD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:32:08+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:DEBD205E7959DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:40:40+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:A6A577708D59DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:48:07+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:A7A577708D59DE11965BEAB5465F1AFC /stEvt:instanceID stEvt:when 2009-06-15T14:48:08+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed /metadata /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D70F5AF1A959DE11965681505D58AD45 /stEvt:instanceID stEvt:when 2009-06-15T18:18:31+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action saved /stEvt:action stEvt:instanceID xmp.iid:D80F5AF1A959DE11965681505D58AD45 /stEvt:instanceID stEvt:when 2009-06-15T18:24:10+05:30 /stEvt:when stEvt:softwareAgent Adobe InDesign 6.0 /stEvt:softwareAgent stEvt:changed / /stEvt:changed /rdf:li rdf:li rdf:parseType Resource stEvt:action s",
+              "pmid": "39066467",
+              "PMID": "39066467",
+              "pmcid": "PMC11282531",
+              "PMCID": "PMC11282531",
+              "doi": "10.1177/17455057241259171",
+              "DOI": "10.1177/17455057241259171",
+              "sourceRecordTitle": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study.",
+              "mappedBy": "single_reference_zip"
+            }
+          ],
+          "source": "api_original_pdf_download",
+          "batch_index": 1,
+          "batch_label": "PDF batch 1/1 (1 references)",
+          "batch_size": 1,
+          "requested_reference_count": 1
+        }
+      ],
+      "batch_errors": [],
+      "localZipPath": "smi/subprojects/maternal-exposure-to-heat-and-its-association/runs/run-20260821-155304-02123d2c/outputs/pdfs/row_level_article_pdfs.zip",
+      "fileName": "row_level_article_pdfs.zip"
+    },
+    "intelligence_extraction": {
+      "enabled": true,
+      "modules": [
+        "exposure_health_associations",
+        "clinical_epidemiology",
+        "research_datasets",
+        "geospatial_datasets",
+        "cohorts",
+        "chemical_watchlist",
+        "research_reviews",
+        "hew_resource_library"
+      ],
+      "counts": {
+        "exposure_health_associations": 1,
+        "clinical_epidemiology": 1,
+        "research_datasets": 0,
+        "geospatial_datasets": 0,
+        "cohorts": 0,
+        "chemical_watchlist": 0,
+        "research_reviews": 0,
+        "hew_resource_library": 1,
+        "article_methods": 1
+      },
+      "knowledge_space": {
+        "records": 1,
+        "clusters": 1,
+        "priority_items": 1,
+        "large_scale_mode": false,
+        "umap": "single_record"
+      },
+      "generated_at": "2026-08-21T15:53:54Z"
+    }
+  },
+  "updated_at": "2026-08-21T15:53:54Z"
+}

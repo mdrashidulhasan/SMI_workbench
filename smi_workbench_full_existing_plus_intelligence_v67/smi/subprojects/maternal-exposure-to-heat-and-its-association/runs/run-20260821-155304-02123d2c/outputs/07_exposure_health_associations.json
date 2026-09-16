@@ -1,0 +1,21 @@
+[
+  {
+    "exposure_name": "heat/temperature",
+    "exposure_type": "non-chemical stressor",
+    "health_outcome": "miscarriage",
+    "population": "pregnancies / pregnant women",
+    "study_design": "population-based cohort study",
+    "effect_direction": "higher miscarriage odds with additional preconception hot days; no clear association for the immediate pre-outcome window",
+    "effect_estimate": "preconception/T1: OR 1.26 (95% CI 1.15-1.38); pre-outcome/T2: OR 0.94 (95% CI 0.73-1.20)",
+    "sample_size": "3477 pregnancies",
+    "population_size": "not reported",
+    "statistical_methods": "binary logistic regression",
+    "evidence_sentence": "Each additional hot day during T1 was associated with a 26% higher odds of miscarriage (odds ratio: 1.26; 95% confidence interval: 1.15-1.38).",
+    "citation": "PMID: 39066467",
+    "source_title": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study",
+    "confidence": "high",
+    "id": "assoc-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

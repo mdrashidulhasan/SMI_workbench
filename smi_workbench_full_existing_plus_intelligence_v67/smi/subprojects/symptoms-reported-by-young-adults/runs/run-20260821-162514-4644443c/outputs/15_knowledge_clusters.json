@@ -1,0 +1,18 @@
+[
+  {
+    "cluster_id": 1,
+    "theme": "wildfire smoke + asthma",
+    "article_count": 1,
+    "cluster_method": "agglomerative_cosine",
+    "articles": [
+      {
+        "article_id": "PMID: 39340501",
+        "title": "Symptoms Reported by Young Adults With Asthma During Wildfire Smoke Season.",
+        "pca_x": 0.0,
+        "pca_y": 0.0,
+        "umap_x": 0.0,
+        "umap_y": 0.0
+      }
+    ]
+  }
+]

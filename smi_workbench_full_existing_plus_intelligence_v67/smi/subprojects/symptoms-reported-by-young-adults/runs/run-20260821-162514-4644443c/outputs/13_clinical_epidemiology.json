@@ -1,0 +1,27 @@
+[
+  {
+    "evidence_type": "clinical trial / intervention study",
+    "population": "cohort participants",
+    "comparator": "not specified",
+    "predictor_or_exposure": "trial intervention / treatment exposure",
+    "health_outcome": "not extracted",
+    "study_design": "clinical trial / intervention study",
+    "effect_direction": "intervention effect evaluated",
+    "effect_estimate": "not extracted",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "study_period": "not specified",
+    "data_source": "not specified",
+    "recruitment_site": "not specified",
+    "enrollment_site": "not specified",
+    "study_site": "not specified",
+    "statistical_methods": "linear regression",
+    "evidence_sentence": "Asthma control was inversely related to AQ with increased exposure to poor AQ tied to poor asthma control.",
+    "citation": "PMID: 39340501",
+    "source_title": "Symptoms Reported by Young Adults With Asthma During Wildfire Smoke Season",
+    "confidence": "low",
+    "id": "clin-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

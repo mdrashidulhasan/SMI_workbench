@@ -1,0 +1,21 @@
+[
+  {
+    "article_id": "PMID: 38546088",
+    "title": "Geospatial Patterns of Non-Melanoma Skin Cancer in Relation to Climate Changes in Iran.",
+    "cluster_id": 1,
+    "pca_x": 0.0,
+    "pca_y": 0.0,
+    "umap_x": 0.0,
+    "umap_y": 0.0,
+    "x": 0.0,
+    "y": 0.0,
+    "priority_score": 0.505,
+    "effect_direction": "unclear",
+    "exposures": "",
+    "outcomes": "cancer",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "spatial autocorrelation analysis; General G statistic; Moran's I; spatial cluster analysis; Geographically Weighted Regression (GWR); detection-coefficient model accuracy evaluation",
+    "filter_text": "geospatial patterns of non-melanoma skin cancer in relation to climate changes in iran. pmid: 38546088 objective: the purpose of this study is to examine the impact of climate change factors on the incidence of skin cancer in iran.. methods: the statistical population for this study comprises skin cancer patients in iran. all other data used in this research were extracted from remote sensing imagery, including ultraviolet ray, relative humidity, cloud cover, incoming short-wave flux, elevation, and total hours of sunshine. initially, spatial autocorrelation analysis and cluster patterns were calculated using general g and moran's i indices. subsequently, a geographically weighted regression model was used to establish a regression relationship between the climate change data and the detection and forecasting rate of skin cancer. finally, the model's accuracy was evaluated by estimating the detection coefficient between the reality map and the forecasting map.. results: the study found that uv radiation and relative humidity exhibit the highest positive and negative correlation, respectively, with the skin cancer rate in iran. geostatistical analysis revealed a clustered spatial distribution of skin cancer rates, and the proposed gwr model demonstrated high accuracy in predicting the skin cancer rate. the results indicate the highest positive correlation (+0.51) for uv ray and the most negative correlation (-0.43) for relative humidity. the geostatistical analysis reveals spatial autocorrelation, cluster patterns, and non-randomness of the data.. conclusion: the detection rate of skin cancer increases from north to south and from west to east  cancer  "
+  }
+]

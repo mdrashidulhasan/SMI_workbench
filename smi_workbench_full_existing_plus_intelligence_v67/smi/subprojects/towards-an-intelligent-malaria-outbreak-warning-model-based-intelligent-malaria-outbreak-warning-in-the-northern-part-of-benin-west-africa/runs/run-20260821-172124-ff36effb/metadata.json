@@ -1,0 +1,324 @@
+{
+  "subproject": "towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa",
+  "run_id": "run-20260821-172124-ff36effb",
+  "created_at": "2026-08-21T17:21:24Z",
+  "config_path": "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/generated_configs/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa_20260821_132123.yaml",
+  "api_base_url": "https://dev.posit.niehs.nih.gov/et/api",
+  "state": "created",
+  "artifacts": {
+    "literature_search": {
+      "id": "references_581fc6220129430cbcc8e5464078ed15",
+      "recordCount": 1,
+      "databaseQueries": {
+        "pubmed": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa"
+      },
+      "successfulSources": [
+        "pubmed"
+      ],
+      "sourceErrors": [],
+      "sourceCounts": {
+        "pubmed": 1
+      }
+    },
+    "deduplication": {
+      "id": "references_7cb619edcaf74fa39753f6801c195fff",
+      "recordCount": 1,
+      "duplicateRecordCount": 0
+    },
+    "ai_screening": {
+      "chunked_ai_screening": true,
+      "screening_status": "screened_in_chunks",
+      "screening_mode": "record_level_local_decisions",
+      "references_id": "references_7cb619edcaf74fa39753f6801c195fff",
+      "applied_limit": 1000,
+      "requested_record_count": 1,
+      "processed_record_count": 1,
+      "screened_record_count": 1,
+      "retained_record_count": 1,
+      "decisionCounts": {
+        "Relevant": 1,
+        "Not relevant": 0,
+        "Unclear": 0
+      },
+      "chunk_size": 75,
+      "chunk_count": 1,
+      "parallel": false,
+      "max_workers": 1,
+      "completed_chunk_unit_count": 1,
+      "chunks": [
+        {
+          "recordCount": 1,
+          "sourceRecordCount": 1,
+          "decisionCounts": {
+            "Relevant": 1,
+            "Not relevant": 0,
+            "Unclear": 0
+          },
+          "chunk_index": 1,
+          "chunk_label": "AI screening chunk 1/1 (1 records)",
+          "chunk_size": 1,
+          "requested_reference_count": 1,
+          "processed_record_count": 1,
+          "retained_record_count": 1,
+          "excluded_record_count": 0,
+          "unclear_record_count": 0,
+          "source": "local_record_level_ai_screening",
+          "screening_mode": "record_level_local_decisions",
+          "records": [
+            {
+              "id": "PMID-38347490",
+              "pmid": "38347490",
+              "pmcid": "PMC10863265",
+              "title": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa.",
+              "doi": "10.1186/s12889-024-17847-w",
+              "authors": "Gbaguidi GJ, Topanou N, Filho WL, Ketoh GK",
+              "journal": "BMC public health",
+              "volume": "24",
+              "issue": "1",
+              "publicationDate": "2024-02-13",
+              "fullTextAvailable": true,
+              "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10863265/pdf/",
+              "abstract": "BACKGROUND: Malaria is one of the major vector-borne diseases most sensitive to climatic change in West Africa. The prevention and reduction of malaria are very difficult in Benin due to poverty, economic insatiability and the non control of environmental determinants. This study aims to develop an intelligent outbreak malaria early warning model driven by monthly time series climatic variables in the northern part of Benin. METHODS: Climate data from nine rain gauge stations and malaria incidence data from 2009 to 2021 were extracted from the National Meteorological Agency (METEO) and the Ministry of Health of Benin, respectively. Projected relative humidity and temperature were obtained from the coordinated regional downscaling experiment (CORDEX) simulations of the Rossby Centre Regional Atmospheric regional climate model (RCA4). A structural equation model was employed to determine the effects of climatic variables on malaria incidence. We developed an intelligent malaria early warning model to predict the prevalence of malaria using machine learning by applying three machine learning algorithms, including linear regression (LiR), support vector machine (SVM), and negative binomial regression (NBiR). RESULTS: Two ecological factors such as factor 1 (related to average mean relative humidity, average maximum relative humidity, and average maximal temperature) and factor 2 (related to average minimal temperature) affect the incidence of malaria. Support vector machine regression is the best-performing algorithm, predicting 82% of malaria incidence in the northern part of Benin. The projection reveals an increase in malaria incidence under RCP4.5 and RCP8.5 over the studied period. CONCLUSION: These results reveal that the northern part of Benin is at high risk of malaria, and specific malaria control programs are urged to reduce the risk of malaria.",
+              "index": 0,
+              "sourceIndex": 0,
+              "sourceId": "pubmed",
+              "database": "PubMed",
+              "databaseKey": "pubmed",
+              "pages": "",
+              "isbn": "",
+              "referenceIndex": 0,
+              "duplicate": false,
+              "ai_screening_decision": "Relevant",
+              "screening_decision": "Relevant"
+            }
+          ],
+          "decisions": [
+            {
+              "record_index": 1,
+              "record_label": "PMID 38347490",
+              "decision": "Relevant",
+              "retained": true,
+              "api_response_id": "references_07589ae0a3874b129e6f741d491ae756"
+            }
+          ]
+        }
+      ],
+      "screening_ids": [],
+      "records": [
+        {
+          "id": "PMID-38347490",
+          "pmid": "38347490",
+          "pmcid": "PMC10863265",
+          "title": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa.",
+          "doi": "10.1186/s12889-024-17847-w",
+          "authors": "Gbaguidi GJ, Topanou N, Filho WL, Ketoh GK",
+          "journal": "BMC public health",
+          "volume": "24",
+          "issue": "1",
+          "publicationDate": "2024-02-13",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10863265/pdf/",
+          "abstract": "BACKGROUND: Malaria is one of the major vector-borne diseases most sensitive to climatic change in West Africa. The prevention and reduction of malaria are very difficult in Benin due to poverty, economic insatiability and the non control of environmental determinants. This study aims to develop an intelligent outbreak malaria early warning model driven by monthly time series climatic variables in the northern part of Benin. METHODS: Climate data from nine rain gauge stations and malaria incidence data from 2009 to 2021 were extracted from the National Meteorological Agency (METEO) and the Ministry of Health of Benin, respectively. Projected relative humidity and temperature were obtained from the coordinated regional downscaling experiment (CORDEX) simulations of the Rossby Centre Regional Atmospheric regional climate model (RCA4). A structural equation model was employed to determine the effects of climatic variables on malaria incidence. We developed an intelligent malaria early warning model to predict the prevalence of malaria using machine learning by applying three machine learning algorithms, including linear regression (LiR), support vector machine (SVM), and negative binomial regression (NBiR). RESULTS: Two ecological factors such as factor 1 (related to average mean relative humidity, average maximum relative humidity, and average maximal temperature) and factor 2 (related to average minimal temperature) affect the incidence of malaria. Support vector machine regression is the best-performing algorithm, predicting 82% of malaria incidence in the northern part of Benin. The projection reveals an increase in malaria incidence under RCP4.5 and RCP8.5 over the studied period. CONCLUSION: These results reveal that the northern part of Benin is at high risk of malaria, and specific malaria control programs are urged to reduce the risk of malaria.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ]
+    },
+    "retrieved_records": {
+      "chunked_retrieval": true,
+      "source": "chunked_ai_screening_results",
+      "record_count": 1,
+      "applied_limit": 1000,
+      "records": [
+        {
+          "id": "PMID-38347490",
+          "pmid": "38347490",
+          "pmcid": "PMC10863265",
+          "title": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa.",
+          "doi": "10.1186/s12889-024-17847-w",
+          "authors": "Gbaguidi GJ, Topanou N, Filho WL, Ketoh GK",
+          "journal": "BMC public health",
+          "volume": "24",
+          "issue": "1",
+          "publicationDate": "2024-02-13",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10863265/pdf/",
+          "abstract": "BACKGROUND: Malaria is one of the major vector-borne diseases most sensitive to climatic change in West Africa. The prevention and reduction of malaria are very difficult in Benin due to poverty, economic insatiability and the non control of environmental determinants. This study aims to develop an intelligent outbreak malaria early warning model driven by monthly time series climatic variables in the northern part of Benin. METHODS: Climate data from nine rain gauge stations and malaria incidence data from 2009 to 2021 were extracted from the National Meteorological Agency (METEO) and the Ministry of Health of Benin, respectively. Projected relative humidity and temperature were obtained from the coordinated regional downscaling experiment (CORDEX) simulations of the Rossby Centre Regional Atmospheric regional climate model (RCA4). A structural equation model was employed to determine the effects of climatic variables on malaria incidence. We developed an intelligent malaria early warning model to predict the prevalence of malaria using machine learning by applying three machine learning algorithms, including linear regression (LiR), support vector machine (SVM), and negative binomial regression (NBiR). RESULTS: Two ecological factors such as factor 1 (related to average mean relative humidity, average maximum relative humidity, and average maximal temperature) and factor 2 (related to average minimal temperature) affect the incidence of malaria. Support vector machine regression is the best-performing algorithm, predicting 82% of malaria incidence in the northern part of Benin. The projection reveals an increase in malaria incidence under RCP4.5 and RCP8.5 over the studied period. CONCLUSION: These results reveal that the northern part of Benin is at high risk of malaria, and specific malaria control programs are urged to reduce the risk of malaria.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ],
+      "chunk_results": [
+        {
+          "chunk_index": 1,
+          "source": "records_embedded_in_ai_screening_chunk",
+          "record_count": 1
+        }
+      ]
+    },
+    "pdf_download": {
+      "enabled": true,
+      "status": "success",
+      "source": "api_original_pdf_download_batched_resilient",
+      "requested_reference_count": 1,
+      "batch_size": 1,
+      "min_batch_size": 1,
+      "batch_count": 1,
+      "parallel": false,
+      "max_workers": 20,
+      "row_level_pdfs": true,
+      "completed_batch_unit_count": 1,
+      "successful_pdf_count": 1,
+      "package_zip_count": 2,
+      "failed_batch_count": 0,
+      "pdfs": [
+        {
+          "title": "API-1",
+          "fileName": "API-1.pdf",
+          "localPath": "smi/subprojects/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa/runs/run-20260821-172124-ff36effb/outputs/pdfs/api_original_pdfs/API-1.pdf",
+          "status": "downloaded",
+          "source": "original_api_pdf_zip",
+          "is_original_pdf": true,
+          "zipSource": "PDF batch 1-1 -1 references-pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+          "zipMemberName": "API-1.pdf",
+          "pdfTextProbe": "PDF-1.4 1 0 obj /Keywords(Climate change;Malaria;Prediction;Northern Benin)/CrossMarkDomains 5b1 5d(springer.com)/Creator(Adobe InDesign 15.1 (Windows ))/ModDate(D:20240213014833+01 00 )/Trapped/False/CreationDate(D:20240212154050Z)/CrossmarkMajorVersionDate(2010-04-23)/Subject(BMC Public Health, https://doi.org/10.1186/s12889-024-17847-w)/Author( Gouvid Jean Gbaguidi )/Title(Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa)/CrossmarkDomainExclusive(true)/robots(noindex)/Producer(Adobe PDF Library 15.0; modified using iText 5.3.5 2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version ))/doi(10.1186/s12889-024-17847-w)/CrossMarkDomains 5b2 5d(springerlink.com) endobj 2 0 obj /Subtype/XML/Type/Metadata/Length 30194 stream xpacket begin id W5M0MpCehiHzreSzNTczkc9d x:xmpmeta x:xmptk Adobe XMP Core 5.6-c015 81.159809, 2016/11/11-01:42:16 xmlns:x adobe:ns:meta/ rdf:RDF xmlns:rdf http://www.w3.org/1999/02/22-rdf-syntax-ns rdf:Description rdf:about xmlns:crossmark http://crossref.org/crossmark/1.0/ xmlns:dc http://purl.org/dc/elements/1.1/ xmlns:pdf http://ns.adobe.com/pdf/1.3/ xmlns:pdfaExtension http://www.aiim.org/pdfa/ns/extension/ xmlns:pdfaField http://www.aiim.org/pdfa/ns/field xmlns:pdfaProperty http://www.aiim.org/pdfa/ns/property xmlns:pdfaSchema http://www.aiim.org/pdfa/ns/schema xmlns:pdfaType http://www.aiim.org/pdfa/ns/type xmlns:pdfaid http://www.aiim.org/pdfa/ns/id/ xmlns:pdfx http://ns.adobe.com/pdfx/1.3/ xmlns:prism http://prismstandard.org/namespaces/basic/2.0/ xmlns:stEvt http://ns.adobe.com/xap/1.0/sType/ResourceEvent xmlns:xmp http://ns.adobe.com/xap/1.0/ xmlns:xmpMM http://ns.adobe.com/xap/1.0/mm/ xmp:CreateDate 2024-02-12T15:40:50 /xmp:CreateDate xmp:CreatorTool Adobe InDesign 15.1 (Windows) /xmp:CreatorTool xmp:ModifyDate 2024-02-13T01:48:33+01:00 /xmp:ModifyDate xmp:MetadataDate 2024-02-13T01:48:33+01:00 /xmp:MetadataDate pdf:Producer Adobe PDF Library 15.0; modified using iText 5.3.5 2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version) /pdf:Producer pdf:Keywords Climate change;Malaria;Prediction;Northern Benin /pdf:Keywords pdf:Trapped False /pdf:Trapped dc:format application/pdf /dc:format dc:identifier https://doi.org/10.1186/s12889-024-17847-w /dc:identifier dc:publisher rdf:Bag rdf:li BioMed Central /rdf:li /rdf:Bag /dc:publisher dc:description rdf:Alt rdf:li xml:lang x-default BMC Public Health, https://doi.org/10.1186/s12889-024-17847-w /rdf:li /rdf:Alt /dc:description dc:subject rdf:Bag rdf:li Climate change /rdf:li rdf:li Malaria /rdf:li rdf:li Prediction /rdf:li rdf:li Northern Benin /rdf:li /rdf:Bag /dc:subject dc:title rdf:Alt rdf:li xml:lang x-default Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa /rdf:li /rdf:Alt /dc:title dc:creator rdf:Seq rdf:li Gouvid Jean Gbaguidi /rdf:li rdf:li Nikita Topanou /rdf:li rdf:li Walter Leal Filho /rdf:li rdf:li Guillaume K. Ketoh /rdf:li /rdf:Seq /dc:creator crossmark:DOI 10.1186/s12889-024-17847-w /crossmark:DOI crossmark:MajorVersionDate 2010-04-23 /crossmark:MajorVersionDate crossmark:CrossmarkDomainExclusive true /crossmark:CrossmarkDomainExclusive crossmark:CrossMarkDomains rdf:Seq rdf:li springer.com /rdf:li rdf:li springerlink.com /rdf:li /rdf:Seq /crossmark:CrossMarkDomains prism:url https://doi.org/10.1186/s12889-024-17847-w /prism:url prism:doi 10.1186/s12889-024-17847-w /prism:doi prism:issn 1471-2458 /prism:issn prism:aggregationType journal /prism:aggregationType prism:publicationName BMC Public Health /prism:publicationName prism:copyright The Author(s) /prism:copyright pdfx:CrossmarkMajorVersionDate 2010-04-23 /pdfx:CrossmarkMajorVersionDate pdfx:CrossmarkDomainExclusive true /pdfx:CrossmarkDomainExclusive pdfx:doi 10.1186/s12889-024-17847-w /pdfx:doi pdfx:robots noindex /pdfx:robots pdfx:CrossMarkDomains rdf:Seq rdf:li springer.com /rdf:li rdf:li springerlink.com /rdf:li /rdf:Seq /pdfx:CrossMarkDomains xmpMM:DocumentID uuid:eb6d95fe-895c-4687-8176-06b3ff25f229 /xmpMM:DocumentID xmpMM:InstanceID uuid:4e6bd407-e03c-4dc7-98a3-a261a5c99376 /xmpMM:InstanceID xmpMM:RenditionClass default /xmpMM:RenditionClass xmpMM:VersionID 1 /xmpMM:VersionID xmpMM:History rdf:Seq rdf:li rdf:parseType Resource stEvt:action converted /stEvt:action stEvt:instanceID uuid:eb6d95fe-895c-4687-8176-06b3ff25f229 /stEvt:instanceID stEvt:parameters converted to PDF/A-2b /stEvt:parameters stEvt:softwareAgent pdfToolbox /stEvt:softwareAgent stEvt:when 2024-02-13T00:09:17Z /stEvt:when /rdf:li /rdf:Seq /xmpMM:History pdfaid:part 2 /pdfaid:part pdfaid:conformance B /pdfaid:conformance pdfaExtension:schemas rdf:Bag rdf:li rdf:parseType Resource pdfaSchema:namespaceURI http://ns.adobe.com/pdfx/1.3/ /pdfaSchema:namespaceURI pdfaSchema:prefix pdfx /pdfaSchema:prefix pdfaSchema:schema Adobe Document Info PDF eXtension Schema /pdfaSchema:schema pdfaSchema:property rdf:Seq rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description Mirrors crossmark:MajorVersionDate /pdfaProperty:description pdfaProperty:name CrossmarkMajorVersionDate /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description Mirrors crossmark:CrossmarkDomainExclusive /pdfaProperty:description pdfaProperty:name CrossmarkDomainExclusive /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Mirrors crossmark:DOI /pdfaProperty:description pdfaProperty:name doi /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description Mirrors crossmark:CrosMarkDomains /pdfaProperty:description pdfaProperty:name CrossMarkDomains /pdfaProperty:name pdfaProperty:valueType seq Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description A name object indicating whether the document has been modified to include trapping information /pdfaProperty:description pdfaProperty:name robots /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description ID of PDF/X standard /pdfaProperty:description pdfaProperty:name GTS_PDFXVersion /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Conformance level of PDF/X standard /pdfaProperty:description pdfaProperty:name GTS_PDFXConformance /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Company creating the PDF /pdfaProperty:description pdfaProperty:name Company /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Date when document was last modified /pdfaProperty:description pdfaProperty:name SourceModified /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li /rdf:Seq /pdfaSchema:property /rdf:li rdf:li rdf:parseType Resource pdfaSchema:namespaceURI http://crossref.org/crossmark/1.0/ /pdfaSchema:namespaceURI pdfaSchema:prefix crossmark /pdfaSchema:prefix pdfaSchema:schema Crossmark Schema /pdfaSchema:schema pdfaSchema:property rdf:Seq rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Usual same as prism:doi /pdfaProperty:description pdfaProperty:name DOI /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description The date when a publication was publishe. /pdfaProperty:description pdfaProperty:name MajorVersionDate /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description CrossmarkDomainExclusive /pdfaProperty:description pdfaProperty:name CrossmarkDomainExclusive /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description CrossMarkDomains /pdfaProperty:description pdfaProperty:name CrossMarkDomains /pdfaProperty:name pdfaProperty:valueType seq Text /pdfaProperty:valueType /rdf:li /rdf:Seq /pdfaSchema:property /rdf:li rdf:li rdf:parseType Resource pdfaSchema:namespaceURI http://prismstandard.org/namespaces/basic/2.0/ /pdfaSchema:namespaceURI pdfaSchema:prefix prism /pdfaSchema:prefix pdfaSchema:schema Prism Schema /pdfaSchema:schema pdfaSchema:property rdf:Seq rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description This element provides the url for an article or unit of content. The attribute platform is optionally allowed for situations in which multiple URLs must be specified. PRISM recommends that a subset of the PCV platform values, namely mobile and web , be used in conjunction with this element. NOTE: PRISM recommends against the use of the other value allowed in the PRISM Platform controlled vocabulary. In lieu of using other please reach out to the PRISM group at prism-wg yahoogroups.com to request addition of your term to the Platform Controlled Vocabulary. /pdfaProperty:description pdfaProperty:name url /pdfaProperty:name pdfaProperty:valueType URI /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description The Digital Object Identifier for the article. The DOI may also be used as the dc:identifier. If used as a dc:identifier, the URI form should be captured, and the bare identifier should also be captured using prism:doi. If an alternate unique identifier is used as the required dc:identifier, then the DOI should be specified as a bare identifier within prism:doi only. If the URL associated with a DOI is to be specified, then prism:url may be used in conjunction with prism:doi in order to provide the service endpoint (i.e. the URL). /pdfaProperty:description pdfaProperty:name doi /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description ISSN for an electronic version of the issue in which the resource occurs. Permits publishers to include a second ISSN, identifying an electronic version of the issue in which the resource occurs (therefore e(lectronic)Issn. If used, prism:eIssn MUST contain the ISSN of the electronic version. /pdfaProperty:description pdfaProperty:name issn /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Volume number /pdfaProperty:description pdfaProperty:name volume /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Issue number /pdfaProperty:description pdfaProperty:name number /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Starting page /pdfaProperty:description pdfaProperty:",
+          "pmid": "38347490",
+          "PMID": "38347490",
+          "pmcid": "PMC10863265",
+          "PMCID": "PMC10863265",
+          "doi": "10.1186/s12889-024-17847-w",
+          "DOI": "10.1186/s12889-024-17847-w",
+          "sourceRecordTitle": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa.",
+          "mappedBy": "single_reference_zip"
+        }
+      ],
+      "packageZips": [
+        {
+          "fileName": "row_level_article_pdfs.zip",
+          "localZipPath": "smi/subprojects/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa/runs/run-20260821-172124-ff36effb/outputs/pdfs/row_level_article_pdfs.zip",
+          "relativePath": "smi/subprojects/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa/runs/run-20260821-172124-ff36effb/outputs/pdfs/row_level_article_pdfs.zip",
+          "batchLabel": "Combined row-level article PDF package",
+          "sizeBytes": 3346437,
+          "pdfCount": 1,
+          "source": "local_package_from_row_level_pdfs"
+        },
+        {
+          "fileName": "PDF batch 1-1 -1 references-pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+          "localZipPath": "smi/subprojects/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa/runs/run-20260821-172124-ff36effb/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+          "relativePath": "smi/subprojects/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa/runs/run-20260821-172124-ff36effb/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+          "batchLabel": "PDF batch 1/1 (1 references)",
+          "sizeBytes": 3346261
+        }
+      ],
+      "batch_results": [
+        {
+          "id": "pdfs_4a48de64c4254dd0a36ab3edbd2f18ba",
+          "sourceId": "references_4852f162391f4c0e903d310c005926ea",
+          "sourceType": "references",
+          "status": "downloaded",
+          "recordCount": 1,
+          "downloadedCount": 1,
+          "manualRequiredCount": 0,
+          "failedCount": 0,
+          "skippedCount": 0,
+          "zipFileCount": 1,
+          "fileName": "pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+          "downloadUrl": "/api/pdf-downloads/pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+          "records": [
+            {
+              "id": "API-1",
+              "title": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa.",
+              "doi": "10.1186/s12889-024-17847-w",
+              "pmcid": "PMC10863265",
+              "status": "downloaded",
+              "filePath": "/opt/rstudio-connect/mnt/app/data/pdfs/tools/pdfs_4a48de64c4254dd0a36ab3edbd2f18ba/API-1.pdf",
+              "errorMessage": ""
+            }
+          ],
+          "errorMessage": "",
+          "localZipPath": "smi/subprojects/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa/runs/run-20260821-172124-ff36effb/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+          "pdfs": [
+            {
+              "title": "API-1",
+              "fileName": "API-1.pdf",
+              "localPath": "smi/subprojects/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa/runs/run-20260821-172124-ff36effb/outputs/pdfs/api_original_pdfs/API-1.pdf",
+              "status": "downloaded",
+              "source": "original_api_pdf_zip",
+              "is_original_pdf": true,
+              "zipSource": "PDF batch 1-1 -1 references-pdfs_4a48de64c4254dd0a36ab3edbd2f18ba.zip",
+              "zipMemberName": "API-1.pdf",
+              "pdfTextProbe": "PDF-1.4 1 0 obj /Keywords(Climate change;Malaria;Prediction;Northern Benin)/CrossMarkDomains 5b1 5d(springer.com)/Creator(Adobe InDesign 15.1 (Windows ))/ModDate(D:20240213014833+01 00 )/Trapped/False/CreationDate(D:20240212154050Z)/CrossmarkMajorVersionDate(2010-04-23)/Subject(BMC Public Health, https://doi.org/10.1186/s12889-024-17847-w)/Author( Gouvid Jean Gbaguidi )/Title(Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa)/CrossmarkDomainExclusive(true)/robots(noindex)/Producer(Adobe PDF Library 15.0; modified using iText 5.3.5 2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version ))/doi(10.1186/s12889-024-17847-w)/CrossMarkDomains 5b2 5d(springerlink.com) endobj 2 0 obj /Subtype/XML/Type/Metadata/Length 30194 stream xpacket begin id W5M0MpCehiHzreSzNTczkc9d x:xmpmeta x:xmptk Adobe XMP Core 5.6-c015 81.159809, 2016/11/11-01:42:16 xmlns:x adobe:ns:meta/ rdf:RDF xmlns:rdf http://www.w3.org/1999/02/22-rdf-syntax-ns rdf:Description rdf:about xmlns:crossmark http://crossref.org/crossmark/1.0/ xmlns:dc http://purl.org/dc/elements/1.1/ xmlns:pdf http://ns.adobe.com/pdf/1.3/ xmlns:pdfaExtension http://www.aiim.org/pdfa/ns/extension/ xmlns:pdfaField http://www.aiim.org/pdfa/ns/field xmlns:pdfaProperty http://www.aiim.org/pdfa/ns/property xmlns:pdfaSchema http://www.aiim.org/pdfa/ns/schema xmlns:pdfaType http://www.aiim.org/pdfa/ns/type xmlns:pdfaid http://www.aiim.org/pdfa/ns/id/ xmlns:pdfx http://ns.adobe.com/pdfx/1.3/ xmlns:prism http://prismstandard.org/namespaces/basic/2.0/ xmlns:stEvt http://ns.adobe.com/xap/1.0/sType/ResourceEvent xmlns:xmp http://ns.adobe.com/xap/1.0/ xmlns:xmpMM http://ns.adobe.com/xap/1.0/mm/ xmp:CreateDate 2024-02-12T15:40:50 /xmp:CreateDate xmp:CreatorTool Adobe InDesign 15.1 (Windows) /xmp:CreatorTool xmp:ModifyDate 2024-02-13T01:48:33+01:00 /xmp:ModifyDate xmp:MetadataDate 2024-02-13T01:48:33+01:00 /xmp:MetadataDate pdf:Producer Adobe PDF Library 15.0; modified using iText 5.3.5 2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version) /pdf:Producer pdf:Keywords Climate change;Malaria;Prediction;Northern Benin /pdf:Keywords pdf:Trapped False /pdf:Trapped dc:format application/pdf /dc:format dc:identifier https://doi.org/10.1186/s12889-024-17847-w /dc:identifier dc:publisher rdf:Bag rdf:li BioMed Central /rdf:li /rdf:Bag /dc:publisher dc:description rdf:Alt rdf:li xml:lang x-default BMC Public Health, https://doi.org/10.1186/s12889-024-17847-w /rdf:li /rdf:Alt /dc:description dc:subject rdf:Bag rdf:li Climate change /rdf:li rdf:li Malaria /rdf:li rdf:li Prediction /rdf:li rdf:li Northern Benin /rdf:li /rdf:Bag /dc:subject dc:title rdf:Alt rdf:li xml:lang x-default Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa /rdf:li /rdf:Alt /dc:title dc:creator rdf:Seq rdf:li Gouvid Jean Gbaguidi /rdf:li rdf:li Nikita Topanou /rdf:li rdf:li Walter Leal Filho /rdf:li rdf:li Guillaume K. Ketoh /rdf:li /rdf:Seq /dc:creator crossmark:DOI 10.1186/s12889-024-17847-w /crossmark:DOI crossmark:MajorVersionDate 2010-04-23 /crossmark:MajorVersionDate crossmark:CrossmarkDomainExclusive true /crossmark:CrossmarkDomainExclusive crossmark:CrossMarkDomains rdf:Seq rdf:li springer.com /rdf:li rdf:li springerlink.com /rdf:li /rdf:Seq /crossmark:CrossMarkDomains prism:url https://doi.org/10.1186/s12889-024-17847-w /prism:url prism:doi 10.1186/s12889-024-17847-w /prism:doi prism:issn 1471-2458 /prism:issn prism:aggregationType journal /prism:aggregationType prism:publicationName BMC Public Health /prism:publicationName prism:copyright The Author(s) /prism:copyright pdfx:CrossmarkMajorVersionDate 2010-04-23 /pdfx:CrossmarkMajorVersionDate pdfx:CrossmarkDomainExclusive true /pdfx:CrossmarkDomainExclusive pdfx:doi 10.1186/s12889-024-17847-w /pdfx:doi pdfx:robots noindex /pdfx:robots pdfx:CrossMarkDomains rdf:Seq rdf:li springer.com /rdf:li rdf:li springerlink.com /rdf:li /rdf:Seq /pdfx:CrossMarkDomains xmpMM:DocumentID uuid:eb6d95fe-895c-4687-8176-06b3ff25f229 /xmpMM:DocumentID xmpMM:InstanceID uuid:4e6bd407-e03c-4dc7-98a3-a261a5c99376 /xmpMM:InstanceID xmpMM:RenditionClass default /xmpMM:RenditionClass xmpMM:VersionID 1 /xmpMM:VersionID xmpMM:History rdf:Seq rdf:li rdf:parseType Resource stEvt:action converted /stEvt:action stEvt:instanceID uuid:eb6d95fe-895c-4687-8176-06b3ff25f229 /stEvt:instanceID stEvt:parameters converted to PDF/A-2b /stEvt:parameters stEvt:softwareAgent pdfToolbox /stEvt:softwareAgent stEvt:when 2024-02-13T00:09:17Z /stEvt:when /rdf:li /rdf:Seq /xmpMM:History pdfaid:part 2 /pdfaid:part pdfaid:conformance B /pdfaid:conformance pdfaExtension:schemas rdf:Bag rdf:li rdf:parseType Resource pdfaSchema:namespaceURI http://ns.adobe.com/pdfx/1.3/ /pdfaSchema:namespaceURI pdfaSchema:prefix pdfx /pdfaSchema:prefix pdfaSchema:schema Adobe Document Info PDF eXtension Schema /pdfaSchema:schema pdfaSchema:property rdf:Seq rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description Mirrors crossmark:MajorVersionDate /pdfaProperty:description pdfaProperty:name CrossmarkMajorVersionDate /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description Mirrors crossmark:CrossmarkDomainExclusive /pdfaProperty:description pdfaProperty:name CrossmarkDomainExclusive /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Mirrors crossmark:DOI /pdfaProperty:description pdfaProperty:name doi /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description Mirrors crossmark:CrosMarkDomains /pdfaProperty:description pdfaProperty:name CrossMarkDomains /pdfaProperty:name pdfaProperty:valueType seq Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description A name object indicating whether the document has been modified to include trapping information /pdfaProperty:description pdfaProperty:name robots /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description ID of PDF/X standard /pdfaProperty:description pdfaProperty:name GTS_PDFXVersion /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Conformance level of PDF/X standard /pdfaProperty:description pdfaProperty:name GTS_PDFXConformance /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Company creating the PDF /pdfaProperty:description pdfaProperty:name Company /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Date when document was last modified /pdfaProperty:description pdfaProperty:name SourceModified /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li /rdf:Seq /pdfaSchema:property /rdf:li rdf:li rdf:parseType Resource pdfaSchema:namespaceURI http://crossref.org/crossmark/1.0/ /pdfaSchema:namespaceURI pdfaSchema:prefix crossmark /pdfaSchema:prefix pdfaSchema:schema Crossmark Schema /pdfaSchema:schema pdfaSchema:property rdf:Seq rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Usual same as prism:doi /pdfaProperty:description pdfaProperty:name DOI /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description The date when a publication was publishe. /pdfaProperty:description pdfaProperty:name MajorVersionDate /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description CrossmarkDomainExclusive /pdfaProperty:description pdfaProperty:name CrossmarkDomainExclusive /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description CrossMarkDomains /pdfaProperty:description pdfaProperty:name CrossMarkDomains /pdfaProperty:name pdfaProperty:valueType seq Text /pdfaProperty:valueType /rdf:li /rdf:Seq /pdfaSchema:property /rdf:li rdf:li rdf:parseType Resource pdfaSchema:namespaceURI http://prismstandard.org/namespaces/basic/2.0/ /pdfaSchema:namespaceURI pdfaSchema:prefix prism /pdfaSchema:prefix pdfaSchema:schema Prism Schema /pdfaSchema:schema pdfaSchema:property rdf:Seq rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description This element provides the url for an article or unit of content. The attribute platform is optionally allowed for situations in which multiple URLs must be specified. PRISM recommends that a subset of the PCV platform values, namely mobile and web , be used in conjunction with this element. NOTE: PRISM recommends against the use of the other value allowed in the PRISM Platform controlled vocabulary. In lieu of using other please reach out to the PRISM group at prism-wg yahoogroups.com to request addition of your term to the Platform Controlled Vocabulary. /pdfaProperty:description pdfaProperty:name url /pdfaProperty:name pdfaProperty:valueType URI /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description The Digital Object Identifier for the article. The DOI may also be used as the dc:identifier. If used as a dc:identifier, the URI form should be captured, and the bare identifier should also be captured using prism:doi. If an alternate unique identifier is used as the required dc:identifier, then the DOI should be specified as a bare identifier within prism:doi only. If the URL associated with a DOI is to be specified, then prism:url may be used in conjunction with prism:doi in order to provide the service endpoint (i.e. the URL). /pdfaProperty:description pdfaProperty:name doi /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category external /pdfaProperty:category pdfaProperty:description ISSN for an electronic version of the issue in which the resource occurs. Permits publishers to include a second ISSN, identifying an electronic version of the issue in which the resource occurs (therefore e(lectronic)Issn. If used, prism:eIssn MUST contain the ISSN of the electronic version. /pdfaProperty:description pdfaProperty:name issn /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Volume number /pdfaProperty:description pdfaProperty:name volume /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Issue number /pdfaProperty:description pdfaProperty:name number /pdfaProperty:name pdfaProperty:valueType Text /pdfaProperty:valueType /rdf:li rdf:li rdf:parseType Resource pdfaProperty:category internal /pdfaProperty:category pdfaProperty:description Starting page /pdfaProperty:description pdfaProperty:",
+              "pmid": "38347490",
+              "PMID": "38347490",
+              "pmcid": "PMC10863265",
+              "PMCID": "PMC10863265",
+              "doi": "10.1186/s12889-024-17847-w",
+              "DOI": "10.1186/s12889-024-17847-w",
+              "sourceRecordTitle": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa.",
+              "mappedBy": "single_reference_zip"
+            }
+          ],
+          "source": "api_original_pdf_download",
+          "batch_index": 1,
+          "batch_label": "PDF batch 1/1 (1 references)",
+          "batch_size": 1,
+          "requested_reference_count": 1
+        }
+      ],
+      "batch_errors": [],
+      "localZipPath": "smi/subprojects/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa/runs/run-20260821-172124-ff36effb/outputs/pdfs/row_level_article_pdfs.zip",
+      "fileName": "row_level_article_pdfs.zip"
+    },
+    "intelligence_extraction": {
+      "enabled": true,
+      "modules": [
+        "exposure_health_associations",
+        "clinical_epidemiology",
+        "research_datasets",
+        "geospatial_datasets",
+        "cohorts",
+        "chemical_watchlist",
+        "research_reviews",
+        "hew_resource_library"
+      ],
+      "counts": {
+        "exposure_health_associations": 2,
+        "clinical_epidemiology": 1,
+        "research_datasets": 0,
+        "geospatial_datasets": 0,
+        "cohorts": 0,
+        "chemical_watchlist": 0,
+        "research_reviews": 0,
+        "hew_resource_library": 1,
+        "article_methods": 1
+      },
+      "knowledge_space": {
+        "records": 1,
+        "clusters": 1,
+        "priority_items": 1,
+        "large_scale_mode": false,
+        "umap": "single_record"
+      },
+      "generated_at": "2026-08-21T17:21:38Z"
+    }
+  },
+  "updated_at": "2026-08-21T17:21:38Z"
+}

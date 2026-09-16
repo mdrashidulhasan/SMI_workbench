@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% set page_title = "Workflow Submitted" %}
+{% set page_kicker = "Run" %}
+{% set page_subtitle = subproject_slug if subproject_slug is defined else "Workflow result" %}
+{% block content %}
+{% if running_in_background and job_id %}
+<script>
+setTimeout(function(){
+  window.location.href = "{{ connect_app_base }}/runs/status?subproject={{ subproject_slug }}&run_id={{ run_id }}&job_id={{ job_id }}";
+}, 5000);
+</script>
+{% endif %}
+{% if running_in_background %}
+  <div class="notice warn">Workflow was started in the background. This page will refresh to the live status page. You can stop it below or open Outputs to check progress.</div>
+{% elif failed %}
+  <div class="notice danger">The workflow started but one command failed. The details are available below.</div>
+{% elif needs_approval %}
+  <div class="notice warn">{{ pause_info.message }} Checkpoint: <b>{{ pause_info.approval_checkpoint }}</b></div>
+{% else %}
+  <div class="notice">Workflow completed or advanced successfully.</div>
+{% endif %}
+
+<div class="card">
+  <h2>Run status</h2>
+  <div class="grid">
+    <div class="metric"><div class="label">Project</div><div class="value" style="font-size:18px;">{{ subproject_slug }}</div></div>
+    <div class="metric"><div class="label">Run</div><div class="value" style="font-size:18px;">{{ run_id or 'Creating' }}</div></div>
+    <div class="metric"><div class="label">Current state</div><div class="value" style="font-size:18px;">{% if running_in_background %}started / running{% elif run_summary %}{{ run_summary.state }}{% elif failed %}failed{% else %}submitted{% endif %}</div></div>
+    <div class="metric"><div class="label">Current step</div><div class="value" style="font-size:18px;">{% if running_in_background %}live workflow{% elif run_summary %}{{ run_summary.current_step }}{% elif failed %}error{% else %}workflow{% endif %}</div></div>
+  </div>
+  {% if run_summary %}
+  <div class="grid" style="margin-top:16px;">
+    <div class="metric"><div class="label">Search records</div><div class="value">{{ run_summary.search_records }}</div></div>
+    <div class="metric"><div class="label">Retrieved records</div><div class="value">{{ run_summary.retrieved_records }}</div></div>
+    <div class="metric"><div class="label">PDF downloads</div><div class="value">{{ run_summary.pdf_downloads }}</div></div>
+    <div class="metric"><div class="label">Created</div><div class="value" style="font-size:15px;">{{ run_summary.created_at or 'n/a' }}</div></div>
+  </div>
+  {% endif %}
+
+  {% if ai_progress and ai_progress.available %}
+  <div class="card" style="margin-top:16px;">
+    <h2>AI screening count</h2>
+    <div class="metric">
+      <div class="label">Screened records</div>
+      <div class="value">{{ ai_progress.label }}</div>
+      <div class="small muted">Updates after each completed AI-screening chunk. {{ ai_progress.percent }}% complete.</div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if pdf_progress and pdf_progress.available %}
+  <div class="card" style="margin-top:16px;">
+    <h2>PDF download count</h2>
+    <div class="metric">
+      <div class="label">Processed PDF references</div>
+      <div class="value">{{ pdf_progress.label }}</div>
+      <div class="small muted">Updates after each completed PDF batch. {{ pdf_progress.percent }}% complete{% if pdf_progress.details %}. {{ pdf_progress.details }}{% endif %}.</div>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="actions" style="margin-top:18px;">
+    {% if running_in_background and job_id %}
+    <form method="post" action="{{ connect_app_base }}/runs/stop" onsubmit="return confirm('Stop this workflow run now?');">
+      <input type="hidden" name="job_id" value="{{ job_id }}">
+      <input type="hidden" name="subproject" value="{{ subproject_slug }}">
+      <input type="hidden" name="run_id" value="{{ run_id }}">
+      <input type="hidden" name="return_to" value="outputs">
+      <button type="submit" class="button-red">Stop Run</button>
+    </form>
+    {% endif %}
+    <a class="button" href="{{ connect_app_base }}/outputs?subproject={{ subproject_slug }}{% if run_id %}&run_id={{ run_id }}{% endif %}">Open Outputs / PDFs</a>
+    <a class="button button-light" href="{{ connect_app_base }}/intelligence?subproject={{ subproject_slug }}{% if run_id %}&run_id={{ run_id }}{% endif %}">Open Intelligence</a>
+    <a class="button button-light" href="{{ connect_app_base }}/approvals?subproject={{ subproject_slug }}{% if run_id %}&run_id={{ run_id }}{% endif %}">Approvals</a>
+    <a class="button button-light" href="{{ connect_app_base }}/statistics?subproject={{ subproject_slug }}{% if run_id %}&run_id={{ run_id }}{% endif %}">Statistics</a>
+    {% if job_log_url %}<a class="button button-light" href="{{ job_log_url }}" target="_blank">View live log</a>{% endif %}
+  </div>
+</div>
+
+<div class="card">
+  <h2>What happened</h2>
+  <table>
+    <tr><th>Step</th><th>Status</th><th>Note</th></tr>
+    {% for item in command_outputs %}
+    <tr>
+      <td><code>{{ item.command.split(' ')[-1] }}</code></td>
+      <td>
+        {% if item.code == 0 %}<span class="chip">OK</span>
+        {% elif item.code == 'running' %}<span class="chip chip-gray">Running</span>
+        {% else %}<span class="chip chip-red">Failed</span>{% endif %}
+      </td>
+      <td>{% if item.stdout %}{{ item.stdout.split('\n')[0] }}{% elif item.stderr %}{{ item.stderr.split('\n')[0] }}{% else %}No message{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+<details class="card">
+  <summary style="cursor:pointer;font-weight:900;">Show technical command log</summary>
+  <div style="margin-top:14px;">
+    {% for item in command_outputs %}
+      <h3>$ {{ item.command }}</h3>
+      <p>Exit code: {{ item.code }}</p>
+      {% if item.stdout %}<pre>{{ item.stdout }}</pre>{% endif %}
+      {% if item.stderr %}<pre>{{ item.stderr }}</pre>{% endif %}
+    {% endfor %}
+  </div>
+</details>
+{% endblock %}

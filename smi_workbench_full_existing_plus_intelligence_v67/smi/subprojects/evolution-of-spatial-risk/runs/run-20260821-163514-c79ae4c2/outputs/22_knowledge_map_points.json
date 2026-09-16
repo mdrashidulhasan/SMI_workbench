@@ -1,0 +1,21 @@
+[
+  {
+    "article_id": "PMID: 37584317",
+    "title": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda.",
+    "cluster_id": 1,
+    "pca_x": 0.0,
+    "pca_y": 0.0,
+    "umap_x": 0.0,
+    "umap_y": 0.0,
+    "x": 0.0,
+    "y": 0.0,
+    "priority_score": 0.505,
+    "effect_direction": "positive",
+    "exposures": "",
+    "outcomes": "mortality",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "not extracted",
+    "filter_text": "evolution of spatial risk of malaria infection after a pragmatic chemoprevention program in response to severe flooding in rural western uganda. pmid: 37584317 background: malaria epidemics result from extreme precipitation and flooding, which are increasing with global climate change. local adaptation and mitigation strategies will be essential to prevent excess morbidity and mortality.. methods: we investigated the spatial risk of malaria infection at multiple timepoints after severe flooding in rural western uganda employing longitudinal household surveys measuring parasite prevalence and leveraging remotely sensed information to inform spatial models of malaria risk in the 3 months after flooding.. results: we identified clusters of malaria risk emerging in areas (1) that showed the greatest changes in normalized difference vegetation index from pre- to postflood and (2) where residents were displaced for longer periods of time and had lower access to long-lasting insecticidal nets, both of which were associated with a positive malaria rapid diagnostic test result. the disproportionate risk persisted despite a concurrent chemoprevention program that achieved high coverage.. conclusions: the findings enhance our understanding not only of the spatial evolution of malaria risk after flooding, but also in the context of an effective intervention. the results provide a \"proof of concept\" for programs aiming to prevent malaria outbreaks after flooding using a combination of interventions. further study of mitigation strategies-and particularly studies of implementation-is urgently needed  mortality  "
+  }
+]

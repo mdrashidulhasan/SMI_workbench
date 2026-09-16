@@ -1,0 +1,6 @@
+literature_search:
+  query: demo
+  database:
+    - pubmed
+intelligence:
+  enabled: true

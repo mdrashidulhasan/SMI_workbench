@@ -1,0 +1,2 @@
+rank,article_id,title,cluster_id,priority_score,priority_level,review_reason,exposures,outcomes,sample_size,population_size,statistical_methods
+1,PMID: 37806575,"Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom.",1,0.505,medium,novel compared with prior/cluster records,heat/temperature,asthma,not reported,not reported,generalized additive models

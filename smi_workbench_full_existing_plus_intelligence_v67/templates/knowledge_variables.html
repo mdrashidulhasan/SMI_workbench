@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h2>Auto-Suggested Variables</h2>
+  <p class="muted">The app proposes variables from trusted dictionaries and repeated corpus terms. Accepted and auto-added variables are included in the next knowledge-vector build. Rejected variables are excluded.</p>
+  {% if selected_project and selected_run %}
+  <div class="actions">
+    <a class="button button-light" href="/knowledge/variables?subproject={{ selected_project }}&run_id={{ selected_run.name }}&status=all">All</a>
+    <a class="button button-light" href="/knowledge/variables?subproject={{ selected_project }}&run_id={{ selected_run.name }}&status=suggested">Suggested</a>
+    <a class="button button-light" href="/knowledge/variables?subproject={{ selected_project }}&run_id={{ selected_run.name }}&status=auto_added">Auto-added</a>
+    <a class="button button-light" href="/knowledge/variables?subproject={{ selected_project }}&run_id={{ selected_run.name }}&status=accepted">Accepted</a>
+    <a class="button button-light" href="/knowledge/variables?subproject={{ selected_project }}&run_id={{ selected_run.name }}&status=rejected">Rejected</a>
+  </div>
+  {% endif %}
+</div>
+<div class="card scroll">
+  {% if variables %}
+  <table>
+    <tr><th>Variable</th><th>Type</th><th>Count</th><th>Status</th><th>Rationale</th><th>Example</th><th>Action</th></tr>
+    {% for row in variables %}
+    <tr>
+      <td><b>{{ row.variable }}</b><br><span class="small muted">{{ row.variable_slug }}</span></td>
+      <td>{{ row.variable_type }}</td>
+      <td>{{ row.count }}</td>
+      <td>{{ row.review_status }}</td>
+      <td>{{ row.rationale }}</td>
+      <td>{{ row.example_title }}</td>
+      <td>
+        {% if selected_project and selected_run %}
+        <form method="post" action="/knowledge/variables/update">
+          <input type="hidden" name="subproject" value="{{ selected_project }}">
+          <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+          <input type="hidden" name="variable_slug" value="{{ row.variable_slug }}">
+          <select name="status">
+            <option value="accepted">accept</option>
+            <option value="rejected">reject</option>
+            <option value="suggested">mark suggested</option>
+            <option value="auto_added">auto-add</option>
+          </select>
+          <input name="notes" placeholder="optional note" value="{{ row.reviewer_notes | default('') }}">
+          <button type="submit">Update</button>
+        </form>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}<p class="muted">No variable suggestions yet. Generate Knowledge Space first.</p>{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{
+  "pid": 12001,
+  "subproject": "geospatial-exposure-health-outcomes",
+  "run_id": "run-20260818-205738-fd532383",
+  "config_path": "generated_configs/geospatial-exposure-health-outcomes_20260818_165737.yaml",
+  "log_path": "smi/jobs/job-20260818-165738-89876.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260818-165738-89876.log",
+  "started_at": "2026-08-18T16:57:39",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject geospatial-exposure-health-outcomes --config generated_configs/geospatial-exposure-health-outcomes_20260818_165737.yaml",
+  "job_id": "job-20260818-165738-89876"
+}

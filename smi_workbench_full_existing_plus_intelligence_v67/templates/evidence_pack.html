@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% set page_title = "Evidence Pack" %}
+{% set page_kicker = "Traceability" %}
+{% set page_subtitle = "Original paper, abstract, PDF status, and all extracted facts linked to this source" %}
+{% block content %}
+{% if selected_run %}
+<div class="card">
+  <div class="actions">
+    <a class="button button-light" href="/outputs?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Back to Citation Table</a>
+    <a class="button button-light" href="/intelligence?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Back to Intelligence Dashboard</a>
+    {% if back_to_module_url %}<a class="button button-light" href="{{ back_to_module_url }}">Back to Module</a>{% endif %}
+  </div>
+</div>
+{% if not source_found %}
+<div class="notice warn"><b>Source record not fully matched.</b> The extracted row is shown below, but the app could not confidently find the full original record in this run. Regenerate intelligence outputs or check that retrieved records exist.</div>
+{% endif %}
+<div class="card">
+  <h2>{{ record_fields.title or 'Source title not available' }}</h2>
+  <p class="muted">{{ authors }}</p>
+  <div class="grid">
+    <div><label>PMID</label><div>{{ record_fields.pmid or 'not available' }}</div></div>
+    <div><label>DOI</label><div>{{ record_fields.doi or 'not available' }}</div></div>
+    <div><label>PMCID</label><div>{{ record_fields.pmcid or 'not available' }}</div></div>
+    <div><label>Journal / Date</label><div>{{ journal or 'not available' }}{% if publication_date %}<br><span class="muted small">{{ publication_date }}</span>{% endif %}</div></div>
+  </div>
+</div>
+{% if citation_row %}
+<div class="card">
+  <h2>PDF and citation status</h2>
+  <p><b>PDF status:</b> {{ citation_row.pdf_status }}{% if citation_row.pdf_file_name %}<br><span class="small muted">{{ citation_row.pdf_file_name }}</span>{% endif %}</p>
+  <div class="actions">
+    {% if citation_row.pdf_preview_url %}<a class="button button-light" href="{{ citation_row.pdf_preview_url }}" target="_blank">Preview PDF</a>{% endif %}
+    {% if citation_row.pdf_is_individual and citation_row.pdf_download_url %}<a class="button button-light" href="{{ citation_row.pdf_download_url }}">Download PDF</a>{% endif %}
+    {% if not citation_row.pdf_is_individual %}<span class="small muted">No row-level PDF mapped for this article.</span>{% endif %}
+  </div>
+  {% if citation_row.scope_warning %}<p class="small" style="font-weight:700;color:#9a3412;">{{ citation_row.scope_warning }}</p>{% endif %}
+</div>
+{% elif pdf_status_fast_mode %}
+<div class="card">
+  <h2>PDF status</h2>
+  <p class="muted">Evidence Pack opens in fast mode, so PDF package matching is not rebuilt on this page. Use the Outputs page for PDF/package links, or start the app with <code>SMI_EVIDENCE_PACK_LOAD_PDF_STATUS=1</code> if you want PDF status loaded inside Evidence Packs.</p>
+</div>
+{% endif %}
+<div class="card">
+  <h2>Abstract / source text</h2>
+  {% if abstract %}<p style="white-space:pre-wrap;">{{ abstract }}</p>{% else %}<p class="muted">No abstract text was found in this run output.</p>{% endif %}
+</div>
+{% if source_row %}
+<div class="card">
+  <h2>Selected extracted row</h2>
+  <div class="scroll"><table>
+    <tr><th>Field</th><th>Value</th></tr>
+    {% for key, value in source_row.items() %}
+    <tr><td>{{ key|replace('_', ' ')|title }}</td><td>{{ value }}</td></tr>
+    {% endfor %}
+  </table></div>
+</div>
+{% endif %}
+<div class="card">
+  <h2>All extracted facts from this paper</h2>
+  {% if related_rows %}
+  <div class="scroll"><table>
+    <tr><th>Module</th><th>Item</th><th>Evidence / rationale</th><th>Confidence</th><th>Status</th></tr>
+    {% for item in related_rows %}
+    <tr {% if item.is_focus %}style="background:#fff7ed;"{% endif %}>
+      <td>{{ item.module_label }}</td>
+      <td><b>{{ item.label }}</b><br><span class="small muted">{{ item.id }}</span></td>
+      <td>
+        {{ item.evidence }}
+        {% if item.details %}
+        <details style="margin-top:.5rem;">
+          <summary class="small muted">Show structured fields</summary>
+          <table style="margin-top:.5rem;">
+            {% for detail in item.details %}
+            <tr><td style="font-weight:700;min-width:180px;">{{ detail.field }}</td><td>{{ detail.value }}</td></tr>
+            {% endfor %}
+          </table>
+        </details>
+        {% endif %}
+      </td>
+      <td>{{ item.confidence }}</td>
+      <td>{{ item.review_status }}</td>
+    </tr>
+    {% endfor %}
+  </table></div>
+  {% else %}<p class="muted">No extracted rows from this source paper were found.</p>{% endif %}
+</div>
+{% else %}<div class="notice warn">No run selected.</div>{% endif %}
+{% endblock %}

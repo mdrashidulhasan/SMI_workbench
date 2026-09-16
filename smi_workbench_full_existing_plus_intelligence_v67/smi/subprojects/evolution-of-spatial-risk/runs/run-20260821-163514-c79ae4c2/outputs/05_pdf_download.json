@@ -1,0 +1,49 @@
+{
+  "status": "unavailable",
+  "source": "api_unavailable",
+  "note": "The PDF API returned no extractable original PDFs or package ZIPs for this run. Requested 1 references in 1 batch(es). Failed batches: 0. No generated summary PDFs were substituted.",
+  "fileName": "",
+  "localZipPath": "",
+  "pdfs": [],
+  "batch_size": 1,
+  "min_batch_size": 1,
+  "batch_count": 1,
+  "parallel": false,
+  "max_workers": 20,
+  "row_level_pdfs": true,
+  "batch_results": [
+    {
+      "id": "pdfs_3965469f23e94d3a9ca8c29e005049b9",
+      "sourceId": "references_8f19ba6651a64f4ca7ad1ef044241d9d",
+      "sourceType": "references",
+      "status": "manual_required",
+      "recordCount": 1,
+      "downloadedCount": 0,
+      "manualRequiredCount": 0,
+      "failedCount": 1,
+      "skippedCount": 0,
+      "zipFileCount": 0,
+      "fileName": "",
+      "downloadUrl": "",
+      "records": [
+        {
+          "id": "API-1",
+          "title": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda.",
+          "doi": "10.1093/infdis/jiad348",
+          "pmcid": "PMC10786254",
+          "status": "failed",
+          "filePath": "",
+          "errorMessage": "The link opened a web page instead of a PDF. Open it in a browser or upload the PDF manually.; PDF is behind a publisher browser check or access page, so it could not be downloaded automatically. Open it through your browser or institutional access, then upload the PDF manually.; The link opened a web page instead of a PDF. Open it in a browser or upload the PDF manually."
+        }
+      ],
+      "errorMessage": "No PDFs were downloaded automatically.",
+      "pdfs": [],
+      "batch_index": 1,
+      "batch_label": "PDF batch 1/1 (1 references)",
+      "batch_size": 1,
+      "requested_reference_count": 1
+    }
+  ],
+  "batch_errors": [],
+  "packageZips": []
+}

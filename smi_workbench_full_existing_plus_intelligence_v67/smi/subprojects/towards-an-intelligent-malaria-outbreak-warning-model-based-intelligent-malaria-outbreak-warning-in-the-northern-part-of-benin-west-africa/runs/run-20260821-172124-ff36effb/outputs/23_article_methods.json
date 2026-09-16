@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa",
+    "citation": "PMID: 38347490",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "negative binomial regression; linear regression; support vector machines (SVM/LS-SVM)",
+    "population": "not specified",
+    "study_design": "time-series epidemiologic study",
+    "evidence_sentence": "We developed an intelligent malaria early warning model to predict the prevalence of malaria using machine learning by applying three machine learning algorithms, including linear regression (LiR), support vector machine (SVM), and negative binomial regression (NBiR)..",
+    "abstract_available": "yes; possibly incomplete",
+    "id": "method-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

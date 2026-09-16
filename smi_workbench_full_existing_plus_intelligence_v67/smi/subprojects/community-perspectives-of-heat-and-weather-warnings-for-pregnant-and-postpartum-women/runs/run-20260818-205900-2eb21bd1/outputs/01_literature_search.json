@@ -1,0 +1,14 @@
+{
+  "id": "references_a54a22f1f6054fd794f11e20b427beb9",
+  "recordCount": 1,
+  "databaseQueries": {
+    "pubmed": "Community perspectives of heat and weather warnings for pregnant and postpartum women"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 1
+  }
+}

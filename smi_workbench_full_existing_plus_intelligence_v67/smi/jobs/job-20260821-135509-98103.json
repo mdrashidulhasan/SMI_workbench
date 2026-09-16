@@ -1,0 +1,12 @@
+{
+  "pid": 98208,
+  "subproject": "geospatial-patterns-of-non-melanoma-skin-cancer",
+  "run_id": "run-20260821-175509-463caafb",
+  "config_path": "generated_configs/geospatial-patterns-of-non-melanoma-skin-cancer_20260821_135508.yaml",
+  "log_path": "smi/jobs/job-20260821-135509-98103.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-135509-98103.log",
+  "started_at": "2026-08-21T13:55:09",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject geospatial-patterns-of-non-melanoma-skin-cancer --config generated_configs/geospatial-patterns-of-non-melanoma-skin-cancer_20260821_135508.yaml",
+  "job_id": "job-20260821-135509-98103"
+}

@@ -1,0 +1,12 @@
+{
+  "pid": 62129,
+  "subproject": "maternal-exposure-to-heat-and-its-association-with-miscarriage-in-rural-kwazulu-natal-south-africa-a-population-based-cohort-study",
+  "run_id": "run-20260821-153911-d291b976",
+  "config_path": "generated_configs/maternal-exposure-to-heat-and-its-association-with-miscarriage-in-rural-kwazulu-natal-south-africa-a-population-based-cohort-study_20260821_113911.yaml",
+  "log_path": "smi/jobs/job-20260821-113911-57186.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-113911-57186.log",
+  "started_at": "2026-08-21T11:39:12",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject maternal-exposure-to-heat-and-its-association-with-miscarriage-in-rural-kwazulu-natal-south-africa-a-population-based-cohort-study --config generated_configs/maternal-exposure-to-heat-and-its-association-with-miscarriage-in-rural-kwazulu-natal-south-africa-a-population-based-cohort-study_20260821_113911.yaml",
+  "job_id": "job-20260821-113911-57186"
+}

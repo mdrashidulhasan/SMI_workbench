@@ -1,0 +1,56 @@
+{
+  "recordCount": 1,
+  "sourceRecordCount": 1,
+  "decisionCounts": {
+    "Relevant": 1,
+    "Not relevant": 0,
+    "Unclear": 0
+  },
+  "chunk_index": 1,
+  "chunk_label": "AI screening chunk 1/1 (1 records)",
+  "chunk_size": 1,
+  "requested_reference_count": 1,
+  "processed_record_count": 1,
+  "retained_record_count": 1,
+  "excluded_record_count": 0,
+  "unclear_record_count": 0,
+  "source": "local_record_level_ai_screening",
+  "screening_mode": "record_level_local_decisions",
+  "records": [
+    {
+      "id": "PMID-38407907",
+      "pmid": "38407907",
+      "pmcid": "PMC10897744",
+      "title": "Psychotropic Medication Prescriptions and Large California Wildfires.",
+      "doi": "10.1001/jamanetworkopen.2023.56466",
+      "authors": "Wettstein ZS, Vaidyanathan A",
+      "journal": "JAMA network open",
+      "volume": "7",
+      "issue": "2",
+      "publicationDate": "2024-02-05",
+      "fullTextAvailable": true,
+      "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10897744/pdf/",
+      "abstract": "IMPORTANCE: Wildfires, intensified by climate change, have known effects on physical health but their effects on mental health are less well characterized. It has been hypothesized that the residential proximity to a large wildfire can exacerbate underlying mental health conditions as evidenced by increased prescriptions of psychotropic medications. OBJECTIVE: To evaluate the association between the occurrence of large wildfires and the prescription rates of psychotropic medications immediately following the start of the fire. DESIGN, SETTING, AND PARTICIPANTS: This cohortstudy used an interrupted time-series analysis to compare psychotropic medication prescriptions in the 6 weeks before and after each of 25 wildfires. The setting was California counties within metropolitan statistical areas (MSAs) experiencing large wildfires from 2011 through 2018. Participants included individuals residing in California MSAs with prescriptions of psychotropic medications recorded in the Merative MarketScan Research Database (MarketScan) during the study period. Statistical analysis was performed for these 25 large wildfires occurring between September 2011 and November 2018. EXPOSURE: Residential proximity to large wildfires that burned more than 25 000 acres occurring in a California county within an MSA. MAIN OUTCOMES AND MEASURES: Prescriptions of psychotropic medications, including antidepressants, antipsychotics, anxiolytics, hypnotics, and mood-stabilizers, with statins as a negative control outcome. RESULTS: For the study period, prescription data and patient-level attributes were extracted for 7 115 690 unique individuals (annual mean [range]: 889 461 [455 705-1 426 928] individuals) enrolled in MarketScan and residing in fire-affected MSAs. This study found a statistically significant increase in prescriptions of antidepressants (rate ratio [RR], 1.04 [95% CI, 1.01-1.07]), anxiolytics (RR, 1.05 [95% CI, 1.02-1.09]), and mood-stabilizing medications (RR, 1.06 [95% CI, 1.01-1.13]) in the fire period compared with the prefire baseline. However, the prescriptions of antipsychotics, hypnotics, and the negative control outcome, statins, showed no significant association. CONCLUSIONS AND RELEVANCE: In this cohort study of large California wildfires, the occurrence of wildfire was associated with increased mental health burden as reflected in increased prescription rates of certain psychotropic medications. The findings underscore the need for further scientific examination into the mental health effects of wildfires and the allocation of mental health resources in disaster responses. California experienced a substantial burden of wildfires from 2011 to 2018, and as wildfires become more intense and frequent in the context of anthropogenic climate change, it is increasingly important to understand and address their mental health effects.",
+      "index": 0,
+      "sourceIndex": 0,
+      "sourceId": "pubmed",
+      "database": "PubMed",
+      "databaseKey": "pubmed",
+      "pages": "",
+      "isbn": "",
+      "referenceIndex": 0,
+      "duplicate": false,
+      "ai_screening_decision": "Relevant",
+      "screening_decision": "Relevant"
+    }
+  ],
+  "decisions": [
+    {
+      "record_index": 1,
+      "record_label": "PMID 38407907",
+      "decision": "Relevant",
+      "retained": true,
+      "api_response_id": "references_e88b5cee48bc48628bd2cf5046930321"
+    }
+  ]
+}

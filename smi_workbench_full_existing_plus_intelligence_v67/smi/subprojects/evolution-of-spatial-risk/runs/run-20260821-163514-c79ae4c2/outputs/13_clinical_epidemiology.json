@@ -1,0 +1,27 @@
+[
+  {
+    "evidence_type": "longitudinal clinical / observational study",
+    "population": "study participants",
+    "comparator": "not specified",
+    "predictor_or_exposure": "primary study factor described in the abstract",
+    "health_outcome": "mortality",
+    "study_design": "longitudinal observational study",
+    "effect_direction": "positive association",
+    "effect_estimate": "We identified clusters of malaria risk emerging in areas (1) that showed the greatest changes in Normalized Difference Vegetation Index from pre- to postflood and (2) where residents were displaced for longer periods of time and had lower access to long-lasting insecticidal nets, both of which were associated with a positive malaria rapid diagnostic test result.",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "study_period": "not specified",
+    "data_source": "not specified",
+    "recruitment_site": "not specified",
+    "enrollment_site": "not specified",
+    "study_site": "not specified",
+    "statistical_methods": "not extracted",
+    "evidence_sentence": "We identified clusters of malaria risk emerging in areas (1) that showed the greatest changes in Normalized Difference Vegetation Index from pre- to postflood and (2) where residents were displaced for longer periods of time and had lower access to long-lasting insecticidal nets, both of which were associated with a positive malaria rapid diagnostic test result.",
+    "citation": "PMID: 37584317",
+    "source_title": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda",
+    "confidence": "medium",
+    "id": "clin-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

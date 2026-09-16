@@ -1,0 +1,12 @@
+{
+  "pid": 86338,
+  "subproject": "investigating-the-association-between-floods-and-low-birth-weight-in-india-using-the-geospatial-approach",
+  "run_id": "run-20260821-171939-1a29cdb1",
+  "config_path": "generated_configs/investigating-the-association-between-floods-and-low-birth-weight-in-india-using-the-geospatial-approach_20260821_131938.yaml",
+  "log_path": "smi/jobs/job-20260821-131939-86163.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-131939-86163.log",
+  "started_at": "2026-08-21T13:19:39",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject investigating-the-association-between-floods-and-low-birth-weight-in-india-using-the-geospatial-approach --config generated_configs/investigating-the-association-between-floods-and-low-birth-weight-in-india-using-the-geospatial-approach_20260821_131938.yaml",
+  "job_id": "job-20260821-131939-86163"
+}

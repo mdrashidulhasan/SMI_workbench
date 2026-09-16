@@ -1,0 +1,21 @@
+[
+  {
+    "evidence_type": "review / perspective / research synthesis",
+    "review_type": "narrative review",
+    "research_area": "Mechanisms of Heat-Induced Sleep Disruption in Aging: A Narrative Review.",
+    "technologies_methods": "not specified in abstract",
+    "application_domains": "environment; public health",
+    "key_tradeoffs": "not specified in abstract",
+    "challenges": "not specified in abstract",
+    "future_directions": "not specified in abstract",
+    "study_design": "narrative review",
+    "data_source": "published literature / technological developments reviewed in the article; exact review methodology not stated in abstract",
+    "evidence_sentence": "TITLE: Mechanisms of Heat-Induced Sleep Disruption in Aging: A Narrative Review Rising global temperatures and more frequent heat waves pose a growing threat to public health, particularly among older adults.",
+    "citation": "PMID: 42496250",
+    "source_title": "Mechanisms of Heat-Induced Sleep Disruption in Aging: A Narrative Review.",
+    "confidence": "medium",
+    "review_status": "pending",
+    "reviewer_notes": "",
+    "id": "review-0001"
+  }
+]

@@ -1,0 +1,70 @@
+exposure,health_outcome,article_count,positive,negative,null,mixed,unclear
+air pollution,cardiovascular,7,0,0,0,0,0
+heat/temperature,cardiovascular,6,0,0,0,0,0
+PM2.5,cardiovascular,3,0,0,0,0,0
+air pollution,asthma,3,0,0,0,0,0
+air pollution,respiratory,3,0,0,0,0,0
+heat/temperature,asthma,3,0,0,0,0,0
+heat/temperature,respiratory,3,0,0,0,0,0
+particulate matter,cardiovascular,3,0,0,0,0,0
+PFAS,birth weight,2,0,0,0,0,0
+PFAS,immune,2,0,0,0,0,0
+PFAS,thyroid,2,0,0,0,0,0
+PM2.5,asthma,2,0,0,0,0,0
+PM2.5,autism spectrum disorder,2,0,0,0,0,0
+PM2.5,mortality,2,0,0,0,0,0
+air pollution,mortality,2,0,0,0,0,0
+nitrogen dioxide (NO2),asthma,2,0,0,0,0,0
+nitrogen dioxide (NO2),respiratory,2,0,0,0,0,0
+particulate matter,birth weight/fetal growth,2,0,0,0,0,0
+PFAS,birth weight/fetal growth,1,0,0,0,0,0
+PFAS,cardiovascular,1,0,0,0,0,0
+PFAS,hypertension,1,0,0,0,0,0
+PFAS,immune/inflammation,1,0,0,0,0,0
+PFAS,neurodevelopment,1,0,0,0,0,0
+PFAS,pregnancy outcomes,1,0,0,0,0,0
+PFOA,birth weight,1,0,0,0,0,0
+PFOA,immune,1,0,0,0,0,0
+PFOA,pregnancy outcomes,1,0,0,0,0,0
+PFOA,thyroid,1,0,0,0,0,0
+PFOS,cardiovascular,1,0,0,0,0,0
+PFOS,thyroid,1,0,0,0,0,0
+PM2.5,autism-related traits,1,0,0,0,0,0
+PM2.5,folate status,1,0,0,0,0,0
+PM2.5,hypertension,1,0,0,0,0,0
+PM2.5,immune,1,0,0,0,0,0
+PM2.5,maternal blood pressure,1,0,0,0,0,0
+air pollution,birth weight,1,0,0,0,0,0
+air pollution,kidney,1,0,0,0,0,0
+black carbon,autism spectrum disorder,1,0,0,0,0,0
+heat/temperature,apoptosis-related signaling,1,0,0,0,0,0
+heat/temperature,cardiovascular mortality,1,0,0,0,0,0
+heat/temperature,hypertension,1,0,0,0,0,0
+heat/temperature,maternal/child health,1,0,0,0,0,0
+heat/temperature,mortality,1,0,0,0,0,0
+heat/temperature,pregnancy outcomes,1,0,0,0,0,0
+heat/temperature,preterm birth,1,0,0,0,0,0
+nanoplastics,cardiovascular,1,0,0,0,0,0
+nitrogen dioxide (NO2),autism spectrum disorder,1,0,0,0,0,0
+nitrogen dioxide (NO2),autism-related traits,1,0,0,0,0,0
+nitrogen dioxide (NO2),birth weight,1,0,0,0,0,0
+nitrogen dioxide (NO2),cardiovascular disease mortality,1,0,0,0,0,0
+nitrogen dioxide (NO2),folate status,1,0,0,0,0,0
+nitrogen dioxide (NO2),hypertension,1,0,0,0,0,0
+nitrogen dioxide (NO2),thyroid,1,0,0,0,0,0
+ozone (O3),birth weight,1,0,0,0,0,0
+ozone (O3),cardiovascular,1,0,0,0,0,0
+ozone (O3),respiratory,1,0,0,0,0,0
+particulate matter,asthma,1,0,0,0,0,0
+particulate matter,cardiovascular mortality,1,0,0,0,0,0
+particulate matter,coronary inflammation / pericoronary fat attenuation index,1,0,0,0,0,0
+particulate matter,hypertension,1,0,0,0,0,0
+particulate matter,liver,1,0,0,0,0,0
+particulate matter,mortality,1,0,0,0,0,0
+particulate matter,neurodevelopment,1,0,0,0,0,0
+particulate matter,pregnancy outcomes,1,0,0,0,0,0
+particulate matter,preterm birth,1,0,0,0,0,0
+particulate matter,respiratory,1,0,0,0,0,0
+particulate matter,thyroid,1,0,0,0,0,0
+phthalate,birth weight,1,0,0,0,0,0
+phthalate,birth weight/fetal growth,1,0,0,0,0,0

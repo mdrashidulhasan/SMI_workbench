@@ -1,0 +1,324 @@
+{
+  "subproject": "psychotropic-medication-prescriptions-and-large-california-wildfires",
+  "run_id": "run-20260821-164010-e47ae432",
+  "created_at": "2026-08-21T16:40:10Z",
+  "config_path": "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/generated_configs/psychotropic-medication-prescriptions-and-large-california-wildfires_20260821_124010.yaml",
+  "api_base_url": "https://dev.posit.niehs.nih.gov/et/api",
+  "state": "created",
+  "artifacts": {
+    "literature_search": {
+      "id": "references_ef396dca8f1a4b1eb24fb2c22244f3ff",
+      "recordCount": 1,
+      "databaseQueries": {
+        "pubmed": "Psychotropic Medication Prescriptions and Large California Wildfires"
+      },
+      "successfulSources": [
+        "pubmed"
+      ],
+      "sourceErrors": [],
+      "sourceCounts": {
+        "pubmed": 1
+      }
+    },
+    "deduplication": {
+      "id": "references_14ab0aa6bf9c4f4fbf31e14ac21c7c5b",
+      "recordCount": 1,
+      "duplicateRecordCount": 0
+    },
+    "ai_screening": {
+      "chunked_ai_screening": true,
+      "screening_status": "screened_in_chunks",
+      "screening_mode": "record_level_local_decisions",
+      "references_id": "references_14ab0aa6bf9c4f4fbf31e14ac21c7c5b",
+      "applied_limit": 1000,
+      "requested_record_count": 1,
+      "processed_record_count": 1,
+      "screened_record_count": 1,
+      "retained_record_count": 1,
+      "decisionCounts": {
+        "Relevant": 1,
+        "Not relevant": 0,
+        "Unclear": 0
+      },
+      "chunk_size": 75,
+      "chunk_count": 1,
+      "parallel": false,
+      "max_workers": 1,
+      "completed_chunk_unit_count": 1,
+      "chunks": [
+        {
+          "recordCount": 1,
+          "sourceRecordCount": 1,
+          "decisionCounts": {
+            "Relevant": 1,
+            "Not relevant": 0,
+            "Unclear": 0
+          },
+          "chunk_index": 1,
+          "chunk_label": "AI screening chunk 1/1 (1 records)",
+          "chunk_size": 1,
+          "requested_reference_count": 1,
+          "processed_record_count": 1,
+          "retained_record_count": 1,
+          "excluded_record_count": 0,
+          "unclear_record_count": 0,
+          "source": "local_record_level_ai_screening",
+          "screening_mode": "record_level_local_decisions",
+          "records": [
+            {
+              "id": "PMID-38407907",
+              "pmid": "38407907",
+              "pmcid": "PMC10897744",
+              "title": "Psychotropic Medication Prescriptions and Large California Wildfires.",
+              "doi": "10.1001/jamanetworkopen.2023.56466",
+              "authors": "Wettstein ZS, Vaidyanathan A",
+              "journal": "JAMA network open",
+              "volume": "7",
+              "issue": "2",
+              "publicationDate": "2024-02-05",
+              "fullTextAvailable": true,
+              "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10897744/pdf/",
+              "abstract": "IMPORTANCE: Wildfires, intensified by climate change, have known effects on physical health but their effects on mental health are less well characterized. It has been hypothesized that the residential proximity to a large wildfire can exacerbate underlying mental health conditions as evidenced by increased prescriptions of psychotropic medications. OBJECTIVE: To evaluate the association between the occurrence of large wildfires and the prescription rates of psychotropic medications immediately following the start of the fire. DESIGN, SETTING, AND PARTICIPANTS: This cohortstudy used an interrupted time-series analysis to compare psychotropic medication prescriptions in the 6 weeks before and after each of 25 wildfires. The setting was California counties within metropolitan statistical areas (MSAs) experiencing large wildfires from 2011 through 2018. Participants included individuals residing in California MSAs with prescriptions of psychotropic medications recorded in the Merative MarketScan Research Database (MarketScan) during the study period. Statistical analysis was performed for these 25 large wildfires occurring between September 2011 and November 2018. EXPOSURE: Residential proximity to large wildfires that burned more than 25 000 acres occurring in a California county within an MSA. MAIN OUTCOMES AND MEASURES: Prescriptions of psychotropic medications, including antidepressants, antipsychotics, anxiolytics, hypnotics, and mood-stabilizers, with statins as a negative control outcome. RESULTS: For the study period, prescription data and patient-level attributes were extracted for 7 115 690 unique individuals (annual mean [range]: 889 461 [455 705-1 426 928] individuals) enrolled in MarketScan and residing in fire-affected MSAs. This study found a statistically significant increase in prescriptions of antidepressants (rate ratio [RR], 1.04 [95% CI, 1.01-1.07]), anxiolytics (RR, 1.05 [95% CI, 1.02-1.09]), and mood-stabilizing medications (RR, 1.06 [95% CI, 1.01-1.13]) in the fire period compared with the prefire baseline. However, the prescriptions of antipsychotics, hypnotics, and the negative control outcome, statins, showed no significant association. CONCLUSIONS AND RELEVANCE: In this cohort study of large California wildfires, the occurrence of wildfire was associated with increased mental health burden as reflected in increased prescription rates of certain psychotropic medications. The findings underscore the need for further scientific examination into the mental health effects of wildfires and the allocation of mental health resources in disaster responses. California experienced a substantial burden of wildfires from 2011 to 2018, and as wildfires become more intense and frequent in the context of anthropogenic climate change, it is increasingly important to understand and address their mental health effects.",
+              "index": 0,
+              "sourceIndex": 0,
+              "sourceId": "pubmed",
+              "database": "PubMed",
+              "databaseKey": "pubmed",
+              "pages": "",
+              "isbn": "",
+              "referenceIndex": 0,
+              "duplicate": false,
+              "ai_screening_decision": "Relevant",
+              "screening_decision": "Relevant"
+            }
+          ],
+          "decisions": [
+            {
+              "record_index": 1,
+              "record_label": "PMID 38407907",
+              "decision": "Relevant",
+              "retained": true,
+              "api_response_id": "references_e88b5cee48bc48628bd2cf5046930321"
+            }
+          ]
+        }
+      ],
+      "screening_ids": [],
+      "records": [
+        {
+          "id": "PMID-38407907",
+          "pmid": "38407907",
+          "pmcid": "PMC10897744",
+          "title": "Psychotropic Medication Prescriptions and Large California Wildfires.",
+          "doi": "10.1001/jamanetworkopen.2023.56466",
+          "authors": "Wettstein ZS, Vaidyanathan A",
+          "journal": "JAMA network open",
+          "volume": "7",
+          "issue": "2",
+          "publicationDate": "2024-02-05",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10897744/pdf/",
+          "abstract": "IMPORTANCE: Wildfires, intensified by climate change, have known effects on physical health but their effects on mental health are less well characterized. It has been hypothesized that the residential proximity to a large wildfire can exacerbate underlying mental health conditions as evidenced by increased prescriptions of psychotropic medications. OBJECTIVE: To evaluate the association between the occurrence of large wildfires and the prescription rates of psychotropic medications immediately following the start of the fire. DESIGN, SETTING, AND PARTICIPANTS: This cohortstudy used an interrupted time-series analysis to compare psychotropic medication prescriptions in the 6 weeks before and after each of 25 wildfires. The setting was California counties within metropolitan statistical areas (MSAs) experiencing large wildfires from 2011 through 2018. Participants included individuals residing in California MSAs with prescriptions of psychotropic medications recorded in the Merative MarketScan Research Database (MarketScan) during the study period. Statistical analysis was performed for these 25 large wildfires occurring between September 2011 and November 2018. EXPOSURE: Residential proximity to large wildfires that burned more than 25 000 acres occurring in a California county within an MSA. MAIN OUTCOMES AND MEASURES: Prescriptions of psychotropic medications, including antidepressants, antipsychotics, anxiolytics, hypnotics, and mood-stabilizers, with statins as a negative control outcome. RESULTS: For the study period, prescription data and patient-level attributes were extracted for 7 115 690 unique individuals (annual mean [range]: 889 461 [455 705-1 426 928] individuals) enrolled in MarketScan and residing in fire-affected MSAs. This study found a statistically significant increase in prescriptions of antidepressants (rate ratio [RR], 1.04 [95% CI, 1.01-1.07]), anxiolytics (RR, 1.05 [95% CI, 1.02-1.09]), and mood-stabilizing medications (RR, 1.06 [95% CI, 1.01-1.13]) in the fire period compared with the prefire baseline. However, the prescriptions of antipsychotics, hypnotics, and the negative control outcome, statins, showed no significant association. CONCLUSIONS AND RELEVANCE: In this cohort study of large California wildfires, the occurrence of wildfire was associated with increased mental health burden as reflected in increased prescription rates of certain psychotropic medications. The findings underscore the need for further scientific examination into the mental health effects of wildfires and the allocation of mental health resources in disaster responses. California experienced a substantial burden of wildfires from 2011 to 2018, and as wildfires become more intense and frequent in the context of anthropogenic climate change, it is increasingly important to understand and address their mental health effects.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ]
+    },
+    "retrieved_records": {
+      "chunked_retrieval": true,
+      "source": "chunked_ai_screening_results",
+      "record_count": 1,
+      "applied_limit": 1000,
+      "records": [
+        {
+          "id": "PMID-38407907",
+          "pmid": "38407907",
+          "pmcid": "PMC10897744",
+          "title": "Psychotropic Medication Prescriptions and Large California Wildfires.",
+          "doi": "10.1001/jamanetworkopen.2023.56466",
+          "authors": "Wettstein ZS, Vaidyanathan A",
+          "journal": "JAMA network open",
+          "volume": "7",
+          "issue": "2",
+          "publicationDate": "2024-02-05",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10897744/pdf/",
+          "abstract": "IMPORTANCE: Wildfires, intensified by climate change, have known effects on physical health but their effects on mental health are less well characterized. It has been hypothesized that the residential proximity to a large wildfire can exacerbate underlying mental health conditions as evidenced by increased prescriptions of psychotropic medications. OBJECTIVE: To evaluate the association between the occurrence of large wildfires and the prescription rates of psychotropic medications immediately following the start of the fire. DESIGN, SETTING, AND PARTICIPANTS: This cohortstudy used an interrupted time-series analysis to compare psychotropic medication prescriptions in the 6 weeks before and after each of 25 wildfires. The setting was California counties within metropolitan statistical areas (MSAs) experiencing large wildfires from 2011 through 2018. Participants included individuals residing in California MSAs with prescriptions of psychotropic medications recorded in the Merative MarketScan Research Database (MarketScan) during the study period. Statistical analysis was performed for these 25 large wildfires occurring between September 2011 and November 2018. EXPOSURE: Residential proximity to large wildfires that burned more than 25 000 acres occurring in a California county within an MSA. MAIN OUTCOMES AND MEASURES: Prescriptions of psychotropic medications, including antidepressants, antipsychotics, anxiolytics, hypnotics, and mood-stabilizers, with statins as a negative control outcome. RESULTS: For the study period, prescription data and patient-level attributes were extracted for 7 115 690 unique individuals (annual mean [range]: 889 461 [455 705-1 426 928] individuals) enrolled in MarketScan and residing in fire-affected MSAs. This study found a statistically significant increase in prescriptions of antidepressants (rate ratio [RR], 1.04 [95% CI, 1.01-1.07]), anxiolytics (RR, 1.05 [95% CI, 1.02-1.09]), and mood-stabilizing medications (RR, 1.06 [95% CI, 1.01-1.13]) in the fire period compared with the prefire baseline. However, the prescriptions of antipsychotics, hypnotics, and the negative control outcome, statins, showed no significant association. CONCLUSIONS AND RELEVANCE: In this cohort study of large California wildfires, the occurrence of wildfire was associated with increased mental health burden as reflected in increased prescription rates of certain psychotropic medications. The findings underscore the need for further scientific examination into the mental health effects of wildfires and the allocation of mental health resources in disaster responses. California experienced a substantial burden of wildfires from 2011 to 2018, and as wildfires become more intense and frequent in the context of anthropogenic climate change, it is increasingly important to understand and address their mental health effects.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ],
+      "chunk_results": [
+        {
+          "chunk_index": 1,
+          "source": "records_embedded_in_ai_screening_chunk",
+          "record_count": 1
+        }
+      ]
+    },
+    "pdf_download": {
+      "enabled": true,
+      "status": "success",
+      "source": "api_original_pdf_download_batched_resilient",
+      "requested_reference_count": 1,
+      "batch_size": 1,
+      "min_batch_size": 1,
+      "batch_count": 1,
+      "parallel": false,
+      "max_workers": 20,
+      "row_level_pdfs": true,
+      "completed_batch_unit_count": 1,
+      "successful_pdf_count": 1,
+      "package_zip_count": 2,
+      "failed_batch_count": 0,
+      "pdfs": [
+        {
+          "title": "API-1",
+          "fileName": "API-1.pdf",
+          "localPath": "smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/api_original_pdfs/API-1.pdf",
+          "status": "downloaded",
+          "source": "original_api_pdf_zip",
+          "is_original_pdf": true,
+          "zipSource": "PDF batch 1-1 -1 references-pdfs_50daa79665184de796c654afac6eba3f.zip",
+          "zipMemberName": "API-1.pdf",
+          "pdfTextProbe": "PDF-1.7 1 0 obj /Type/Catalog/Pages 2 0 R/Lang(en) /StructTreeRoot 54 0 R/MarkInfo /Marked true /Metadata 817 0 R/ViewerPreferences 818 0 R endobj 2 0 obj /Type/Pages/Count 6/Kids 3 0 R 31 0 R 40 0 R 43 0 R 47 0 R 50 0 R endobj 3 0 obj /Type/Page/Parent 2 0 R/Resources /Font /F1 5 0 R/F2 9 0 R/F3 11 0 R/F4 16 0 R/F5 18 0 R/F6 20 0 R/F7 22 0 R/F8 24 0 R/F9 26 0 R /ExtGState /GS7 7 0 R/GS8 8 0 R /ProcSet /PDF/Text/ImageB/ImageC/ImageI /MediaBox 0 0 792 612 /Contents 4 0 R/Group /Type/Group/S/Transparency/CS/DeviceRGB /Tabs/S/StructParents 0 endobj 4 0 obj /Filter/FlateDecode/Length 2371 stream x mS N a ) m E e w 8 A K I, O Lw , E Gz x0 N 4 d M i o : H , :/ ) Y H Xqxp2 d a , L l / 6 qlNg i c / 9 x 7 z : y p n p ZpHQR- Y0 7 8 Bj M _z 8IP8D P a u 4:elp N s eE o F ;Vh H - s G / y C4 T;T 0 K mP i s_Y4 N D s p S g 7yV VU 6 t + l S 9 - -R g 5 / kz W O M U6 OH - zmq pP k( (aQ . SH L 7 i5T I B L 3 . ; pqa t W n ; 5whr :CKw ; 5L I CYp Je: x v W TA i S LW s(K s S D x: Q h , X -r g3 r; )c D M t / v/eL Uo2ml 5 k.ve S ZfLt ; p f r 4 s dH m t dp l8 ; R b yN h D .o l p . i) r ;J Hl z cpm Gl W OYMsp d jAL 8 9 + r e A BVC N . 33 JB 3 o P Z OI q h GK 3 cF U 8 , S E4V k f i A5 K R S F Y , q L / 2q 5 q Q 2 G Q G u QF vF j v x p V L f R 36t G R d u l 0 _ w 7f v yg w l 8 0 h I / x d3 d p ; w 8 s Lh9 cs R6c a 0 r Mf m4 s h7T sj 0 s P p PR M G w C o , 9 L y c i g K yG 8tZ + U 2g X e j f P b ) 9 .o_ z0 -Z M 2 S , l6q J / V i f J o( ;S+ 0 f C 1 Z , v HU. y W M H h d An iZ X(m , E 8_d0 w ES z ah + Z ; k 0T ;k Vl , R :s x jw G- D L D r W S 8 + h, 5 q Uiw/s x zZ csG 2 Y M f + S W p m f Q d 5 1 C P Dv s a kEz b 9 V u N3 +hr )B Hk 6 G g+ nW O3 J 7 eg ;D d o S e kF v f+ u c _: g 0 D l : ZU xm s j 5 , i mwbio O s n l R e V m E + w V g V p g y , Xi v _ FM8 3 vw A g endstream endobj 5 0 obj /Type/Font/Subtype/TrueType/Name/F1/BaseFont/BCDEEE+Calibri/Encoding/WinAnsiEncoding/FontDescriptor 6 0 R/FirstChar 32/LastChar 169/Widths 798 0 R endobj 6 0 obj /Type/FontDescriptor/FontName/BCDEEE+Calibri/Flags 32/ItalicAngle 0/Ascent 750/Descent -250/CapHeight 750/AvgWidth 521/MaxWidth 1743/FontWeight 400/XHeight 250/StemV 52/FontBBox -503 -250 1240 750 /FontFile2 799 0 R endobj 7 0 obj /Type/ExtGState/BM/Normal/ca 1 endobj 8 0 obj /Type/ExtGState/BM/Normal/CA 1 endobj 9 0 obj /Type/Font/Subtype/TrueType/Name/F2/BaseFont/BCDFEE+Calibri-Italic/Encoding/WinAnsiEncoding/FontDescriptor 10 0 R/FirstChar 32/LastChar 119/Widths 800 0 R endobj 10 0 obj /Type/FontDescriptor/FontName/BCDFEE+Calibri-Italic/Flags 32/ItalicAngle -11/Ascent 750/Descent -250/CapHeight 750/AvgWidth 521/MaxWidth 1984/FontWeight 400/XHeight 250/StemV 52/FontBBox -725 -250 1260 750 /FontFile2 801 0 R endobj 11 0 obj /Type/Font/Subtype/Type0/BaseFont/Arial-BoldMT/Encoding/Identity-H/DescendantFonts 12 0 R/ToUnicode 802 0 R endobj 12 0 obj 13 0 R endobj 13 0 obj /BaseFont/Arial-BoldMT/Subtype/CIDFontType2/Type/Font/CIDToGIDMap/Identity/DW 1000/CIDSystemInfo 14 0 R/FontDescriptor 15 0 R/W 804 0 R endobj 14 0 obj /Ordering(Identity) /Registry(Adobe) /Supplement 0 endobj 15 0 obj /Type/FontDescriptor/FontName/Arial-BoldMT/Flags 32/ItalicAngle 0/Ascent 905/Descent -210/CapHeight 728/AvgWidth 479/MaxWidth 2628/FontWeight 700/XHeight 250/Leading 33/StemV 47/FontBBox -628 -210 2000 728 /FontFile2 803 0 R endobj 16 0 obj /Type/Font/Subtype/TrueType/Name/F4/BaseFont/Arial-BoldMT/Encoding/WinAnsiEncoding/FontDescriptor 17 0 R/FirstChar 32/LastChar 121/Widths 805 0 R endobj 17 0 obj /Type/FontDescriptor/FontName/Arial-BoldMT/Flags 32/ItalicAngle 0/Ascent 905/Descent -210/CapHeight 728/AvgWidth 479/MaxWidth 2628/FontWeight 700/XHeight 250/Leading 33/StemV 47/FontBBox -628 -210 2000 728 endobj 18 0 obj /Type/Font/Subtype/TrueType/Name/F5/BaseFont/TimesNewRomanPSMT/Encoding/WinAnsiEncoding/FontDescriptor 19 0 R/FirstChar 32/LastChar 121/Widths 809 0 R endobj 19 0 obj /Type/FontDescriptor/FontName/TimesNewRomanPSMT/Flags 32/ItalicAngle 0/Ascent 891/Descent -216/CapHeight 693/AvgWidth 401/MaxWidth 2614/FontWeight 400/XHeight 250/Leading 42/StemV 40/FontBBox -568 -216 2046 693 endobj 20 0 obj /Type/Font/Subtype/TrueType/Name/F6/BaseFont/TimesNewRomanPS-ItalicMT/Encoding/WinAnsiEncoding/FontDescriptor 21 0 R/FirstChar 32/LastChar 119/Widths 810 0 R endobj 21 0 obj /Type/FontDescriptor/FontName/TimesNewRomanPS-ItalicMT/Flags 32/ItalicAngle -16.4/Ascent 891/Descent -216/CapHeight 694/AvgWidth 402/MaxWidth 1831/FontWeight 400/XHeight 250/Leading 42/StemV 40/FontBBox -498 -216 1333 694 endobj 22 0 obj /Type/Font/Subtype/TrueType/Name/F7/BaseFont/ArialMT/Encoding/WinAnsiEncoding/FontDescriptor 23 0 R/FirstChar 32/LastChar 122/Widths 814 0 R endobj 23 0 obj /Type/FontDescriptor/FontName/ArialMT/Flags 32/ItalicAngle 0/Ascent 905/Descent -210/CapHeight 728/AvgWidth 441/MaxWidth 2665/FontWeight 400/XHeight 250/Leading 33/StemV 44/FontBBox -665 -210 2000 728 endobj 24 0 obj /Type/Font/Subtype/TrueType/Name/F8/BaseFont/TimesNewRomanPS-BoldMT/Encoding/WinAnsiEncoding/FontDescriptor 25 0 R/FirstChar 32/LastChar 117/Widths 815 0 R endobj 25 0 obj /Type/FontDescriptor/FontName/TimesNewRomanPS-BoldMT/Flags 32/ItalicAngle 0/Ascent 891/Descent -216/CapHeight 677/AvgWidth 427/MaxWidth 2558/FontWeight 700/XHeight 250/Leading 42/StemV 42/FontBBox -558 -216 2000 677 endobj 26 0 obj /Type/Font/Subtype/Type0/BaseFont/TimesNewRomanPSMT/Encoding/Identity-H/DescendantFonts 27 0 R/ToUnicode 806 0 R endobj 27 0 obj 28 0 R endobj 28 0 obj /BaseFont/TimesNewRomanPSMT/Subtype/CIDFontType2/Type/Font/CIDToGIDMap/Identity/DW 1000/CIDSystemInfo 29 0 R/FontDescriptor 30 0 R/W 808 0 R endobj 29 0 obj /Ordering(Identity) /Registry(Adobe) /Supplement 0 endobj 30 0 obj /Type/FontDescriptor/FontName/TimesNewRomanPSMT/Flags 32/ItalicAngle 0/Ascent 891/Descent -216/CapHeight 693/AvgWidth 401/MaxWidth 2614/FontWeight 400/XHeight 250/Leading 42/StemV 40/FontBBox -568 -216 2046 693 /FontFile2 807 0 R endobj 31 0 obj /Type/Page/Parent 2 0 R/Resources /Font /F1 5 0 R/F2 9 0 R/F7 22 0 R/F4 16 0 R/F3 11 0 R/F10 33 0 R /ExtGState /GS7 7 0 R/GS8 8 0 R /ProcSet /PDF/Text/ImageB/ImageC/ImageI /Annots 38 0 R 39 0 R /MediaBox 0 0 792 612 /Contents 32 0 R/Group /Type/Group/S/Transparency/CS/DeviceRGB /Tabs/S/StructParents 1 endobj 32 0 obj /Filter/FlateDecode/Length 11528 stream x o 7r ; G) 4 f_ C , dsYO h g,g o n : , 3 T _ x z o 7 o O o zz p Uw : l 0 2 ; h n:z x _ T _ : _ u _ w _ r 3 . D q v M s H 9 D p ww 1Dp t c _ W y (l _ c ) O lu j x t u w o p w z w 1 7tc 6 ; D; u a +3 C d E: f8Z x 9 ;lV c x D g N 2 cOi 6 +N o 6 S W 6 t u . N k 7 2 M : 5 K d E Kl- + x 1 T 2 OM T ) d A ) xH 16 t F z N 4m rE+ Eo t D 1 s 0 E wi w Zs er /; qo q v Q k u k / X; g x 1z 8 s 6 n W / x 7 s 3 . w T 7LXl c , K E i p U N 6: +u qE 8 t t I oW ._ a X , 3 8x: L :E2 no b a 8 M K 6x Y A mhs,m a K l F l n CV I YT ) NE ) Kg lW ; o_+ aDn 8 m 1 Ab q f b d q0N T E 7 x; k Lw 9:Z 8 - K y) n D K . d MP8 O 0 gb g x VK 7 7I / 6 : c 2 ;; C i + x RC 75 H5 ; , H tY -k k C w . o C / T q k m k zS L L d N I. u v 2; f _ e Lw .+ K e G 1 o rO 7e + M _ _H . k 3 o ;1 0 F N O- P, a - M q r Mj3y x p. A b 8N g hLl t u ( I k E I ( O lo V W 3wEj7J J K n ; S f 5v 8 K m e- O i bs3/w 0 k,u :OG H F 47 a D D t 7 s F f ;S UM F_ i X IumU + U A d L 8 z OM j 5 P 3) 0 n T9 , P m X wkN ss7 rL F I iB ,R RYZ 1 S / - c 2)6: y ; N : 9u TDj + 5I y bJ BS b _ Fd6 h 5 / _fy _ o S k92D u + CQWj N Q Lye 1iGI; z7 _ Rx v . -, 1a u 3 e tBE w - 7 Z R +:o 0 p e F W 3 k H 6 2 e9 W9cV D , A7D V r U C u / _xWu 4Y- / q O VI0 + - 0 xG xW d J R b 2 J F f E ( m ) xz 6 MA UOQ u d : Sq patH 8 Hh jY G; q 1 x , j (JeE4 d x M a w fnnY 3 R) Q 2JJ9 _ i A X T ; J,h x 7 B d i L - K D h oD S qD Hz a 8 - X p X x f 0 0 ; +) QU 0Bpdah2 . . l / M C7 ) Ml: n P m 8 uB Sx 0 w _2 q 0 Pi; t b E r QI / D ESud 4 Zn 9 8 A S4 H x Q / D0 4 J a Uf 8 J F D h 3J - Y p X ( 7 D + D DxW oG D G M 2 0 M 9 7 j q S + D K ,p9 i L - EmO i H )k . :. , ) o / h e Q 1 / e : +2 U . Y ID 0 kB PG T i eX _a h m 3 2Jk: K ( : E 5 D E l j z X 4 P ( C 2 z6, ) cv-B 6 , + D d _.j G X vj y H H 2 Z q x W ) 9 c M 2 bC )kS m 4 H i ) S Z / I i y 3vS H , Y L s B 44 nl u + x _6 c R wY m 0J/ _D 7v R q E E Rw HQ in + L e o: L 2m 0 nna6VT q r a RiK + O1Q A q T J L TL + 7 m P 0 S X) SR _ 6 9SJ a(U+ R J- 0 Z q IO R R N C T QM 8 R W5 J Y . 4 6 8 j P g 6E fC c vj _2 A R Ms r2g -_Nh U 9 6 M U d E f 0 D y Pv b 2 s i R NO JX z P 9 ) x i X NM W) B Q 7u Wu 4 g sr O B f ;5yx X H ) pO U qd 8 7 q + 8xW5 ed A ( ; o kD Y q j mJ q6 88 ) p6 8 L C o j Q 8vH 8TX 3 + J1 rB 0 g 9 1 S d + x / w gU N R / + 8 g d s s m 2 B 3 l , p VT 3 3 Ccv - x I J MJ Q0 Mz +Yxg ob v U ; 0; Z r O4 m ) 0; Z 9H K bIu - D T AQ dq W, e5( b emJ q6 2s6 kS l6 m _2 H J 4 1 BZW g 0 vTFV L OD 7 r a I 3 3 _D 8 I 3 3 Q H D Nw : c E ; 8 T C m , T R J RL M a J TD i R 3 H1 vOY 7 w 4 u h hbI pO US, R5 K K H (U j G5 (U T d emJ q6 S d l H l m _2 : X V S i P + z H iU d E w R 3 ; c 03 K y Ov h L K K J(bC S i- ; (1R + 0U n a PD - d D1R 3 (0 7y z0 K M B j L _ Q4( X Z B Sk b wU Sr d F W Q r Q sE U U d )j 6 8 5 M m 52 Q 0 IN z F V 9vv 3,W a+) zS9 9 u 5 p 0 ZuI uo /P 1 i 3 B EV h vF k p 3 j _ 3 m()1Q) 3 0 W /5 A G R yzE K S p R A GSB iJH8E QEyM UeZ d JH 6 8 ( M I gJ N 4 d 06 NC 2r - 7+ y Q j T GBe Z u T B Z / p 5 X _ _2 b yO B mQ /r + cu c ( C Wnp 7VY 9 ( G 0E 6H K X SJ W . K 8VM P H b 5AN,6D r V 9b55G t 2 VSs j j GSs wU3 r Y X, -WF Q 5 Ut X ST ; 6 / Q A (P 8 N W I Hf f l g2 v 9D H e , jv f J D Kq - HiN 6 U 5 d y Y 1 l T a3 R Q Y; y 2 DiO )6S 3 B( WoR / ) aYH / _ z4(8wX V qts 9 q 8 B 6 81 e) U 8 )kW S l p +X j 8NL ; V q KY+ 8 P 8NM zZpdal b+ rS Xl M1 diX iLC i P I N G __ hP T N L L t s ;h e+ M . A Ot cs,: ( l Sh y EdyM Q , T y Nv /: ( F Z crs: l 7 GW h4 ( 6 Q / PU 7t a Q F- t f: A a9 Y _ 95) XS p Z d1 E ( b i+7 UW j o 1M Q i 4 QMz 2 I , N X e E a0 X g p 1 t 2 dN 7G R V L zr q A .3 Ty u DJ 4L A d F ) y 10 2Z4-7 2 o2e hP Os J 5 _2e n 84 a R VPy ) x 0 a U h V X GAn k,n8 W,k j x W Fu F6 Y wT +X wU 8 06 X h mJ q6 a cm 4 5 X _ p X O 9 3 B . 0T6N M D KU ; 9 U 7 R HU R y E M y N ) u bS10 M 4- M Y MfS 4 M - M R Su w p RG i ) P ( 7 M1 v ; 4 L + 2 p 2j J Yut f U 7 + UyW5 dV A )X X5 ; U UM 8 U G M 2 0 M g2 z U 6 G n e B up O O 0 l qpQ sp ap - wjn ; mXw Qe fW a m X5 R o2 TO Hh U , S 9 S w c Q0 + Qy 9 ps n 7 sR AAXj N g p Y 4 0 l0 e 7 + xW5 gd A ( , D ; 2 U d N ) _ q6 kS l6D JW K vB L /rxZ q C c c 2 s c f e u D qSd 4 : O dn z gr M-Z k a,Y _ M N h R s5( V N_ X R a r kK O M , q a 3 T Q B S b w w . y sg ( r b 9 W0 z d ) r 6 8 ( M m( a 3 , a ( E d 9q k N + 7 a U Cp , IU v q / W k -lK G r x U c ) 1H l y J ( H 9:7 ; A a G8 w u C fK AAX+ p E t 9 ) x S p R A:FS i G8E Q sM UEU x d G 6 8 ( M i) w ( Ha 1 aE A n - s2 n u W M 7 A Z DO T d ADw X P4 FX t kH f v 6 h GLK e m 4 t R WG F 0-5 z + /4 F 2 z F 6 a z UU RT A FS j GXE Q wM U X z d ( G 6 8 M F R _r p F nJ f q T n o2. cy / l w e V7 2 n, Q r r p I u/ ; : K W- f R k p Cc A x X p a A T6E M +td i b E H c P g2 D :CG S W - 0 FU h j NQ M ) xG5s ) / Y lu M 2 S l H 1 f e )P8 a 6 4 M W8 tiI a K Z / i _ wT 4 _ Po T/ qv X 4k W r M _,P , 0 S / s 8 M H 1 5A h Ni kN t cx G g i 1 B h B s z ) / K u ON s ytQ o g r t TV 4 4 N ( u _b Uu mU l -: oR6 rH nW j X e X gR y u Q s X T ;:M U N+ v ) i vt Cpd a :4W D 76 cy e M j Y o am69 aX m Hd_r a v+ b Tba 7 . E Lb + /G +l. Z .Y ; a1 E q w fU . vm 9 F Z r 8D t T y Ut gsw g +)m q Z , W ( cp A Be 9 eW2lb . eyO 4 K )w q )b 6 4a6( 8 N u ) A V / / 6+ (n J 7 1ZQ j V /Om V -y i W d U X-xy / 1 VY (T S 8G Mz z 9 A bL L 9 h l XI 4D c P VY q E I y T ( g O O H W : q D g EW2 ewf8 h _RkJ g2 h kSs: l J L a lu5 BF q R T/Z e G D B D X D Q :K l p j C md 8 F V(/ jE l bL L z / K Ko XAn ( P 4 B i I Y_w)HD C K g Z / B n HZ G j H 0 G 6 V W8 9 U jn SsJX R + P CP X Xh 9-,P 3 0 k/ T SD B K x3) : a , X ,,n8X W,, V OK E l hE 2, V B 9 I / L X L 9 h l uzX dX .W O r B i a J /z p tH8 s a U ;/ x KH a H n eN - L X 2 lQ , RkJ ( z c( A J (s J + 21 z 2Gt;E s A XF x9Qy 3 /1 : N C b Q s It I D n O i CfXL - p X d L C j Spd D A d V D1 5v 2 L 4 kl1Q l dh V Dq N . kKe J w p 0 3 G P0 c i s M n 9 w e i/ : / x _ s ( ,C f c u n s : ZY d ) fL3 c 8 ) 9 s 7 W c z 3 fvqj; 2 G _ nI p _ K h h L I eM z d- J7E + + endstream endobj 33 0 obj /Type",
+          "pmid": "38407907",
+          "PMID": "38407907",
+          "pmcid": "PMC10897744",
+          "PMCID": "PMC10897744",
+          "doi": "10.1001/jamanetworkopen.2023.56466",
+          "DOI": "10.1001/jamanetworkopen.2023.56466",
+          "sourceRecordTitle": "Psychotropic Medication Prescriptions and Large California Wildfires.",
+          "mappedBy": "single_reference_zip"
+        }
+      ],
+      "packageZips": [
+        {
+          "fileName": "row_level_article_pdfs.zip",
+          "localZipPath": "smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/row_level_article_pdfs.zip",
+          "relativePath": "smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/row_level_article_pdfs.zip",
+          "batchLabel": "Combined row-level article PDF package",
+          "sizeBytes": 413566,
+          "pdfCount": 1,
+          "source": "local_package_from_row_level_pdfs"
+        },
+        {
+          "fileName": "PDF batch 1-1 -1 references-pdfs_50daa79665184de796c654afac6eba3f.zip",
+          "localZipPath": "smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_50daa79665184de796c654afac6eba3f.zip",
+          "relativePath": "smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_50daa79665184de796c654afac6eba3f.zip",
+          "batchLabel": "PDF batch 1/1 (1 references)",
+          "sizeBytes": 413412
+        }
+      ],
+      "batch_results": [
+        {
+          "id": "pdfs_50daa79665184de796c654afac6eba3f",
+          "sourceId": "references_2adf37abf43f45b590b48d23a8bb21df",
+          "sourceType": "references",
+          "status": "downloaded",
+          "recordCount": 1,
+          "downloadedCount": 1,
+          "manualRequiredCount": 0,
+          "failedCount": 0,
+          "skippedCount": 0,
+          "zipFileCount": 1,
+          "fileName": "pdfs_50daa79665184de796c654afac6eba3f.zip",
+          "downloadUrl": "/api/pdf-downloads/pdfs_50daa79665184de796c654afac6eba3f.zip",
+          "records": [
+            {
+              "id": "API-1",
+              "title": "Psychotropic Medication Prescriptions and Large California Wildfires.",
+              "doi": "10.1001/jamanetworkopen.2023.56466",
+              "pmcid": "PMC10897744",
+              "status": "downloaded",
+              "filePath": "/opt/rstudio-connect/mnt/app/data/pdfs/tools/pdfs_50daa79665184de796c654afac6eba3f/API-1.pdf",
+              "errorMessage": ""
+            }
+          ],
+          "errorMessage": "",
+          "localZipPath": "smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_50daa79665184de796c654afac6eba3f.zip",
+          "pdfs": [
+            {
+              "title": "API-1",
+              "fileName": "API-1.pdf",
+              "localPath": "smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/api_original_pdfs/API-1.pdf",
+              "status": "downloaded",
+              "source": "original_api_pdf_zip",
+              "is_original_pdf": true,
+              "zipSource": "PDF batch 1-1 -1 references-pdfs_50daa79665184de796c654afac6eba3f.zip",
+              "zipMemberName": "API-1.pdf",
+              "pdfTextProbe": "PDF-1.7 1 0 obj /Type/Catalog/Pages 2 0 R/Lang(en) /StructTreeRoot 54 0 R/MarkInfo /Marked true /Metadata 817 0 R/ViewerPreferences 818 0 R endobj 2 0 obj /Type/Pages/Count 6/Kids 3 0 R 31 0 R 40 0 R 43 0 R 47 0 R 50 0 R endobj 3 0 obj /Type/Page/Parent 2 0 R/Resources /Font /F1 5 0 R/F2 9 0 R/F3 11 0 R/F4 16 0 R/F5 18 0 R/F6 20 0 R/F7 22 0 R/F8 24 0 R/F9 26 0 R /ExtGState /GS7 7 0 R/GS8 8 0 R /ProcSet /PDF/Text/ImageB/ImageC/ImageI /MediaBox 0 0 792 612 /Contents 4 0 R/Group /Type/Group/S/Transparency/CS/DeviceRGB /Tabs/S/StructParents 0 endobj 4 0 obj /Filter/FlateDecode/Length 2371 stream x mS N a ) m E e w 8 A K I, O Lw , E Gz x0 N 4 d M i o : H , :/ ) Y H Xqxp2 d a , L l / 6 qlNg i c / 9 x 7 z : y p n p ZpHQR- Y0 7 8 Bj M _z 8IP8D P a u 4:elp N s eE o F ;Vh H - s G / y C4 T;T 0 K mP i s_Y4 N D s p S g 7yV VU 6 t + l S 9 - -R g 5 / kz W O M U6 OH - zmq pP k( (aQ . SH L 7 i5T I B L 3 . ; pqa t W n ; 5whr :CKw ; 5L I CYp Je: x v W TA i S LW s(K s S D x: Q h , X -r g3 r; )c D M t / v/eL Uo2ml 5 k.ve S ZfLt ; p f r 4 s dH m t dp l8 ; R b yN h D .o l p . i) r ;J Hl z cpm Gl W OYMsp d jAL 8 9 + r e A BVC N . 33 JB 3 o P Z OI q h GK 3 cF U 8 , S E4V k f i A5 K R S F Y , q L / 2q 5 q Q 2 G Q G u QF vF j v x p V L f R 36t G R d u l 0 _ w 7f v yg w l 8 0 h I / x d3 d p ; w 8 s Lh9 cs R6c a 0 r Mf m4 s h7T sj 0 s P p PR M G w C o , 9 L y c i g K yG 8tZ + U 2g X e j f P b ) 9 .o_ z0 -Z M 2 S , l6q J / V i f J o( ;S+ 0 f C 1 Z , v HU. y W M H h d An iZ X(m , E 8_d0 w ES z ah + Z ; k 0T ;k Vl , R :s x jw G- D L D r W S 8 + h, 5 q Uiw/s x zZ csG 2 Y M f + S W p m f Q d 5 1 C P Dv s a kEz b 9 V u N3 +hr )B Hk 6 G g+ nW O3 J 7 eg ;D d o S e kF v f+ u c _: g 0 D l : ZU xm s j 5 , i mwbio O s n l R e V m E + w V g V p g y , Xi v _ FM8 3 vw A g endstream endobj 5 0 obj /Type/Font/Subtype/TrueType/Name/F1/BaseFont/BCDEEE+Calibri/Encoding/WinAnsiEncoding/FontDescriptor 6 0 R/FirstChar 32/LastChar 169/Widths 798 0 R endobj 6 0 obj /Type/FontDescriptor/FontName/BCDEEE+Calibri/Flags 32/ItalicAngle 0/Ascent 750/Descent -250/CapHeight 750/AvgWidth 521/MaxWidth 1743/FontWeight 400/XHeight 250/StemV 52/FontBBox -503 -250 1240 750 /FontFile2 799 0 R endobj 7 0 obj /Type/ExtGState/BM/Normal/ca 1 endobj 8 0 obj /Type/ExtGState/BM/Normal/CA 1 endobj 9 0 obj /Type/Font/Subtype/TrueType/Name/F2/BaseFont/BCDFEE+Calibri-Italic/Encoding/WinAnsiEncoding/FontDescriptor 10 0 R/FirstChar 32/LastChar 119/Widths 800 0 R endobj 10 0 obj /Type/FontDescriptor/FontName/BCDFEE+Calibri-Italic/Flags 32/ItalicAngle -11/Ascent 750/Descent -250/CapHeight 750/AvgWidth 521/MaxWidth 1984/FontWeight 400/XHeight 250/StemV 52/FontBBox -725 -250 1260 750 /FontFile2 801 0 R endobj 11 0 obj /Type/Font/Subtype/Type0/BaseFont/Arial-BoldMT/Encoding/Identity-H/DescendantFonts 12 0 R/ToUnicode 802 0 R endobj 12 0 obj 13 0 R endobj 13 0 obj /BaseFont/Arial-BoldMT/Subtype/CIDFontType2/Type/Font/CIDToGIDMap/Identity/DW 1000/CIDSystemInfo 14 0 R/FontDescriptor 15 0 R/W 804 0 R endobj 14 0 obj /Ordering(Identity) /Registry(Adobe) /Supplement 0 endobj 15 0 obj /Type/FontDescriptor/FontName/Arial-BoldMT/Flags 32/ItalicAngle 0/Ascent 905/Descent -210/CapHeight 728/AvgWidth 479/MaxWidth 2628/FontWeight 700/XHeight 250/Leading 33/StemV 47/FontBBox -628 -210 2000 728 /FontFile2 803 0 R endobj 16 0 obj /Type/Font/Subtype/TrueType/Name/F4/BaseFont/Arial-BoldMT/Encoding/WinAnsiEncoding/FontDescriptor 17 0 R/FirstChar 32/LastChar 121/Widths 805 0 R endobj 17 0 obj /Type/FontDescriptor/FontName/Arial-BoldMT/Flags 32/ItalicAngle 0/Ascent 905/Descent -210/CapHeight 728/AvgWidth 479/MaxWidth 2628/FontWeight 700/XHeight 250/Leading 33/StemV 47/FontBBox -628 -210 2000 728 endobj 18 0 obj /Type/Font/Subtype/TrueType/Name/F5/BaseFont/TimesNewRomanPSMT/Encoding/WinAnsiEncoding/FontDescriptor 19 0 R/FirstChar 32/LastChar 121/Widths 809 0 R endobj 19 0 obj /Type/FontDescriptor/FontName/TimesNewRomanPSMT/Flags 32/ItalicAngle 0/Ascent 891/Descent -216/CapHeight 693/AvgWidth 401/MaxWidth 2614/FontWeight 400/XHeight 250/Leading 42/StemV 40/FontBBox -568 -216 2046 693 endobj 20 0 obj /Type/Font/Subtype/TrueType/Name/F6/BaseFont/TimesNewRomanPS-ItalicMT/Encoding/WinAnsiEncoding/FontDescriptor 21 0 R/FirstChar 32/LastChar 119/Widths 810 0 R endobj 21 0 obj /Type/FontDescriptor/FontName/TimesNewRomanPS-ItalicMT/Flags 32/ItalicAngle -16.4/Ascent 891/Descent -216/CapHeight 694/AvgWidth 402/MaxWidth 1831/FontWeight 400/XHeight 250/Leading 42/StemV 40/FontBBox -498 -216 1333 694 endobj 22 0 obj /Type/Font/Subtype/TrueType/Name/F7/BaseFont/ArialMT/Encoding/WinAnsiEncoding/FontDescriptor 23 0 R/FirstChar 32/LastChar 122/Widths 814 0 R endobj 23 0 obj /Type/FontDescriptor/FontName/ArialMT/Flags 32/ItalicAngle 0/Ascent 905/Descent -210/CapHeight 728/AvgWidth 441/MaxWidth 2665/FontWeight 400/XHeight 250/Leading 33/StemV 44/FontBBox -665 -210 2000 728 endobj 24 0 obj /Type/Font/Subtype/TrueType/Name/F8/BaseFont/TimesNewRomanPS-BoldMT/Encoding/WinAnsiEncoding/FontDescriptor 25 0 R/FirstChar 32/LastChar 117/Widths 815 0 R endobj 25 0 obj /Type/FontDescriptor/FontName/TimesNewRomanPS-BoldMT/Flags 32/ItalicAngle 0/Ascent 891/Descent -216/CapHeight 677/AvgWidth 427/MaxWidth 2558/FontWeight 700/XHeight 250/Leading 42/StemV 42/FontBBox -558 -216 2000 677 endobj 26 0 obj /Type/Font/Subtype/Type0/BaseFont/TimesNewRomanPSMT/Encoding/Identity-H/DescendantFonts 27 0 R/ToUnicode 806 0 R endobj 27 0 obj 28 0 R endobj 28 0 obj /BaseFont/TimesNewRomanPSMT/Subtype/CIDFontType2/Type/Font/CIDToGIDMap/Identity/DW 1000/CIDSystemInfo 29 0 R/FontDescriptor 30 0 R/W 808 0 R endobj 29 0 obj /Ordering(Identity) /Registry(Adobe) /Supplement 0 endobj 30 0 obj /Type/FontDescriptor/FontName/TimesNewRomanPSMT/Flags 32/ItalicAngle 0/Ascent 891/Descent -216/CapHeight 693/AvgWidth 401/MaxWidth 2614/FontWeight 400/XHeight 250/Leading 42/StemV 40/FontBBox -568 -216 2046 693 /FontFile2 807 0 R endobj 31 0 obj /Type/Page/Parent 2 0 R/Resources /Font /F1 5 0 R/F2 9 0 R/F7 22 0 R/F4 16 0 R/F3 11 0 R/F10 33 0 R /ExtGState /GS7 7 0 R/GS8 8 0 R /ProcSet /PDF/Text/ImageB/ImageC/ImageI /Annots 38 0 R 39 0 R /MediaBox 0 0 792 612 /Contents 32 0 R/Group /Type/Group/S/Transparency/CS/DeviceRGB /Tabs/S/StructParents 1 endobj 32 0 obj /Filter/FlateDecode/Length 11528 stream x o 7r ; G) 4 f_ C , dsYO h g,g o n : , 3 T _ x z o 7 o O o zz p Uw : l 0 2 ; h n:z x _ T _ : _ u _ w _ r 3 . D q v M s H 9 D p ww 1Dp t c _ W y (l _ c ) O lu j x t u w o p w z w 1 7tc 6 ; D; u a +3 C d E: f8Z x 9 ;lV c x D g N 2 cOi 6 +N o 6 S W 6 t u . N k 7 2 M : 5 K d E Kl- + x 1 T 2 OM T ) d A ) xH 16 t F z N 4m rE+ Eo t D 1 s 0 E wi w Zs er /; qo q v Q k u k / X; g x 1z 8 s 6 n W / x 7 s 3 . w T 7LXl c , K E i p U N 6: +u qE 8 t t I oW ._ a X , 3 8x: L :E2 no b a 8 M K 6x Y A mhs,m a K l F l n CV I YT ) NE ) Kg lW ; o_+ aDn 8 m 1 Ab q f b d q0N T E 7 x; k Lw 9:Z 8 - K y) n D K . d MP8 O 0 gb g x VK 7 7I / 6 : c 2 ;; C i + x RC 75 H5 ; , H tY -k k C w . o C / T q k m k zS L L d N I. u v 2; f _ e Lw .+ K e G 1 o rO 7e + M _ _H . k 3 o ;1 0 F N O- P, a - M q r Mj3y x p. A b 8N g hLl t u ( I k E I ( O lo V W 3wEj7J J K n ; S f 5v 8 K m e- O i bs3/w 0 k,u :OG H F 47 a D D t 7 s F f ;S UM F_ i X IumU + U A d L 8 z OM j 5 P 3) 0 n T9 , P m X wkN ss7 rL F I iB ,R RYZ 1 S / - c 2)6: y ; N : 9u TDj + 5I y bJ BS b _ Fd6 h 5 / _fy _ o S k92D u + CQWj N Q Lye 1iGI; z7 _ Rx v . -, 1a u 3 e tBE w - 7 Z R +:o 0 p e F W 3 k H 6 2 e9 W9cV D , A7D V r U C u / _xWu 4Y- / q O VI0 + - 0 xG xW d J R b 2 J F f E ( m ) xz 6 MA UOQ u d : Sq patH 8 Hh jY G; q 1 x , j (JeE4 d x M a w fnnY 3 R) Q 2JJ9 _ i A X T ; J,h x 7 B d i L - K D h oD S qD Hz a 8 - X p X x f 0 0 ; +) QU 0Bpdah2 . . l / M C7 ) Ml: n P m 8 uB Sx 0 w _2 q 0 Pi; t b E r QI / D ESud 4 Zn 9 8 A S4 H x Q / D0 4 J a Uf 8 J F D h 3J - Y p X ( 7 D + D DxW oG D G M 2 0 M 9 7 j q S + D K ,p9 i L - EmO i H )k . :. , ) o / h e Q 1 / e : +2 U . Y ID 0 kB PG T i eX _a h m 3 2Jk: K ( : E 5 D E l j z X 4 P ( C 2 z6, ) cv-B 6 , + D d _.j G X vj y H H 2 Z q x W ) 9 c M 2 bC )kS m 4 H i ) S Z / I i y 3vS H , Y L s B 44 nl u + x _6 c R wY m 0J/ _D 7v R q E E Rw HQ in + L e o: L 2m 0 nna6VT q r a RiK + O1Q A q T J L TL + 7 m P 0 S X) SR _ 6 9SJ a(U+ R J- 0 Z q IO R R N C T QM 8 R W5 J Y . 4 6 8 j P g 6E fC c vj _2 A R Ms r2g -_Nh U 9 6 M U d E f 0 D y Pv b 2 s i R NO JX z P 9 ) x i X NM W) B Q 7u Wu 4 g sr O B f ;5yx X H ) pO U qd 8 7 q + 8xW5 ed A ( ; o kD Y q j mJ q6 88 ) p6 8 L C o j Q 8vH 8TX 3 + J1 rB 0 g 9 1 S d + x / w gU N R / + 8 g d s s m 2 B 3 l , p VT 3 3 Ccv - x I J MJ Q0 Mz +Yxg ob v U ; 0; Z r O4 m ) 0; Z 9H K bIu - D T AQ dq W, e5( b emJ q6 2s6 kS l6 m _2 H J 4 1 BZW g 0 vTFV L OD 7 r a I 3 3 _D 8 I 3 3 Q H D Nw : c E ; 8 T C m , T R J RL M a J TD i R 3 H1 vOY 7 w 4 u h hbI pO US, R5 K K H (U j G5 (U T d emJ q6 S d l H l m _2 : X V S i P + z H iU d E w R 3 ; c 03 K y Ov h L K K J(bC S i- ; (1R + 0U n a PD - d D1R 3 (0 7y z0 K M B j L _ Q4( X Z B Sk b wU Sr d F W Q r Q sE U U d )j 6 8 5 M m 52 Q 0 IN z F V 9vv 3,W a+) zS9 9 u 5 p 0 ZuI uo /P 1 i 3 B EV h vF k p 3 j _ 3 m()1Q) 3 0 W /5 A G R yzE K S p R A GSB iJH8E QEyM UeZ d JH 6 8 ( M I gJ N 4 d 06 NC 2r - 7+ y Q j T GBe Z u T B Z / p 5 X _ _2 b yO B mQ /r + cu c ( C Wnp 7VY 9 ( G 0E 6H K X SJ W . K 8VM P H b 5AN,6D r V 9b55G t 2 VSs j j GSs wU3 r Y X, -WF Q 5 Ut X ST ; 6 / Q A (P 8 N W I Hf f l g2 v 9D H e , jv f J D Kq - HiN 6 U 5 d y Y 1 l T a3 R Q Y; y 2 DiO )6S 3 B( WoR / ) aYH / _ z4(8wX V qts 9 q 8 B 6 81 e) U 8 )kW S l p +X j 8NL ; V q KY+ 8 P 8NM zZpdal b+ rS Xl M1 diX iLC i P I N G __ hP T N L L t s ;h e+ M . A Ot cs,: ( l Sh y EdyM Q , T y Nv /: ( F Z crs: l 7 GW h4 ( 6 Q / PU 7t a Q F- t f: A a9 Y _ 95) XS p Z d1 E ( b i+7 UW j o 1M Q i 4 QMz 2 I , N X e E a0 X g p 1 t 2 dN 7G R V L zr q A .3 Ty u DJ 4L A d F ) y 10 2Z4-7 2 o2e hP Os J 5 _2e n 84 a R VPy ) x 0 a U h V X GAn k,n8 W,k j x W Fu F6 Y wT +X wU 8 06 X h mJ q6 a cm 4 5 X _ p X O 9 3 B . 0T6N M D KU ; 9 U 7 R HU R y E M y N ) u bS10 M 4- M Y MfS 4 M - M R Su w p RG i ) P ( 7 M1 v ; 4 L + 2 p 2j J Yut f U 7 + UyW5 dV A )X X5 ; U UM 8 U G M 2 0 M g2 z U 6 G n e B up O O 0 l qpQ sp ap - wjn ; mXw Qe fW a m X5 R o2 TO Hh U , S 9 S w c Q0 + Qy 9 ps n 7 sR AAXj N g p Y 4 0 l0 e 7 + xW5 gd A ( , D ; 2 U d N ) _ q6 kS l6D JW K vB L /rxZ q C c c 2 s c f e u D qSd 4 : O dn z gr M-Z k a,Y _ M N h R s5( V N_ X R a r kK O M , q a 3 T Q B S b w w . y sg ( r b 9 W0 z d ) r 6 8 ( M m( a 3 , a ( E d 9q k N + 7 a U Cp , IU v q / W k -lK G r x U c ) 1H l y J ( H 9:7 ; A a G8 w u C fK AAX+ p E t 9 ) x S p R A:FS i G8E Q sM UEU x d G 6 8 ( M i) w ( Ha 1 aE A n - s2 n u W M 7 A Z DO T d ADw X P4 FX t kH f v 6 h GLK e m 4 t R WG F 0-5 z + /4 F 2 z F 6 a z UU RT A FS j GXE Q wM U X z d ( G 6 8 M F R _r p F nJ f q T n o2. cy / l w e V7 2 n, Q r r p I u/ ; : K W- f R k p Cc A x X p a A T6E M +td i b E H c P g2 D :CG S W - 0 FU h j NQ M ) xG5s ) / Y lu M 2 S l H 1 f e )P8 a 6 4 M W8 tiI a K Z / i _ wT 4 _ Po T/ qv X 4k W r M _,P , 0 S / s 8 M H 1 5A h Ni kN t cx G g i 1 B h B s z ) / K u ON s ytQ o g r t TV 4 4 N ( u _b Uu mU l -: oR6 rH nW j X e X gR y u Q s X T ;:M U N+ v ) i vt Cpd a :4W D 76 cy e M j Y o am69 aX m Hd_r a v+ b Tba 7 . E Lb + /G +l. Z .Y ; a1 E q w fU . vm 9 F Z r 8D t T y Ut gsw g +)m q Z , W ( cp A Be 9 eW2lb . eyO 4 K )w q )b 6 4a6( 8 N u ) A V / / 6+ (n J 7 1ZQ j V /Om V -y i W d U X-xy / 1 VY (T S 8G Mz z 9 A bL L 9 h l XI 4D c P VY q E I y T ( g O O H W : q D g EW2 ewf8 h _RkJ g2 h kSs: l J L a lu5 BF q R T/Z e G D B D X D Q :K l p j C md 8 F V(/ jE l bL L z / K Ko XAn ( P 4 B i I Y_w)HD C K g Z / B n HZ G j H 0 G 6 V W8 9 U jn SsJX R + P CP X Xh 9-,P 3 0 k/ T SD B K x3) : a , X ,,n8X W,, V OK E l hE 2, V B 9 I / L X L 9 h l uzX dX .W O r B i a J /z p tH8 s a U ;/ x KH a H n eN - L X 2 lQ , RkJ ( z c( A J (s J + 21 z 2Gt;E s A XF x9Qy 3 /1 : N C b Q s It I D n O i CfXL - p X d L C j Spd D A d V D1 5v 2 L 4 kl1Q l dh V Dq N . kKe J w p 0 3 G P0 c i s M n 9 w e i/ : / x _ s ( ,C f c u n s : ZY d ) fL3 c 8 ) 9 s 7 W c z 3 fvqj; 2 G _ nI p _ K h h L I eM z d- J7E + + endstream endobj 33 0 obj /Type",
+              "pmid": "38407907",
+              "PMID": "38407907",
+              "pmcid": "PMC10897744",
+              "PMCID": "PMC10897744",
+              "doi": "10.1001/jamanetworkopen.2023.56466",
+              "DOI": "10.1001/jamanetworkopen.2023.56466",
+              "sourceRecordTitle": "Psychotropic Medication Prescriptions and Large California Wildfires.",
+              "mappedBy": "single_reference_zip"
+            }
+          ],
+          "source": "api_original_pdf_download",
+          "batch_index": 1,
+          "batch_label": "PDF batch 1/1 (1 references)",
+          "batch_size": 1,
+          "requested_reference_count": 1
+        }
+      ],
+      "batch_errors": [],
+      "localZipPath": "smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/row_level_article_pdfs.zip",
+      "fileName": "row_level_article_pdfs.zip"
+    },
+    "intelligence_extraction": {
+      "enabled": true,
+      "modules": [
+        "exposure_health_associations",
+        "clinical_epidemiology",
+        "research_datasets",
+        "geospatial_datasets",
+        "cohorts",
+        "chemical_watchlist",
+        "research_reviews",
+        "hew_resource_library"
+      ],
+      "counts": {
+        "exposure_health_associations": 0,
+        "clinical_epidemiology": 0,
+        "research_datasets": 0,
+        "geospatial_datasets": 0,
+        "cohorts": 0,
+        "chemical_watchlist": 0,
+        "research_reviews": 0,
+        "hew_resource_library": 1,
+        "article_methods": 1
+      },
+      "knowledge_space": {
+        "records": 1,
+        "clusters": 1,
+        "priority_items": 1,
+        "large_scale_mode": false,
+        "umap": "single_record"
+      },
+      "generated_at": "2026-08-21T16:40:22Z"
+    }
+  },
+  "updated_at": "2026-08-21T16:40:22Z"
+}

@@ -1,0 +1,5 @@
+/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py:411: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  run_id = f"run-{dt.datetime.utcnow().strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:8]}"
+/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py:305: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+Workflow completed early: Literature search completed successfully but returned 0 records. The workflow stopped cleanly before deduplication and AI screening. Search query: 'Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study'.

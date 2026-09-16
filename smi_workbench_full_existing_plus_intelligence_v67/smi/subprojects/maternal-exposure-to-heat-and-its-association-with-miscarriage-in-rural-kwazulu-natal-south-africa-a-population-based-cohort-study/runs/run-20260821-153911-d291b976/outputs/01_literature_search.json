@@ -1,0 +1,14 @@
+{
+  "id": "references_9617c8305bc74c2eb5135860ac965651",
+  "recordCount": 0,
+  "databaseQueries": {
+    "pubmed": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 0
+  }
+}

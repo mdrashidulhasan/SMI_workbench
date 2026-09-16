@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-08-21T13:41:01",
+  "requested_reference_count": 1,
+  "batch_size": 1,
+  "completed_batch_count": 1,
+  "completed_reference_count": 1,
+  "successful_pdf_count": 1,
+  "failed_batch_count": 0,
+  "package_zip_count": 1,
+  "package_zips": [
+    {
+      "fileName": "PDF batch 1-1 -1 references-pdfs_d5002b0d90374ffda9949beb4b3ab531.zip",
+      "localZipPath": "smi/subprojects/geospatial-patterns-of-non-melanoma-skin-cancer-in-relation-to-climate-changes-in-iran/runs/run-20260821-174043-3e93d948/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_d5002b0d90374ffda9949beb4b3ab531.zip",
+      "relativePath": "smi/subprojects/geospatial-patterns-of-non-melanoma-skin-cancer-in-relation-to-climate-changes-in-iran/runs/run-20260821-174043-3e93d948/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_d5002b0d90374ffda9949beb4b3ab531.zip",
+      "batchLabel": "PDF batch 1/1 (1 references)",
+      "sizeBytes": 2780451
+    }
+  ],
+  "batch_errors": []
+}

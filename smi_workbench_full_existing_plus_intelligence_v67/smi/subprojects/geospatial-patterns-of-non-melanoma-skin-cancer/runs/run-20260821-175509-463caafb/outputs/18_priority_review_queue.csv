@@ -1,0 +1,2 @@
+rank,article_id,title,cluster_id,priority_score,priority_level,review_reason,exposures,outcomes,sample_size,population_size,statistical_methods
+1,PMID: 38546088,Geospatial Patterns of Non-Melanoma Skin Cancer in Relation to Climate Changes in Iran.,1,0.505,medium,novel compared with prior/cluster records,,cancer,not reported,not reported,spatial autocorrelation analysis; General G statistic; Moran's I; spatial cluster analysis; Geographically Weighted Regression (GWR); detection-coefficient model accuracy evaluation

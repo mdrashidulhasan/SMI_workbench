@@ -1,0 +1,260 @@
+{
+  "subproject": "symptoms-reported-by-young-adults",
+  "run_id": "run-20260821-162514-4644443c",
+  "created_at": "2026-08-21T16:25:14Z",
+  "config_path": "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/generated_configs/symptoms-reported-by-young-adults_20260821_122514.yaml",
+  "api_base_url": "https://dev.posit.niehs.nih.gov/et/api",
+  "state": "created",
+  "artifacts": {
+    "literature_search": {
+      "id": "references_2848f174e9aa48b99fd006bfa5f4a307",
+      "recordCount": 1,
+      "databaseQueries": {
+        "pubmed": "Symptoms Reported Young Adults Asthma During Wildfire Smoke Season"
+      },
+      "successfulSources": [
+        "pubmed"
+      ],
+      "sourceErrors": [],
+      "sourceCounts": {
+        "pubmed": 1
+      }
+    },
+    "deduplication": {
+      "id": "references_ff236e18f22a40ff8626400096e82ebb",
+      "recordCount": 1,
+      "duplicateRecordCount": 0
+    },
+    "ai_screening": {
+      "chunked_ai_screening": true,
+      "screening_status": "screened_in_chunks",
+      "screening_mode": "record_level_local_decisions",
+      "references_id": "references_ff236e18f22a40ff8626400096e82ebb",
+      "applied_limit": 1000,
+      "requested_record_count": 1,
+      "processed_record_count": 1,
+      "screened_record_count": 1,
+      "retained_record_count": 1,
+      "decisionCounts": {
+        "Relevant": 1,
+        "Not relevant": 0,
+        "Unclear": 0
+      },
+      "chunk_size": 75,
+      "chunk_count": 1,
+      "parallel": false,
+      "max_workers": 1,
+      "completed_chunk_unit_count": 1,
+      "chunks": [
+        {
+          "recordCount": 1,
+          "sourceRecordCount": 1,
+          "decisionCounts": {
+            "Relevant": 1,
+            "Not relevant": 0,
+            "Unclear": 0
+          },
+          "chunk_index": 1,
+          "chunk_label": "AI screening chunk 1/1 (1 records)",
+          "chunk_size": 1,
+          "requested_reference_count": 1,
+          "processed_record_count": 1,
+          "retained_record_count": 1,
+          "excluded_record_count": 0,
+          "unclear_record_count": 0,
+          "source": "local_record_level_ai_screening",
+          "screening_mode": "record_level_local_decisions",
+          "records": [
+            {
+              "id": "PMID-39340501",
+              "pmid": "39340501",
+              "pmcid": "PMC11568906",
+              "title": "Symptoms Reported by Young Adults With Asthma During Wildfire Smoke Season.",
+              "doi": "10.1016/j.jadohealth.2024.07.026",
+              "authors": "Postma J, Bindler R, Haverkamp HC, Walden V",
+              "journal": "The Journal of adolescent health : official publication of the Society for Adolescent Medicine",
+              "volume": "75",
+              "issue": "6",
+              "publicationDate": "2024-12-01",
+              "fullTextAvailable": true,
+              "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11568906/pdf/",
+              "abstract": "PURPOSE: The purpose of this article is to evaluate the relationship between exposure to poor air quality (AQ) and self-reported symptoms among young adults with asthma during wildfire smoke season. METHODS: Sixty seven young adults (aged 18-26 years) completed the Asthma Control Test and reported asthma symptoms at three time points (baseline, 4 weeks, and 8 weeks) during wildfire season as part of a clinical trial. Bivariate correlations between Asthma Control Test and AQ measures were examined followed by predictive linear regression. Multiple symptoms were compared between participants who experienced poor AQ and those who did not. RESULTS: Asthma control was inversely related to AQ with increased exposure to poor AQ tied to poor asthma control. A significantly greater proportion of participants reported critical respiratory symptoms when exposed to poor AQ than those who were not. DISCUSSION: Respiratory symptoms are key indicators that young adults can monitor to optimize their asthma management during wildfire smoke season.",
+              "index": 0,
+              "sourceIndex": 0,
+              "sourceId": "pubmed",
+              "database": "PubMed",
+              "databaseKey": "pubmed",
+              "pages": "",
+              "isbn": "",
+              "referenceIndex": 0,
+              "duplicate": false,
+              "ai_screening_decision": "Relevant",
+              "screening_decision": "Relevant"
+            }
+          ],
+          "decisions": [
+            {
+              "record_index": 1,
+              "record_label": "PMID 39340501",
+              "decision": "Relevant",
+              "retained": true,
+              "api_response_id": "references_097b39fa751949de96ee5bcae4a437f9"
+            }
+          ]
+        }
+      ],
+      "screening_ids": [],
+      "records": [
+        {
+          "id": "PMID-39340501",
+          "pmid": "39340501",
+          "pmcid": "PMC11568906",
+          "title": "Symptoms Reported by Young Adults With Asthma During Wildfire Smoke Season.",
+          "doi": "10.1016/j.jadohealth.2024.07.026",
+          "authors": "Postma J, Bindler R, Haverkamp HC, Walden V",
+          "journal": "The Journal of adolescent health : official publication of the Society for Adolescent Medicine",
+          "volume": "75",
+          "issue": "6",
+          "publicationDate": "2024-12-01",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11568906/pdf/",
+          "abstract": "PURPOSE: The purpose of this article is to evaluate the relationship between exposure to poor air quality (AQ) and self-reported symptoms among young adults with asthma during wildfire smoke season. METHODS: Sixty seven young adults (aged 18-26 years) completed the Asthma Control Test and reported asthma symptoms at three time points (baseline, 4 weeks, and 8 weeks) during wildfire season as part of a clinical trial. Bivariate correlations between Asthma Control Test and AQ measures were examined followed by predictive linear regression. Multiple symptoms were compared between participants who experienced poor AQ and those who did not. RESULTS: Asthma control was inversely related to AQ with increased exposure to poor AQ tied to poor asthma control. A significantly greater proportion of participants reported critical respiratory symptoms when exposed to poor AQ than those who were not. DISCUSSION: Respiratory symptoms are key indicators that young adults can monitor to optimize their asthma management during wildfire smoke season.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ]
+    },
+    "retrieved_records": {
+      "chunked_retrieval": true,
+      "source": "chunked_ai_screening_results",
+      "record_count": 1,
+      "applied_limit": 1000,
+      "records": [
+        {
+          "id": "PMID-39340501",
+          "pmid": "39340501",
+          "pmcid": "PMC11568906",
+          "title": "Symptoms Reported by Young Adults With Asthma During Wildfire Smoke Season.",
+          "doi": "10.1016/j.jadohealth.2024.07.026",
+          "authors": "Postma J, Bindler R, Haverkamp HC, Walden V",
+          "journal": "The Journal of adolescent health : official publication of the Society for Adolescent Medicine",
+          "volume": "75",
+          "issue": "6",
+          "publicationDate": "2024-12-01",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11568906/pdf/",
+          "abstract": "PURPOSE: The purpose of this article is to evaluate the relationship between exposure to poor air quality (AQ) and self-reported symptoms among young adults with asthma during wildfire smoke season. METHODS: Sixty seven young adults (aged 18-26 years) completed the Asthma Control Test and reported asthma symptoms at three time points (baseline, 4 weeks, and 8 weeks) during wildfire season as part of a clinical trial. Bivariate correlations between Asthma Control Test and AQ measures were examined followed by predictive linear regression. Multiple symptoms were compared between participants who experienced poor AQ and those who did not. RESULTS: Asthma control was inversely related to AQ with increased exposure to poor AQ tied to poor asthma control. A significantly greater proportion of participants reported critical respiratory symptoms when exposed to poor AQ than those who were not. DISCUSSION: Respiratory symptoms are key indicators that young adults can monitor to optimize their asthma management during wildfire smoke season.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ],
+      "chunk_results": [
+        {
+          "chunk_index": 1,
+          "source": "records_embedded_in_ai_screening_chunk",
+          "record_count": 1
+        }
+      ]
+    },
+    "pdf_download": {
+      "status": "unavailable",
+      "source": "api_unavailable",
+      "note": "The PDF API returned no extractable original PDFs or package ZIPs for this run. Requested 1 references in 1 batch(es). Failed batches: 0. No generated summary PDFs were substituted.",
+      "fileName": "",
+      "localZipPath": "",
+      "pdfs": [],
+      "batch_size": 1,
+      "min_batch_size": 1,
+      "batch_count": 1,
+      "parallel": false,
+      "max_workers": 20,
+      "row_level_pdfs": true,
+      "batch_results": [
+        {
+          "id": "pdfs_09fe388835834c8ca0ca7a991031d4ce",
+          "sourceId": "references_5efc26c84afc483dabd8365cdcad749b",
+          "sourceType": "references",
+          "status": "manual_required",
+          "recordCount": 1,
+          "downloadedCount": 0,
+          "manualRequiredCount": 0,
+          "failedCount": 1,
+          "skippedCount": 0,
+          "zipFileCount": 0,
+          "fileName": "",
+          "downloadUrl": "",
+          "records": [
+            {
+              "id": "API-1",
+              "title": "Symptoms Reported by Young Adults With Asthma During Wildfire Smoke Season.",
+              "doi": "10.1016/j.jadohealth.2024.07.026",
+              "pmcid": "PMC11568906",
+              "status": "failed",
+              "filePath": "",
+              "errorMessage": "The link opened a web page instead of a PDF. Open it in a browser or upload the PDF manually.; The link opened a web page instead of a PDF. Open it in a browser or upload the PDF manually."
+            }
+          ],
+          "errorMessage": "No PDFs were downloaded automatically.",
+          "pdfs": [],
+          "batch_index": 1,
+          "batch_label": "PDF batch 1/1 (1 references)",
+          "batch_size": 1,
+          "requested_reference_count": 1
+        }
+      ],
+      "batch_errors": [],
+      "packageZips": []
+    },
+    "intelligence_extraction": {
+      "enabled": true,
+      "modules": [
+        "exposure_health_associations",
+        "clinical_epidemiology",
+        "research_datasets",
+        "geospatial_datasets",
+        "cohorts",
+        "chemical_watchlist",
+        "research_reviews",
+        "hew_resource_library"
+      ],
+      "counts": {
+        "exposure_health_associations": 1,
+        "clinical_epidemiology": 1,
+        "research_datasets": 0,
+        "geospatial_datasets": 0,
+        "cohorts": 0,
+        "chemical_watchlist": 0,
+        "research_reviews": 0,
+        "hew_resource_library": 1,
+        "article_methods": 1
+      },
+      "knowledge_space": {
+        "records": 1,
+        "clusters": 1,
+        "priority_items": 1,
+        "large_scale_mode": false,
+        "umap": "single_record"
+      },
+      "generated_at": "2026-08-21T16:25:29Z"
+    }
+  },
+  "updated_at": "2026-08-21T16:25:29Z"
+}

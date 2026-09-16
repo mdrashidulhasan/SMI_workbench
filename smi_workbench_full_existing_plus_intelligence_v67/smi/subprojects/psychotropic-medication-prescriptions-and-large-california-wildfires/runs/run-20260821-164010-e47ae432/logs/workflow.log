@@ -1,0 +1,29 @@
+[2026-08-21T16:40:10Z] Created workflow run.
+[2026-08-21T16:40:13Z] Literature search requested_limit=1000.
+[2026-08-21T16:40:13Z] Completed literature search.
+[2026-08-21T16:40:13Z] Completed deduplication. effective_limit=1000.
+[2026-08-21T16:40:13Z] AI screening is using non-empty exclusion criteria from the run config (keys=['study_type', 'exposure', 'outcome']).
+[2026-08-21T16:40:13Z] Trying to retrieve concrete records for chunked AI screening: result_type=deduped, limit=1000, page_size=500.
+[2026-08-21T16:40:14Z] Retrieved 1 concrete records so far for chunked AI screening using result_type=deduped.
+[2026-08-21T16:40:14Z] Retrieved 1 concrete records for chunked AI screening using result_type=deduped.
+[2026-08-21T16:40:14Z] AI screening will use record-level local decision mapping for 1 records in 1 checkpoint chunk(s), chunk_size=75. Opaque references_* ids returned by /ai-screening will be kept for audit only and will not be sent to /results.
+[2026-08-21T16:40:14Z] AI screening record-level workers=1 (parallel=disabled).
+[2026-08-21T16:40:20Z] Completed AI screening chunk 1/1: Relevant=1, Unclear=0, Not relevant=0.
+[2026-08-21T16:40:20Z] Completed record-level AI screening for 1 records: Relevant=1, Unclear=0, Not relevant=0; retained=1.
+[2026-08-21T16:40:20Z] AI screening effective_limit=1000.
+[2026-08-21T16:40:20Z] Completed AI screening.
+[2026-08-21T16:40:20Z] Retrieving records from 1 AI-screening chunk result(s).
+[2026-08-21T16:40:20Z] Retrieved 1 records from chunked AI screening.
+[2026-08-21T16:40:20Z] PDF download will attempt all retrieved records: 1.
+[2026-08-21T16:40:20Z] Row-level PDF mode enabled: requesting one reference per PDF batch for safest article-to-PDF mapping.
+[2026-08-21T16:40:20Z] PDF download will request 1 references in 1 batch(es), batch_size=1, min_batch_size=1, retries=1.
+[2026-08-21T16:40:20Z] PDF parallel mode disabled; running batches sequentially.
+[2026-08-21T16:40:20Z] Starting PDF batch 1/1 (1 references), attempt 1/2.
+[2026-08-21T16:40:22Z] PDF batch 1/1 (1 references) extracted 1 original PDFs from API ZIP.
+[2026-08-21T16:40:22Z] PDF batch 1/1 (1 references) downloaded PDF package to /Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi/subprojects/psychotropic-medication-prescriptions-and-large-california-wildfires/runs/run-20260821-164010-e47ae432/outputs/pdfs/PDF batch 1-1 -1 references-pdfs_50daa79665184de796c654afac6eba3f.zip.
+[2026-08-21T16:40:22Z] Checkpointed PDF manifest after PDF batch 1/1 (1 references); completed units: 1, errors: 0.
+[2026-08-21T16:40:22Z] Created combined run-level ZIP package from 1 row-level PDFs: row_level_article_pdfs.zip.
+[2026-08-21T16:40:22Z] Completed PDF download stage.
+[2026-08-21T16:40:22Z] Generated Knowledge Space outputs: {'records': 1, 'clusters': 1, 'priority_items': 1, 'large_scale_mode': False, 'umap': 'single_record'}.
+[2026-08-21T16:40:22Z] Completed intelligence extraction.
+[2026-08-21T16:40:22Z] Paused for approval: post-pdf-download.

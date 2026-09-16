@@ -1,0 +1,40 @@
+[
+  {
+    "exposure_name": "temperature",
+    "exposure_type": "non-chemical climate/meteorological stressor",
+    "health_outcome": "malaria incidence / infection",
+    "population": "malaria cases / transmission in the study area",
+    "study_design": "time-series epidemiologic study",
+    "effect_direction": "climate conditions associated with increased/expanded transmission suitability",
+    "effect_estimate": "not applicable / no conventional epidemiologic effect estimate reported in abstract",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "negative binomial regression; linear regression; support vector machines (SVM/LS-SVM)",
+    "evidence_sentence": "Two ecological factors such as factor 1 (related to average mean relative humidity, average maximum relative humidity, and average maximal temperature) and factor 2 (related to average minimal temperature) affect the incidence of malaria.",
+    "citation": "PMID: 38347490",
+    "source_title": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa",
+    "confidence": "high",
+    "id": "assoc-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  },
+  {
+    "exposure_name": "humidity",
+    "exposure_type": "meteorological factor",
+    "health_outcome": "malaria incidence / infection",
+    "population": "malaria cases / transmission in the study area",
+    "study_design": "time-series epidemiologic study",
+    "effect_direction": "climate conditions associated with increased/expanded transmission suitability",
+    "effect_estimate": "not applicable / no conventional epidemiologic effect estimate reported in abstract",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "negative binomial regression; linear regression; support vector machines (SVM/LS-SVM)",
+    "evidence_sentence": "Two ecological factors such as factor 1 (related to average mean relative humidity, average maximum relative humidity, and average maximal temperature) and factor 2 (related to average minimal temperature) affect the incidence of malaria.",
+    "citation": "PMID: 38347490",
+    "source_title": "Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa",
+    "confidence": "high",
+    "id": "assoc-0002",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

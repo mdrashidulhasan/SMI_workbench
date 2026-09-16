@@ -1,0 +1,14 @@
+{
+  "id": "references_2848f174e9aa48b99fd006bfa5f4a307",
+  "recordCount": 1,
+  "databaseQueries": {
+    "pubmed": "Symptoms Reported Young Adults Asthma During Wildfire Smoke Season"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 1
+  }
+}

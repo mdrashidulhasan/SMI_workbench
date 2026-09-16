@@ -1,0 +1,18 @@
+[
+  {
+    "cluster_id": 1,
+    "theme": "cancer",
+    "article_count": 1,
+    "cluster_method": "agglomerative_cosine",
+    "articles": [
+      {
+        "article_id": "PMID: 38546088",
+        "title": "Geospatial Patterns of Non-Melanoma Skin Cancer in Relation to Climate Changes in Iran.",
+        "pca_x": 0.0,
+        "pca_y": 0.0,
+        "umap_x": 0.0,
+        "umap_y": 0.0
+      }
+    ]
+  }
+]

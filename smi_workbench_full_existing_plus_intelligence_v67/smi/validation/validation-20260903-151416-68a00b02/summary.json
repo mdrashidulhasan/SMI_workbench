@@ -1,0 +1,753 @@
+{
+  "benchmark_publications": 2505,
+  "selected_publications": 2495,
+  "completed_publications": 2495,
+  "search": {
+    "title_found": 2153,
+    "identifier_rescue": 258,
+    "not_found": 62,
+    "error": 22,
+    "title_search_recall": 0.8629258517034069,
+    "found_after_identifier_rescue": 0.9663326653306613
+  },
+  "source": {
+    "available": 1806,
+    "identity_matches": 1756,
+    "availability_rate": 0.7238476953907815,
+    "identity_match_rate": 0.9723145071982281
+  },
+  "structured_evidence": {
+    "papers_scored": 1806,
+    "tp": 9628,
+    "fp": 3890,
+    "fn": 8269,
+    "precision": 0.7122355378014499,
+    "recall": 0.5379672570821925,
+    "f1": 0.6129555944612446
+  },
+  "field_metrics": [
+    {
+      "field": "reference_type",
+      "label": "Reference Type",
+      "tp": 1316,
+      "fp": 490,
+      "fn": 257,
+      "papers_scored": 1806,
+      "papers_exact": 1315,
+      "precision": 0.7286821705426356,
+      "recall": 0.8366179275270185,
+      "f1": 0.7789286771234093,
+      "exact_agreement": 0.7281284606866002
+    },
+    {
+      "field": "exposure_l1",
+      "label": "Exposure L1",
+      "tp": 1777,
+      "fp": 333,
+      "fn": 979,
+      "papers_scored": 1806,
+      "papers_exact": 914,
+      "precision": 0.8421800947867298,
+      "recall": 0.6447750362844702,
+      "f1": 0.7303740238388818,
+      "exact_agreement": 0.5060908084163898
+    },
+    {
+      "field": "exposure_l2",
+      "label": "Exposure L2",
+      "tp": 1182,
+      "fp": 175,
+      "fn": 818,
+      "papers_scored": 1806,
+      "papers_exact": 1111,
+      "precision": 0.871039056742815,
+      "recall": 0.591,
+      "f1": 0.7042001787310098,
+      "exact_agreement": 0.615171650055371
+    },
+    {
+      "field": "health_impact_l1",
+      "label": "Health Impact L1",
+      "tp": 1275,
+      "fp": 579,
+      "fn": 1064,
+      "papers_scored": 1806,
+      "papers_exact": 703,
+      "precision": 0.6877022653721683,
+      "recall": 0.5451047456177853,
+      "f1": 0.6081564512282375,
+      "exact_agreement": 0.3892580287929125
+    },
+    {
+      "field": "health_impact_l2",
+      "label": "Health Impact L2",
+      "tp": 719,
+      "fp": 465,
+      "fn": 653,
+      "papers_scored": 1806,
+      "papers_exact": 995,
+      "precision": 0.6072635135135135,
+      "recall": 0.5240524781341108,
+      "f1": 0.5625978090766823,
+      "exact_agreement": 0.5509413067552602
+    },
+    {
+      "field": "health_impact_l3",
+      "label": "Health Impact L3",
+      "tp": 152,
+      "fp": 104,
+      "fn": 162,
+      "papers_scored": 1806,
+      "papers_exact": 1622,
+      "precision": 0.59375,
+      "recall": 0.4840764331210191,
+      "f1": 0.5333333333333334,
+      "exact_agreement": 0.8981173864894795
+    },
+    {
+      "field": "geography_l1",
+      "label": "Geography L1",
+      "tp": 1203,
+      "fp": 622,
+      "fn": 596,
+      "papers_scored": 1806,
+      "papers_exact": 1184,
+      "precision": 0.6591780821917809,
+      "recall": 0.6687048360200111,
+      "f1": 0.6639072847682119,
+      "exact_agreement": 0.655592469545958
+    },
+    {
+      "field": "geography_l2",
+      "label": "Geography L2",
+      "tp": 745,
+      "fp": 107,
+      "fn": 459,
+      "papers_scored": 1806,
+      "papers_exact": 1295,
+      "precision": 0.8744131455399061,
+      "recall": 0.6187707641196013,
+      "f1": 0.7247081712062257,
+      "exact_agreement": 0.7170542635658915
+    },
+    {
+      "field": "geographic_feature",
+      "label": "Geographic Feature",
+      "tp": 207,
+      "fp": 499,
+      "fn": 160,
+      "papers_scored": 1806,
+      "papers_exact": 1272,
+      "precision": 0.29320113314447593,
+      "recall": 0.5640326975476839,
+      "f1": 0.38583410997204104,
+      "exact_agreement": 0.7043189368770764
+    },
+    {
+      "field": "data_resource_type_l1",
+      "label": "Data Resource Type L1",
+      "tp": 44,
+      "fp": 10,
+      "fn": 601,
+      "papers_scored": 1806,
+      "papers_exact": 1236,
+      "precision": 0.8148148148148148,
+      "recall": 0.06821705426356589,
+      "f1": 0.12589413447782546,
+      "exact_agreement": 0.6843853820598007
+    },
+    {
+      "field": "data_resource_type_l2",
+      "label": "Data Resource Type L2",
+      "tp": 0,
+      "fp": 0,
+      "fn": 17,
+      "papers_scored": 1806,
+      "papers_exact": 1789,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_agreement": 0.9905869324473976
+    },
+    {
+      "field": "model_type",
+      "label": "Model Type",
+      "tp": 60,
+      "fp": 18,
+      "fn": 375,
+      "papers_scored": 1806,
+      "papers_exact": 1441,
+      "precision": 0.7692307692307693,
+      "recall": 0.13793103448275862,
+      "f1": 0.23391812865497078,
+      "exact_agreement": 0.7978959025470653
+    },
+    {
+      "field": "special_topic_l1",
+      "label": "Special Topic L1",
+      "tp": 504,
+      "fp": 239,
+      "fn": 1271,
+      "papers_scored": 1806,
+      "papers_exact": 817,
+      "precision": 0.6783310901749664,
+      "recall": 0.28394366197183096,
+      "f1": 0.4003177124702144,
+      "exact_agreement": 0.4523809523809524
+    },
+    {
+      "field": "special_topic_l2",
+      "label": "Special Topic L2",
+      "tp": 444,
+      "fp": 249,
+      "fn": 857,
+      "papers_scored": 1806,
+      "papers_exact": 1061,
+      "precision": 0.6406926406926406,
+      "recall": 0.3412759415833974,
+      "f1": 0.44533600802407225,
+      "exact_agreement": 0.5874861572535991
+    }
+  ],
+  "vocabulary_gaps": [
+    {
+      "field": "Health Impact L3",
+      "term": "Post Traumatic Stress Disorder",
+      "count": 142
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Birth Outcome",
+      "count": 54
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Human Confict/Violence",
+      "count": 18
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Chronic Obstructive Pulmonary Disease",
+      "count": 13
+    },
+    {
+      "field": "Exposure L2",
+      "term": "Lightening Storm",
+      "count": 13
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Glacier Melt/Snow Melt",
+      "count": 3
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Thermosensation?",
+      "count": 1
+    }
+  ],
+  "top_missing_terms": [
+    {
+      "field": "Geography L1",
+      "term": "Non-United States",
+      "count": 412
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Extreme Weather-Related Event or Disaster",
+      "count": 340
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Intervention",
+      "count": 337
+    },
+    {
+      "field": "Data Resource Type L1",
+      "term": "Survey",
+      "count": 323
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Study Population",
+      "count": 309
+    },
+    {
+      "field": "Exposure L2",
+      "term": "Extreme Heat/Heat",
+      "count": 199
+    },
+    {
+      "field": "Geography L2",
+      "term": "Asia",
+      "count": 185
+    },
+    {
+      "field": "Model Type",
+      "term": "Exposure Modeling",
+      "count": 180
+    },
+    {
+      "field": "Geography L2",
+      "term": "Europe",
+      "count": 175
+    },
+    {
+      "field": "Exposure L2",
+      "term": "Heatwave",
+      "count": 165
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "General Health Impact",
+      "count": 164
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Temperature",
+      "count": 164
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Temperature-Related Health Impact",
+      "count": 147
+    },
+    {
+      "field": "Geography L1",
+      "term": "United States",
+      "count": 146
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Health Sector Influence",
+      "count": 146
+    },
+    {
+      "field": "Health Impact L3",
+      "term": "Post Traumatic Stress Disorder",
+      "count": 142
+    },
+    {
+      "field": "Model Type",
+      "term": "Geospatial Modeling",
+      "count": 140
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Heat-Related Health Impact",
+      "count": 132
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Communication",
+      "count": 129
+    },
+    {
+      "field": "Data Resource Type L1",
+      "term": "Dataset",
+      "count": 129
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Sex",
+      "count": 118
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Policy",
+      "count": 117
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Sociodemographic Vulnerability",
+      "count": 117
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Infectious Disease",
+      "count": 117
+    },
+    {
+      "field": "Reference Type",
+      "term": "Commentary/Opinion",
+      "count": 106
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Stress Disorder",
+      "count": 97
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Mental Health and Well-Being",
+      "count": 90
+    },
+    {
+      "field": "Data Resource Type L1",
+      "term": "Cohort",
+      "count": 90
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Respiratory Impact",
+      "count": 82
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Low Socioeconomic Status",
+      "count": 82
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Cardiovascular Impact",
+      "count": 80
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Injury",
+      "count": 80
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Pre-existing Medical Condition",
+      "count": 80
+    },
+    {
+      "field": "Reference Type",
+      "term": "Review Article",
+      "count": 79
+    },
+    {
+      "field": "Exposure L1",
+      "term": "General Exposure",
+      "count": 73
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "General Mental Health and Well-Being",
+      "count": 64
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Research Gap",
+      "count": 63
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Health Professional",
+      "count": 63
+    },
+    {
+      "field": "Reference Type",
+      "term": "Research Article",
+      "count": 62
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Air Pollution",
+      "count": 62
+    },
+    {
+      "field": "Exposure L2",
+      "term": "Extreme Cold/Cold",
+      "count": 61
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Children",
+      "count": 61
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Elderly",
+      "count": 60
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Precipitation",
+      "count": 57
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Morbidity/Mortality",
+      "count": 57
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Other Health Impact - Specify",
+      "count": 56
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Seasonality",
+      "count": 56
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Birth Outcome",
+      "count": 54
+    },
+    {
+      "field": "Data Resource Type L1",
+      "term": "Software Code/Library",
+      "count": 53
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Waterborne Disease",
+      "count": 52
+    }
+  ],
+  "top_extra_terms": [
+    {
+      "field": "Geography L1",
+      "term": "Global or Unspecified Location",
+      "count": 559
+    },
+    {
+      "field": "Reference Type",
+      "term": "Research Article",
+      "count": 375
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Morbidity/Mortality",
+      "count": 156
+    },
+    {
+      "field": "Geographic Feature",
+      "term": "Island",
+      "count": 152
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "General Mental Health and Well-Being",
+      "count": 149
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Study Population",
+      "count": 112
+    },
+    {
+      "field": "Health Impact L3",
+      "term": "PTSD, Post Traumatic Stress Disorder",
+      "count": 87
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Mental Health and Well-Being",
+      "count": 79
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Injury",
+      "count": 78
+    },
+    {
+      "field": "Geographic Feature",
+      "term": "Tropical",
+      "count": 72
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "General Health Impact",
+      "count": 70
+    },
+    {
+      "field": "Reference Type",
+      "term": "Review Article",
+      "count": 62
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Meteorological Factor",
+      "count": 61
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Children",
+      "count": 58
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Infectious Disease",
+      "count": 55
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Temperature",
+      "count": 52
+    },
+    {
+      "field": "Geographic Feature",
+      "term": "Urban",
+      "count": 52
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Airborne Disease",
+      "count": 51
+    },
+    {
+      "field": "Reference Type",
+      "term": "Commentary/Opinion",
+      "count": 49
+    },
+    {
+      "field": "Geographic Feature",
+      "term": "Built Environment",
+      "count": 46
+    },
+    {
+      "field": "Geography L1",
+      "term": "Non-United States",
+      "count": 44
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Birth Outcomes",
+      "count": 43
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Elderly",
+      "count": 43
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Air Pollution",
+      "count": 41
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Precipitation",
+      "count": 40
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Intervention",
+      "count": 39
+    },
+    {
+      "field": "Geographic Feature",
+      "term": "Forest",
+      "count": 39
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Low Socioeconomic Status",
+      "count": 37
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Extreme Weather-Related Event or Disaster",
+      "count": 37
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Sociodemographic Vulnerability",
+      "count": 37
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Mood Disorder",
+      "count": 37
+    },
+    {
+      "field": "Geographic Feature",
+      "term": "Rural",
+      "count": 35
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "General Infectious Disease",
+      "count": 34
+    },
+    {
+      "field": "Exposure L2",
+      "term": "Extreme Heat/Heat",
+      "count": 33
+    },
+    {
+      "field": "Geography L2",
+      "term": "Europe",
+      "count": 33
+    },
+    {
+      "field": "Geographic Feature",
+      "term": "Ocean/Coastal",
+      "count": 31
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Workers",
+      "count": 28
+    },
+    {
+      "field": "Exposure L2",
+      "term": "Particulate Matter",
+      "count": 27
+    },
+    {
+      "field": "Health Impact L2",
+      "term": "Heat-Related Health Impact",
+      "count": 26
+    },
+    {
+      "field": "Geography L2",
+      "term": "Asia",
+      "count": 26
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Temperature-Related Health Impact",
+      "count": 24
+    },
+    {
+      "field": "Geographic Feature",
+      "term": "Freshwater",
+      "count": 23
+    },
+    {
+      "field": "Special Topic L1",
+      "term": "Research Gap",
+      "count": 23
+    },
+    {
+      "field": "Exposure L2",
+      "term": "Wildfire",
+      "count": 21
+    },
+    {
+      "field": "Geography L2",
+      "term": "Central/South America",
+      "count": 21
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Cardiovascular Impact",
+      "count": 21
+    },
+    {
+      "field": "Special Topic L2",
+      "term": "Early Warning System",
+      "count": 21
+    },
+    {
+      "field": "Exposure L2",
+      "term": "Extreme Cold/Cold",
+      "count": 21
+    },
+    {
+      "field": "Health Impact L1",
+      "term": "Diabetes/Obesity/Overweight",
+      "count": 20
+    },
+    {
+      "field": "Exposure L1",
+      "term": "Seasonality",
+      "count": 19
+    }
+  ]
+}

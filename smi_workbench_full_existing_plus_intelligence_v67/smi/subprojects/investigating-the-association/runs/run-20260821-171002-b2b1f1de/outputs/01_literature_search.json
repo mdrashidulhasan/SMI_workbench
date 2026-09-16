@@ -1,0 +1,14 @@
+{
+  "id": "references_fbad0e75e796427296c05340bde46c3c",
+  "recordCount": 1,
+  "databaseQueries": {
+    "pubmed": "Investigating the association between floods and low birth weight in India: Using the geospatial approach"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 1
+  }
+}

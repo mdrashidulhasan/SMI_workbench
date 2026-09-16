@@ -1,0 +1,2 @@
+rank,article_id,title,cluster_id,priority_score,priority_level,review_reason,exposures,outcomes,sample_size,population_size,statistical_methods
+1,PMID: 39176885,Deep Learning Models for Health-Driven Forecasting of Indoor Temperatures in Heat Waves in Canada: An Exploratory Study Using Smart Thermostats.,1,0.505,medium,novel compared with prior/cluster records,heat/temperature,,not reported,not reported,deep learning

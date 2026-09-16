@@ -1,0 +1,2 @@
+cluster_id,theme,article_count,main_titles,cluster_method
+1,heat/temperature,1,Deep Learning Models for Health-Driven Forecasting of Indoor Temperatures in Heat Waves in Canada: An Exploratory Study Using Smart Thermostats.,agglomerative_cosine

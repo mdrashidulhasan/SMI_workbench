@@ -1,0 +1,12 @@
+{
+  "pid": 83331,
+  "subproject": "investigating-the-association",
+  "run_id": "run-20260821-171002-b2b1f1de",
+  "config_path": "generated_configs/investigating-the-association_20260821_131001.yaml",
+  "log_path": "smi/jobs/job-20260821-131002-81091.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-131002-81091.log",
+  "started_at": "2026-08-21T13:10:02",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject investigating-the-association --config generated_configs/investigating-the-association_20260821_131001.yaml",
+  "job_id": "job-20260821-131002-81091"
+}

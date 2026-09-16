@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-08-21T13:19:50",
+  "requested_reference_count": 1,
+  "batch_size": 1,
+  "completed_batch_count": 1,
+  "completed_reference_count": 1,
+  "successful_pdf_count": 0,
+  "failed_batch_count": 0,
+  "package_zip_count": 0,
+  "package_zips": [],
+  "batch_errors": []
+}

@@ -1,0 +1,12 @@
+{
+  "pid": 81908,
+  "subproject": "association-between-ambient-temperature",
+  "run_id": "run-20260821-170409-c26d6f3e",
+  "config_path": "generated_configs/association-between-ambient-temperature_20260821_130408.yaml",
+  "log_path": "smi/jobs/job-20260821-130408-81091.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-130408-81091.log",
+  "started_at": "2026-08-21T13:04:09",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject association-between-ambient-temperature --config generated_configs/association-between-ambient-temperature_20260821_130408.yaml",
+  "job_id": "job-20260821-130408-81091"
+}

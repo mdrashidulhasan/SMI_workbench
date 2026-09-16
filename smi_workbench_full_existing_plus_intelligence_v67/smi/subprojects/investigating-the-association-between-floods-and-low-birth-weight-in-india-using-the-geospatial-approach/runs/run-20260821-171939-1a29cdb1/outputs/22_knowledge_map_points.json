@@ -1,0 +1,21 @@
+[
+  {
+    "article_id": "PMID: 38151131",
+    "title": "Investigating the association between floods and low birth weight in India: Using the geospatial approach.",
+    "cluster_id": 1,
+    "pca_x": 0.0,
+    "pca_y": 0.0,
+    "umap_x": 0.0,
+    "umap_y": 0.0,
+    "x": 0.0,
+    "y": 0.0,
+    "priority_score": 0.505,
+    "effect_direction": "positive",
+    "exposures": "",
+    "outcomes": "birth weight; mortality",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "logistic regression",
+    "filter_text": "investigating the association between floods and low birth weight in india: using the geospatial approach. pmid: 38151131 background: frequent natural disasters like floods pose a major threat to india, with significant implications for public health. low birth weight (lbw) is a critical global health concern, contributing to neonatal mortality. however, the association between floods and lbw remains underexplored. this study aims to address this gap by investigating the association between flood hazards and lbw in india using a geospatial approach. by analyzing data from the national family health survey (nfhs-5) and flood zonation maps, the study aims to uncover the spatial dynamics of this association, offering insights into the implications of floods on birth weight across diverse geographical regions.. methods: the study used the fifth round of nfhs data, 2019-21, which involved 202,194 children selected through a multi-stage stratified sampling technique. the vulnerability atlas of india 2019 maps were also utilized to classify areas as flood or non-flood zones. birth weight data from the nfhs-5 were categorized into three groups: very low, low, and normal birth weight (vlbw, lbw and nbw). control variables including flood exposure, socio-demographic attributes, and geographic region were considered. bivariate analysis and multinomial logistic regression were employed for statistical analysis. the spatial analysis involved moran's i statistics and geographically weighted regression to explore spatial dynamics of the association between floods and birth weight in india.. results: floods predominantly affect india's lower himalayan belts and western coastal regions. flood-affected areas show higher proportions of vlbw and lbw infants. groundwater usage and unimproved sanitation are associated with higher risk of vlbw and lbw. sex, wealth, maternal education, residence type, and geographic region significantly influence birth weights. multinomial logistic regression reveals 8 % and 27 % higher risks for lbw and vlbw in flood-affected regions. lisa cluster maps identify high-risk areas for both lbw and floods. geographically weighted regression highlights 52 % of the variability in lbw occurrences can be attributed to the influence of flood hazards. families hailing from the poorest wealth background and exposed to flood hazards bear a 5 % heightened likelihood of delivering lbw infants, in stark contrast to their counterparts from the same economic background yet unaffected by floods.. conclusions: the significant association between floods and lbw underscores the importance of robust disaster preparedness and public health strategies. by unraveling the spatial intricacies of flood-induced lbw disparities, this research provides valuable insights for promoting healthier birth outcomes and reducing child mortality rates, particularly in flood-prone regions. these findings emphasize the importance of holistic policies that address both environmental challenges and socioeconomic inequalities to safeguard maternal and infant health across the nation  birth weight; mortality  "
+  }
+]

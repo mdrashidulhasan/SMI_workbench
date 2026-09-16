@@ -1,0 +1,70 @@
+{
+  "chunked_ai_screening": true,
+  "screening_mode": "record_level_local_decisions",
+  "parallel": false,
+  "max_workers": 1,
+  "completed_chunk_units": 1,
+  "failed_chunk_units": 0,
+  "completed_record_count": 1,
+  "requested_record_count": 1,
+  "chunk_size": 75,
+  "chunks": [
+    {
+      "recordCount": 1,
+      "sourceRecordCount": 1,
+      "decisionCounts": {
+        "Relevant": 1,
+        "Not relevant": 0,
+        "Unclear": 0
+      },
+      "chunk_index": 1,
+      "chunk_label": "AI screening chunk 1/1 (1 records)",
+      "chunk_size": 1,
+      "requested_reference_count": 1,
+      "processed_record_count": 1,
+      "retained_record_count": 1,
+      "excluded_record_count": 0,
+      "unclear_record_count": 0,
+      "source": "local_record_level_ai_screening",
+      "screening_mode": "record_level_local_decisions",
+      "records": [
+        {
+          "id": "PMID-39340501",
+          "pmid": "39340501",
+          "pmcid": "PMC11568906",
+          "title": "Symptoms Reported by Young Adults With Asthma During Wildfire Smoke Season.",
+          "doi": "10.1016/j.jadohealth.2024.07.026",
+          "authors": "Postma J, Bindler R, Haverkamp HC, Walden V",
+          "journal": "The Journal of adolescent health : official publication of the Society for Adolescent Medicine",
+          "volume": "75",
+          "issue": "6",
+          "publicationDate": "2024-12-01",
+          "fullTextAvailable": true,
+          "pdfUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11568906/pdf/",
+          "abstract": "PURPOSE: The purpose of this article is to evaluate the relationship between exposure to poor air quality (AQ) and self-reported symptoms among young adults with asthma during wildfire smoke season. METHODS: Sixty seven young adults (aged 18-26 years) completed the Asthma Control Test and reported asthma symptoms at three time points (baseline, 4 weeks, and 8 weeks) during wildfire season as part of a clinical trial. Bivariate correlations between Asthma Control Test and AQ measures were examined followed by predictive linear regression. Multiple symptoms were compared between participants who experienced poor AQ and those who did not. RESULTS: Asthma control was inversely related to AQ with increased exposure to poor AQ tied to poor asthma control. A significantly greater proportion of participants reported critical respiratory symptoms when exposed to poor AQ than those who were not. DISCUSSION: Respiratory symptoms are key indicators that young adults can monitor to optimize their asthma management during wildfire smoke season.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ],
+      "decisions": [
+        {
+          "record_index": 1,
+          "record_label": "PMID 39340501",
+          "decision": "Relevant",
+          "retained": true,
+          "api_response_id": "references_097b39fa751949de96ee5bcae4a437f9"
+        }
+      ]
+    }
+  ],
+  "chunk_errors": []
+}

@@ -1,0 +1,2 @@
+[2026-08-18T20:57:38Z] Created workflow run.
+[2026-08-18T20:57:38Z] literature_search failed: ConnectionError: HTTPSConnectionPool(host='dev.posit.niehs.nih.gov', port=443): Max retries exceeded with url: /et/api/search (Caused by NameResolutionError("HTTPSConnection(host='dev.posit.niehs.nih.gov', port=443): Failed to resolve 'dev.posit.niehs.nih.gov' ([Errno 8] nodename nor servname provided, or not known)"))

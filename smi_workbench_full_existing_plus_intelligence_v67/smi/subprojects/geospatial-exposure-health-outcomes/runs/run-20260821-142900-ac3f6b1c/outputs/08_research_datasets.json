@@ -1,0 +1,34 @@
+[
+  {
+    "dataset_name": "Medicare",
+    "dataset_provider": "CMS",
+    "dataset_type": "health claims",
+    "variables_used": "PM2.5; particulate matter; air pollution; NO2; O3",
+    "geographic_coverage": "United States",
+    "time_period": "not specified",
+    "access_type": "public or controlled; verify source",
+    "source_paper": "Case-Crossover Analysis of Short-Term Particulate Matter and Health Outcomes in Patients With Atrial Fibrillation.",
+    "evidence_sentence": "METHODS: Using 2021 Medicare data, we identified patients with established AF residing in western US states.",
+    "citation": "PMID: 42500877",
+    "confidence": "high",
+    "review_status": "pending",
+    "reviewer_notes": "",
+    "id": "dataset-0001"
+  },
+  {
+    "dataset_name": "Sentinel",
+    "dataset_provider": "ESA",
+    "dataset_type": "satellite remote sensing",
+    "variables_used": "PM2.5; particulate matter",
+    "geographic_coverage": "not specified",
+    "time_period": "not specified",
+    "access_type": "public or controlled; verify source",
+    "source_paper": "Fine Particulate Matter (PM2.5), the Exposome, and Cumulative Health Risk: A Life-course Perspective.",
+    "evidence_sentence": "Positioning PM2.5 as a sentinel indicator of cumulative environmental risk provides a unifying framework for exposome-informed science and supports the development of more precise, equitable, and policy-relevant interventions",
+    "citation": "PMID: 42442744",
+    "confidence": "high",
+    "review_status": "pending",
+    "reviewer_notes": "",
+    "id": "dataset-0002"
+  }
+]

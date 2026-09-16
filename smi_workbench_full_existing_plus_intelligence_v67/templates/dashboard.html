@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% set page_title = "Dashboard" %}
+{% set page_kicker = "Review Index" %}
+{% set page_subtitle = projects|length ~ " projects available" %}
+{% block content %}
+<div class="card">
+  <div class="actions">
+    <a class="button" href="/new">Start New Workflow</a>
+    <a class="button button-light" href="/outputs">View Outputs and PDFs</a>
+    <a class="button button-light" href="/intelligence">View Intelligence Add-on</a>
+  </div>
+</div>
+
+{% if active_jobs %}
+<div class="card">
+  <h2>Active Background Runs</h2>
+  <div class="scroll"><table>
+    <tr><th>Project</th><th>Run</th><th>PID</th><th>Started</th><th>Actions</th></tr>
+    {% for job in active_jobs %}
+    <tr>
+      <td>{{ job.subproject }}</td>
+      <td>{{ job.run_id or 'creating' }}</td>
+      <td>{{ job.pid }}</td>
+      <td>{{ job.started_at }}</td>
+      <td class="actions">
+        <a href="/outputs?subproject={{ job.subproject }}{% if job.run_id %}&run_id={{ job.run_id }}{% endif %}">Outputs</a>
+        {% if job.log_url %}<a href="{{ job.log_url }}" target="_blank">Log</a>{% endif %}
+        <form method="post" action="/runs/stop" onsubmit="return confirm('Stop this workflow run now?');">
+          <input type="hidden" name="job_id" value="{{ job.job_id }}">
+          <input type="hidden" name="subproject" value="{{ job.subproject }}">
+          <input type="hidden" name="run_id" value="{{ job.run_id }}">
+          <input type="hidden" name="return_to" value="dashboard">
+          <button type="submit" class="button-red">Stop Run</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table></div>
+</div>
+{% endif %}
+<div class="grid">
+  <div class="metric"><div class="value">{{ projects|length }}</div><div class="label">Projects</div></div>
+  <div class="metric"><div class="value">{{ project_summaries|length }}</div><div class="label">Runs with outputs</div></div>
+  <div class="metric"><div class="value">{{ 'Yes' if api_connected else 'No' }}</div><div class="label">External API connected</div></div>
+</div>
+<div class="card">
+  <h2>Project Runs</h2>
+  {% if project_summaries %}
+  <div class="scroll"><table>
+    <tr><th>Project</th><th>Run</th><th>State</th><th>Current step</th><th>Search</th><th>Retrieved</th><th>PDFs</th><th>Actions</th></tr>
+    {% for s in project_summaries %}
+    <tr>
+      <td><b>{{ s.subproject }}</b><br><span class="small muted">{{ s.created_at }}</span></td>
+      <td>{{ s.run_id }}</td>
+      <td><span class="chip">{{ s.state }}</span></td>
+      <td>{{ s.current_step }}</td>
+      <td>{{ s.search_records }}</td>
+      <td>{{ s.retrieved_records }}</td>
+      <td>{{ s.pdf_downloads }}</td>
+      <td class="actions">
+        <a href="/outputs?subproject={{ s.subproject }}&run_id={{ s.run_id }}">Outputs</a>
+        <a href="/statistics?subproject={{ s.subproject }}&run_id={{ s.run_id }}">Stats</a>
+        <a href="/intelligence?subproject={{ s.subproject }}&run_id={{ s.run_id }}">Intelligence</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table></div>
+  {% else %}
+  <p class="muted">No runs found yet. Use New Run, or use the included demo run if available after setup.</p>
+  {% endif %}
+</div>
+{% endblock %}

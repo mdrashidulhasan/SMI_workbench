@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study",
+    "citation": "PMID: 39066467",
+    "sample_size": "3477 pregnancies",
+    "population_size": "not reported",
+    "statistical_methods": "binary logistic regression",
+    "population": "pregnancies / pregnant women",
+    "study_design": "population-based cohort study",
+    "evidence_sentence": "Binary logistic regression was used to investigate the relationship between maternal heat exposure and miscarriage..",
+    "abstract_available": "yes; possibly incomplete",
+    "id": "method-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

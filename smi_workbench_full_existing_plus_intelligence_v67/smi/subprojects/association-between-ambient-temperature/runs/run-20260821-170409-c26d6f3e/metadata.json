@@ -1,0 +1,260 @@
+{
+  "subproject": "association-between-ambient-temperature",
+  "run_id": "run-20260821-170409-c26d6f3e",
+  "created_at": "2026-08-21T17:04:09Z",
+  "config_path": "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/generated_configs/association-between-ambient-temperature_20260821_130408.yaml",
+  "api_base_url": "https://dev.posit.niehs.nih.gov/et/api",
+  "state": "created",
+  "artifacts": {
+    "literature_search": {
+      "id": "references_5484f6afc06b4ef1bc46cda359926099",
+      "recordCount": 1,
+      "databaseQueries": {
+        "pubmed": "Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom"
+      },
+      "successfulSources": [
+        "pubmed"
+      ],
+      "sourceErrors": [],
+      "sourceCounts": {
+        "pubmed": 1
+      }
+    },
+    "deduplication": {
+      "id": "references_29679cda274241d2afbd73fa28d1bc15",
+      "recordCount": 1,
+      "duplicateRecordCount": 0
+    },
+    "ai_screening": {
+      "chunked_ai_screening": true,
+      "screening_status": "screened_in_chunks",
+      "screening_mode": "record_level_local_decisions",
+      "references_id": "references_29679cda274241d2afbd73fa28d1bc15",
+      "applied_limit": 1000,
+      "requested_record_count": 1,
+      "processed_record_count": 1,
+      "screened_record_count": 1,
+      "retained_record_count": 1,
+      "decisionCounts": {
+        "Relevant": 1,
+        "Not relevant": 0,
+        "Unclear": 0
+      },
+      "chunk_size": 75,
+      "chunk_count": 1,
+      "parallel": false,
+      "max_workers": 1,
+      "completed_chunk_unit_count": 1,
+      "chunks": [
+        {
+          "recordCount": 1,
+          "sourceRecordCount": 1,
+          "decisionCounts": {
+            "Relevant": 1,
+            "Not relevant": 0,
+            "Unclear": 0
+          },
+          "chunk_index": 1,
+          "chunk_label": "AI screening chunk 1/1 (1 records)",
+          "chunk_size": 1,
+          "requested_reference_count": 1,
+          "processed_record_count": 1,
+          "retained_record_count": 1,
+          "excluded_record_count": 0,
+          "unclear_record_count": 0,
+          "source": "local_record_level_ai_screening",
+          "screening_mode": "record_level_local_decisions",
+          "records": [
+            {
+              "id": "PMID-37806575",
+              "pmid": "37806575",
+              "pmcid": "",
+              "title": "Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom.",
+              "doi": "10.1016/j.scitotenv.2023.167607",
+              "authors": "Lam HCY, Anees-Hill S, Satchwell J, Symon F, Macintyre H, Pashley CH, Marczylo EL, Douglas P, Aldridge S, Hansell A",
+              "journal": "The Science of the total environment",
+              "volume": "906",
+              "issue": "",
+              "publicationDate": "2024-01-01",
+              "fullTextAvailable": false,
+              "pdfUrl": "",
+              "abstract": "Exposure to pollen and fungal spores can trigger asthma/allergic symptoms and affect health. Rising temperatures from climate change have been associated with earlier seasons and increasing intensity for some pollen, with weaker evidence for fungal spores. It is unclear whether climate change has resulted in changes in the exposure-response function between temperature and pollen/fungal spore concentrations over time. This study examined associations between temperature and pollen/fungal spores in different time periods and assessed potential adaptation using the longest pollen/fungal spore dataset in existence (52 years). Daily concentrations of pollen (birch and grass) and fungal spores (Cladosporium, Alternaria, Sporobolomyces and Tilletiopsis) collected between April and October from Derby (1970-2005) and Leicester (2006-2021), UK, were analysed. Cumulative seasonal concentrations (seasonal integral) and start-of-season were calculated and linked to seasonal mean temperatures (Tmeans) using generalized additive models. Daily concentrations were evaluated against daily Tmean with distributed lagged nonlinear models. Models were adjusted for precipitation, relative humidity, long-term trend and location. Seasonal and daily analyses were respectively stratified into two periods (1970-1995, 1997-2021) and five decades. Warmer seasonal Tmeans were associated with higher seasonal integral for birch, Cladosporium and Alternaria, as well as earlier start-of-season for birch, grass and Cladosporium. There were indications of changing associations with temperature in the recent decades. A warmer January was associated with higher seasonal integral for grass in 1997-2021, but not in 1970-1995. In 2000-2021, daily concentrations of birch pollen tended to remain at higher levels, vs. decrease during 1990s, when Tmean was between 13 and 15 °C. Our study suggests higher temperatures experienced in recent decades are associated with higher overall abundance of some pollen/fungal spores, which may increase future disease burdens of allergies. The changing responses of some pollen to higher temperatures over time may indicate adaptation to increasing temperatures and should be considered in climate change mitigation and adaptation planning.",
+              "index": 0,
+              "sourceIndex": 0,
+              "sourceId": "pubmed",
+              "database": "PubMed",
+              "databaseKey": "pubmed",
+              "pages": "",
+              "isbn": "",
+              "referenceIndex": 0,
+              "duplicate": false,
+              "ai_screening_decision": "Relevant",
+              "screening_decision": "Relevant"
+            }
+          ],
+          "decisions": [
+            {
+              "record_index": 1,
+              "record_label": "PMID 37806575",
+              "decision": "Relevant",
+              "retained": true,
+              "api_response_id": "references_a27aa1fcdfab46a9a37957658e4edb6a"
+            }
+          ]
+        }
+      ],
+      "screening_ids": [],
+      "records": [
+        {
+          "id": "PMID-37806575",
+          "pmid": "37806575",
+          "pmcid": "",
+          "title": "Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom.",
+          "doi": "10.1016/j.scitotenv.2023.167607",
+          "authors": "Lam HCY, Anees-Hill S, Satchwell J, Symon F, Macintyre H, Pashley CH, Marczylo EL, Douglas P, Aldridge S, Hansell A",
+          "journal": "The Science of the total environment",
+          "volume": "906",
+          "issue": "",
+          "publicationDate": "2024-01-01",
+          "fullTextAvailable": false,
+          "pdfUrl": "",
+          "abstract": "Exposure to pollen and fungal spores can trigger asthma/allergic symptoms and affect health. Rising temperatures from climate change have been associated with earlier seasons and increasing intensity for some pollen, with weaker evidence for fungal spores. It is unclear whether climate change has resulted in changes in the exposure-response function between temperature and pollen/fungal spore concentrations over time. This study examined associations between temperature and pollen/fungal spores in different time periods and assessed potential adaptation using the longest pollen/fungal spore dataset in existence (52 years). Daily concentrations of pollen (birch and grass) and fungal spores (Cladosporium, Alternaria, Sporobolomyces and Tilletiopsis) collected between April and October from Derby (1970-2005) and Leicester (2006-2021), UK, were analysed. Cumulative seasonal concentrations (seasonal integral) and start-of-season were calculated and linked to seasonal mean temperatures (Tmeans) using generalized additive models. Daily concentrations were evaluated against daily Tmean with distributed lagged nonlinear models. Models were adjusted for precipitation, relative humidity, long-term trend and location. Seasonal and daily analyses were respectively stratified into two periods (1970-1995, 1997-2021) and five decades. Warmer seasonal Tmeans were associated with higher seasonal integral for birch, Cladosporium and Alternaria, as well as earlier start-of-season for birch, grass and Cladosporium. There were indications of changing associations with temperature in the recent decades. A warmer January was associated with higher seasonal integral for grass in 1997-2021, but not in 1970-1995. In 2000-2021, daily concentrations of birch pollen tended to remain at higher levels, vs. decrease during 1990s, when Tmean was between 13 and 15 °C. Our study suggests higher temperatures experienced in recent decades are associated with higher overall abundance of some pollen/fungal spores, which may increase future disease burdens of allergies. The changing responses of some pollen to higher temperatures over time may indicate adaptation to increasing temperatures and should be considered in climate change mitigation and adaptation planning.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ]
+    },
+    "retrieved_records": {
+      "chunked_retrieval": true,
+      "source": "chunked_ai_screening_results",
+      "record_count": 1,
+      "applied_limit": 1000,
+      "records": [
+        {
+          "id": "PMID-37806575",
+          "pmid": "37806575",
+          "pmcid": "",
+          "title": "Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom.",
+          "doi": "10.1016/j.scitotenv.2023.167607",
+          "authors": "Lam HCY, Anees-Hill S, Satchwell J, Symon F, Macintyre H, Pashley CH, Marczylo EL, Douglas P, Aldridge S, Hansell A",
+          "journal": "The Science of the total environment",
+          "volume": "906",
+          "issue": "",
+          "publicationDate": "2024-01-01",
+          "fullTextAvailable": false,
+          "pdfUrl": "",
+          "abstract": "Exposure to pollen and fungal spores can trigger asthma/allergic symptoms and affect health. Rising temperatures from climate change have been associated with earlier seasons and increasing intensity for some pollen, with weaker evidence for fungal spores. It is unclear whether climate change has resulted in changes in the exposure-response function between temperature and pollen/fungal spore concentrations over time. This study examined associations between temperature and pollen/fungal spores in different time periods and assessed potential adaptation using the longest pollen/fungal spore dataset in existence (52 years). Daily concentrations of pollen (birch and grass) and fungal spores (Cladosporium, Alternaria, Sporobolomyces and Tilletiopsis) collected between April and October from Derby (1970-2005) and Leicester (2006-2021), UK, were analysed. Cumulative seasonal concentrations (seasonal integral) and start-of-season were calculated and linked to seasonal mean temperatures (Tmeans) using generalized additive models. Daily concentrations were evaluated against daily Tmean with distributed lagged nonlinear models. Models were adjusted for precipitation, relative humidity, long-term trend and location. Seasonal and daily analyses were respectively stratified into two periods (1970-1995, 1997-2021) and five decades. Warmer seasonal Tmeans were associated with higher seasonal integral for birch, Cladosporium and Alternaria, as well as earlier start-of-season for birch, grass and Cladosporium. There were indications of changing associations with temperature in the recent decades. A warmer January was associated with higher seasonal integral for grass in 1997-2021, but not in 1970-1995. In 2000-2021, daily concentrations of birch pollen tended to remain at higher levels, vs. decrease during 1990s, when Tmean was between 13 and 15 °C. Our study suggests higher temperatures experienced in recent decades are associated with higher overall abundance of some pollen/fungal spores, which may increase future disease burdens of allergies. The changing responses of some pollen to higher temperatures over time may indicate adaptation to increasing temperatures and should be considered in climate change mitigation and adaptation planning.",
+          "index": 0,
+          "sourceIndex": 0,
+          "sourceId": "pubmed",
+          "database": "PubMed",
+          "databaseKey": "pubmed",
+          "pages": "",
+          "isbn": "",
+          "referenceIndex": 0,
+          "duplicate": false,
+          "ai_screening_decision": "Relevant",
+          "screening_decision": "Relevant"
+        }
+      ],
+      "chunk_results": [
+        {
+          "chunk_index": 1,
+          "source": "records_embedded_in_ai_screening_chunk",
+          "record_count": 1
+        }
+      ]
+    },
+    "pdf_download": {
+      "status": "unavailable",
+      "source": "api_unavailable",
+      "note": "The PDF API returned no extractable original PDFs or package ZIPs for this run. Requested 1 references in 1 batch(es). Failed batches: 0. No generated summary PDFs were substituted.",
+      "fileName": "",
+      "localZipPath": "",
+      "pdfs": [],
+      "batch_size": 1,
+      "min_batch_size": 1,
+      "batch_count": 1,
+      "parallel": false,
+      "max_workers": 20,
+      "row_level_pdfs": true,
+      "batch_results": [
+        {
+          "id": "pdfs_94438a5522dc4cb88452cf7853f00e34",
+          "sourceId": "references_97d7449613b54ff18251e8c2ee046fbe",
+          "sourceType": "references",
+          "status": "manual_required",
+          "recordCount": 1,
+          "downloadedCount": 0,
+          "manualRequiredCount": 1,
+          "failedCount": 0,
+          "skippedCount": 0,
+          "zipFileCount": 0,
+          "fileName": "",
+          "downloadUrl": "",
+          "records": [
+            {
+              "id": "API-1",
+              "title": "Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom.",
+              "doi": "10.1016/j.scitotenv.2023.167607",
+              "pmcid": "",
+              "status": "manual_required",
+              "filePath": "",
+              "errorMessage": "No open-access PDF URL was found from the record identifiers."
+            }
+          ],
+          "errorMessage": "No PDFs were downloaded automatically.",
+          "pdfs": [],
+          "batch_index": 1,
+          "batch_label": "PDF batch 1/1 (1 references)",
+          "batch_size": 1,
+          "requested_reference_count": 1
+        }
+      ],
+      "batch_errors": [],
+      "packageZips": []
+    },
+    "intelligence_extraction": {
+      "enabled": true,
+      "modules": [
+        "exposure_health_associations",
+        "clinical_epidemiology",
+        "research_datasets",
+        "geospatial_datasets",
+        "cohorts",
+        "chemical_watchlist",
+        "research_reviews",
+        "hew_resource_library"
+      ],
+      "counts": {
+        "exposure_health_associations": 1,
+        "clinical_epidemiology": 0,
+        "research_datasets": 0,
+        "geospatial_datasets": 0,
+        "cohorts": 0,
+        "chemical_watchlist": 0,
+        "research_reviews": 0,
+        "hew_resource_library": 1,
+        "article_methods": 1
+      },
+      "knowledge_space": {
+        "records": 1,
+        "clusters": 1,
+        "priority_items": 1,
+        "large_scale_mode": false,
+        "umap": "single_record"
+      },
+      "generated_at": "2026-08-21T17:04:25Z"
+    }
+  },
+  "updated_at": "2026-08-21T17:04:25Z"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "references_8020cf9b9cf649b4a2e7b7b945e4ea2e",
+  "recordCount": 1,
+  "databaseQueries": {
+    "pubmed": "Geospatial Patterns of Non-Melanoma Skin Cancer in Relation to Climate Changes in Iran"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 1
+  }
+}

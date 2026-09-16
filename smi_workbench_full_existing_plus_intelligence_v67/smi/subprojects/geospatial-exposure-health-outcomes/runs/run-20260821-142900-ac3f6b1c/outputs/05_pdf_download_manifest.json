@@ -1,0 +1,244 @@
+{
+  "generated_at": "2026-08-21T10:37:30",
+  "requested_reference_count": 71,
+  "batch_size": 1,
+  "completed_batch_count": 71,
+  "completed_reference_count": 71,
+  "successful_pdf_count": 33,
+  "failed_batch_count": 0,
+  "package_zip_count": 33,
+  "package_zips": [
+    {
+      "fileName": "PDF batch 8-71 -1 references-pdfs_95e75cbce0164f4ca324eb179251154d.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 8-71 -1 references-pdfs_95e75cbce0164f4ca324eb179251154d.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 8-71 -1 references-pdfs_95e75cbce0164f4ca324eb179251154d.zip",
+      "batchLabel": "PDF batch 8/71 (1 references)",
+      "sizeBytes": 1944613
+    },
+    {
+      "fileName": "PDF batch 13-71 -1 references-pdfs_8733c5969b5d42daba4fd6473f461e81.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 13-71 -1 references-pdfs_8733c5969b5d42daba4fd6473f461e81.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 13-71 -1 references-pdfs_8733c5969b5d42daba4fd6473f461e81.zip",
+      "batchLabel": "PDF batch 13/71 (1 references)",
+      "sizeBytes": 1405058
+    },
+    {
+      "fileName": "PDF batch 17-71 -1 references-pdfs_1e17ebb230534aa2a291950649afcd05.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 17-71 -1 references-pdfs_1e17ebb230534aa2a291950649afcd05.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 17-71 -1 references-pdfs_1e17ebb230534aa2a291950649afcd05.zip",
+      "batchLabel": "PDF batch 17/71 (1 references)",
+      "sizeBytes": 384734
+    },
+    {
+      "fileName": "PDF batch 19-71 -1 references-pdfs_12fe2a7b11034c2cb93d9f20de9936d2.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 19-71 -1 references-pdfs_12fe2a7b11034c2cb93d9f20de9936d2.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 19-71 -1 references-pdfs_12fe2a7b11034c2cb93d9f20de9936d2.zip",
+      "batchLabel": "PDF batch 19/71 (1 references)",
+      "sizeBytes": 1413825
+    },
+    {
+      "fileName": "PDF batch 20-71 -1 references-pdfs_70a8bf24bb8349fe989d379b3c45baa8.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 20-71 -1 references-pdfs_70a8bf24bb8349fe989d379b3c45baa8.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 20-71 -1 references-pdfs_70a8bf24bb8349fe989d379b3c45baa8.zip",
+      "batchLabel": "PDF batch 20/71 (1 references)",
+      "sizeBytes": 2623329
+    },
+    {
+      "fileName": "PDF batch 21-71 -1 references-pdfs_88647d5eb4e44bc4934e749175757abf.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 21-71 -1 references-pdfs_88647d5eb4e44bc4934e749175757abf.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 21-71 -1 references-pdfs_88647d5eb4e44bc4934e749175757abf.zip",
+      "batchLabel": "PDF batch 21/71 (1 references)",
+      "sizeBytes": 319736
+    },
+    {
+      "fileName": "PDF batch 23-71 -1 references-pdfs_3190c193fd504bc5ad3e8d4f5bb07f1a.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 23-71 -1 references-pdfs_3190c193fd504bc5ad3e8d4f5bb07f1a.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 23-71 -1 references-pdfs_3190c193fd504bc5ad3e8d4f5bb07f1a.zip",
+      "batchLabel": "PDF batch 23/71 (1 references)",
+      "sizeBytes": 2320068
+    },
+    {
+      "fileName": "PDF batch 24-71 -1 references-pdfs_10df2e20ceab46788d826a9cd60ebd55.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 24-71 -1 references-pdfs_10df2e20ceab46788d826a9cd60ebd55.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 24-71 -1 references-pdfs_10df2e20ceab46788d826a9cd60ebd55.zip",
+      "batchLabel": "PDF batch 24/71 (1 references)",
+      "sizeBytes": 956064
+    },
+    {
+      "fileName": "PDF batch 25-71 -1 references-pdfs_0922fe6aa9704f19a58d2a25b0bb9b65.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 25-71 -1 references-pdfs_0922fe6aa9704f19a58d2a25b0bb9b65.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 25-71 -1 references-pdfs_0922fe6aa9704f19a58d2a25b0bb9b65.zip",
+      "batchLabel": "PDF batch 25/71 (1 references)",
+      "sizeBytes": 4886463
+    },
+    {
+      "fileName": "PDF batch 26-71 -1 references-pdfs_0161377d3c9241eb9c4cb1f8ad73b64e.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 26-71 -1 references-pdfs_0161377d3c9241eb9c4cb1f8ad73b64e.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 26-71 -1 references-pdfs_0161377d3c9241eb9c4cb1f8ad73b64e.zip",
+      "batchLabel": "PDF batch 26/71 (1 references)",
+      "sizeBytes": 1680601
+    },
+    {
+      "fileName": "PDF batch 32-71 -1 references-pdfs_05746447fe5947ca9208ede0630cde92.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 32-71 -1 references-pdfs_05746447fe5947ca9208ede0630cde92.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 32-71 -1 references-pdfs_05746447fe5947ca9208ede0630cde92.zip",
+      "batchLabel": "PDF batch 32/71 (1 references)",
+      "sizeBytes": 853335
+    },
+    {
+      "fileName": "PDF batch 33-71 -1 references-pdfs_b9f271e400204a23bb24efbc5eaf9802.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 33-71 -1 references-pdfs_b9f271e400204a23bb24efbc5eaf9802.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 33-71 -1 references-pdfs_b9f271e400204a23bb24efbc5eaf9802.zip",
+      "batchLabel": "PDF batch 33/71 (1 references)",
+      "sizeBytes": 402114
+    },
+    {
+      "fileName": "PDF batch 34-71 -1 references-pdfs_44f653bb983b418fbd0598ac76913043.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 34-71 -1 references-pdfs_44f653bb983b418fbd0598ac76913043.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 34-71 -1 references-pdfs_44f653bb983b418fbd0598ac76913043.zip",
+      "batchLabel": "PDF batch 34/71 (1 references)",
+      "sizeBytes": 1077224
+    },
+    {
+      "fileName": "PDF batch 37-71 -1 references-pdfs_fce1809fada94ccb9f3032da308d5ce0.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 37-71 -1 references-pdfs_fce1809fada94ccb9f3032da308d5ce0.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 37-71 -1 references-pdfs_fce1809fada94ccb9f3032da308d5ce0.zip",
+      "batchLabel": "PDF batch 37/71 (1 references)",
+      "sizeBytes": 4360717
+    },
+    {
+      "fileName": "PDF batch 39-71 -1 references-pdfs_ad625d853461403c802391b004434bba.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 39-71 -1 references-pdfs_ad625d853461403c802391b004434bba.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 39-71 -1 references-pdfs_ad625d853461403c802391b004434bba.zip",
+      "batchLabel": "PDF batch 39/71 (1 references)",
+      "sizeBytes": 2615065
+    },
+    {
+      "fileName": "PDF batch 40-71 -1 references-pdfs_efc3eddcae4246f6b1bf26525ec3d10f.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 40-71 -1 references-pdfs_efc3eddcae4246f6b1bf26525ec3d10f.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 40-71 -1 references-pdfs_efc3eddcae4246f6b1bf26525ec3d10f.zip",
+      "batchLabel": "PDF batch 40/71 (1 references)",
+      "sizeBytes": 547050
+    },
+    {
+      "fileName": "PDF batch 42-71 -1 references-pdfs_c527de95a3f945949e755dca43bf8256.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 42-71 -1 references-pdfs_c527de95a3f945949e755dca43bf8256.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 42-71 -1 references-pdfs_c527de95a3f945949e755dca43bf8256.zip",
+      "batchLabel": "PDF batch 42/71 (1 references)",
+      "sizeBytes": 6795430
+    },
+    {
+      "fileName": "PDF batch 43-71 -1 references-pdfs_fa9c5fb23e464b2cba4be62d420948c4.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 43-71 -1 references-pdfs_fa9c5fb23e464b2cba4be62d420948c4.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 43-71 -1 references-pdfs_fa9c5fb23e464b2cba4be62d420948c4.zip",
+      "batchLabel": "PDF batch 43/71 (1 references)",
+      "sizeBytes": 8021288
+    },
+    {
+      "fileName": "PDF batch 44-71 -1 references-pdfs_f92e54d63ab1464a997c90d4d0258b41.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 44-71 -1 references-pdfs_f92e54d63ab1464a997c90d4d0258b41.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 44-71 -1 references-pdfs_f92e54d63ab1464a997c90d4d0258b41.zip",
+      "batchLabel": "PDF batch 44/71 (1 references)",
+      "sizeBytes": 1401781
+    },
+    {
+      "fileName": "PDF batch 50-71 -1 references-pdfs_f395d48fe0cd4a53a7b5e1e428b40b4e.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 50-71 -1 references-pdfs_f395d48fe0cd4a53a7b5e1e428b40b4e.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 50-71 -1 references-pdfs_f395d48fe0cd4a53a7b5e1e428b40b4e.zip",
+      "batchLabel": "PDF batch 50/71 (1 references)",
+      "sizeBytes": 1632221
+    },
+    {
+      "fileName": "PDF batch 51-71 -1 references-pdfs_32e21ea98a0d47708c7527ebcf4937cc.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 51-71 -1 references-pdfs_32e21ea98a0d47708c7527ebcf4937cc.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 51-71 -1 references-pdfs_32e21ea98a0d47708c7527ebcf4937cc.zip",
+      "batchLabel": "PDF batch 51/71 (1 references)",
+      "sizeBytes": 3465002
+    },
+    {
+      "fileName": "PDF batch 54-71 -1 references-pdfs_ac687a823bdb4ca0ae743e3904bb788f.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 54-71 -1 references-pdfs_ac687a823bdb4ca0ae743e3904bb788f.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 54-71 -1 references-pdfs_ac687a823bdb4ca0ae743e3904bb788f.zip",
+      "batchLabel": "PDF batch 54/71 (1 references)",
+      "sizeBytes": 555710
+    },
+    {
+      "fileName": "PDF batch 57-71 -1 references-pdfs_efa41ae13f92496fa190e773d6c03c88.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 57-71 -1 references-pdfs_efa41ae13f92496fa190e773d6c03c88.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 57-71 -1 references-pdfs_efa41ae13f92496fa190e773d6c03c88.zip",
+      "batchLabel": "PDF batch 57/71 (1 references)",
+      "sizeBytes": 829549
+    },
+    {
+      "fileName": "PDF batch 58-71 -1 references-pdfs_947f9217d59a4020aa63c3e850593e08.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 58-71 -1 references-pdfs_947f9217d59a4020aa63c3e850593e08.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 58-71 -1 references-pdfs_947f9217d59a4020aa63c3e850593e08.zip",
+      "batchLabel": "PDF batch 58/71 (1 references)",
+      "sizeBytes": 1891826
+    },
+    {
+      "fileName": "PDF batch 59-71 -1 references-pdfs_1bbf1222098f4bf29c5fc0092c5348dd.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 59-71 -1 references-pdfs_1bbf1222098f4bf29c5fc0092c5348dd.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 59-71 -1 references-pdfs_1bbf1222098f4bf29c5fc0092c5348dd.zip",
+      "batchLabel": "PDF batch 59/71 (1 references)",
+      "sizeBytes": 533330
+    },
+    {
+      "fileName": "PDF batch 60-71 -1 references-pdfs_c6aaa9c9440b410ab4e3febba5d5bae2.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 60-71 -1 references-pdfs_c6aaa9c9440b410ab4e3febba5d5bae2.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 60-71 -1 references-pdfs_c6aaa9c9440b410ab4e3febba5d5bae2.zip",
+      "batchLabel": "PDF batch 60/71 (1 references)",
+      "sizeBytes": 1903847
+    },
+    {
+      "fileName": "PDF batch 61-71 -1 references-pdfs_886308a871d14fcf83c0cbe63c77f8b8.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 61-71 -1 references-pdfs_886308a871d14fcf83c0cbe63c77f8b8.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 61-71 -1 references-pdfs_886308a871d14fcf83c0cbe63c77f8b8.zip",
+      "batchLabel": "PDF batch 61/71 (1 references)",
+      "sizeBytes": 1655805
+    },
+    {
+      "fileName": "PDF batch 62-71 -1 references-pdfs_b3fa3027f18341d483c90033c97490bf.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 62-71 -1 references-pdfs_b3fa3027f18341d483c90033c97490bf.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 62-71 -1 references-pdfs_b3fa3027f18341d483c90033c97490bf.zip",
+      "batchLabel": "PDF batch 62/71 (1 references)",
+      "sizeBytes": 940642
+    },
+    {
+      "fileName": "PDF batch 65-71 -1 references-pdfs_6fa5ea1f6c454f439b0f86ee79fb9974.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 65-71 -1 references-pdfs_6fa5ea1f6c454f439b0f86ee79fb9974.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 65-71 -1 references-pdfs_6fa5ea1f6c454f439b0f86ee79fb9974.zip",
+      "batchLabel": "PDF batch 65/71 (1 references)",
+      "sizeBytes": 420629
+    },
+    {
+      "fileName": "PDF batch 66-71 -1 references-pdfs_1da5c7f28c964d77ba7e54b0ad21fca3.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 66-71 -1 references-pdfs_1da5c7f28c964d77ba7e54b0ad21fca3.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 66-71 -1 references-pdfs_1da5c7f28c964d77ba7e54b0ad21fca3.zip",
+      "batchLabel": "PDF batch 66/71 (1 references)",
+      "sizeBytes": 3202937
+    },
+    {
+      "fileName": "PDF batch 67-71 -1 references-pdfs_aebbd4034c0c452ead6dc9c7cc59121f.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 67-71 -1 references-pdfs_aebbd4034c0c452ead6dc9c7cc59121f.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 67-71 -1 references-pdfs_aebbd4034c0c452ead6dc9c7cc59121f.zip",
+      "batchLabel": "PDF batch 67/71 (1 references)",
+      "sizeBytes": 711979
+    },
+    {
+      "fileName": "PDF batch 69-71 -1 references-pdfs_3b587f8eb2f848d39c36d09ba7798fbf.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 69-71 -1 references-pdfs_3b587f8eb2f848d39c36d09ba7798fbf.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 69-71 -1 references-pdfs_3b587f8eb2f848d39c36d09ba7798fbf.zip",
+      "batchLabel": "PDF batch 69/71 (1 references)",
+      "sizeBytes": 152891
+    },
+    {
+      "fileName": "PDF batch 71-71 -1 references-pdfs_3044f322dbe048c08874ae9ba16b709e.zip",
+      "localZipPath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 71-71 -1 references-pdfs_3044f322dbe048c08874ae9ba16b709e.zip",
+      "relativePath": "smi/subprojects/geospatial-exposure-health-outcomes/runs/run-20260821-142900-ac3f6b1c/outputs/pdfs/PDF batch 71-71 -1 references-pdfs_3044f322dbe048c08874ae9ba16b709e.zip",
+      "batchLabel": "PDF batch 71/71 (1 references)",
+      "sizeBytes": 496695
+    }
+  ],
+  "batch_errors": []
+}

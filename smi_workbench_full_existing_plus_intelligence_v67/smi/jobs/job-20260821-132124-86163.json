@@ -1,0 +1,12 @@
+{
+  "pid": 86822,
+  "subproject": "towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa",
+  "run_id": "run-20260821-172124-ff36effb",
+  "config_path": "generated_configs/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa_20260821_132123.yaml",
+  "log_path": "smi/jobs/job-20260821-132124-86163.log",
+  "log_url": "/preview?path=smi%2Fjobs%2Fjob-20260821-132124-86163.log",
+  "started_at": "2026-08-21T13:21:25",
+  "state": "running",
+  "command": "/Users/hasanm3/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/DTT/SMI/06_30_2026/smi_workflow_implementation_chatgpt/.venv/bin/python3 smi_workflow.py --root smi run --subproject towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa --config generated_configs/towards-an-intelligent-malaria-outbreak-warning-model-based-intelligent-malaria-outbreak-warning-in-the-northern-part-of-benin-west-africa_20260821_132123.yaml",
+  "job_id": "job-20260821-132124-86163"
+}

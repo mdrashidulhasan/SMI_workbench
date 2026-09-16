@@ -1,0 +1,3 @@
+exposure,health_outcome,article_count,positive,negative,null,mixed,unclear
+not extracted,birth weight,1,1,0,0,0,0
+not extracted,mortality,1,1,0,0,0,0

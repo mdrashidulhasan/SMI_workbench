@@ -1,0 +1,14 @@
+{
+  "id": "references_be43331e267c45cea05d1ce38963006a",
+  "recordCount": 8920,
+  "databaseQueries": {
+    "pubmed": "(PM2.5 OR particulate matter OR PFAS OR heat) AND (asthma OR pregnancy OR cardiovascular) AND environmental health"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 8920
+  }
+}

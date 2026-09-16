@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <form method="get" action="/knowledge" class="grid">
+    <div>
+      <label>Project</label>
+      <select name="subproject" onchange="this.form.submit()">
+        {% for p in projects %}
+        <option value="{{ p }}" {% if p == selected_project %}selected{% endif %}>{{ p }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label>Run</label>
+      <select name="run_id" onchange="this.form.submit()">
+        {% for r in runs %}
+        <option value="{{ r.name }}" {% if selected_run and r.name == selected_run.name %}selected{% endif %}>{{ r.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </form>
+</div>
+
+<div class="card">
+  <h2>Knowledge Space</h2>
+  <p class="muted">This layer converts article abstracts into knowledge vectors, clusters large literatures, projects them into PCA/UMAP maps, supports run-specific topic filters generated from the current search, and ranks items for review.</p>
+  {% if selected_project and selected_run %}
+  <form method="post" action="/knowledge/generate" class="actions">
+    <input type="hidden" name="subproject" value="{{ selected_project }}">
+    <input type="hidden" name="run_id" value="{{ selected_run.name }}">
+    <button type="submit">Generate / Refresh Knowledge Space</button>
+    <a class="button" href="/knowledge/evidence-map?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Open Evidence Map</a>
+    <a class="button button-light" href="/knowledge/map?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Open Knowledge Map</a>
+    <a class="button button-light" href="/knowledge/priority?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Priority Queue</a>
+  </form>
+  {% else %}
+  <div class="notice warn">No run selected. Start or select a run first.</div>
+  {% endif %}
+</div>
+
+<div class="card">
+  <h2>Structured Evidence Map</h2>
+  <p class="muted">Explore normalized evidence relationships across exposures, health impacts, geography, model types, and special topics. Every relationship stays linked to its supporting publications and Evidence Packs.</p>
+  {% if selected_project and selected_run %}
+  <div class="actions">
+    <a class="button button-light" href="/knowledge/evidence-map?subproject={{ selected_project }}&run_id={{ selected_run.name }}">Explore Structured Evidence</a>
+    <a class="button button-light" href="/intelligence/structured_evidence?subproject={{ selected_project }}&run_id={{ selected_run.name }}">View Structured Evidence Table</a>
+  </div>
+  {% endif %}
+</div>
+
+{% if generated_counts %}
+<div class="notice">Knowledge Space generated: {{ generated_counts }}</div>
+{% endif %}
+
+<div class="grid">
+  <div class="metric"><div class="value">{{ knowledge_counts.vectors }}</div><div class="label">Articles vectorized</div></div>
+  <div class="metric"><div class="value">{{ knowledge_counts.clusters }}</div><div class="label">Knowledge clusters</div></div>
+  <div class="metric"><div class="value">{{ knowledge_counts.priority }}</div><div class="label">Priority queue items</div></div>
+</div>
+
+<div class="grid-2">
+  <div class="card">
+    <h2>Clusters</h2>
+    {% if clusters %}
+    <table><tr><th>Cluster</th><th>Theme</th><th>Articles</th></tr>
+      {% for cluster in clusters[:12] %}
+      <tr><td>{{ cluster.cluster_id }}</td><td>{{ cluster.theme }}</td><td>{{ cluster.article_count }}</td></tr>
+      {% endfor %}
+    </table>
+    {% else %}<p class="muted">No clusters yet. Generate Knowledge Space for this run.</p>{% endif %}
+  </div>
+  <div class="card">
+    <h2>Top Review Priorities</h2>
+    {% if priority_rows %}
+    <table><tr><th>Rank</th><th>Title</th><th>Score</th><th>Reason</th></tr>
+      {% for row in priority_rows %}
+      <tr><td>{{ row.rank }}</td><td>{{ row.title }}</td><td>{{ row.priority_score }}</td><td>{{ row.review_reason }}</td></tr>
+      {% endfor %}
+    </table>
+    {% else %}<p class="muted">No priority rows yet.</p>{% endif %}
+  </div>
+</div>
+
+<div class="card">
+  <h2>Summary</h2>
+  {% if knowledge_summary %}<pre>{{ knowledge_summary }}</pre>{% else %}<p class="muted">No Knowledge Space summary yet.</p>{% endif %}
+</div>
+{% endblock %}

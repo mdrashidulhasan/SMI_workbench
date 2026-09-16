@@ -1,0 +1,14 @@
+{
+  "id": "references_8cc11a73b1194b4085f545ab3a975f5d",
+  "recordCount": 1,
+  "databaseQueries": {
+    "pubmed": "Evolution of Spatial Risk of Malaria Infection After a Pragmatic Chemoprevention Program in Response to Severe Flooding in Rural Western Uganda"
+  },
+  "successfulSources": [
+    "pubmed"
+  ],
+  "sourceErrors": [],
+  "sourceCounts": {
+    "pubmed": 1
+  }
+}

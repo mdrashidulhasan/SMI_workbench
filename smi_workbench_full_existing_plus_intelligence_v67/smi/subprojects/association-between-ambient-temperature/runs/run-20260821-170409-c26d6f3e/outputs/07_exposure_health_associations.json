@@ -1,0 +1,21 @@
+[
+  {
+    "exposure_name": "heat/temperature",
+    "exposure_type": "non-chemical stressor",
+    "health_outcome": "asthma",
+    "population": "not specified",
+    "study_design": "not specified",
+    "effect_direction": "unspecified",
+    "effect_estimate": "not extracted",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "generalized additive models",
+    "evidence_sentence": "Models were adjusted for precipitation, relative humidity, long-term trend and location.",
+    "citation": "PMID: 37806575",
+    "source_title": "Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom",
+    "confidence": "medium",
+    "id": "assoc-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

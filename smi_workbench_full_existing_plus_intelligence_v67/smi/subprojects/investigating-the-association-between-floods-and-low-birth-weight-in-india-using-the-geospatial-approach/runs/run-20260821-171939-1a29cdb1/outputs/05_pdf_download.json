@@ -1,0 +1,49 @@
+{
+  "status": "unavailable",
+  "source": "api_unavailable",
+  "note": "The PDF API returned no extractable original PDFs or package ZIPs for this run. Requested 1 references in 1 batch(es). Failed batches: 0. No generated summary PDFs were substituted.",
+  "fileName": "",
+  "localZipPath": "",
+  "pdfs": [],
+  "batch_size": 1,
+  "min_batch_size": 1,
+  "batch_count": 1,
+  "parallel": false,
+  "max_workers": 20,
+  "row_level_pdfs": true,
+  "batch_results": [
+    {
+      "id": "pdfs_612f1b0cc5784044ba26a6a56f7096eb",
+      "sourceId": "references_f20d2ffa484c451d9e8db353c5b8ce51",
+      "sourceType": "references",
+      "status": "manual_required",
+      "recordCount": 1,
+      "downloadedCount": 0,
+      "manualRequiredCount": 1,
+      "failedCount": 0,
+      "skippedCount": 0,
+      "zipFileCount": 0,
+      "fileName": "",
+      "downloadUrl": "",
+      "records": [
+        {
+          "id": "API-1",
+          "title": "Investigating the association between floods and low birth weight in India: Using the geospatial approach.",
+          "doi": "10.1016/j.scitotenv.2023.169593",
+          "pmcid": "",
+          "status": "manual_required",
+          "filePath": "",
+          "errorMessage": "No open-access PDF URL was found from the record identifiers."
+        }
+      ],
+      "errorMessage": "No PDFs were downloaded automatically.",
+      "pdfs": [],
+      "batch_index": 1,
+      "batch_label": "PDF batch 1/1 (1 references)",
+      "batch_size": 1,
+      "requested_reference_count": 1
+    }
+  ],
+  "batch_errors": [],
+  "packageZips": []
+}

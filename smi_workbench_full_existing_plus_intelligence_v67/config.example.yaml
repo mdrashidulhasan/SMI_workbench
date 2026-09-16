@@ -1,0 +1,30 @@
+literature_search:
+  query: "(PM2.5 OR particulate matter) AND asthma AND geospatial"
+  start_date: "2015-01-01"
+  end_date: "2026-06-30"
+  database:
+    - pubmed
+  # v21: no literature-search limit. Use downstream limits instead.
+  limit: null
+
+ai_screening:
+  exclusion_criteria: {}
+  limit: 1000
+
+record_retrieval:
+  type: screened
+  start_index: 0
+  number_of_records: 1000
+
+approval_gates:
+  pre-ai-screening: true
+  post-ai-screening: true
+  pre-final-summary: true
+  final-approval: true
+
+pdf_download:
+  enabled: true
+  row_level_pdfs: true
+  batch_size: 1
+  min_batch_size: 1
+  # v65: no PDF-specific limit. The PDF stage attempts every record already retrieved.

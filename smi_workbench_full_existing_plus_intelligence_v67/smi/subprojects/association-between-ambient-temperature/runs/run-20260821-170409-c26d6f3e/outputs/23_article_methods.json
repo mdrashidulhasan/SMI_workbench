@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Association between ambient temperature and common allergenic pollen and fungal spores: A 52-year analysis in central England, United Kingdom",
+    "citation": "PMID: 37806575",
+    "sample_size": "not reported",
+    "population_size": "not reported",
+    "statistical_methods": "generalized additive models",
+    "population": "not specified",
+    "study_design": "not specified",
+    "evidence_sentence": "Cumulative seasonal concentrations (seasonal integral) and start-of-season were calculated and linked to seasonal mean temperatures (Tmeans) using generalized additive models.",
+    "abstract_available": "yes; possibly incomplete",
+    "id": "method-0001",
+    "review_status": "pending",
+    "reviewer_notes": ""
+  }
+]

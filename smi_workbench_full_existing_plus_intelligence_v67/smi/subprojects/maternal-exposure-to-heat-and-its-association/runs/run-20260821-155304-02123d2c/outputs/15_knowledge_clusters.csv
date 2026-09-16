@@ -1,0 +1,2 @@
+cluster_id,theme,article_count,main_titles,cluster_method
+1,heat/temperature + pregnancy,1,"Maternal exposure to heat and its association with miscarriage in rural KwaZulu-Natal, South Africa: A population-based cohort study.",agglomerative_cosine

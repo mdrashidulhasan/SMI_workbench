@@ -1,0 +1,20 @@
+/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py:411: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  run_id = f"run-{dt.datetime.utcnow().strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:8]}"
+/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py:305: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+Traceback (most recent call last):
+  File "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py", line 4030, in <module>
+    main()
+    ~~~~^^
+  File "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py", line 4009, in main
+    run_workflow(ctx, resume=False)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py", line 3890, in run_workflow
+    fn()
+    ~~^^
+  File "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py", line 3873, in <lambda>
+    ("ai_screening", lambda: stage_screening(ctx, client), "ai_screening"),
+                             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/hasanm3/Downloads/smi_workbench_full_existing_plus_intelligence_v66/smi_workflow.py", line 3142, in stage_screening
+    raise exc
+RuntimeError: AI screening failed for 7323 record(s). No records were silently dropped. See outputs/03_ai_screening_partial.json and logs/workflow.log.
